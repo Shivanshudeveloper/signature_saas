@@ -188,7 +188,7 @@ class EmailInvoice extends Component {
                               borderTop: "1px solid #dee2e6",
                             }}
                           >
-                            Landrick Template
+                             Template
                                 </td>
                           <td
                             style={{
@@ -307,7 +307,7 @@ class EmailInvoice extends Component {
                     textAlign: "center",
                   }}
                 >
-                  © 2019-20 Landrick.
+                  © 2019-20
                       </td>
               </tr>
             </tbody>

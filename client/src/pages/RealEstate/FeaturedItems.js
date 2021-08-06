@@ -26,7 +26,7 @@ class FeaturedItems extends Component {
     this.state = {
       pathItems: [
         //id must required
-        { id: 1, name: "Landrick", link: "/index" },
+        { id: 1, name: "Company Name", link: "/" },
         { id: 2, name: "Shop", link: "#" },
         { id: 3, name: "Product Details" },
       ],
@@ -146,9 +146,6 @@ class FeaturedItems extends Component {
                 <h4 className="title mt-3 mb-4">Latest Property</h4>
                 <p className="text-muted mx-auto mx-lg-left para-desc mb-0">
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
                 </p>

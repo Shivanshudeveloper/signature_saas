@@ -20,16 +20,7 @@ class FooterWithoutMenuLightSocialOnly extends Component {
               <Col sm="6">
                 <div className="text-sm-start">
                   <p className="mb-0">
-                    © 2020-21 Landrick. Develop by{" "}
-                    <a
-                      href="https://themesbrand.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-success"
-                    >
-                      Themesbrand
-                    </a>
-                    .
+                    © 2020-21
                   </p>
                 </div>
               </Col>

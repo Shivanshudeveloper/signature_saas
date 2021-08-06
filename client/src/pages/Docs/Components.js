@@ -69,7 +69,7 @@ class Components extends Component {
     this.state = {
       pathItems: [
         //id must required
-        { id: 1, name: "Landrick", link: "/index" },
+        { id: 1, name: "Company Name", link: "/" },
         { id: 2, name: "Docs", link: "#" },
         { id: 3, name: "Components" },
       ],
@@ -436,7 +436,7 @@ class Components extends Component {
                         <h6 className="text-muted mb-2 pb-2">
                           Ex.{" "}
                           <code className="text-danger">
-                            &lt;div className="bg-primary"&gt; Landrick Saas &
+                            &lt;div className="bg-primary"&gt;  Saas &
                             Software Template &lt;/div&gt;
                           </code>
                         </h6>
@@ -539,7 +539,7 @@ class Components extends Component {
                         <h6 className="text-muted mb-2 pb-2">
                           Ex.{" "}
                           <code className="text-danger">
-                            &lt;div className="bg-soft-primary"&gt; Landrick
+                            &lt;div className="bg-soft-primary"&gt; 
                             Saas & Software Template &lt;/div&gt;
                           </code>
                         </h6>
@@ -687,7 +687,7 @@ class Components extends Component {
                         <h6 className="text-muted mb-4 pb-2">
                           Ex.{" "}
                           <code className="text-danger">
-                            &lt;div className="text-primary"&gt; Landrick Saas &
+                            &lt;div className="text-primary"&gt;  Saas &
                             Software Template &lt;/div&gt;
                           </code>
                         </h6>
@@ -2340,7 +2340,7 @@ class Components extends Component {
                             &nbsp;&nbsp; &lt;CardBody&gt; <br />
                             &nbsp;&nbsp;&nbsp;&nbsp; &lt;h5
                             className="card-title"&gt;Saas & Software :
-                            Landrick&lt;/h5&gt; <br />
+                            &lt;/h5&gt; <br />
                             &nbsp;&nbsp;&nbsp;&nbsp; &lt;p className="text-muted
                             mb-0"&gt;Due to its widespread use as filler text
                             for layouts, non-readability is of great
@@ -2360,7 +2360,7 @@ class Components extends Component {
                               />
                               <CardBody>
                                 <h5 className="card-title">
-                                  Saas & Software : Landrick
+                                  Saas & Software : 
                                 </h5>
                                 <p className="text-muted">
                                   Due to its widespread use as filler text for
@@ -2384,7 +2384,7 @@ class Components extends Component {
                             <Card className="shadow rounded border-0 overflow-hidden">
                               <CardBody>
                                 <h5 className="card-title">
-                                  Saas & Software : Landrick
+                                  Saas & Software : 
                                 </h5>
                                 <p className="text-muted">
                                   Due to its widespread use as filler text for
@@ -2422,7 +2422,7 @@ class Components extends Component {
                               &nbsp;&nbsp; &lt;CardBody&gt; <br />
                               &nbsp;&nbsp;&nbsp;&nbsp; &lt;h5
                               className="card-title"&gt;Saas & Software :
-                              Landrick&lt;/h5&gt; <br />
+                              &lt;/h5&gt; <br />
                               &nbsp;&nbsp;&nbsp;&nbsp; &lt;p
                               className="text-muted mb-0"&gt;Due to its
                               widespread use as filler text for layouts,
@@ -2447,7 +2447,7 @@ class Components extends Component {
                                 <Col md={7}>
                                   <CardBody>
                                     <h5 className="card-title">
-                                      Saas & Software : Landrick
+                                      Saas & Software :
                                     </h5>
                                     <CardText>
                                       This is a wider card with supporting text
@@ -2843,7 +2843,7 @@ class Components extends Component {
                           listClassName="bg-white rounded shadow mb-0"
                         >
                           <BreadcrumbItem>
-                            <a href="index">Landrick</a>
+                            <a href="index">Company Name</a>
                           </BreadcrumbItem>
                           <BreadcrumbItem>
                             <Link to="#">Docs</Link>
@@ -3086,7 +3086,7 @@ class Components extends Component {
                             <TabContent activeTab={this.state.activeTab}>
                               <TabPane tabId="1" className="p-3">
                                 <p className="text-muted mb-0">
-                                  You can combine all the Landrick templates
+                                  You can combine all the  templates
                                   into a single one, you can take a component
                                   from the Application theme and use it in the
                                   Website.
@@ -3094,14 +3094,14 @@ class Components extends Component {
                               </TabPane>
                               <TabPane tabId="2" className="p-3">
                                 <p className="text-muted mb-0">
-                                  Can combine all the Landrick templates into a
+                                  Can combine all the  templates into a
                                   single one, you can take a component from the
                                   Application theme and use it in the Website.
                                 </p>
                               </TabPane>
                               <TabPane tabId="3" className="p-3">
                                 <p className="text-muted mb-0">
-                                  You can combine all the Landrick templates
+                                  You can combine all the  templates
                                   into a single one, you can take a component
                                   from the Application theme and use it in the
                                   Website.

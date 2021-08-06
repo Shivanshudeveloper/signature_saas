@@ -22,7 +22,7 @@ class HelpCenterOverview extends Component {
     this.state = {
       pathItems: [
         //id must required
-        { id: 1, name: "Landrick", link: "/index" },
+        { id: 1, name: "Company Name", link: "/" },
         { id: 2, name: "Help Center", link: "#" },
         { id: 3, name: "Overview" },
       ],
@@ -249,7 +249,7 @@ class HelpCenterOverview extends Component {
                         >
                           <h6 className="title mb-0">
                             {" "}
-                            Do I need a designer to use Landrick ?
+                            Do I need a designer to use  ?
                             <i
                               className={
                                 this.state.col2

@@ -39,7 +39,7 @@ class PagePricing extends Component {
     this.state = {
       pathItems: [
         //id must required
-        { id: 1, name: "Landrick", link: "/index" },
+        { id: 1, name: "Company Name", link: "/" },
         { id: 2, name: "Page", link: "#" },
         { id: 3, name: "Pricing" },
       ],
@@ -460,7 +460,7 @@ class PagePricing extends Component {
 
                   <div className="flex-1">
                     <h5 className="mt-0">
-                      How our <span className="text-primary">Landrick</span>{" "}
+                      How our <span className="text-primary"></span>{" "}
                       work ?
                     </h5>
                     <p className="answer text-muted mb-0">
@@ -526,7 +526,7 @@ class PagePricing extends Component {
 
                   <div className="flex-1">
                     <h5 className="mt-0">
-                      Is <span className="text-primary">Landrick</span> safer to
+                      Is <span className="text-primary"></span> safer to
                       use with my account ?
                     </h5>
                     <p className="answer text-muted mb-0">
@@ -546,9 +546,6 @@ class PagePricing extends Component {
                   <h4 className="title mb-4">Have Question ? Get in touch!</h4>
                   <p className="text-muted para-desc mx-auto">
                     Start working with{" "}
-                    <span className="text-primary fw-bold">
-                      Landrick
-                    </span>{" "}
                     that can provide everything you need to generate awareness,
                     drive traffic, connect.
                   </p>

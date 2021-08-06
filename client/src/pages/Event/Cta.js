@@ -40,7 +40,7 @@ class Cta extends Component {
                       Digital International Conference 2019
                     </h4>
                     <p className="text-light para-desc para-dark mx-auto">
-                      Start working with Landrick that can provide everything
+                      Start Working with  that can provide everything
                       you need to generate awareness, drive traffic, connect.
                     </p>
                     <Link

@@ -57,9 +57,6 @@ export default class RecentPost extends Component {
                 <h4 className="mb-4">Recent Post</h4>
                 <p className="text-muted mb-0 para-desc">
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
                 </p>

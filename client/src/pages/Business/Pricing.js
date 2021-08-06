@@ -232,13 +232,10 @@ class Pricing extends Component {
                 <div className="section-title">
                   <h4 className="title mb-4">
                     See everything about your{" "}
-                    <span className="text-primary">Landrick</span> Business
+                    <span className="text-primary"></span> Business
                   </h4>
                   <p className="text-muted para-desc">
                     Start working with{" "}
-                    <span className="text-primary fw-bold">
-                      Landrick
-                    </span>{" "}
                     that can provide everything you need to generate awareness,
                     drive traffic, connect.
                   </p>

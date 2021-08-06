@@ -132,13 +132,10 @@ class Faqs extends Component {
                 <div className="section-title mb-4 pb-2">
                   <h4 className="title mb-4">
                     See everything about your{" "}
-                    <span className="text-primary">Landrick</span>
+                    <span className="text-primary"></span>
                   </h4>
                   <p className="text-muted para-desc mx-auto mb-0">
                     Start working with{" "}
-                    <span className="text-primary fw-bold">
-                      Landrick
-                    </span>{" "}
                     that can provide everything you need to generate awareness,
                     drive traffic, connect.
                   </p>
@@ -174,7 +171,7 @@ class Faqs extends Component {
                           <h6 className="title mb-0">
                             {" "}
                             How our{" "}
-                            <span className="text-primary">Landrick</span> work
+                            <span className="text-primary"></span> work
                             ?
                             <i
                               className={
@@ -289,9 +286,6 @@ class Faqs extends Component {
                         >
                           <h6 className="title mb-0">
                             {" "}
-                            Is <span className="text-primary">
-                              Landrick
-                            </span>{" "}
                             safer to use with my account ?
                             <i
                               className={
@@ -368,9 +362,6 @@ class Faqs extends Component {
                   <h4 className="title mb-4">Get Started!</h4>
                   <p className="text-muted para-desc mx-auto">
                     Start working with{" "}
-                    <span className="text-primary fw-bold">
-                      Landrick
-                    </span>{" "}
                     that can provide everything you need to generate awareness,
                     drive traffic, connect.
                   </p>

@@ -11,7 +11,7 @@ class HelpCenterGuides extends Component {
     this.state = {
       pathItems: [
         //id must required
-        { id: 1, name: "Landrick", link: "/index" },
+        { id: 1, name: "Company Name", link: "/" },
         { id: 2, name: "Help Center", link: "#" },
         { id: 3, name: "Guides" },
       ],
@@ -138,7 +138,7 @@ class HelpCenterGuides extends Component {
                   <li className="mt-2">
                     <Link to="#" className="text-muted">
                       <i className="mdi mdi-arrow-right text-primary me-2"></i>
-                      Landrick Plus
+                       Plus
                     </Link>
                   </li>
                   <li className="mt-2">
@@ -192,13 +192,13 @@ class HelpCenterGuides extends Component {
                   <li className="mt-2">
                     <Link to="#" className="text-muted">
                       <i className="mdi mdi-arrow-right text-primary me-2"></i>
-                      Landrick safely
+                       safely
                     </Link>
                   </li>
                   <li className="mt-2">
                     <Link to="#" className="text-muted">
                       <i className="mdi mdi-arrow-right text-primary me-2"></i>
-                      Landrick Experiences and Adventures
+                       Experiences and Adventures
                     </Link>
                   </li>
                   <li className="mt-2">

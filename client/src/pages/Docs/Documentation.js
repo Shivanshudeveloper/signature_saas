@@ -12,7 +12,7 @@ class Documentation extends Component {
     this.state = {
       pathItems: [
         //id must required
-        { id: 1, name: "Landrick", link: "/index" },
+        { id: 1, name: "Company Name", link: "/" },
         { id: 2, name: "Docs", link: "#" },
         { id: 3, name: "Documentation" },
       ],
@@ -66,9 +66,7 @@ class Documentation extends Component {
                 <h1>Introduction</h1>
                 <p className="text-muted h5 font-weight-normal">
                   Get Start With{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
+
                   in React Js. Launch your campaign and benefit from our
                   expertise on designing and managing conversion centered
                   bootstrap5 React js page.
@@ -78,9 +76,6 @@ class Documentation extends Component {
 
                 <p className="text-muted">
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.{" "}
                   <Link

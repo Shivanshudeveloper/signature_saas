@@ -42,9 +42,6 @@ class PageContactDetail extends Component {
                   <h1 className="heading">Let's talk about your portfolio</h1>
                   <p className="text-dark">
                     Start working with{" "}
-                    <span className="text-primary fw-bold">
-                      Landrick
-                    </span>{" "}
                     that can provide everything you need to generate awareness,
                     drive traffic, connect.
                   </p>

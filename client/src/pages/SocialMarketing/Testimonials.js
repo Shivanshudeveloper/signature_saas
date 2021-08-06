@@ -85,9 +85,6 @@ class Testimonials extends Component {
                 <h4 className="title mb-4">User's Stories</h4>
                 <p className="text-muted para-desc mx-auto mb-0">
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
                 </p>

@@ -45,9 +45,6 @@ class Contact extends Component {
                 <h4 className="title mb-4">We're here to help you</h4>
                 <p className="text-muted para-desc">
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
                 </p>
@@ -78,7 +75,7 @@ class Contact extends Component {
                       <p className="text-muted para-desc mx-auto mb-0">
                         Start working with{" "}
                         <span className="text-primary fw-bold">
-                          Landrick
+                          
                         </span>{" "}
                         that can provide everything you need.
                       </p>

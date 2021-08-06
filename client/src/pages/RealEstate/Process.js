@@ -19,9 +19,6 @@ export default class Process extends Component {
                 <h4 className="title mt-3 mb-4">How it work</h4>
                 <p className="text-muted para-desc mb-0 mx-auto">
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
                 </p>

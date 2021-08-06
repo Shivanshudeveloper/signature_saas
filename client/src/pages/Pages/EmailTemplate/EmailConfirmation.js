@@ -73,7 +73,7 @@ class EmailConfirmation extends Component {
                 <td
                   style={{ padding: "15px 24px 15px", color: " #8492a6" }}
                 >
-                  Thanks for creating an Landrick account. To continue,
+                  Thanks for creating an  account. To continue,
                   please confirm your email address by clicking the button
                   below :
                       </td>
@@ -110,7 +110,7 @@ class EmailConfirmation extends Component {
                 <td
                   style={{ padding: "15px 24px 15px", color: "#8492a6" }}
                 >
-                  Landrick <br /> Support Team
+                   <br /> Support Team
                       </td>
               </tr>
               <tr>
@@ -122,7 +122,7 @@ class EmailConfirmation extends Component {
                     textAlign: "center",
                   }}
                 >
-                  © 2021 Landrick.
+                  © 2021
                       </td>
               </tr>
             </tbody>

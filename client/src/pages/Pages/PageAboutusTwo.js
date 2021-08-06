@@ -104,7 +104,7 @@ export default class PageAboutusTwo extends Component {
                 <div className="page-next-level title-heading">
                   <h1 className="text-white title-dark"> Aboutus </h1>
                   <p className="text-white-50 para-desc mb-0 mx-auto">
-                    Start working with Landrick that can provide everything you
+                    Start Working with  that can provide everything you
                     need to generate awareness, drive traffic, connect.
                   </p>
                   <div className="page-next">
@@ -168,9 +168,6 @@ export default class PageAboutusTwo extends Component {
                     <h4 className="title mb-4">Who we are ?</h4>
                     <p className="text-muted">
                       Start working with{" "}
-                      <span className="text-primary fw-bold">
-                        Landrick
-                      </span>{" "}
                       that can provide everything you need to generate
                       awareness, drive traffic, connect. Dummy text is text that
                       is used in the publishing industry or by web designers to
@@ -215,9 +212,6 @@ export default class PageAboutusTwo extends Component {
                   <h4 className="title mb-4">What we do ?</h4>
                   <p className="text-muted mb-0 para-desc">
                     Start working with{" "}
-                    <span className="text-primary fw-bold">
-                      Landrick
-                    </span>{" "}
                     that can provide everything you need to generate awareness,
                     drive traffic, connect.
                   </p>

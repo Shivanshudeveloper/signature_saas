@@ -39,7 +39,7 @@ class Faq extends Component {
                     </i>
                     <div className="flex-1">
                       <h5 className="mt-0">
-                        How our <span className="text-primary">Landrick</span>{" "}
+                        How our <span className="text-primary"></span>{" "}
                         work ?
                       </h5>
                       <p className="answer text-muted mb-0">
@@ -107,7 +107,7 @@ class Faq extends Component {
                     <div className="flex-1">
                       <h5 className="mt-0">
                         {" "}
-                        Is <span className="text-primary">Landrick</span> safer
+                        Is <span className="text-primary"></span> safer
                         to use with my account ?
                       </h5>
                       <p className="answer text-muted mb-0">
@@ -128,9 +128,6 @@ class Faq extends Component {
                   <h4 className="title mb-4">Download Our App Now !</h4>
                   <p className="text-muted para-desc mx-auto">
                     Start working with{" "}
-                    <span className="text-primary fw-bold">
-                      Landrick
-                    </span>{" "}
                     that can provide everything you need to generate awareness,
                     drive traffic, connect.
                   </p>

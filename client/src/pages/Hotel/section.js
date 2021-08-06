@@ -30,7 +30,7 @@ class Section extends Component {
         {
           id: 1,
           image: bg01,
-          h1: "Enjoy Better Holidays With  <br />  Landrick Resort",
+          h1: "Enjoy Better Holidays With  <br />   Resort",
           p:
             "Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.",
           btnclass: "btn btn-icon btn-pills btn-primary lightbox",
@@ -53,7 +53,7 @@ class Section extends Component {
         {
           id: 3,
           image: bg03,
-          h1: "Welcome Landrick, <br /> A Stunning Hotel",
+          h1: "Welcome , <br /> A Stunning Hotel",
           p:
             "Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.",
           btnclass: "btn btn-primary mouse-down",

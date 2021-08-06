@@ -26,7 +26,7 @@ class PageAboutUs extends Component {
     this.state = {
       pathItems: [
         //id must required
-        { id: 1, name: "Landrick", link: "/index" },
+        { id: 1, name: "Company Name", link: "/" },
         { id: 2, name: "Page", link: "#" },
         { id: 3, name: "About Us" },
       ],
@@ -177,9 +177,6 @@ class PageAboutUs extends Component {
                   <h4 className="title mb-4">Our Story</h4>
                   <p className="text-muted">
                     Start working with{" "}
-                    <span className="text-primary fw-bold">
-                      Landrick
-                    </span>{" "}
                     that can provide everything you need to generate awareness,
                     drive traffic, connect. Dummy text is text that is used in
                     the publishing industry or by web designers to occupy the
@@ -240,9 +237,6 @@ class PageAboutUs extends Component {
                   </h4>
                   <p className="text-muted para-desc mx-auto">
                     Start working with{" "}
-                    <span className="text-primary fw-bold">
-                      Landrick
-                    </span>{" "}
                     that can provide everything you need to generate awareness,
                     drive traffic, connect.
                   </p>

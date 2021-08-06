@@ -28,7 +28,7 @@ class PageContactOne extends Component {
     this.state = {
       pathItems: [
         //id must required
-        { id: 1, name: "Landrick", link: "/index" },
+        { id: 1, name: "Company Name", link: "/" },
         { id: 2, name: "Page", link: "#" },
         { id: 3, name: "Contact", link: "#" },
         { id: 4, name: "Contact One" },
@@ -104,7 +104,7 @@ class PageContactOne extends Component {
                   <div className="content mt-3">
                     <h5 className="fw-bold">Phone</h5>
                     <p className="text-muted">
-                      Start working with Landrick that can provide everything
+                      Start Working with  that can provide everything
                     </p>
                     <Link
                       to="#"
@@ -125,7 +125,7 @@ class PageContactOne extends Component {
                   <div className="content mt-3">
                     <h5 className="fw-bold">Email</h5>
                     <p className="text-muted">
-                      Start working with Landrick that can provide everything
+                      Start Working with  that can provide everything
                     </p>
                     <Link
                       to="#"

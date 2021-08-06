@@ -1,7 +1,7 @@
 import React from "react";
 
 // Root Include
-const Root = React.lazy(() => import("./pages/Home/indexRoot"));
+// const Root = React.lazy(() => import("./pages/Home/indexRoot"));
 
 //Main Index
 const Main = React.lazy(() => import("./pages/Home/indexMain"));
@@ -508,8 +508,8 @@ const routes = [
   { path: "/index", component: Main, isTopbarDark: true },
 
   //Index root
-
-  { path: "/", component: Root, isWithoutLayout: true, exact: true },
+  { path: "/", component: Business, isTopbarDark: true },
+  // { path: "/", component: Root, isWithoutLayout: true, exact: true },
   { component: PageError, isWithoutLayout: true, exact: false },
 ];
 

@@ -86,9 +86,6 @@ class Features extends Component {
                   data-aos-duration="1800"
                 >
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
                 </p>

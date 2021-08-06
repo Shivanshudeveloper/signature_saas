@@ -137,7 +137,7 @@ class Features extends Component {
                   >
                     <h4 className="title mb-4">
                       Speed up your development <br /> with{" "}
-                      <span className="text-primary">Landrick.</span>
+                      <span className="text-primary"></span>
                     </h4>
                   </SectionTitleLeft>
                   <Link to="#" className="mt-3 h6 text-primary">

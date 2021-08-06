@@ -61,9 +61,6 @@ export default class Blog extends Component {
               <div className="section-title text-center text-lg-start">
                 <p className="text-muted mb-0 mx-auto para-desc">
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
                 </p>

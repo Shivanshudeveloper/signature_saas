@@ -83,9 +83,6 @@ class PageComingSoon extends Component {
                 </div>
                 <p className="text-light para-desc para-dark mx-auto">
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
                 </p>

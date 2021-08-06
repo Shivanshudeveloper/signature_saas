@@ -149,9 +149,6 @@ class Home extends Component {
                   </h4>
                   <p className="para-desc text-muted">
                     Start working with{" "}
-                    <span className="text-primary fw-bold">
-                      Landrick
-                    </span>{" "}
                     that can provide everything you need to generate awareness,
                     drive traffic, connect.
                   </p>

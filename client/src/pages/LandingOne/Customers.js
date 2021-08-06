@@ -63,9 +63,6 @@ export default class Customers extends Component {
                             <div className="section-title text-md-start">
                               <p className="text-white-50 para-desc">
                                 Start working with{" "}
-                                <span className="text-light title-dark">
-                                  Landrick
-                                </span>{" "}
                                 that can provide everything you need to generate
                                 awareness, drive traffic, connect.
                               </p>

@@ -7,7 +7,7 @@ import Tagline from "./Tagline";
 import ScrollUpButton from "react-scroll-up-button";
 
 //Import Switcher
-import ThemeSwitcher from "./ThemeSwitcher";
+// import ThemeSwitcher from "./ThemeSwitcher";
 
 //Import Icons
 import FeatherIcon from "feather-icons-react";
@@ -122,7 +122,7 @@ class Layout extends Component {
           {/* </div> */}
 
           {/* theme switcher */}
-          <ThemeSwitcher />
+          {/* <ThemeSwitcher /> */}
         </Suspense>
       </React.Fragment>
     );

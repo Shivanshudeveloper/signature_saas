@@ -16,9 +16,6 @@ class Faq extends Component {
                 <h4 className="title mb-4">Frequently Asked Questions</h4>
                 <p className="text-muted para-desc mb-0 mx-auto">
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
                 </p>{" "}
@@ -37,7 +34,7 @@ class Faq extends Component {
                 </i>
                 <div className="flex-1">
                   <h5 className="mt-0">
-                    How our <span className="text-primary">Landrick</span> work
+                    How our <span className="text-primary"></span> work
                     ?
                   </h5>
                   <p className="answer text-muted mb-0">
@@ -102,7 +99,7 @@ class Faq extends Component {
                 <div className="flex-1">
                   <h5 className="mt-0">
                     {" "}
-                    Is <span className="text-primary">Landrick</span> safer to
+                    Is <span className="text-primary"></span> safer to
                     use with my account ?
                   </h5>
                   <p className="answer text-muted mb-0">
@@ -122,9 +119,6 @@ class Faq extends Component {
                 <h4 className="title mb-4">Have Question ? Get in touch!</h4>
                 <p className="text-muted para-desc mx-auto">
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
                 </p>

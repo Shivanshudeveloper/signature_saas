@@ -17,9 +17,6 @@ export default class Luxury extends Component {
                 </h4>
                 <p className="text-muted para-desc mb-0 mx-auto">
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
                 </p>
@@ -77,7 +74,7 @@ export default class Luxury extends Component {
                   Experience Luxury & <br /> Find Your Base
                 </h4>
                 <p className="text-muted">
-                  You can combine all the Landrick templates into a single one,
+                  You can combine all the  templates into a single one,
                   you can take a component from the Application theme and use it
                   in the Website.
                 </p>

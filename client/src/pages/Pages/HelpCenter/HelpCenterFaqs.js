@@ -14,7 +14,7 @@ class HelpCenterFaqs extends Component {
     this.state = {
       pathItems: [
         //id must required
-        { id: 1, name: "Landrick", link: "/index" },
+        { id: 1, name: "Company Name", link: "/" },
         { id: 2, name: "Help Center", link: "#" },
         { id: 3, name: "Faqs" },
       ],
@@ -103,7 +103,7 @@ class HelpCenterFaqs extends Component {
                       answer3="It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental."
                       question4="Where can I get some ?"
                       answer4="To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth."
-                      question5="How Landrick Work ?"
+                      question5="How  Work ?"
                       answer5="To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth."
                     />
                   </div>
@@ -124,7 +124,7 @@ class HelpCenterFaqs extends Component {
                       answer3="It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental."
                       question4="Where can I get some ?"
                       answer4="To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth."
-                      question5="How Landrick Work ?"
+                      question5="How  Work ?"
                       answer5="To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth."
                     />
                   </div>
@@ -145,7 +145,7 @@ class HelpCenterFaqs extends Component {
                       answer3="It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental."
                       question4="Where can I get some ?"
                       answer4="To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth."
-                      question5="How Landrick Work ?"
+                      question5="How  Work ?"
                       answer5="To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth."
                     />
                   </div>
@@ -166,7 +166,7 @@ class HelpCenterFaqs extends Component {
                       answer3="It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental."
                       question4="Where can I get some ?"
                       answer4="To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth."
-                      question5="How Landrick Work ?"
+                      question5="How  Work ?"
                       answer5="To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth."
                     />
                   </div>

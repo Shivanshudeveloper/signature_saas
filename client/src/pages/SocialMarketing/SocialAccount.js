@@ -25,9 +25,6 @@ class SocialAccount extends Component {
                     +
                   </span>{" "}
                   user using{" "}
-                  <span className="fw-bold text-primary">
-                    Landrick.
-                  </span>{" "}
                   to drive customer engagement, inspire brand loyalty, and grow
                   their business
                 </h5>

@@ -24,9 +24,6 @@ class About extends Component {
                   </h4>
                   <p className="text-muted">
                     Start Course with{" "}
-                    <span className="text-primary fw-bold">
-                      Landrick Education
-                    </span>{" "}
                     that can provide everything you need to generate awareness,
                     drive traffic, connect. Dummy text is text that is used in
                     the publishing industry or by web designers to occupy the

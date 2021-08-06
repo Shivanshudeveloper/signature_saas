@@ -40,7 +40,7 @@ export default class ForumTopic extends Component {
             <div className="row justify-content-center">
               <Col lg={12} className="text-center">
                 <div className="page-next-level">
-                  <h4 className="title"> Introduction: Landrick </h4>
+                  <h4 className="title"> Introduction: </h4>
                   <div className="page-next">
                     <nav aria-label="breadcrumb" className="d-inline-block">
                       <ul className="breadcrumb bg-white rounded shadow mb-0">

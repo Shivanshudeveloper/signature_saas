@@ -149,9 +149,6 @@ class Faq extends Component {
                   <h4 className="title mb-4">Frequently asked questions</h4>
                   <p className="text-muted para-desc mb-0">
                     Start working with{" "}
-                    <span className="text-primary fw-bold">
-                      Landrick
-                    </span>{" "}
                     that can provide everything you need to generate awareness,
                     drive traffic, connect.
                   </p>
@@ -176,7 +173,7 @@ class Faq extends Component {
                           <h6 className="title mb-0">
                             {" "}
                             How our{" "}
-                            <span className="text-primary">Landrick</span> work
+                            <span className="text-primary"></span> work
                             ?
                             <i
                               className={

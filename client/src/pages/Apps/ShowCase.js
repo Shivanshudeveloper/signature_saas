@@ -79,7 +79,7 @@ class ShowCase extends Component {
                     features={this.state.features}
                   >
                     <h4 className="title mb-4">
-                      Best <span className="text-primary">Landrick</span> App
+                      Best <span className="text-primary"></span> App
                       Partner For Your Life
                     </h4>
                   </SectionTitleLeft>
@@ -96,13 +96,10 @@ class ShowCase extends Component {
               <Col xs="12" className="text-center">
                 <div className="section-title mb-4 pb-2">
                   <h4 className="title mb-4">
-                    <span className="text-primary">Landrick</span> App Showcase
+                    <span className="text-primary"></span> App Showcase
                   </h4>
                   <p className="text-muted para-desc mb-0 mx-auto">
                     Start working with{" "}
-                    <span className="text-primary fw-bold">
-                      Landrick
-                    </span>{" "}
                     that can provide everything you need to generate awareness,
                     drive traffic, connect.
                   </p>

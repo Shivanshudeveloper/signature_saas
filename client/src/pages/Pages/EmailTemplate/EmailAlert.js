@@ -124,7 +124,7 @@ class EmailAlert extends Component {
 
               <tr>
                 <td style={{ padding: "15px 24px 0", color: "#8492a6" }}>
-                  Thanks for choosing Landrick Template.
+                  Thanks for choosing  Template.
                       </td>
               </tr>
 
@@ -132,7 +132,7 @@ class EmailAlert extends Component {
                 <td
                   style={{ padding: "15px 24px 15px", color: "#8492a6" }}
                 >
-                  Landrick <br /> Support Team
+                   <br /> Support Team
                       </td>
               </tr>
 
@@ -145,7 +145,7 @@ class EmailAlert extends Component {
                     textAlign: "center",
                   }}
                 >
-                  © 2019-20 Landrick.
+                  © 2019-20 .
                       </td>
               </tr>
             </tbody>

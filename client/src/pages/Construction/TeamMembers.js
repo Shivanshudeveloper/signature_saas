@@ -53,9 +53,6 @@ export default class TeamMembers extends Component {
                 <h4 className="title mb-4">Expert Team Members</h4>
                 <p className="text-muted mx-auto para-desc mb-0">
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
                 </p>

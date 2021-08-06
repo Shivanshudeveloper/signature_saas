@@ -109,7 +109,7 @@ class EmailPasswordReset extends Component {
                 <td
                   style={{ padding: "15px 24px 15px", color: "#8492a6" }}
                 >
-                  Landrick <br /> Support Team
+                   <br /> Support Team
                       </td>
               </tr>
               <tr>
@@ -121,7 +121,7 @@ class EmailPasswordReset extends Component {
                     textAlign: "center",
                   }}
                 >
-                  © 2021 Landrick.
+                  © 2021
                       </td>
               </tr>
             </tbody>

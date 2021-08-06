@@ -24,7 +24,7 @@ export default class Project extends Component {
     this.state = {
       pathItems: [
         //id must required
-        { id: 1, name: "Landrick", link: "/index" },
+        { id: 1, name: "Company Name", link: "/" },
         { id: 2, name: "Shop", link: "#" },
         { id: 3, name: "Product Details" },
       ],
@@ -159,13 +159,10 @@ export default class Project extends Component {
             >
               <div className="section-title text-md-start text-center">
                 <h4 className="title mb-4">
-                  Whats our clients said <br /> about landrick project
+                  Whats our clients said <br /> about  project
                 </h4>
                 <p className="text-muted mb-0 para-desc">
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
                 </p>
@@ -239,9 +236,6 @@ export default class Project extends Component {
                 </h4>
                 <p className="text-muted para-desc mx-auto mb-0">
                   Start working with{" "}
-                  <span className="text-primary fw-bold">
-                    Landrick
-                  </span>{" "}
                   that can provide everything you need to generate awareness,
                   drive traffic, connect.
                 </p>

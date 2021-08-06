@@ -34,7 +34,7 @@ export default class Section extends Component {
                                             <Link to="#" className="text-success"><i className="mdi mdi-circle"></i></Link>
                                         </div>
 
-                                        <small className="fw-bold"><i className="mdi mdi-circle-medium text-success"></i> Landrick</small>
+                                        <small className="fw-bold"><i className="mdi mdi-circle-medium text-success"></i> </small>
                                     </div>
                                     <div className="bg-light px-2 position-relative">
                                         <video className="w-100 rounded" controls autoPlay loop>

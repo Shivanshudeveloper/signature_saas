@@ -59,7 +59,7 @@ class PageInvoice extends Component {
                       <Row>
                         <Col md="8">
                           <div className="logo-invoice mb-2">
-                            Landrick<span className="text-primary">.</span>
+                            <span className="text-primary">.</span>
                           </div>
                           <Link to="#" className="text-primary h6">
                             <i>
