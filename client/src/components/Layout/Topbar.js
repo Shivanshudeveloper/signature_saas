@@ -526,7 +526,7 @@ class Topbar extends Component {
                 return (
                   <div className="buy-button">
                     <Link
-                      to="/"
+                      to="/login"
                       className="btn btn-pills btn-primary"
                     >
                       Go to console
@@ -537,7 +537,7 @@ class Topbar extends Component {
                 return (
                   <div className="buy-button">
                     <Link
-                      to="/"
+                      to="/login"
                       rel="noopener noreferrer"
                       id="buyButton"
                       className="btn btn-primary"
@@ -782,7 +782,7 @@ class Topbar extends Component {
               </ul>
               <div className="buy-menu-btn d-none">
                 <Link
-                  to="/"
+                  to="/login"
                   rel="noopener noreferrer"
                   className="btn btn-primary"
                 >

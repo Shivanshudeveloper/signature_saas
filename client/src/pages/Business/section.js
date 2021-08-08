@@ -36,15 +36,13 @@ class Section extends Component {
                     className="alert-light alert-pills shadow"
                     role="alert"
                   >
-                    <span className="badge rounded-pill bg-danger me-1">v3.1</span>
                     <span className="content">
                       {" "}
-                      Build <span className="text-primary">anything</span> you
-                      want - 
+                      Get started for free
                     </span>
                   </Alert>
                   <h1 className="heading mb-3">
-                    Leading Digital Business For &nbsp;
+                    Leading Digital Signature For &nbsp;
                     <Typist style={{ display: "contents" }}>
                       <span className="element text-primary">Agency</span>
                       <Typist.Backspace count={15} delay={1200} />
@@ -67,7 +65,7 @@ class Section extends Component {
                       <span className="element text-primary">Webapps</span>
                       <Typist.Backspace count={15} delay={1200} />
                     </Typist>
-                    &nbsp; Solution
+                    &nbsp;
                   </h1>
                   <p className="para-desc text-muted">
                     Launch your campaign and benefit from our expertise on
@@ -76,8 +74,8 @@ class Section extends Component {
                   </p>
                   <div className="mt-4">
                     <Link to="#" className="btn btn-outline-primary rounded">
-                      <i className="uil uil-store me-1"></i>Make
-                      Your Shop
+                      Make
+                      Your Signature
                     </Link>
                   </div>
                 </div>

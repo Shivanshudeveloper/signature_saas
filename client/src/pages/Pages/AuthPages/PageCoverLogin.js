@@ -189,7 +189,7 @@ class PageCoverLogin extends Component {
                                     Don't have an account ?
                                   </small>{" "}
                                   <Link
-                                    to="page-cover-signup"
+                                    to="signup"
                                     className="text-dark fw-bold"
                                   >
                                     Sign Up
