@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import {
+  Button,
   Container,
   Progress,
   Row,
@@ -8,7 +9,6 @@ import {
   Alert,
   Form,
   Input,
-  Button,
   Label,
   CardBody,
   Card,
@@ -37,7 +37,7 @@ class PageProfileEdit extends Component {
           icon: "uil uil-dashboard",
           className: "navbar-item account-menu px-0",
           title: "Profile",
-          link: "/page-profile",
+          link: "/dashboard",
         },
         {
           id: 2,
@@ -106,12 +106,12 @@ class PageProfileEdit extends Component {
     this.setState({ successMsg3: true });
   }
 
-  componentDidMount() {
-    document.body.classList = "";
-    document.getElementById("top-menu").classList.add("nav-light");
-    document.getElementById("buyButton").className = "btn btn-light";
-    window.addEventListener("scroll", this.scrollNavigation, true);
-  }
+  // componentDidMount() {
+  //   document.body.classList = "";
+  //   document.getElementById("top-menu").classList.add("nav-light");
+  //   document.getElementById("buyButton").className = "btn btn-light";
+  //   window.addEventListener("scroll", this.scrollNavigation, true);
+  // }
   // Make sure to remove the DOM listener when the component is unmounted.
   componentWillUnmount() {
     window.removeEventListener("scroll", this.scrollNavigation, true);
@@ -152,10 +152,16 @@ class PageProfileEdit extends Component {
       <React.Fragment>
         {/* breadcrumb */}
         <section
-          className="bg-profile d-table w-100 bg-primary"
-          style={{ background: `url(${imgbg}) center center` }}
+          className="d-table w-100 bg-primary"
+          style={{ background: `url(${imgbg}) center center`}}
         >
           <Container>
+            <div style={{textAlign: 'right'}}>
+              <br></br>
+              <Button color="secondary">Log Out</Button>
+              <br></br>
+              <br></br>
+            </div>
             <Row>
               <Col lg="12">
                 <Card
@@ -272,46 +278,11 @@ class PageProfileEdit extends Component {
           </Container>
         </section>
 
-        <section className="section mt-60">
+        <section className="section" style={{paddingTop:0}}>
           <Container className="mt-lg-3">
             <Row className="justify-content-center">
               <Col lg="4" md="6" xs="12" className="d-lg-block d-none">
                 <div className="sidebar sticky-bar p-4 rounded shadow">
-                  <div className="widget">
-                    <h5 className="widget-title">Followers :</h5>
-                    <div className="row mt-4">
-                      <div className="col-6 text-center">
-                        <FeatherIcon
-                          icon="user-plus"
-                          className="fea icon-ex-md text-primary mb-1"
-                        />
-                        <h5 className="mb-0">2588</h5>
-                        <p className="text-muted mb-0">Followers</p>
-                      </div>
-
-                      <div className="col-6 text-center">
-                        <FeatherIcon icon="users"
-                          className="fea icon-ex-md text-primary mb-1" />
-                        <h5 className="mb-0">454</h5>
-                        <p className="text-muted mb-0">Following</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="widget mt-4 pt-2">
-                    <h5 className="widget-title">Projects :</h5>
-                    <div className="progress-box mt-4">
-                      <h6 className="title text-muted">Progress</h6>
-                      <Progress
-                        value={50}
-                        color="primary"
-                        barClassName="position-relative"
-                      >
-                        <div className="progress-value d-block text-muted h6">
-                          24 / 48
-                        </div>
-                      </Progress>
-                    </div>
-                  </div>
 
                   <div className="widget mt-4">
                     <ul className="list-unstyled sidebar-nav mb-0" id="navmenu-nav">
@@ -325,82 +296,6 @@ class PageProfileEdit extends Component {
                           </Link>
                         </li>
                       ))}
-                    </ul>
-                  </div>
-
-                  <div className="widget mt-4 pt-2">
-                    <h5 className="widget-title">Follow me :</h5>
-                    <ul className="list-unstyled social-icon mb-0 mt-4">
-                      <li className="list-inline-item me-1">
-                        <Link to="#" className="rounded">
-                          <i>
-                            <FeatherIcon
-                              icon="facebook"
-                              className="fea icon-sm fea-social"
-                            />
-                          </i>
-                        </Link>
-                      </li>
-                      <li className="list-inline-item me-1">
-                        <Link to="#" className="rounded">
-                          <i>
-                            <FeatherIcon
-                              icon="instagram"
-                              className="fea icon-sm fea-social"
-                            />
-                          </i>
-                        </Link>
-                      </li>
-                      <li className="list-inline-item me-1">
-                        <Link to="#" className="rounded">
-                          <i>
-                            <FeatherIcon
-                              icon="twitter"
-                              className="fea icon-sm fea-social"
-                            />
-                          </i>
-                        </Link>
-                      </li>
-                      <li className="list-inline-item me-1">
-                        <Link to="#" className="rounded">
-                          <i>
-                            <FeatherIcon
-                              icon="linkedin"
-                              className="fea icon-sm fea-social"
-                            />
-                          </i>
-                        </Link>
-                      </li>
-                      <li className="list-inline-item me-1">
-                        <Link to="#" className="rounded">
-                          <i>
-                            <FeatherIcon
-                              icon="github"
-                              className="fea icon-sm fea-social"
-                            />
-                          </i>
-                        </Link>
-                      </li>
-                      <li className="list-inline-item me-1">
-                        <Link to="#" className="rounded">
-                          <i>
-                            <FeatherIcon
-                              icon="youtube"
-                              className="fea icon-sm fea-social"
-                            />
-                          </i>
-                        </Link>
-                      </li>
-                      <li className="list-inline-item me-1">
-                        <Link to="#" className="rounded">
-                          <i>
-                            <FeatherIcon
-                              icon="gitlab"
-                              className="fea icon-sm fea-social"
-                            />
-                          </i>
-                        </Link>
-                      </li>
                     </ul>
                   </div>
                 </div>

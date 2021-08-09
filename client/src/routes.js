@@ -458,13 +458,13 @@ const routes = [
   { path: "/page-work-masonry", component: PageWorkMasonry, isTopbarDark: true },
 
   //Page Profile
-  { path: "/page-profile", component: PageProfile },
-  { path: "/page-members", component: PageMembers },
-  { path: "/page-works", component: PageWorks },
-  { path: "/page-messages", component: PageMessages },
-  { path: "/page-profile-edit", component: PageProfileEdit },
-  { path: "/page-payments", component: PagePayments },
-  { path: "/page-invoice", component: PageInvoice, isTopbarDark: true },
+  { path: "/dashboard", component: PageProfile, isWithoutLayout: true },
+  { path: "/page-members", component: PageMembers, isWithoutLayout: true },
+  { path: "/page-works", component: PageWorks, isWithoutLayout: true },
+  { path: "/page-messages", component: PageMessages, isWithoutLayout: true },
+  { path: "/page-profile-edit", component: PageProfileEdit, isWithoutLayout: true },
+  { path: "/page-payments", component: PagePayments, isWithoutLayout: true },
+  { path: "/page-invoice", component: PageInvoice, isWithoutLayout: true},
 
   //Page Job
   { path: "/page-job", component: PageJob, isTopbarDark: true },

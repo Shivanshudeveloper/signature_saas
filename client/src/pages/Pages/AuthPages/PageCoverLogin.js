@@ -160,7 +160,7 @@ class PageCoverLogin extends Component {
 
                               <Col lg={12} className="mb-0">
                                 <div className="d-grid">
-                                  <Button color="primary">
+                                  <Button href='/dashboard' color="primary">
                                     Sign in
                                 </Button>
                                 </div>
