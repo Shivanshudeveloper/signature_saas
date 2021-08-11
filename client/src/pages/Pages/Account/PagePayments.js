@@ -39,7 +39,7 @@ class PagePayments extends Component {
         id: 2,
         icon: "uil uil-users-alt",
         className: "navbar-item account-menu px-0 mt-2",
-        title: "Members",
+        title: "My Signatures",
         link: "/page-members",
       },
       {
@@ -108,10 +108,10 @@ class PagePayments extends Component {
       <React.Fragment>
         <section
           className=" d-table w-100 bg-primary"
-          style={{ background: `url(${imgbg}) center center`}}
+          style={{ background: `url(${imgbg}) center center` }}
         >
           <Container>
-            <div style={{textAlign: 'right'}}>
+            <div style={{ textAlign: "right" }}>
               <br></br>
               <Button color="secondary">Log Out</Button>
               <br></br>
@@ -233,17 +233,22 @@ class PagePayments extends Component {
           </Container>
         </section>
 
-        <section className="section" style={{paddingTop:0}}>
+        <section className="section" style={{ paddingTop: 0 }}>
           <Container className="mt-lg-3">
             <Row>
               <Col lg="4" md="6" xs="12" className="d-lg-block d-none">
                 <div className="sidebar sticky-bar p-4 rounded shadow">
-                  
                   <div className="widget mt-4">
-                    <ul className="list-unstyled sidebar-nav mb-0" id="navmenu-nav">
+                    <ul
+                      className="list-unstyled sidebar-nav mb-0"
+                      id="navmenu-nav"
+                    >
                       {this.state.widgets.map((widget, key) => (
                         <li className={widget.className} key={key}>
-                          <Link to={widget.link} className="navbar-link d-flex rounded shadow align-items-center py-2 px-4">
+                          <Link
+                            to={widget.link}
+                            className="navbar-link d-flex rounded shadow align-items-center py-2 px-4"
+                          >
                             <span className="h4 mb-0">
                               <i className={widget.icon}></i>
                             </span>
