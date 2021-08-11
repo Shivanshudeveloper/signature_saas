@@ -63,8 +63,10 @@
   border-bottom-color: rgb(126, 211, 33);
 }
 .td12 {
-  padding-top: 12px;
+  padding-top: 18px;
   margin: 0.1px;
+  display: flex;
+  justify-content: center;
 }
 .td13 {
   margin: 0.1px;

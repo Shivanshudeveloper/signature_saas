@@ -4,10 +4,10 @@ import { Button } from "reactstrap";
 
 const TemplateOne = () => {
   return (
-    <div className="d-flex key-feature align-items-center p-3 rounded shadow mt-4">
-      <div id="signature-preview" className="o-signature-preview">
+    <div className="d-flex flex-column key-feature align-items-center p-3 rounded shadow mt-4">
+      <div id="signature-preview" className="w-100 o-signature-preview">
         <div>
-          <div>
+          <div className="d-flex flex-column justify-content-center align-items-center">
             <table cellspacing="0" width="500" cellpadding="0" border="0">
               <tr>
                 <td valign="top" width="153" className="td1">
@@ -107,6 +107,7 @@ const TemplateOne = () => {
                     margin: "0.1px",
                     paddingTop: "15px",
                   }}
+                  className="d-flex justify-content-center"
                 >
                   <a target="_blank" href="https://mysignature.io/">
                     <img
@@ -134,7 +135,8 @@ const TemplateOne = () => {
             border="0"
             fragment="c1b7129c67"
             style={{
-              maxWidth: "500px",
+              display: "flex",
+              justifyContent: "center",
               color: "gray",
               fontFamily: "Arial",
               lineHeight: "1",
@@ -192,7 +194,9 @@ const TemplateOne = () => {
           </table>
         </div>
       </div>
-      <Button>EDIT</Button>
+      <Button outline color="primary" style={{ width: "100%" }}>
+        EDIT
+      </Button>
     </div>
   );
 };

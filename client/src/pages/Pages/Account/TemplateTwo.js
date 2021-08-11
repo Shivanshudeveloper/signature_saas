@@ -4,13 +4,19 @@ import { Button } from "reactstrap";
 
 const TemplateTwo = () => {
   return (
-    <div className="d-flex key-feature align-items-center p-3 rounded shadow mt-4">
+    <div className="d-flex flex-column key-feature align-items-center p-3 rounded shadow mt-4 ">
       <div id="signature-preview" className="o-signature-preview">
         <div>
           <div>
             <table width="500" cellspacing="0" cellpadding="0" border="0">
               <tr>
-                <td style={{ margin: "0.1px" }}>
+                <td
+                  style={{
+                    margin: "0.1px",
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
                   <table cellspacing="0" cellpadding="0" border="0">
                     <tr>
                       <td
@@ -192,7 +198,9 @@ const TemplateTwo = () => {
           </table>
         </div>
       </div>
-      <Button>EDIT</Button>
+      <Button outline color="primary" style={{ width: "100%" }}>
+        EDIT
+      </Button>
     </div>
   );
 };
