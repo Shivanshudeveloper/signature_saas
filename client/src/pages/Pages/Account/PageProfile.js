@@ -19,6 +19,11 @@ import TemplateTwo from "./TemplateTwo";
 import "./PageProfile.css";
 import Header from "./Header";
 
+const logout = () => {
+  sessionStorage.clear();
+  window.location.href("/login");
+};
+
 class PageProfile extends Component {
   state = {
     blogs: [
@@ -110,13 +115,6 @@ class PageProfile extends Component {
         title: "Settings",
         link: "/page-profile-edit",
       },
-      {
-        id: 7,
-        icon: "uil uil-dashboard",
-        className: "navbar-item account-menu px-0 mt-2",
-        title: "Logout",
-        link: "/auth-login-three",
-      },
     ],
   };
 
@@ -150,14 +148,6 @@ class PageProfile extends Component {
           className="d-table w-100 bg-primary"
           style={{ background: `url(${imgbg}) center center` }}
         >
-          <Container>
-            <div style={{ textAlign: "right" }}>
-              <br></br>
-              <Button color="secondary">Log Out</Button>
-              <br></br>
-              <br></br>
-            </div>
-          </Container>
           <Header />
         </section>
 

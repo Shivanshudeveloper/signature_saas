@@ -207,9 +207,7 @@ class PageSignUp extends Component {
                         </Col>
                         <Col md="12">
                           <div className="d-grid">
-                            <Button color="primary">
-                              Register
-                          </Button>
+                            <Button color="primary">Register</Button>
                           </div>
                         </Col>
                         <Col md="12" className="mt-4 text-center">
@@ -217,13 +215,19 @@ class PageSignUp extends Component {
                           <Row>
                             <div className="col-6 mt-3">
                               <div className="d-grid">
-                                <Link to="#" className="btn btn-light"><i className="mdi mdi-facebook text-primary"></i> Facebook</Link>
+                                <Link to="#" className="btn btn-light">
+                                  <i className="mdi mdi-facebook text-primary"></i>{" "}
+                                  Facebook
+                                </Link>
                               </div>
                             </div>
 
                             <div className="col-6 mt-3">
                               <div className="d-grid">
-                                <Link to="#" className="btn btn-light"><i className="mdi mdi-google text-danger"></i> Google</Link>
+                                <Link to="#" className="btn btn-light">
+                                  <i className="mdi mdi-google text-danger"></i>{" "}
+                                  Google
+                                </Link>
                               </div>
                             </div>
                           </Row>

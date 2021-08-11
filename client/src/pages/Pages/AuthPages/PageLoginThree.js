@@ -117,27 +117,10 @@ class PageLoginThree extends Component {
                         </Col>
                         <Col lg={12} className="mb-0">
                           <div className="d-grid">
-                            <Button color="primary">
-                              Sign in
-                          </Button>
+                            <Button color="primary">Sign in</Button>
                           </div>
                         </Col>
-                        <Col lg={12} className="mt-4 text-center">
-                          <h6>Or Login With</h6>
-                          <Row>
-                            <div className="col-6 mt-3">
-                              <div className="d-grid">
-                                <Link to="#" className="btn btn-light"><i className="mdi mdi-facebook text-primary"></i> Facebook</Link>
-                              </div>
-                            </div>
 
-                            <div className="col-6 mt-3">
-                              <div className="d-grid">
-                                <Link to="#" className="btn btn-light"><i className="mdi mdi-google text-danger"></i> Google</Link>
-                              </div>
-                            </div>
-                          </Row>
-                        </Col>
                         <Col xs={12} className="text-center">
                           <p className="mb-0 mt-3">
                             <small className="text-dark me-2">

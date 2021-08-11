@@ -26,72 +26,19 @@ import FeatherIcon from "feather-icons-react";
 
 //Import Images
 import imgbg from "../../../assets/images/account/bg.png";
-import profile from "../../../assets/images/client/05.jpg";
-import client1 from "../../../assets/images/client/01.jpg";
-import client2 from "../../../assets/images/client/02.jpg";
-import client3 from "../../../assets/images/client/03.jpg";
-import client4 from "../../../assets/images/client/04.jpg";
-import client5 from "../../../assets/images/client/05.jpg";
-import client6 from "../../../assets/images/client/06.jpg";
-import client7 from "../../../assets/images/client/07.jpg";
-import client8 from "../../../assets/images/client/08.jpg";
+
 import Header from "./Header";
+
+const logout = () => {
+  sessionStorage.clear();
+  window.location.href("/login");
+};
 
 class PageMessages extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      members: [
-        {
-          id: 1,
-          img: client1,
-          title: "Calvin Carlo",
-          desc: "This is required when, for example, the final text is not yet available. Dummy",
-        },
-        {
-          id: 2,
-          img: client2,
-          title: "Miriam Walya",
-          desc: "This is required when, for example, the final text is not yet available. Dummy",
-        },
-        {
-          id: 3,
-          img: client3,
-          title: "Jenelia Parker",
-          desc: "This is required when, for example, the final text is not yet available. Dummy",
-        },
-        {
-          id: 4,
-          img: client4,
-          title: "Jack Deo",
-          desc: "This is required when, for example, the final text is not yet available. Dummy",
-        },
-        {
-          id: 5,
-          img: client5,
-          title: "Marya Joseph",
-          desc: "This is required when, for example, the final text is not yet available. Dummy",
-        },
-        {
-          id: 6,
-          img: client6,
-          title: "Maninder Khan",
-          desc: "This is required when, for example, the final text is not yet available. Dummy",
-        },
-        {
-          id: 7,
-          img: client7,
-          title: "Pitambar Das",
-          desc: "This is required when, for example, the final text is not yet available. Dummy",
-        },
-        {
-          id: 8,
-          img: client8,
-          title: "Cristino Murfy",
-          desc: "This is required when, for example, the final text is not yet available. Dummy",
-        },
-      ],
       widgets: [
         {
           id: 1,
@@ -140,7 +87,8 @@ class PageMessages extends Component {
           icon: "uil uil-dashboard",
           className: "navbar-item account-menu px-0 mt-2",
           title: "Logout",
-          link: "/auth-login-three",
+          link: "/login",
+          click: logout,
         },
       ],
       modal: false,
@@ -221,14 +169,6 @@ class PageMessages extends Component {
           className="d-table w-100 bg-primary"
           style={{ background: `url(${imgbg}) center center` }}
         >
-          <Container>
-            <div style={{ textAlign: "right" }}>
-              <br></br>
-              <Button color="secondary">Log Out</Button>
-              <br></br>
-              <br></br>
-            </div>
-          </Container>
           <Header />
         </section>
 

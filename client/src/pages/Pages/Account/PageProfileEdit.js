@@ -75,13 +75,6 @@ class PageProfileEdit extends Component {
           title: "Settings",
           link: "/page-profile-edit",
         },
-        {
-          id: 7,
-          icon: "uil uil-dashboard",
-          className: "navbar-item account-menu px-0 mt-2",
-          title: "Logout",
-          link: "/auth-login-three",
-        },
       ],
       successMsg: false,
       successMsg2: false,
@@ -156,14 +149,6 @@ class PageProfileEdit extends Component {
           className="d-table w-100 bg-primary"
           style={{ background: `url(${imgbg}) center center` }}
         >
-          <Container>
-            <div style={{ textAlign: "right" }}>
-              <br></br>
-              <Button color="secondary">Log Out</Button>
-              <br></br>
-              <br></br>
-            </div>
-          </Container>
           <Header />
         </section>
 

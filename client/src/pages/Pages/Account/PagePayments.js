@@ -25,6 +25,11 @@ import visaa from "../../../assets/images/payments/payment/visaa.png";
 import rupay from "../../../assets/images/payments/payment/rupay.png";
 import paypals from "../../../assets/images/payments/payment/paypals.png";
 
+const logout = () => {
+  sessionStorage.clear();
+  window.location.href("/login");
+};
+
 class PagePayments extends Component {
   state = {
     widgets: [
@@ -69,13 +74,6 @@ class PagePayments extends Component {
         className: "navbar-item account-menu px-0 mt-2",
         title: "Settings",
         link: "/page-profile-edit",
-      },
-      {
-        id: 7,
-        icon: "uil uil-dashboard",
-        className: "navbar-item account-menu px-0 mt-2",
-        title: "Logout",
-        link: "/auth-login-three",
       },
     ],
   };

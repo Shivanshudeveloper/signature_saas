@@ -12,56 +12,17 @@ import {
 
 //Import Icons
 import FeatherIcon from "feather-icons-react";
-
-//Import Images
 import imgbg from "../../../assets/images/account/bg.png";
-import profile from "../../../assets/images/client/05.jpg";
-import client1 from "../../../assets/images/client/01.jpg";
-import client2 from "../../../assets/images/client/02.jpg";
-import client3 from "../../../assets/images/client/03.jpg";
-import client4 from "../../../assets/images/client/04.jpg";
-import client5 from "../../../assets/images/client/05.jpg";
-import client6 from "../../../assets/images/client/06.jpg";
-import client7 from "../../../assets/images/client/07.jpg";
-import client8 from "../../../assets/images/client/08.jpg";
+
 import Header from "./Header";
+
+const logout = () => {
+  sessionStorage.clear();
+  window.location.href("/login");
+};
 
 class PageMembers extends Component {
   state = {
-    members: [
-      {
-        id: 1,
-        img: client1,
-      },
-      {
-        id: 2,
-        img: client2,
-      },
-      {
-        id: 3,
-        img: client3,
-      },
-      {
-        id: 4,
-        img: client4,
-      },
-      {
-        id: 5,
-        img: client5,
-      },
-      {
-        id: 6,
-        img: client6,
-      },
-      {
-        id: 7,
-        img: client7,
-      },
-      {
-        id: 8,
-        img: client8,
-      },
-    ],
     widgets: [
       {
         id: 1,
@@ -105,13 +66,6 @@ class PageMembers extends Component {
         title: "Settings",
         link: "/page-profile-edit",
       },
-      {
-        id: 7,
-        icon: "uil uil-dashboard",
-        className: "navbar-item account-menu px-0 mt-2",
-        title: "Logout",
-        link: "/auth-login-three",
-      },
     ],
   };
 
@@ -145,14 +99,6 @@ class PageMembers extends Component {
           className="d-table w-100 bg-primary"
           style={{ background: `url(${imgbg}) center center` }}
         >
-          <Container>
-            <div style={{ textAlign: "right" }}>
-              <br></br>
-              <Button color="secondary">Log Out</Button>
-              <br></br>
-              <br></br>
-            </div>
-          </Container>
           <Header />
         </section>
 

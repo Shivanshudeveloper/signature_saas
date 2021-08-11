@@ -8,6 +8,7 @@
     "availity-reactstrap-validation": "^2.7.1",
     "bootstrap": "^5.0.0-beta2",
     "feather-icons-react": "^0.4.3",
+    "firebase": "^8.9.1",
     "node-sass": "^6.0.0",
     "npm": "^7.13.0",
     "number-counter": "^1.0.3",
