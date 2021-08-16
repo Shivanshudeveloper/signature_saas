@@ -3,7 +3,7 @@ import React from 'react'
 const Free5 = () => {
     return (
         <div>
-  <hr />5) Free 5<hr />
+  5) Free 5
   {/* Free 5 start */}
   <div id="signature-preview" className="o-signature-preview">
     <div>

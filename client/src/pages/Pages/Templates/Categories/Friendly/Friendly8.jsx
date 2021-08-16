@@ -4,7 +4,7 @@ const Friendly8 = () => {
     return (
         <>
            <div>
-  <hr />8) Friendly 8<hr />
+  8) Friendly 8
   {/*Friendly 8 Start */}
   <div id="signature-preview" className="o-signature-preview">
     <div>

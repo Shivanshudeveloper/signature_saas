@@ -130,7 +130,7 @@ const Dashboard = () => {
             <div style={{display:"flex",justifyContent:"flex-end"}}>
                 <Example/>
             </div>
-            <hr />
+            
             <Row>
               <Col xs={6}>
               <Card style={{marginTop:"20px"}}><Professional1 /></Card>

@@ -4,7 +4,7 @@ const Modern11 = () => {
     return (
 
         <div>
-  <hr />11) Modern 11<hr />
+  11) Modern 11
   {/* Modern 11  Start*/}
   <div id="signature-preview" className="o-signature-preview">
     <div>

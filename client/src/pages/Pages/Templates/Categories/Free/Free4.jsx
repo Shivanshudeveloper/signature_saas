@@ -3,7 +3,7 @@ import React from 'react'
 const Free4 = () => {
     return (
         <div>
-  <hr />4) Free 4<hr />
+  4) Free 4
   {/* Free 4 start */}
   <div id="signature-preview" className="o-signature-preview">
     <div>

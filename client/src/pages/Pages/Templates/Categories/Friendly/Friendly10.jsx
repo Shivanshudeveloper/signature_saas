@@ -3,7 +3,7 @@ import React from 'react'
 const Friendly10 = () => {
     return (
         <div>
-        <hr />10) Friendly 10<hr />
+        10) Friendly 10
         {/*Friendly 10 Start */}
         <div>
           <table cellSpacing={0} cellPadding={0} border={0} style={{width: '500px', color: 'gray'}}>

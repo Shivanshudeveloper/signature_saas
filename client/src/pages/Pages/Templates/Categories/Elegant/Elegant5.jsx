@@ -3,7 +3,7 @@ import React from 'react'
 const Elegant5 = () => {
     return (
         <div>
-  <hr />5) Elegant 5<hr />
+  5) Elegant 5
   {/* Elegant 5 Start */}
   <div id="signature-preview" className="o-signature-preview">
     <div>

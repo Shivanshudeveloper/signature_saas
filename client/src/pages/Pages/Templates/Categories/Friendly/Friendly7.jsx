@@ -3,7 +3,7 @@ import React from 'react'
 const Friendly7 = () => {
     return (
         <div>
-            <hr />7) Friendly 7<hr />
+            7) Friendly 7
         {/*Friendly 7 Start */}
         <div id="signature-preview" className="o-signature-preview">
           <div>

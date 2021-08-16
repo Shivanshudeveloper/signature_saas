@@ -3,7 +3,7 @@ import React from 'react'
 const Creative3 = () => {
     return (
         <div>
-  <hr />3) Creative 3<hr />
+  3) Creative 3
   {/* Creative 3 Start*/}
   <div id="signature-preview" className="o-signature-preview">
     <div>

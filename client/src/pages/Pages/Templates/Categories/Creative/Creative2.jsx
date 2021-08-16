@@ -3,7 +3,9 @@ import React from 'react'
 const Creative2 = () => {
     return (
         <div>
-  <hr />2) Creative 2<hr />
+          <div style={{padding:"50px 0 0 50px"}}>
+      2) Creative 2
+      </div>
   {/* Creative 2 Start*/}
   <div id="signature-preview" className="o-signature-preview">
     <div>

@@ -3,7 +3,7 @@ import React from 'react'
 const Modern2 = () => {
     return (
         <div>
-  <hr />2)Modern 2<hr />
+  2)Modern 2
   {/* Modern 2Start*/}
   <div id="signature-preview" className="o-signature-preview">
     <div>

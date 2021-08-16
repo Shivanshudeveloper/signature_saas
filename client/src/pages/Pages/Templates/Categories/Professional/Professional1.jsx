@@ -3,7 +3,9 @@ import React from 'react'
 const Professional1 = () => {
     return (
 <div>
-  <hr />1) Professional 1<hr />
+<div style={{padding:"50px 0 0 50px"}}>
+      Professional 1
+      </div>
   {/* Professional 1 Start*/}
   <div id="signature-preview" className="o-signature-preview">
     <div>
