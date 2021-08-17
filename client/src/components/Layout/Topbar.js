@@ -31,7 +31,8 @@ class Topbar extends Component {
         { id: 1, title: "Home", link: "/" },
         { id: 2, title: "About Us", link: "/page-aboutus" },
         { id: 3, title: "Contact Us", link: "/page-contact-detail" },
-        { id: 4, title: "Support And FAQ", link: "/helpcenter-overview" }
+        { id: 4, title: "Support And FAQ", link: "/helpcenter-overview" },
+        { id: 5, title: "Signature" , link:"/signature"}
       ],
       wishlistModal: false,
       dropdownIsOpen: false,

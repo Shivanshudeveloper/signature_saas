@@ -251,6 +251,10 @@ const EmailInvoice = React.lazy(() =>
   import("./pages/Pages/EmailTemplate/EmailInvoice")
 );
 
+//Signature
+const Signature = React.lazy(()=>
+  import('./pages/Pages/Signature/signature')
+)
 //Help Center
 const HelpCenterOverview = React.lazy(() =>
   import("./pages/Pages/HelpCenter/HelpCenterOverview")
@@ -437,6 +441,8 @@ const routes = [
   { path: "/helpcenter-faqs", component: HelpCenterFaqs, isTopbarDark: true },
   { path: "/helpcenter-guides", component: HelpCenterGuides, isTopbarDark: true },
   { path: "/helpcenter-support-request", component: HelpCenterSupportRequest, isTopbarDark: true },
+  //Signature
+  { path: "/signature", component: Signature, isTopbarDark: true },
 
   //Shop
   { path: "/shop-grids", component: ShopProducts, isTopbarDark: true },
