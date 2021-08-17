@@ -9,7 +9,7 @@ const Elegant9 = () => {
     <div>
       {/**/} 
       <div>
-        <table cellSpacing={0} width={550} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={550} cellPadding={0} border={0}>
           <tbody><tr>
               <td style={{margin: '0.1px'}}>
                 <table cellSpacing={0} cellPadding={0} border={0}>
@@ -73,12 +73,12 @@ const Elegant9 = () => {
               </td>
             </tr>
           </tbody></table>
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr>
-              <td style={{margin: '0.1px', paddingTop: '15px'}}><a target="_blank" href="https://mysignature.io/"><img alt="created with MySignature.io" width={368} src="https://img.mysignature.io/b/b/f/c/bfcf967c-6b64-5c12-a27c-c31c8baceaf3.png?time=1613562917" /></a></td>
+              <td style={{margin: '0.1px', paddingTop: '15px'}}><a target="_blank" href="https://mysignature.io/"><img alt="created with MySignature.io" maxWidth={368} src="https://img.mysignature.io/b/b/f/c/bfcf967c-6b64-5c12-a27c-c31c8baceaf3.png?time=1613562917" /></a></td>
             </tr>
           </tbody></table>
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

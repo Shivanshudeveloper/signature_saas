@@ -9,12 +9,12 @@ const Elegant5 = () => {
     <div>
       {/**/} 
       <div>
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr>
               <td style={{margin: '0.1px'}}>
                 <table cellSpacing={0} cellPadding={0} border={0}>
                   <tbody><tr>
-                      <td valign="top" style={{padding: '0px 8px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={105} style={{width: '105px', maxWidth: '105px'}} src="https://img.mysignature.io/p/1/5/c/15c6506a-0e7f-5f82-a369-770ef5c64afd.png?time=1613562958" /></td>
+                      <td valign="top" style={{padding: '0px 8px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={105} style={{width: '105px', maxWidth: '105px'}} src="https://img.mysignature.io/p/1/5/c/15c6506a-0e7f-5f82-a369-770ef5c64afd.png?time=1613562958" /></td>
                       <td valign="top" style={{margin: '0.1px', fontSize: '1em', padding: '0px 15px 0px 8px', verticalAlign: 'top'}}>
                         <table cellSpacing={0} cellPadding={0} border={0} style={{fontFamily: 'Arial, Helvetica, sans-serif', lineHeight: '1.4', fontSize: '90%', color: 'rgb(0, 0, 1)'}}>
                           <tbody><tr>
@@ -69,12 +69,12 @@ const Elegant5 = () => {
               </td>
             </tr>
           </tbody></table>
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr>
-              <td style={{margin: '0.1px', paddingTop: '15px'}}><a target="_blank" href="https://mysignature.io/"><img alt="created with MySignature.io" width={323} src="https://img.mysignature.io/b/1/5/c/15c6506a-0e7f-5f82-a369-770ef5c64afd.png?time=1613562958" /></a></td>
+              <td style={{margin: '0.1px', paddingTop: '15px'}}><a target="_blank" href="https://mysignature.io/"><img alt="created with MySignature.io" maxWidth={323} src="https://img.mysignature.io/b/1/5/c/15c6506a-0e7f-5f82-a369-770ef5c64afd.png?time=1613562958" /></a></td>
             </tr>
           </tbody></table>
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

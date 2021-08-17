@@ -14,7 +14,7 @@ const Modern8 = () => {
               <td style={{margin: '0.1px', padding: '20px'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{lineHeight: '1.4', backgroundColor: 'rgb(255, 255, 255)', color: 'rgb(0, 0, 1)', fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '93%'}}>
                   <tbody><tr>
-                      <td style={{margin: '0.1px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={138} style={{width: '138px', maxWidth: '138px'}} src="https://img.mysignature.io/p/8/4/b/84b17a8d-81e7-50a6-946e-8da5193dabbb.png?time=1610637336" /></td>
+                      <td style={{margin: '0.1px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={138} style={{width: '138px', maxWidth: '138px'}} src="https://img.mysignature.io/p/8/4/b/84b17a8d-81e7-50a6-946e-8da5193dabbb.png?time=1610637336" /></td>
                       <td style={{margin: '0.1px', paddingLeft: '15px'}}>
                         <table>
                           <tbody><tr>

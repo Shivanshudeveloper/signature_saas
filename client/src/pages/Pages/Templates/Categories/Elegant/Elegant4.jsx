@@ -11,7 +11,7 @@ const Elegant4 = () => {
       <div>
         <table cellSpacing={0} cellPadding={0} border={0} style={{marginLeft: '20px', lineHeight: '1.4', color: 'rgb(0, 0, 1)', fontFamily: 'Tahoma, Geneva, sans-serif', fontSize: '70%', paddingLeft: '20px', textAlign: 'center', display: 'table'}}>
           <tbody><tr>
-              <td><img alt="created with MySignature.io" width={188} style={{width: '188px', maxWidth: '188px'}} src="https://img.mysignature.io/p/c/d/2/cd2f7a98-ee7e-5e35-8076-ab6e3c3f87f0.png?time=1610637352" /></td>
+              <td><img alt="created with MySignature.io" maxWidth={188} style={{width: '188px', maxWidth: '188px'}} src="https://img.mysignature.io/p/c/d/2/cd2f7a98-ee7e-5e35-8076-ab6e3c3f87f0.png?time=1610637352" /></td>
             </tr>
             <tr>
               <td style={{margin: '0.1px', padding: '13px 0px 5px'}}>

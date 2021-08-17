@@ -9,12 +9,12 @@ const Friendly3 = () => {
           <div>
             {/**/} 
             <div>
-              <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+              <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
                 <tbody><tr>
                     <td style={{margin: '0.1px'}}>
                       <table cellSpacing={0} cellPadding={0} border={0}>
                         <tbody><tr>
-                            <td valign="top" style={{padding: '0px 8px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={151} style={{width: '151px', maxWidth: '151px'}} src="https://img.mysignature.io/p/4/f/a/4fad9901-d24d-5770-8c52-afbc59e0ffaa.png?time=1613563316" /></td>
+                            <td valign="top" style={{padding: '0px 8px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={151} style={{width: '151px', maxWidth: '151px'}} src="https://img.mysignature.io/p/4/f/a/4fad9901-d24d-5770-8c52-afbc59e0ffaa.png?time=1613563316" /></td>
                             <td valign="top" style={{margin: '0.1px', fontSize: '1em', padding: '0px 15px 0px 8px', verticalAlign: 'top'}}>
                               <table cellSpacing={0} cellPadding={0} border={0} style={{fontFamily: '"Comic Sans MS", cursive, sans-serif', lineHeight: '1.4', fontSize: '84%', color: 'rgb(0, 0, 1)'}}>
                                 <tbody><tr>
@@ -63,7 +63,7 @@ const Friendly3 = () => {
                   </tr>
                 </tbody></table>
               {/**/} 
-              <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+              <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
                 <tbody><tr style={{fontSize: '1px'}}>
                     <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
                   </tr>

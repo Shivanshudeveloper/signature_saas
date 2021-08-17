@@ -13,9 +13,9 @@ const Free2 = () => {
           </tr>
         </tbody></table>
       <div>
-        <table cellSpacing={0} width={470} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={470} cellPadding={0} border={0}>
           <tbody><tr>
-              <td valign="top" width={186} style={{padding: '0px 12px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={186} style={{width: '186px', maxWidth: '186px'}} src="https://img.mysignature.io/p/1/1/9/11939769-c22e-5518-bbaa-d5c3417fefba.png?time=1610636643" /></td>
+              <td valign="top" maxWidth={186} style={{padding: '0px 12px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={186} style={{width: '186px', maxWidth: '186px'}} src="https://img.mysignature.io/p/1/1/9/11939769-c22e-5518-bbaa-d5c3417fefba.png?time=1610636643" /></td>
               <td valign="top" style={{margin: '0.1px', fontSize: '1em', padding: '0px 0px 0px 12px', verticalAlign: 'top', borderLeft: '1px solid rgb(17, 42, 62)'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{lineHeight: '1.4', fontFamily: '"Courier New", Courier, monospace', fontSize: '80%', color: 'rgb(0, 0, 1)'}}>
                   <tbody><tr>
@@ -67,7 +67,7 @@ const Free2 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

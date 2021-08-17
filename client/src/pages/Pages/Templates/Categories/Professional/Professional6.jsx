@@ -9,9 +9,9 @@ const Professional6 = () => {
     <div>
       {/**/} 
       <div>
-        <table cellSpacing={0} width={500} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={500} cellPadding={0} border={0}>
           <tbody><tr>
-              <td valign="top" width={182} style={{verticalAlign: 'top'}}><img alt="created with MySignature.io" width={182} style={{width: '182px', maxWidth: '182px'}} src="https://img.mysignature.io/p/2/8/7/287e6bc7-fe66-5123-98dc-b28470cd2110.png?time=1610637050" /></td>
+              <td valign="top" maxWidth={182} style={{verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={182} style={{width: '182px', maxWidth: '182px'}} src="https://img.mysignature.io/p/2/8/7/287e6bc7-fe66-5123-98dc-b28470cd2110.png?time=1610637050" /></td>
               <td valign="top" style={{margin: '0.1px', fontSize: '1em', padding: '0px 0px 0px 15px', verticalAlign: 'top'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{width: '100%', maxWidth: '400px', lineHeight: '1.4', fontFamily: 'Verdana, Geneva, sans-serif', fontSize: '93%', color: 'rgb(0, 0, 1)'}}>
                   <tbody><tr>
@@ -78,7 +78,7 @@ const Professional6 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

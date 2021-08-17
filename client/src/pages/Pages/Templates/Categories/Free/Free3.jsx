@@ -9,12 +9,12 @@ const Free3 = () => {
     <div>
       {/**/} 
       <div>
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr>
               <td style={{margin: '0.1px'}}>
                 <table cellSpacing={0} cellPadding={0} border={0}>
                   <tbody><tr>
-                      <td valign="top" style={{padding: '0px 8px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={134} style={{width: '134px', maxWidth: '134px'}} src="https://img.mysignature.io/p/2/7/8/278c157b-393d-575d-922a-16951a60d918.png?time=1610636659" /></td>
+                      <td valign="top" style={{padding: '0px 8px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={134} style={{width: '134px', maxWidth: '134px'}} src="https://img.mysignature.io/p/2/7/8/278c157b-393d-575d-922a-16951a60d918.png?time=1610636659" /></td>
                       <td valign="top" style={{margin: '0.1px', fontSize: '1em', padding: '0px 15px 0px 8px', verticalAlign: 'top'}}>
                         <table cellSpacing={0} cellPadding={0} border={0} style={{fontFamily: 'Verdana, Geneva, sans-serif', lineHeight: '1.4', fontSize: '75%', color: 'rgb(0, 0, 1)'}}>
                           <tbody><tr>
@@ -69,7 +69,7 @@ const Free3 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>
@@ -87,7 +87,7 @@ const Free3 = () => {
             <td style={{paddingTop: '15px', margin: '0.1px'}}><a target="_blank" href="https://mysignature.io/" style={{backgroundColor: '#00b066', paddingLeft: '5px', paddingRight: '15px', marginRight: '5px', lineHeight: '36px', display: 'inline-block', color: '#FFFFFF', borderRadius: '1px', textDecoration: 'none'}}><i style={{verticalAlign: 'middle', padding: '6px 0 0 1px', fontSize: '24px', color: '#FFFFFF', display: 'inline-block', width: '36px', height: '36px', textAlign: 'center'}} className="icon_addon-hangouts" /><span style={{paddingLeft: '5px', verticalAlign: 'middle', fontSize: '15px'}}>Meet me on Google Hangouts</span></a></td>
           </tr>
           <tr style={{}}>
-            <td style={{margin: '0.1px', paddingTop: '15px'}}><a href="https://mysignature.io/" target="_blank"><img alt="Meet me on Google Hangouts" width={256} src="https://img.mysignature.io/a/v1/e/9/d/e9ddc1ee-6ba8-5853-a8c8-b17948c99d11.png" style={{width: '256px'}} /></a></td>
+            <td style={{margin: '0.1px', paddingTop: '15px'}}><a href="https://mysignature.io/" target="_blank"><img alt="Meet me on Google Hangouts" maxWidth={256} src="https://img.mysignature.io/a/v1/e/9/d/e9ddc1ee-6ba8-5853-a8c8-b17948c99d11.png" style={{width: '256px'}} /></a></td>
           </tr>
         </tbody></table>
       {/**/} 

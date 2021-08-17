@@ -15,7 +15,7 @@ const Friendly4 = () => {
             <div>
               <table cellSpacing={0} cellPadding={0} border={0} style={{marginLeft: '20px', lineHeight: '1.4', color: 'rgb(0, 0, 1)', fontFamily: '"Comic Sans MS", cursive, sans-serif', fontSize: '70%', paddingLeft: '20px', textAlign: 'center', display: 'table'}}>
                 <tbody><tr>
-                    <td><img alt="created with MySignature.io" width={157} style={{width: '157px', maxWidth: '157px'}} src="https://img.mysignature.io/p/d/f/8/df8dbd3a-0253-5cb6-9595-c954c48ba33e.png?time=1613558962" /></td>
+                    <td><img alt="created with MySignature.io" maxWidth={157} style={{width: '157px', maxWidth: '157px'}} src="https://img.mysignature.io/p/d/f/8/df8dbd3a-0253-5cb6-9595-c954c48ba33e.png?time=1613558962" /></td>
                   </tr>
                   <tr>
                     <td style={{margin: '0.1px', padding: '13px 0px 5px'}}>
@@ -68,7 +68,7 @@ const Friendly4 = () => {
                     <td style={{margin: '0.1px', paddingTop: '15px'}}>
                       <table align="center" cellSpacing={0} cellPadding={0} border={0} style={{margin: '0px auto', fontFamily: '"Comic Sans MS", cursive, sans-serif'}}>
                         <tbody><tr>
-                            <td><a target="_blank" href="https://mysignature.io/"><img alt="created with MySignature.io" width={353} src="https://img.mysignature.io/b/d/f/8/df8dbd3a-0253-5cb6-9595-c954c48ba33e.png?time=1613558962" /></a></td>
+                            <td><a target="_blank" href="https://mysignature.io/"><img alt="created with MySignature.io" maxWidth={353} src="https://img.mysignature.io/b/d/f/8/df8dbd3a-0253-5cb6-9595-c954c48ba33e.png?time=1613558962" /></a></td>
                           </tr>
                         </tbody></table>
                     </td>

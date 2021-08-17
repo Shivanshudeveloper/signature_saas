@@ -9,9 +9,9 @@ const Elegant3 = () => {
     <div>
       {/**/} 
       <div>
-        <table cellSpacing={0} width={500} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={500} cellPadding={0} border={0}>
           <tbody><tr>
-              <td valign="top" width={153} style={{padding: '0px 15px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={153} style={{width: '153px', maxWidth: '153px'}} src="https://img.mysignature.io/p/3/7/1/3713e908-a7c6-5a1e-9ed7-bbbb8ef02658.png?time=1621352854" /></td>
+              <td valign="top" maxWidth={153} style={{padding: '0px 15px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={153} style={{width: '153px', maxWidth: '153px'}} src="https://img.mysignature.io/p/3/7/1/3713e908-a7c6-5a1e-9ed7-bbbb8ef02658.png?time=1621352854" /></td>
               <td valign="top" style={{margin: '0.1px', fontSize: '1em', padding: '0px 0px 0px 5px', verticalAlign: 'top'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{width: '100%', maxWidth: '400px', lineHeight: '1.4', fontFamily: 'Tahoma, Geneva, sans-serif', fontSize: '70%', color: 'rgb(0, 0, 1)'}}>
                   <tbody><tr>
@@ -69,7 +69,7 @@ const Elegant3 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

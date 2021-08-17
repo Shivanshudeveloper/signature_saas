@@ -9,9 +9,9 @@ const Friendly9 = () => {
     <div>
       {/**/} 
       <div>
-        <table cellSpacing={0} width={500} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={500} cellPadding={0} border={0}>
           <tbody><tr>
-              <td width={149} valign="top" style={{padding: '0px 9px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={149} style={{width: '149px', maxWidth: '149px'}} src="https://img.mysignature.io/p/3/a/3/3a3fe5fd-d549-5eda-9699-53943f151436.png?time=1610637157" /></td>
+              <td maxWidth={149} valign="top" style={{padding: '0px 9px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={149} style={{width: '149px', maxWidth: '149px'}} src="https://img.mysignature.io/p/3/a/3/3a3fe5fd-d549-5eda-9699-53943f151436.png?time=1610637157" /></td>
               <td valign="top" style={{borderLeft: '2px solid rgb(223, 16, 87)', margin: '0.1px', verticalAlign: 'top', borderTopColor: 'rgb(223, 16, 87)', borderRightColor: 'rgb(223, 16, 87)', borderBottomColor: 'rgb(223, 16, 87)', padding: '0px 0px 0px 9px'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{lineHeight: '1.4', fontFamily: 'Verdana, Geneva, sans-serif', fontSize: '101%', color: 'rgb(0, 0, 1)'}}>
                   <tbody><tr>
@@ -55,7 +55,7 @@ const Friendly9 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

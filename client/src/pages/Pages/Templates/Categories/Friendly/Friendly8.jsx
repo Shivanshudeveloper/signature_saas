@@ -10,9 +10,9 @@ const Friendly8 = () => {
     <div>
       {/**/} 
       <div>
-        <table cellSpacing={0} width={470} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={470} cellPadding={0} border={0}>
           <tbody><tr>
-              <td valign="top" width={161} style={{padding: '0px 12px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={161} style={{width: '161px', maxWidth: '161px'}} src="https://img.mysignature.io/p/5/2/f/52f4288e-4dc8-5102-8765-d5a86e57373e.png?time=1613558929" /></td>
+              <td valign="top" maxWidth={161} style={{padding: '0px 12px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={161} style={{width: '161px', maxWidth: '161px'}} src="https://img.mysignature.io/p/5/2/f/52f4288e-4dc8-5102-8765-d5a86e57373e.png?time=1613558929" /></td>
               <td valign="top" style={{margin: '0.1px', fontSize: '1em', padding: '0px 0px 0px 12px', verticalAlign: 'top', borderLeft: '1px solid rgb(195, 95, 62)'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{lineHeight: '1.4', fontFamily: '"Comic Sans MS", cursive, sans-serif', fontSize: '74%', color: 'rgb(0, 0, 1)'}}>
                   <tbody><tr>
@@ -58,12 +58,12 @@ const Friendly8 = () => {
               </td>
             </tr>
           </tbody></table>
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr>
-              <td style={{margin: '0.1px', paddingTop: '15px'}}><a target="_blank" href="https://mysignature.io/"><img alt="created with MySignature.io" width={446} src="https://img.mysignature.io/b/5/2/f/52f4288e-4dc8-5102-8765-d5a86e57373e.png?time=1613558929" /></a></td>
+              <td style={{margin: '0.1px', paddingTop: '15px'}}><a target="_blank" href="https://mysignature.io/"><img alt="created with MySignature.io" maxWidth={446} src="https://img.mysignature.io/b/5/2/f/52f4288e-4dc8-5102-8765-d5a86e57373e.png?time=1613558929" /></a></td>
             </tr>
           </tbody></table>
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

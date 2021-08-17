@@ -11,7 +11,7 @@ const Professional1 = () => {
     <div>
       {/**/} 
       <div>
-        <table cellSpacing={0} width={550} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={550} cellPadding={0} border={0}>
           <tbody><tr>
               <td style={{margin: '0.1px'}}>
                 <table cellSpacing={0} cellPadding={0} border={0}>
@@ -68,7 +68,7 @@ const Professional1 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

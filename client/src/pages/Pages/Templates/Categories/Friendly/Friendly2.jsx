@@ -9,9 +9,9 @@ const Friendly2 = () => {
           <div>
             {/**/} 
             <div>
-              <table cellSpacing={0} width={500} cellPadding={0} border={0}>
+              <table cellSpacing={0} maxWidth={500} cellPadding={0} border={0}>
                 <tbody><tr>
-                    <td width={154} valign="top" style={{padding: '0px 9px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={154} style={{width: '154px', maxWidth: '154px'}} src="https://img.mysignature.io/p/f/3/4/f340abe0-ea46-5d90-82bc-e0a50981024e.png?time=1624440308" /></td>
+                    <td maxWidth={154} valign="top" style={{padding: '0px 9px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={154} style={{width: '154px', maxWidth: '154px'}} src="https://img.mysignature.io/p/f/3/4/f340abe0-ea46-5d90-82bc-e0a50981024e.png?time=1624440308" /></td>
                     <td valign="top" style={{borderLeft: '2px solid rgb(235, 62, 145)', margin: '0.1px', verticalAlign: 'top', borderTopColor: 'rgb(235, 62, 145)', borderRightColor: 'rgb(235, 62, 145)', borderBottomColor: 'rgb(235, 62, 145)', padding: '0px 0px 0px 9px'}}>
                       <table cellSpacing={0} cellPadding={0} border={0} style={{lineHeight: '1.4', fontFamily: '"Courier New", Courier, monospace', fontSize: '90%', color: 'rgb(0, 0, 1)'}}>
                         <tbody><tr>
@@ -70,7 +70,7 @@ const Friendly2 = () => {
                   </tr>
                 </tbody></table>
               {/**/} 
-              <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+              <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
                 <tbody><tr style={{fontSize: '1px'}}>
                     <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
                   </tr>

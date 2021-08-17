@@ -9,9 +9,9 @@ const Free4 = () => {
     <div>
       {/**/} 
       <div>
-        <table cellSpacing={0} width={500} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={500} cellPadding={0} border={0}>
           <tbody><tr>
-              <td width={157} valign="top" style={{padding: '0px 9px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={157} style={{width: '157px', maxWidth: '157px'}} src="https://img.mysignature.io/p/9/a/9/9a9be290-0f29-5353-93bb-02fdce1659bb.png?time=1610636674" /></td>
+              <td maxWidth={157} valign="top" style={{padding: '0px 9px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={157} style={{width: '157px', maxWidth: '157px'}} src="https://img.mysignature.io/p/9/a/9/9a9be290-0f29-5353-93bb-02fdce1659bb.png?time=1610636674" /></td>
               <td valign="top" style={{borderLeft: '2px solid rgb(99, 202, 204)', margin: '0.1px', verticalAlign: 'top', borderTopColor: 'rgb(99, 202, 204)', borderRightColor: 'rgb(99, 202, 204)', borderBottomColor: 'rgb(99, 202, 204)', padding: '0px 0px 0px 9px'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{lineHeight: '1.4', fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '85%', color: 'rgb(0, 0, 1)'}}>
                   <tbody><tr>
@@ -59,7 +59,7 @@ const Free4 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

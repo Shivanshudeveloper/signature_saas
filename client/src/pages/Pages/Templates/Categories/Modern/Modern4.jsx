@@ -9,9 +9,9 @@ const Modern4 = () => {
     <div>
       {/**/} 
       <div>
-        <table cellSpacing={0} width={500} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={500} cellPadding={0} border={0}>
           <tbody><tr>
-              <td valign="top" width={148} style={{verticalAlign: 'top'}}><img alt="created with MySignature.io" width={148} style={{width: '148px', maxWidth: '148px'}} src="https://img.mysignature.io/p/6/1/1/611f5ed1-5a04-572c-9f66-219871079bae.png?time=1613560757" /></td>
+              <td valign="top" maxWidth={148} style={{verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={148} style={{width: '148px', maxWidth: '148px'}} src="https://img.mysignature.io/p/6/1/1/611f5ed1-5a04-572c-9f66-219871079bae.png?time=1613560757" /></td>
               <td valign="top" style={{margin: '0.1px', fontSize: '1em', padding: '0px 0px 0px 15px', verticalAlign: 'top'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{width: '100%', maxWidth: '400px', lineHeight: '1.4', fontFamily: 'Verdana, Geneva, sans-serif', fontSize: '90%', color: 'rgb(0, 0, 1)'}}>
                   <tbody><tr>
@@ -70,12 +70,12 @@ const Modern4 = () => {
               </td>
             </tr>
           </tbody></table>
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
-          <tbody><tr>
-              <td style={{margin: '0.1px', paddingTop: '15px'}}><a target="_blank" href="https://mysignature.io/"><img alt="created with MySignature.io" width={476} src="https://img.mysignature.io/b/6/1/1/611f5ed1-5a04-572c-9f66-219871079bae.png?time=1613560757" /></a></td>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
+          <tbody><tr> 
+              <td style={{margin: '0.1px', paddingTop: '15px'}}><a target="_blank" href="https://mysignature.io/"><img alt="created with MySignature.io" maxWidth={476} src="https://img.mysignature.io/b/6/1/1/611f5ed1-5a04-572c-9f66-219871079bae.png?time=1613560757" /></a></td>
             </tr>
           </tbody></table>
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

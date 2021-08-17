@@ -11,7 +11,7 @@ const Professional2 = () => {
     <div>
       {/**/} 
       <div>
-        <table cellSpacing={0} width={500} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={500} cellPadding={0} border={0}>
           <tbody><tr>
               {/**/} 
               <td valign="top" style={{margin: '0.1px', fontSize: '1em', padding: '0px 0px 0px 5px', verticalAlign: 'top'}}>
@@ -70,7 +70,7 @@ const Professional2 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>
@@ -95,7 +95,7 @@ const Professional2 = () => {
             <td style={{paddingTop: '6px', margin: '0.1px'}}><a target="_blank" href="https://mysignature.io/" style={{backgroundColor: '#7ED321', paddingLeft: '5px', paddingRight: '15px', marginRight: '5px', lineHeight: '34px', display: 'inline-block', color: '#FFFFFF', borderRadius: '6px', textDecoration: 'none'}}><i style={{verticalAlign: 'middle', padding: '6px 0 0 1px', fontSize: '22px', color: '#FFFFFF', display: 'inline-block', width: '34px', height: '34px', textAlign: 'center'}} className="icon_addon-gotomeeting" /><span style={{paddingLeft: '5px', verticalAlign: 'middle', fontSize: '14px'}}>Meet me on GoToMeeting</span></a></td>
           </tr>
           <tr style={{}}>
-            <td style={{margin: '0.1px', paddingTop: '6px'}}><a href="https://mysignature.io/" target="_blank"><img alt="Meet me on GoToMeeting" width={222} src="https://img.mysignature.io/a/v1/1/c/9/1c9feec6-c65f-51f2-89ea-8ef618cfe92d.png" style={{width: '222px'}} /></a></td>
+            <td style={{margin: '0.1px', paddingTop: '6px'}}><a href="https://mysignature.io/" target="_blank"><img alt="Meet me on GoToMeeting" maxWidth={222} src="https://img.mysignature.io/a/v1/1/c/9/1c9feec6-c65f-51f2-89ea-8ef618cfe92d.png" style={{width: '222px'}} /></a></td>
           </tr>
         </tbody></table>
       {/**/} 

@@ -14,7 +14,7 @@ const Elegant6 = () => {
               <td style={{margin: '0.1px', padding: '20px'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{lineHeight: '1.4', backgroundColor: 'rgb(0, 0, 0)', color: 'rgb(0, 0, 1)', fontFamily: '"Arial Black", Gadget, sans-serif', fontSize: '70%'}}>
                   <tbody><tr>
-                      <td style={{margin: '0.1px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={100} style={{width: '100px', maxWidth: '100px'}} src="https://img.mysignature.io/p/c/1/e/c1eab45a-59c4-52da-915f-08ae4c7b3ba8.png?time=1613559133" /></td>
+                      <td style={{margin: '0.1px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={100} style={{width: '100px', maxWidth: '100px'}} src="https://img.mysignature.io/p/c/1/e/c1eab45a-59c4-52da-915f-08ae4c7b3ba8.png?time=1613559133" /></td>
                       <td style={{margin: '0.1px', paddingLeft: '15px'}}>
                         <table>
                           <tbody><tr>
@@ -52,7 +52,7 @@ const Elegant6 = () => {
                     </tr>
                     <tr>
                       <td colSpan={2} style={{padding: '15px 0px 0px'}}>
-                        <div><a target="_blank" href="https://mysignature.io/"><img alt="created with MySignature.io" width={382} src="https://img.mysignature.io/b/c/1/e/c1eab45a-59c4-52da-915f-08ae4c7b3ba8.png?time=1613559133" /></a></div>
+                        <div><a target="_blank" href="https://mysignature.io/"><img alt="created with MySignature.io" maxWidth={382} src="https://img.mysignature.io/b/c/1/e/c1eab45a-59c4-52da-915f-08ae4c7b3ba8.png?time=1613559133" /></a></div>
                       </td>
                     </tr>
                     <tr style={{fontSize: '1px'}}>

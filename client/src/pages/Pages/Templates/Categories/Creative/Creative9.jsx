@@ -14,7 +14,7 @@ const Creative9 = () => {
                     <td style={{margin: '0.1px', padding: '20px'}}>
                       <table cellSpacing={0} cellPadding={0} border={0} style={{lineHeight: '1.4', backgroundColor: 'rgb(254, 207, 54)', color: 'rgb(0, 0, 1)', fontFamily: '"Courier New", Courier, monospace', fontSize: '84%'}}>
                         <tbody><tr>
-                            <td style={{margin: '0.1px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={171} style={{width: '171px', maxWidth: '171px'}} src="https://img.mysignature.io/p/e/d/d/eddd7e23-a5a3-5a9d-9170-71f7361e8cb3.png?time=1613561058" /></td>
+                            <td style={{margin: '0.1px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={171} style={{width: '171px', maxWidth: '171px'}} src="https://img.mysignature.io/p/e/d/d/eddd7e23-a5a3-5a9d-9170-71f7361e8cb3.png?time=1613561058" /></td>
                             <td style={{margin: '0.1px', paddingLeft: '15px'}}>
                               <table>
                                 <tbody><tr>

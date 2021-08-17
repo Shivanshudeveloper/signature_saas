@@ -83,8 +83,122 @@ const Example = (props) => {
     </Dropdown>
   );
 }
-
-
+const Modern = () =>{
+    return (
+        <>
+        <Col className="coll">
+                        <Card className="cardd"><Modern1 /></Card>
+                        <Card className="cardd"><Modern2 /></Card>
+                        <Card className="cardd"><Modern3 /></Card>
+                        <Card className="cardd"><Modern4 /></Card>
+                        <Card className="cardd"><Modern5 /></Card>
+                        <Card className="cardd"><Modern6 /></Card>
+                    </Col>
+                    <Col className="coll">
+                        <Card className="cardd"><Modern7 /></Card>
+                        <Card className="cardd"><Modern8 /></Card>
+                        <Card className="cardd"><Modern9 /></Card>
+                        <Card className="cardd"><Modern10 /></Card>
+                        <Card className="cardd"><Modern11 /></Card>
+                    </Col>
+        </>
+    )
+}
+const Professional = () =>{
+    return (
+        <>
+                    <Col className="coll">
+                        <Card className="cardd"><Professional1 /></Card>
+                        <Card className="cardd"><Professional2 /></Card>
+                        <Card className="cardd"><Professional3 /></Card>
+                        <Card className="cardd"><Professional4 /></Card>
+                        <Card className="cardd"><Professional5 /></Card>
+                        <Card className="cardd"><Professional6 /></Card>
+                    </Col>
+                    <Col className="coll">
+                        <Card className="cardd"><Professional7 /></Card>
+                        <Card className="cardd"><Professional8 /></Card>
+                        <Card className="cardd"><Professional9 /></Card>
+                        <Card className="cardd"><Professional10 /></Card>
+                    </Col>
+        </>
+    )
+}
+const Elegant = () =>{
+    return (
+        <>
+        <Col className="coll">
+                        <Card className="cardd"><Elegant1 /></Card>
+                        <Card className="cardd"><Elegant2 /></Card>
+                        <Card className="cardd"><Elegant3 /></Card>
+                        <Card className="cardd"><Elegant4 /></Card>
+                        <Card className="cardd"><Elegant5 /></Card>
+                        <Card className="cardd"><Elegant6 /></Card>
+                    </Col>
+                    <Col className="coll">
+                        <Card className="cardd"><Elegant7 /></Card>
+                        <Card className="cardd"><Elegant8 /></Card>
+                        <Card className="cardd"><Elegant9 /></Card>
+                        <Card className="cardd"><Elegant10 /></Card>
+                    </Col>
+        </>
+    )
+}
+const Creative = () =>{
+    return (
+        <>
+        <Col className="coll">
+                        <Card className="cardd"><Creative1 /></Card>
+                        <Card className="cardd"><Creative2 /></Card>
+                        <Card className="cardd"><Creative3 /></Card>
+                        <Card className="cardd"><Creative4 /></Card>
+                        <Card className="cardd"><Creative5 /></Card>
+                        <Card className="cardd"><Creative6 /></Card>
+                    </Col>
+                    <Col className="coll">
+                        <Card className="cardd"><Creative7 /></Card>
+                        <Card className="cardd"><Creative8 /></Card>
+                        <Card className="cardd"><Creative9 /></Card>
+                        <Card className="cardd"><Creative10 /></Card>
+                    </Col>
+        </>
+    )
+}
+const Friendly = () =>{
+    return (
+        <>
+        <Col className="coll">
+                        <Card className="cardd"><Friendly1 /></Card>
+                        <Card className="cardd"><Friendly2 /></Card>
+                        <Card className="cardd"><Friendly3 /></Card>
+                        <Card className="cardd"><Friendly4 /></Card>
+                        <Card className="cardd"><Friendly5 /></Card>
+                        <Card className="cardd"><Friendly6 /></Card>
+                    </Col>
+                    <Col className="coll">
+                        <Card className="cardd"><Friendly7 /></Card>
+                        <Card className="cardd"><Friendly8 /></Card>
+                        <Card className="cardd"><Friendly9 /></Card>
+                        <Card className="cardd"><Friendly10 /></Card>
+                    </Col>
+        </>
+    )
+}
+const Free = () =>{
+    return (
+        <>
+        <Col className="coll">
+                        <Card className="cardd"><Free1 /></Card>
+                        <Card className="cardd"><Free2 /></Card>
+                        <Card className="cardd"><Free3 /></Card>
+                    </Col>
+                    <Col className="coll">
+                        <Card className="cardd"><Free4 /></Card>
+                        <Card className="cardd"><Free5 /></Card>
+                    </Col>
+        </>
+    )
+}
 const Signature = () => {
     const [modal, setModal] = useState(false);
     const [curr , setCurr] = useState("Friendly")
@@ -152,6 +266,10 @@ const Signature = () => {
         </Row>
       </Container>
         <Container style={{display:"flex",justifyContent:"center",flexWrap:"wrap"}}>
+            <Container style={{display:"flex",justifyContent:"center",flexWrap:"wrap",paddingBottom:"60px"}}>
+                <h1>Email Signature Examples</h1>
+                <h3>Choose email signature that will fit your brand voice:</h3>
+            </Container>
             <ul className = "sig-cat-list">
                 <li><a id="Friendly" className="sig-cat-link sig-cat-link-active" onClick={handleClick}> Friendly</a></li>
                 <li><a id="Professional" className="sig-cat-link" onClick={handleClick}> Professional</a></li>
@@ -162,24 +280,8 @@ const Signature = () => {
                 
             </ul>
             <Container>
-                <Row xs={3}>
-                    <Col>
-                        <Card><Modern1 /></Card>
-                        <Card><Modern2 /></Card>
-                        <Card><Modern3 /></Card>
-                        <Card><Modern10 /></Card>
-                    </Col>
-                    <Col>
-                        <Card><Modern4 /></Card>
-                        <Card><Modern5 /></Card>
-                        <Card><Modern6 /></Card>
-                    </Col>
-                    <Col>
-                        <Card><Modern7 /></Card>
-                        <Card><Modern8 /></Card>
-                        <Card><Modern9 /></Card>
-                        <Card><Modern11 /></Card>
-                    </Col>
+                <Row xs={2}>
+                    {curr === "Modern" ?  <Modern/> : curr=== "Professional" ? <Professional />: curr === "Elegant" ? <Elegant /> : curr==="Friendly" ? <Friendly /> : curr=== "Creative" ? <Creative /> : <Free/>}
                     
                 </Row>
             </Container>

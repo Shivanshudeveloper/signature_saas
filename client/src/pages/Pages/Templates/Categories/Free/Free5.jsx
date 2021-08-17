@@ -13,9 +13,9 @@ const Free5 = () => {
           </tr>
         </tbody></table>
       <div>
-        <table cellSpacing={0} width={500} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={500} cellPadding={0} border={0}>
           <tbody><tr>
-              <td valign="top" width={162} style={{verticalAlign: 'top'}}><img alt="created with MySignature.io" width={162} style={{width: '162px', maxWidth: '162px'}} src="https://img.mysignature.io/p/2/2/3/2239f27b-c47b-580f-b9aa-208ff8f9f3de.png?time=1610636685" /></td>
+              <td valign="top" maxWidth={162} style={{verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={162} style={{width: '162px', maxWidth: '162px'}} src="https://img.mysignature.io/p/2/2/3/2239f27b-c47b-580f-b9aa-208ff8f9f3de.png?time=1610636685" /></td>
               <td valign="top" style={{margin: '0.1px', fontSize: '1em', padding: '0px 0px 0px 15px', verticalAlign: 'top'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{width: '100%', maxWidth: '400px', lineHeight: '1.4', fontFamily: 'Georgia, serif', fontSize: '80%', color: 'rgb(0, 0, 1)'}}>
                   <tbody><tr>
@@ -79,7 +79,7 @@ const Free5 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

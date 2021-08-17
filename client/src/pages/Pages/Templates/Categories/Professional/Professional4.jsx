@@ -13,9 +13,9 @@ const Professional4 = () => {
           </tr>
         </tbody></table>
       <div>
-        <table cellSpacing={0} width={500} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={500} cellPadding={0} border={0}>
           <tbody><tr>
-              <td width={188} valign="top" style={{padding: '0px 9px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={188} style={{width: '188px', maxWidth: '188px'}} src="https://img.mysignature.io/p/d/a/c/dac638f9-ec7a-5576-b8ed-2fbef1d0245e.png?time=1610636696" /></td>
+              <td maxWidth={188} valign="top" style={{padding: '0px 9px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={188} style={{width: '188px', maxWidth: '188px'}} src="https://img.mysignature.io/p/d/a/c/dac638f9-ec7a-5576-b8ed-2fbef1d0245e.png?time=1610636696" /></td>
               <td valign="top" style={{borderLeft: '2px solid rgb(161, 80, 26)', margin: '0.1px', verticalAlign: 'top', borderTopColor: 'rgb(161, 80, 26)', borderRightColor: 'rgb(161, 80, 26)', borderBottomColor: 'rgb(161, 80, 26)', padding: '0px 0px 0px 9px'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{lineHeight: '1.4', fontFamily: 'Georgia, serif', fontSize: '92%', color: 'rgb(0, 0, 1)'}}>
                   <tbody><tr>
@@ -64,7 +64,7 @@ const Professional4 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

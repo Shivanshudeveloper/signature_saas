@@ -9,10 +9,10 @@ const Modern6 = () => {
     <div>
       {/**/} 
       <div>
-        <table cellSpacing={0} width={500} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={500} cellPadding={0} border={0}>
           <tbody><tr>
-              <td valign="middle" width={119} style={{padding: '0px 15px 0px 0px', verticalAlign: 'middle'}}><img alt="created with MySignature.io" width={119} style={{width: '119px', maxWidth: '119px'}} src="https://img.mysignature.io/p/c/f/1/cf188c51-6819-5d3c-99ce-8b399123d99b.png?time=1610637263" /></td>
-              <td valign="middle" width={37} style={{verticalAlign: 'middle', padding: '0px 15px 0px 0px', fontFamily: 'Arial'}}>
+              <td valign="middle" maxWidth={119} style={{padding: '0px 15px 0px 0px', verticalAlign: 'middle'}}><img alt="created with MySignature.io" maxWidth={119} style={{width: '119px', maxWidth: '119px'}} src="https://img.mysignature.io/p/c/f/1/cf188c51-6819-5d3c-99ce-8b399123d99b.png?time=1610637263" /></td>
+              <td valign="middle" maxWidth={37} style={{verticalAlign: 'middle', padding: '0px 15px 0px 0px', fontFamily: 'Arial'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{lineHeight: 1}}>
                   <tbody>
                     <tr>
@@ -69,7 +69,7 @@ const Modern6 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>
@@ -81,10 +81,10 @@ const Modern6 = () => {
             <td style={{paddingTop: '5px', margin: '0.1px'}}><a target="_blank" href="https://mysignature.io/" style={{backgroundColor: '#00a090', paddingLeft: '5px', paddingRight: '15px', marginRight: '5px', lineHeight: '34px', display: 'inline-block', color: '#FFFFFF', borderRadius: '50px', textDecoration: 'none'}}><i style={{verticalAlign: 'middle', padding: '6px 0 0 1px', fontSize: '22px', color: '#FFFFFF', display: 'inline-block', width: '34px', height: '34px', textAlign: 'center'}} className="icon_addon-meet" /><span style={{paddingLeft: '5px', verticalAlign: 'middle', fontSize: '14px'}}>Meet me on Google Meet</span></a></td>
           </tr>
           <tr style={{}}>
-            <td style={{margin: '0.1px', paddingTop: '5px'}}><a href="https://mysignature.io/" target="_blank"><img alt="Meet me on Google Meet" width={219} src="https://img.mysignature.io/a/v1/a/d/0/ad0e7333-7b4f-56b6-a2a6-7118fc138bc3.png" style={{width: '219px'}} /></a></td>
+            <td style={{margin: '0.1px', paddingTop: '5px'}}><a href="https://mysignature.io/" target="_blank"><img alt="Meet me on Google Meet" maxWidth={219} src="https://img.mysignature.io/a/v1/a/d/0/ad0e7333-7b4f-56b6-a2a6-7118fc138bc3.png" style={{width: '219px'}} /></a></td>
           </tr>
         </tbody></table>
-      <table cellSpacing={0} cellPadding={0} border={0} fragment="d3926f6161" style={{marginTop: '15px', width: '500px', color: 'gray', fontFamily: 'Arial', fontSize: '85%'}}>
+      <table cellSpacing={0} cellPadding={0} border={0} fragment="d3926f6161" style={{marginTop: '15px', maxWidth: '500px', color: 'gray', fontFamily: 'Arial', fontSize: '85%'}}>
         <tbody><tr>
             <td style={{margin: '0.1px', width: '30px'}}><img src="https://img.mysignature.io/addons/v2/green-earth.png?uid=undefined" alt="Please consider the environment before printing this email" /></td>
             <td style={{margin: '0.1px'}}>Please consider the environment before printing this email</td>

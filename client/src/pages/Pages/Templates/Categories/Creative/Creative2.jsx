@@ -15,9 +15,9 @@ const Creative2 = () => {
           </tr>
         </tbody></table>
       <div>
-        <table cellSpacing={0} width={470} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={470} cellPadding={0} border={0}>
           <tbody><tr>
-              <td valign="top" width={168} style={{padding: '0px 12px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={168} style={{width: '168px', maxWidth: '168px'}} src="https://img.mysignature.io/p/6/4/d/64d5e276-ec30-5e25-8bf2-5257aa31b3cf.png?time=1613563156" /></td>
+              <td valign="top" maxWidth={168} style={{padding: '0px 12px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={168} style={{width: '168px', maxWidth: '168px'}} src="https://img.mysignature.io/p/6/4/d/64d5e276-ec30-5e25-8bf2-5257aa31b3cf.png?time=1613563156" /></td>
               <td valign="top" style={{margin: '0.1px', fontSize: '1em', padding: '0px 0px 0px 12px', verticalAlign: 'top', borderLeft: '1px solid rgb(70, 127, 0)'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{lineHeight: '1.4', fontFamily: 'Verdana, Geneva, sans-serif', fontSize: '85%', color: 'rgb(0, 0, 1)'}}>
                   <tbody><tr>
@@ -66,7 +66,7 @@ const Creative2 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

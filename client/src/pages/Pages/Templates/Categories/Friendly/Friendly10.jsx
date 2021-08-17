@@ -14,7 +14,7 @@ const Friendly10 = () => {
           <div>
             <table cellSpacing={0} cellPadding={0} border={0} style={{marginLeft: '10px', width: '400px', lineHeight: '1.4', fontSize: '90%', color: 'rgb(0, 0, 1)'}}>
               <tbody><tr>
-                  <td width={174}><img alt="created with MySignature.io" width={174} style={{width: '174px', maxWidth: '174px'}} src="https://img.mysignature.io/p/2/d/1/2d13c468-ba78-5da5-933d-69b0d142c106.png?time=1613562978" /></td>
+                  <td maxWidth={174}><img alt="created with MySignature.io" maxWidth={174} style={{width: '174px', maxWidth: '174px'}} src="https://img.mysignature.io/p/2/d/1/2d13c468-ba78-5da5-933d-69b0d142c106.png?time=1613562978" /></td>
                 </tr>
                 <tr>
                   <td style={{margin: '0.1px', paddingTop: '10px'}}><span style={{font: '600 1.3em "Palatino Linotype", "Book Antiqua", Palatino, serif', letterSpacing: '0.4pt', textTransform: 'uppercase', color: 'rgb(25, 149, 248)'}}>Amelia Morre</span></td>
@@ -64,7 +64,7 @@ const Friendly10 = () => {
                 </tr>
               </tbody></table>
             {/**/} 
-            <table width={400} cellSpacing={0} cellPadding={0} border={0}>
+            <table maxWidth={400} cellSpacing={0} cellPadding={0} border={0}>
               <tbody><tr style={{fontSize: '1px'}}>
                   <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
                 </tr>

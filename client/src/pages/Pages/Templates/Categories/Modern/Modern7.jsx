@@ -9,12 +9,12 @@ const Modern7 = () => {
     <div>
       {/**/} 
       <div>
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr>
               <td style={{margin: '0.1px'}}>
                 <table cellSpacing={0} cellPadding={0} border={0}>
                   <tbody><tr>
-                      <td valign="top" style={{padding: '0px 8px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={126} style={{width: '126px', maxWidth: '126px'}} src="https://img.mysignature.io/p/e/f/9/ef9afb0c-8552-56b0-bb52-1d54fe74732d.png?time=1610637318" /></td>
+                      <td valign="top" style={{padding: '0px 8px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={126} style={{width: '126px', maxWidth: '126px'}} src="https://img.mysignature.io/p/e/f/9/ef9afb0c-8552-56b0-bb52-1d54fe74732d.png?time=1610637318" /></td>
                       <td valign="top" style={{margin: '0.1px', fontSize: '1em', padding: '0px 15px 0px 8px', verticalAlign: 'top'}}>
                         <table cellSpacing={0} cellPadding={0} border={0} style={{fontFamily: 'Tahoma', lineHeight: '1.4', fontSize: '79%', color: 'rgb(0, 0, 1)'}}>
                           <tbody><tr>
@@ -56,7 +56,7 @@ const Modern7 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

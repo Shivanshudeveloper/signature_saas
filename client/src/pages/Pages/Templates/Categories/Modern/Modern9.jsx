@@ -9,7 +9,7 @@ const Modern9 = () => {
     <div>
       {/**/} 
       <div>
-        <table cellSpacing={0} width={550} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={550} cellPadding={0} border={0}>
           <tbody><tr>
               <td style={{margin: '0.1px'}}>
                 <table cellSpacing={0} cellPadding={0} border={0}>
@@ -17,7 +17,7 @@ const Modern9 = () => {
                       <td valign="middle" rowSpan={2} style={{verticalAlign: 'middle', fontSize: '1em', padding: '0px 15px 0px 7px', borderRight: '2px solid rgb(99, 204, 200)'}}>
                         <table cellSpacing={0} cellPadding={0} border={0} style={{lineHeight: '1.4', textAlign: 'center', fontFamily: 'Arial, Helvetica, sans-serif', fontSize: '81%', color: 'rgb(0, 0, 1)'}}>
                           <tbody><tr>
-                              <td style={{margin: '0.1px', paddingBottom: '10px'}}><img alt="created with MySignature.io" width={92} style={{width: '92px', maxWidth: '92px'}} src="https://img.mysignature.io/p/3/1/a/31a6799e-8110-53c6-9db7-3aa9d1c7749e.png?time=1613562991" /></td>
+                              <td style={{margin: '0.1px', paddingBottom: '10px'}}><img alt="created with MySignature.io" maxWidth={92} style={{width: '92px', maxWidth: '92px'}} src="https://img.mysignature.io/p/3/1/a/31a6799e-8110-53c6-9db7-3aa9d1c7749e.png?time=1613562991" /></td>
                             </tr>
                             <tr>
                               <td style={{margin: '0.1px', font: '200 1.4em Arial, Helvetica, sans-serif', color: 'rgb(99, 204, 200)'}}>
@@ -101,7 +101,7 @@ const Modern9 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>
@@ -113,7 +113,7 @@ const Modern9 = () => {
             <td style={{paddingTop: '18px', margin: '0.1px'}}><a target="_blank" href="https://mysignature.io/" style={{backgroundColor: '#63CCC8', paddingLeft: '5px', paddingRight: '15px', marginRight: '5px', lineHeight: '34px', display: 'inline-block', color: '#FFFFFF', borderRadius: '6px', textDecoration: 'none'}}><i style={{verticalAlign: 'middle', padding: '6px 0 0 1px', fontSize: '22px', color: '#FFFFFF', display: 'inline-block', width: '34px', height: '34px', textAlign: 'center'}} className="icon_addon-zoom" /><span style={{paddingLeft: '5px', verticalAlign: 'middle', fontSize: '14px'}}>Meet me on Zoom</span></a></td>
           </tr>
           <tr style={{}}>
-            <td style={{margin: '0.1px', paddingTop: '18px'}}><a href="https://mysignature.io/" target="_blank"><img alt="Meet me on Zoom" width={173} src="https://img.mysignature.io/a/v1/0/9/f/09facc0c-9768-5eb7-b56f-a095cbc5c790.png" style={{width: '173px'}} /></a></td>
+            <td style={{margin: '0.1px', paddingTop: '18px'}}><a href="https://mysignature.io/" target="_blank"><img alt="Meet me on Zoom" maxWidth={173} src="https://img.mysignature.io/a/v1/0/9/f/09facc0c-9768-5eb7-b56f-a095cbc5c790.png" style={{width: '173px'}} /></a></td>
           </tr>
         </tbody></table>
       {/**/} 

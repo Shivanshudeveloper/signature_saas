@@ -8,9 +8,9 @@ const Professional9 = () => {
     <div>
       {/**/} 
       <div>
-        <table cellSpacing={0} width={500} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={500} cellPadding={0} border={0}>
           <tbody><tr>
-              <td valign="top" width={156} style={{padding: '0px 15px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={156} style={{width: '156px', maxWidth: '156px'}} src="https://img.mysignature.io/p/d/f/6/df6a97c9-21d9-5a3a-aa45-be2a0add7fab.png?time=1610637596" /></td>
+              <td valign="top" maxWidth={156} style={{padding: '0px 15px 0px 0px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={156} style={{width: '156px', maxWidth: '156px'}} src="https://img.mysignature.io/p/d/f/6/df6a97c9-21d9-5a3a-aa45-be2a0add7fab.png?time=1610637596" /></td>
               <td valign="top" style={{margin: '0.1px', fontSize: '1em', padding: '0px 0px 0px 5px', verticalAlign: 'top'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{width: '100%', maxWidth: '400px', lineHeight: '1.4', fontFamily: 'Verdana, Geneva, sans-serif', fontSize: '90%', color: 'rgb(0, 0, 1)'}}>
                   <tbody><tr>
@@ -61,7 +61,7 @@ const Professional9 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

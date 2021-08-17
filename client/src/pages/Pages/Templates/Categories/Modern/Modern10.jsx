@@ -11,7 +11,7 @@ const Modern10 = () => {
       <div>
         <table cellSpacing={0} cellPadding={0} border={0} style={{marginLeft: '10px', width: '400px', lineHeight: '1.4', fontSize: '79%', color: 'rgb(0, 0, 1)'}}>
           <tbody><tr>
-              <td width={131}><img alt="created with MySignature.io" width={131} style={{width: '131px', maxWidth: '131px'}} src="https://img.mysignature.io/p/0/3/b/03b00d76-00f1-5340-8979-92b160eac6f0.png?time=1613563091" /></td>
+              <td maxWidth={131}><img alt="created with MySignature.io" maxWidth={131} style={{width: '131px', maxWidth: '131px'}} src="https://img.mysignature.io/p/0/3/b/03b00d76-00f1-5340-8979-92b160eac6f0.png?time=1613563091" /></td>
             </tr>
             <tr>
               <td style={{margin: '0.1px', paddingTop: '10px'}}><span style={{font: '600 1.3em Arial, Helvetica, sans-serif', letterSpacing: '0.4pt', textTransform: 'uppercase', color: 'rgb(74, 144, 226)'}}>Steve Burnett</span></td>
@@ -82,7 +82,7 @@ const Modern10 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={400} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={400} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

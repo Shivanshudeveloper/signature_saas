@@ -14,7 +14,7 @@ const Professional3 = () => {
               <td style={{margin: '0.1px', padding: '20px'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{lineHeight: '1.4', backgroundColor: 'rgb(255, 255, 255)', color: 'rgb(0, 0, 1)', fontFamily: 'Verdana, Geneva, sans-serif', fontSize: '64%'}}>
                   <tbody><tr>
-                      <td style={{margin: '0.1px', verticalAlign: 'top'}}><img alt="created with MySignature.io" width={200} style={{width: '200px', maxWidth: '200px'}} src="https://img.mysignature.io/p/b/7/4/b7447a62-843d-5e10-90ed-cec23a4178b3.png?time=1610636358" /></td>
+                      <td style={{margin: '0.1px', verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={200} style={{width: '200px', maxWidth: '200px'}} src="https://img.mysignature.io/p/b/7/4/b7447a62-843d-5e10-90ed-cec23a4178b3.png?time=1610636358" /></td>
                       <td style={{margin: '0.1px', paddingLeft: '15px'}}>
                         <table>
                           <tbody><tr>

@@ -10,9 +10,9 @@ const Modern11 = () => {
     <div>
       {/**/} 
       <div>
-        <table cellSpacing={0} width={500} cellPadding={0} border={0}>
+        <table cellSpacing={0} maxWidth={500} cellPadding={0} border={0}>
           <tbody><tr>
-              <td valign="top" width={140} style={{verticalAlign: 'top'}}><img alt="created with MySignature.io" width={140} style={{width: '140px', maxWidth: '140px'}} src="https://img.mysignature.io/p/b/e/9/be973224-2c3d-5c72-8965-c0c27ce1b19d.png?time=1613563106" /></td>
+              <td valign="top" maxWidth={140} style={{verticalAlign: 'top'}}><img alt="created with MySignature.io" maxWidth={140} style={{width: '140px', maxWidth: '140px'}} src="https://img.mysignature.io/p/b/e/9/be973224-2c3d-5c72-8965-c0c27ce1b19d.png?time=1613563106" /></td>
               <td valign="top" style={{margin: '0.1px', fontSize: '1em', padding: '0px 0px 0px 15px', verticalAlign: 'top'}}>
                 <table cellSpacing={0} cellPadding={0} border={0} style={{width: '100%', maxWidth: '400px', lineHeight: '1.4', fontFamily: 'Georgia, serif', fontSize: '80%', color: 'rgb(0, 0, 1)'}}>
                   <tbody><tr>
@@ -69,7 +69,7 @@ const Modern11 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={500} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>

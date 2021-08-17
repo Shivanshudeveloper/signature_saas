@@ -11,7 +11,7 @@ const Modern3 = () => {
       <div>
         <table cellSpacing={0} cellPadding={0} border={0} style={{marginLeft: '20px', lineHeight: '1.4', color: 'rgb(0, 0, 1)', fontFamily: 'Verdana, Geneva, sans-serif', fontSize: '90%', paddingLeft: '20px', textAlign: 'center', display: 'table'}}>
           <tbody><tr>
-              <td><img alt="created with MySignature.io" width={154} style={{width: '154px', maxWidth: '154px'}} src="https://img.mysignature.io/p/a/f/e/afeef554-e1bf-5b5d-b0d1-062e88f384eb.png?time=1610637074" /></td>
+              <td><img alt="created with MySignature.io" maxWidth={154} style={{width: '154px', maxWidth: '154px'}} src="https://img.mysignature.io/p/a/f/e/afeef554-e1bf-5b5d-b0d1-062e88f384eb.png?time=1610637074" /></td>
             </tr>
             <tr>
               <td style={{margin: '0.1px', padding: '13px 0px 5px'}}>

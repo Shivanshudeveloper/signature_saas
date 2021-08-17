@@ -11,6 +11,10 @@
     background-color: #f0f3f9;
     border-radius: 4rem;
 }
+.coll .cardd{
+    margin-top: 20px !important;
+    padding:20px;
+}
 .sig-cat-link:hover{
     color: #fff;
     background-color: #334e70;

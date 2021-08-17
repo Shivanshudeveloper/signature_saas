@@ -11,7 +11,7 @@ const Elegant8 = () => {
       <div>
         <table cellSpacing={0} cellPadding={0} border={0} style={{marginLeft: '10px', width: '400px', lineHeight: '1.4', fontSize: '90%', color: 'rgb(0, 0, 1)'}}>
           <tbody><tr>
-              <td width={138}><img alt="created with MySignature.io" width={138} style={{width: '138px', maxWidth: '138px'}} src="https://img.mysignature.io/p/5/8/9/589b1a98-b088-514f-98a3-8a98a736dfc2.png?time=1610637172" /></td>
+              <td maxWidth={138}><img alt="created with MySignature.io" maxWidth={138} style={{width: '138px', maxWidth: '138px'}} src="https://img.mysignature.io/p/5/8/9/589b1a98-b088-514f-98a3-8a98a736dfc2.png?time=1610637172" /></td>
             </tr>
             <tr>
               <td style={{margin: '0.1px', paddingTop: '10px'}}><span style={{font: '600 1.3em Verdana, Geneva, sans-serif', letterSpacing: '0.4pt', textTransform: 'uppercase', color: 'rgb(74, 74, 74)'}}>Rudra Rosales</span></td>
@@ -67,7 +67,7 @@ const Elegant8 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={400} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={400} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>
@@ -79,7 +79,7 @@ const Elegant8 = () => {
             <td style={{paddingTop: '15px', margin: '0.1px'}}><a target="_blank" href="https://mysignature.io/" style={{backgroundColor: '#4A4A4A', paddingLeft: '5px', paddingRight: '15px', marginRight: '5px', lineHeight: '37px', display: 'inline-block', color: '#FFFFFF', borderRadius: '50px', textDecoration: 'none'}}><i style={{verticalAlign: 'middle', padding: '6px 0 0 1px', fontSize: '25px', color: '#FFFFFF', display: 'inline-block', width: '37px', height: '37px', textAlign: 'center'}} className="icon_addon-zoom" /><span style={{paddingLeft: '5px', verticalAlign: 'middle', fontSize: '15px'}}>Meet me on Zoom</span></a></td>
           </tr>
           <tr style={{}}>
-            <td style={{margin: '0.1px', paddingTop: '15px'}}><a href="https://mysignature.io/" target="_blank"><img alt="Meet me on Zoom" width={182} src="https://img.mysignature.io/a/v1/3/b/e/3be1ed76-e5f2-5c4e-be3f-4e582bedefac.png" style={{width: '182px'}} /></a></td>
+            <td style={{margin: '0.1px', paddingTop: '15px'}}><a href="https://mysignature.io/" target="_blank"><img alt="Meet me on Zoom" maxWidth={182} src="https://img.mysignature.io/a/v1/3/b/e/3be1ed76-e5f2-5c4e-be3f-4e582bedefac.png" style={{width: '182px'}} /></a></td>
           </tr>
         </tbody></table>
       {/**/} 

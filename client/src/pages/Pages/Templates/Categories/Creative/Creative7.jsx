@@ -11,7 +11,7 @@ const Creative7 = () => {
       <div>
         <table cellSpacing={0} cellPadding={0} border={0} style={{marginLeft: '10px', width: '400px', lineHeight: '1.4', fontSize: '83%', color: 'rgb(0, 0, 1)'}}>
           <tbody><tr>
-              <td width={116}><img alt="created with MySignature.io" width={116} style={{width: '116px', maxWidth: '116px'}} src="https://img.mysignature.io/p/7/5/5/755c6ebf-bcdb-517c-a4a0-d2083bd83644.png?time=1610637222" /></td>
+              <td maxWidth={116}><img alt="created with MySignature.io" maxWidth={116} style={{width: '116px', maxWidth: '116px'}} src="https://img.mysignature.io/p/7/5/5/755c6ebf-bcdb-517c-a4a0-d2083bd83644.png?time=1610637222" /></td>
             </tr>
             <tr>
               <td style={{margin: '0.1px', paddingTop: '10px'}}><span style={{font: '600 1.3em "Trebuchet MS", Helvetica, sans-serif', letterSpacing: '0.4pt', textTransform: 'uppercase', color: 'rgb(231, 142, 11)'}}>Fabio Fenton</span></td>
@@ -70,7 +70,7 @@ const Creative7 = () => {
             </tr>
           </tbody></table>
         {/**/} 
-        <table width={400} cellSpacing={0} cellPadding={0} border={0}>
+        <table maxWidth={400} cellSpacing={0} cellPadding={0} border={0}>
           <tbody><tr style={{fontSize: '1px'}}>
               <td colSpan={2} className="s_pixel"><a href="https://mysignature.io/editor/?utm_source=freepixel" style={{}}><img src="https://img.mysignature.io/pixel/null/signature/" /></a></td>
             </tr>
