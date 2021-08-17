@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Container, Row, Col, Card, CardBody, Button ,Modal, ModalHeader, ModalBody, ModalFooter} from "reactstrap";
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 // IMPORTS
+import './Dashboard.css'
 import Friendly1 from '../Templates/Categories/Friendly/Friendly1'
 import Friendly2 from '../Templates/Categories/Friendly/Friendly2'
 import Friendly3 from '../Templates/Categories/Friendly/Friendly3'
@@ -64,8 +65,8 @@ const Example = (props) => {
   const [selected, setSelected] = useState("Select Signature")
   const toggle = () => setDropdownOpen(prevState => !prevState);
   const handleChange = (se) => {
-      console.log(se.target.value);
       setSelected(se.target.value)
+      props.modalCategory(se.target.value)
   }
   return (
     <Dropdown isOpen={dropdownOpen} toggle={toggle}>
@@ -83,9 +84,193 @@ const Example = (props) => {
     </Dropdown>
   );
 }
+const Modern = () =>{
+  return (
+      <>
+      <Col className="coll">
+                      <Card className="cardd"><Modern1 /></Card>
+                      <Card className="cardd"><Modern2 /></Card>
+                      <Card className="cardd"><Modern3 /></Card>
+                      <Card className="cardd"><Modern4 /></Card>
+                      <Card className="cardd"><Modern5 /></Card>
+                      <Card className="cardd"><Modern6 /></Card>
+                  </Col>
+                  <Col className="coll">
+                      <Card className="cardd"><Modern7 /></Card>
+                      <Card className="cardd"><Modern8 /></Card>
+                      <Card className="cardd"><Modern9 /></Card>
+                      <Card className="cardd"><Modern10 /></Card>
+                      <Card className="cardd"><Modern11 /></Card>
+                  </Col>
+      </>
+  )
+}
+const Professional = () =>{
+  return (
+      <>
+                  <Col className="coll">
+                      <Card className="cardd"><Professional1 /></Card>
+                      <Card className="cardd"><Professional2 /></Card>
+                      <Card className="cardd"><Professional3 /></Card>
+                      <Card className="cardd"><Professional4 /></Card>
+                      <Card className="cardd"><Professional5 /></Card>
+                      <Card className="cardd"><Professional6 /></Card>
+                  </Col>
+                  <Col className="coll">
+                      <Card className="cardd"><Professional7 /></Card>
+                      <Card className="cardd"><Professional8 /></Card>
+                      <Card className="cardd"><Professional9 /></Card>
+                      <Card className="cardd"><Professional10 /></Card>
+                  </Col>
+      </>
+  )
+}
+const Elegant = () =>{
+  return (
+      <>
+      <Col className="coll">
+                      <Card className="cardd"><Elegant1 /></Card>
+                      <Card className="cardd"><Elegant2 /></Card>
+                      <Card className="cardd"><Elegant3 /></Card>
+                      <Card className="cardd"><Elegant4 /></Card>
+                      <Card className="cardd"><Elegant5 /></Card>
+                      <Card className="cardd"><Elegant6 /></Card>
+                  </Col>
+                  <Col className="coll">
+                      <Card className="cardd"><Elegant7 /></Card>
+                      <Card className="cardd"><Elegant8 /></Card>
+                      <Card className="cardd"><Elegant9 /></Card>
+                      <Card className="cardd"><Elegant10 /></Card>
+                  </Col>
+      </>
+  )
+}
+const Creative = () =>{
+  return (
+      <>
+      <Col className="coll">
+                      <Card className="cardd"><Creative1 /></Card>
+                      <Card className="cardd"><Creative2 /></Card>
+                      <Card className="cardd"><Creative3 /></Card>
+                      <Card className="cardd"><Creative4 /></Card>
+                      <Card className="cardd"><Creative5 /></Card>
+                      <Card className="cardd"><Creative6 /></Card>
+                  </Col>
+                  <Col className="coll">
+                      <Card className="cardd"><Creative7 /></Card>
+                      <Card className="cardd"><Creative8 /></Card>
+                      <Card className="cardd"><Creative9 /></Card>
+                      <Card className="cardd"><Creative10 /></Card>
+                  </Col>
+      </>
+  )
+}
+const Friendly = () =>{
+  return (
+      <>
+      <Col className="coll">
+                      <Card className="cardd"><Friendly1 /></Card>
+                      <Card className="cardd"><Friendly2 /></Card>
+                      <Card className="cardd"><Friendly3 /></Card>
+                      <Card className="cardd"><Friendly4 /></Card>
+                      <Card className="cardd"><Friendly5 /></Card>
+                      <Card className="cardd"><Friendly6 /></Card>
+                  </Col>
+                  <Col className="coll">
+                      <Card className="cardd"><Friendly7 /></Card>
+                      <Card className="cardd"><Friendly8 /></Card>
+                      <Card className="cardd"><Friendly9 /></Card>
+                      <Card className="cardd"><Friendly10 /></Card>
+                  </Col>
+      </>
+  )
+}
+const Free = () =>{
+  return (
+      <>
+      <Col className="coll">
+                      <Card className="cardd"><Free1 /></Card>
+                      <Card className="cardd"><Free2 /></Card>
+                      <Card className="cardd"><Free3 /></Card>
+                  </Col>
+                  <Col className="coll">
+                      <Card className="cardd"><Free4 /></Card>
+                      <Card className="cardd"><Free5 /></Card>
+                  </Col>
+      </>
+  )
+}
+const AllCategory = () => {
+  return (
+      <>
+      <Col>
+            <Card style={{marginTop:"20px"}}><Professional1 /></Card>
+            <Card style={{marginTop:"20px"}}><Professional2 /></Card>
+            <Card style={{marginTop:"20px"}}><Professional3 /></Card>
+            <Card style={{marginTop:"20px"}}><Professional4 /></Card>
+            <Card style={{marginTop:"20px"}}><Professional5 /></Card>
+            <Card style={{marginTop:"20px"}}><Professional6 /></Card>
+            <Card style={{marginTop:"20px"}}><Professional7 /></Card>
+            <Card style={{marginTop:"20px"}}><Professional8 /></Card>
+            <Card style={{marginTop:"20px"}}><Professional9 /></Card>
+            <Card style={{marginTop:"20px"}}><Professional10 /></Card>
+            <Card style={{marginTop:"20px"}}><Elegant1 /></Card>
+            <Card style={{marginTop:"20px"}}><Elegant2 /></Card>
+            <Card style={{marginTop:"20px"}}><Elegant3 /></Card>
+            <Card style={{marginTop:"20px"}}><Elegant4 /></Card>
+            <Card style={{marginTop:"20px"}}><Elegant5 /></Card>
+            <Card style={{marginTop:"20px"}}><Elegant6 /></Card>
+            <Card style={{marginTop:"20px"}}><Elegant7 /></Card>
+            <Card style={{marginTop:"20px"}}><Elegant8 /></Card>
+            <Card style={{marginTop:"20px"}}><Elegant9 /></Card>
+            <Card style={{marginTop:"20px"}}><Elegant10 /></Card>
+            <Card style={{marginTop:"20px"}}><Modern1 /></Card>
+            <Card style={{marginTop:"20px"}}><Modern2 /></Card>
+            <Card style={{marginTop:"20px"}}><Modern3 /></Card>
+            <Card style={{marginTop:"20px"}}><Modern4 /></Card>
+            <Card style={{marginTop:"20px"}}><Modern5 /></Card>
+            <Card style={{marginTop:"20px"}}><Modern6 /></Card>
+            <Card style={{marginTop:"20px"}}><Modern7 /></Card>
+            <Card style={{marginTop:"20px"}}><Modern8 /></Card>
+            <Card style={{marginTop:"20px"}}><Modern9 /></Card>
 
+            </Col>
+            <Col>
+            <Card style={{marginTop:"20px"}}><Creative1 /></Card>
+            <Card style={{marginTop:"20px"}}><Creative2 /></Card>
+            <Card style={{marginTop:"20px"}}><Creative3 /></Card>
+            <Card style={{marginTop:"20px"}}><Creative4 /></Card>
+            <Card style={{marginTop:"20px"}}><Creative5 /></Card>
+            <Card style={{marginTop:"20px"}}><Creative6 /></Card>
+            <Card style={{marginTop:"20px"}}><Creative7 /></Card>
+            <Card style={{marginTop:"20px"}}><Creative8 /></Card>
+            <Card style={{marginTop:"20px"}}><Creative9 /></Card>
+            <Card style={{marginTop:"20px"}}><Creative10 /></Card> 
+            <Card style={{marginTop:"20px"}}><Friendly1 /></Card>
+            <Card style={{marginTop:"20px"}}><Friendly2 /></Card>
+            <Card style={{marginTop:"20px"}}><Friendly3 /></Card>
+            <Card style={{marginTop:"20px"}}><Friendly4 /></Card>
+            <Card style={{marginTop:"20px"}}><Friendly5 /></Card>
+            <Card style={{marginTop:"20px"}}><Friendly6 /></Card>
+            <Card style={{marginTop:"20px"}}><Friendly7 /></Card>
+            <Card style={{marginTop:"20px"}}><Friendly8 /></Card>
+            <Card style={{marginTop:"20px"}}><Friendly9 /></Card>
+            <Card style={{marginTop:"20px"}}><Friendly10 /></Card>
+            <Card style={{marginTop:"20px"}}><Free1 /></Card>
+            <Card style={{marginTop:"20px"}}><Free2 /></Card>
+            <Card style={{marginTop:"20px"}}><Free3 /></Card>
+            <Card style={{marginTop:"20px"}}><Free4 /></Card>
+            <Card style={{marginTop:"20px"}}><Free5 /></Card>
+            <Card style={{marginTop:"20px"}}><Modern10 /></Card>
+            <Card style={{marginTop:"20px"}}><Modern11 /></Card>
+            </Col>
+          
+      </>
+  )
+}
 
 const Dashboard = () => {
+    const [modalCategory , setModalCategory] = useState("All")
     const [modal, setModal] = useState(false);
 
         const toggle = () => setModal(!modal);
@@ -128,71 +313,12 @@ const Dashboard = () => {
         {/* <ModalHeader>New Signature</ModalHeader> */}
         <ModalBody>
             <div style={{display:"flex",justifyContent:"flex-end"}}>
-                <Example/>
+                <Example modalCategory = {setModalCategory}/>
             </div>
             
-            <Row>
-              <Col xs={6}>
-              <Card style={{marginTop:"20px"}}><Professional1 /></Card>
-              <Card style={{marginTop:"20px"}}><Professional2 /></Card>
-              <Card style={{marginTop:"20px"}}><Professional3 /></Card>
-              <Card style={{marginTop:"20px"}}><Professional4 /></Card>
-              <Card style={{marginTop:"20px"}}><Professional5 /></Card>
-              <Card style={{marginTop:"20px"}}><Professional6 /></Card>
-              <Card style={{marginTop:"20px"}}><Professional7 /></Card>
-              <Card style={{marginTop:"20px"}}><Professional8 /></Card>
-              <Card style={{marginTop:"20px"}}><Professional9 /></Card>
-              <Card style={{marginTop:"20px"}}><Professional10 /></Card>
-              <Card style={{marginTop:"20px"}}><Elegant1 /></Card>
-              <Card style={{marginTop:"20px"}}><Elegant2 /></Card>
-              <Card style={{marginTop:"20px"}}><Elegant3 /></Card>
-              <Card style={{marginTop:"20px"}}><Elegant4 /></Card>
-              <Card style={{marginTop:"20px"}}><Elegant5 /></Card>
-              <Card style={{marginTop:"20px"}}><Elegant6 /></Card>
-              <Card style={{marginTop:"20px"}}><Elegant7 /></Card>
-              <Card style={{marginTop:"20px"}}><Elegant8 /></Card>
-              <Card style={{marginTop:"20px"}}><Elegant9 /></Card>
-              <Card style={{marginTop:"20px"}}><Elegant10 /></Card>
-              <Card style={{marginTop:"20px"}}><Modern1 /></Card>
-              <Card style={{marginTop:"20px"}}><Modern2 /></Card>
-              <Card style={{marginTop:"20px"}}><Modern3 /></Card>
-              <Card style={{marginTop:"20px"}}><Modern4 /></Card>
-              <Card style={{marginTop:"20px"}}><Modern5 /></Card>
-              <Card style={{marginTop:"20px"}}><Modern6 /></Card>
-              <Card style={{marginTop:"20px"}}><Modern7 /></Card>
-              <Card style={{marginTop:"20px"}}><Modern8 /></Card>
-              <Card style={{marginTop:"20px"}}><Modern9 /></Card>
+            <Row xs={2}>
+            {modalCategory === "Modern" ?  <Modern/> : modalCategory=== "Professional" ? <Professional />: modalCategory === "Elegant" ? <Elegant /> : modalCategory==="Friendly" ? <Friendly /> : modalCategory=== "Creative" ? <Creative /> : modalCategory ==="Free" ?<Free/> : <AllCategory />}
 
-              </Col>
-              <Col xs={6}>
-              <Card style={{marginTop:"20px"}}><Creative1 /></Card>
-              <Card style={{marginTop:"20px"}}><Creative2 /></Card>
-              <Card style={{marginTop:"20px"}}><Creative3 /></Card>
-              <Card style={{marginTop:"20px"}}><Creative4 /></Card>
-              <Card style={{marginTop:"20px"}}><Creative5 /></Card>
-              <Card style={{marginTop:"20px"}}><Creative6 /></Card>
-              <Card style={{marginTop:"20px"}}><Creative7 /></Card>
-              <Card style={{marginTop:"20px"}}><Creative8 /></Card>
-              <Card style={{marginTop:"20px"}}><Creative9 /></Card>
-              <Card style={{marginTop:"20px"}}><Creative10 /></Card> 
-              <Card style={{marginTop:"20px"}}><Friendly1 /></Card>
-              <Card style={{marginTop:"20px"}}><Friendly2 /></Card>
-              <Card style={{marginTop:"20px"}}><Friendly3 /></Card>
-              <Card style={{marginTop:"20px"}}><Friendly4 /></Card>
-              <Card style={{marginTop:"20px"}}><Friendly5 /></Card>
-              <Card style={{marginTop:"20px"}}><Friendly6 /></Card>
-              <Card style={{marginTop:"20px"}}><Friendly7 /></Card>
-              <Card style={{marginTop:"20px"}}><Friendly8 /></Card>
-              <Card style={{marginTop:"20px"}}><Friendly9 /></Card>
-              <Card style={{marginTop:"20px"}}><Friendly10 /></Card>
-              <Card style={{marginTop:"20px"}}><Free1 /></Card>
-              <Card style={{marginTop:"20px"}}><Free2 /></Card>
-              <Card style={{marginTop:"20px"}}><Free3 /></Card>
-              <Card style={{marginTop:"20px"}}><Free4 /></Card>
-              <Card style={{marginTop:"20px"}}><Free5 /></Card>
-              <Card style={{marginTop:"20px"}}><Modern10 /></Card>
-              <Card style={{marginTop:"20px"}}><Modern11 /></Card>
-              </Col>
             </Row>
             
         </ModalBody>
