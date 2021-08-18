@@ -1,4 +1,12 @@
-.coll .cardd{
-    margin-top: 20px !important;
-    padding:20px;
+.coll .cardd {
+  margin-top: 20px !important;
+  padding: 20px;
+}
+.coll .cardd:hover {
+  border: 2px solid blue;
+  cursor: pointer;
+}
+.card2:hover {
+  border: 2px solid blue;
+  cursor: pointer;
 }
