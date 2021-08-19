@@ -25,7 +25,7 @@ const Modern3 = () => {
             >
               <tbody>
                 <tr>
-                  <td>
+                  <td className="image1"> 
                     <img
                       alt="created with MySignature.io"
                       maxWidth={154}
@@ -42,6 +42,7 @@ const Modern3 = () => {
                         textTransform: "uppercase",
                         color: "rgb(155, 155, 155)",
                       }}
+                      className= "name1"
                     >
                       Kaydan Padilla
                     </div>
@@ -49,7 +50,7 @@ const Modern3 = () => {
                 </tr>
                 <tr>
                   <td style={{ margin: "0.1px", paddingBottom: "5px" }}>
-                    <div style={{ color: "rgb(77, 76, 76)" }}>
+                    <div style={{ color: "rgb(77, 76, 76)" }} className= "name2">
                       Customer Support at Palm Therapy
                     </div>
                   </td>
@@ -64,6 +65,7 @@ const Modern3 = () => {
                         borderBottom: "1px solid rgb(235, 228, 228)",
                         display: "inline-block",
                       }}
+                      className= "name3"
                     >
                       {/**/} {/**/} phone:
                       <a
@@ -72,6 +74,7 @@ const Modern3 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
+                        className= "name4"
                       >
                         +1321400007
                       </a>
@@ -88,6 +91,7 @@ const Modern3 = () => {
                         borderBottom: "1px solid rgb(235, 228, 228)",
                         display: "inline-block",
                       }}
+                      className= "name5"
                     >
                       {/**/} {/**/} email:
                       <a
@@ -97,6 +101,7 @@ const Modern3 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
+                        className= "name6"
                       >
                         padilla@palmtherapy.com
                       </a>
@@ -111,6 +116,7 @@ const Modern3 = () => {
                         href="http://palmtherapy.com"
                         style={{ textDecoration: "none", color: "#000001" }}
                         target="_blank"
+                        className= "name7"
                       >
                         palmtherapy.com
                       </a>
@@ -276,6 +282,7 @@ const Modern3 = () => {
                             <a
                               href="https://mysignature.io/editor/?utm_source=freepixel"
                               style={{}}
+                              className="image2"
                             >
                               <img src="https://img.mysignature.io/pixel/null/signature/" />
                             </a>

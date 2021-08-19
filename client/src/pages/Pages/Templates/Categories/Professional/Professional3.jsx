@@ -35,7 +35,7 @@ const Professional3 = () => {
                     >
                       <tbody>
                         <tr>
-                          <td style={{ margin: "0.1px", verticalAlign: "top" }}>
+                          <td style={{ margin: "0.1px", verticalAlign: "top" }} className="image1">
                             <img
                               alt="created with MySignature.io"
                               maxWidth={200}
@@ -54,7 +54,7 @@ const Professional3 = () => {
                                       style={{
                                         font: "600 1.3em Verdana, Geneva, sans-serif",
                                         color: "rgb(0, 0, 0)",
-                                      }}
+                                      }} className="name1"
                                     >
                                       Garry Wolf
                                     </div>
@@ -104,7 +104,7 @@ const Professional3 = () => {
                                         fontFamily:
                                           "Verdana, Geneva, sans-serif",
                                         color: "rgb(0, 0, 0)",
-                                      }}
+                                      }} className="name2"
                                     >
                                       Broker |{/**/}
                                     </div>
@@ -122,7 +122,7 @@ const Professional3 = () => {
                                         fontFamily:
                                           "Verdana, Geneva, sans-serif",
                                         color: "rgb(0, 0, 0)",
-                                      }}
+                                      }} className="name3"
                                     >
                                       mobile:
                                       <a
@@ -130,7 +130,7 @@ const Professional3 = () => {
                                         style={{
                                           textDecoration: "none",
                                           color: "rgb(0, 0, 0)",
-                                        }}
+                                        }} className="name4"
                                       >
                                         +1 729 855 4555
                                       </a>{" "}
@@ -140,7 +140,7 @@ const Professional3 = () => {
                                         style={{
                                           textDecoration: "none",
                                           color: "rgb(0, 0, 0)",
-                                        }}
+                                        }} className="name5"
                                       >
                                         +1 728 607 2433
                                       </a>
@@ -167,7 +167,7 @@ const Professional3 = () => {
                                         style={{
                                           textDecoration: "none",
                                           color: "rgb(0, 0, 0)",
-                                        }}
+                                        }} className="name6"
                                       >
                                         Garry.SE
                                       </a>{" "}
@@ -178,7 +178,7 @@ const Professional3 = () => {
                                         style={{
                                           textDecoration: "none",
                                           color: "rgb(0, 0, 0)",
-                                        }}
+                                        }} className="name7"
                                       >
                                         garry@sundray.esate
                                       </a>
@@ -206,7 +206,7 @@ const Professional3 = () => {
                                           textDecoration: "none",
                                           color: "#000000",
                                         }}
-                                        target="_blank"
+                                        target="_blank" className="name8"
                                       >
                                         sundray.esate
                                       </a>
@@ -330,7 +330,7 @@ const Professional3 = () => {
                           <td colSpan={2} className="s_pixel">
                             <a
                               href="https://mysignature.io/editor/?utm_source=freepixel"
-                              style={{}}
+                              style={{}} className="image2"
                             >
                               <img src="https://img.mysignature.io/pixel/null/signature/" />
                             </a>
@@ -367,7 +367,7 @@ const Professional3 = () => {
                       paddingRight: "4px",
                       paddingBottom: "4px",
                       display: "inline-block",
-                    }}
+                    }} className="image3"
                   >
                     <img
                       height={36}
@@ -382,7 +382,7 @@ const Professional3 = () => {
                       paddingRight: "4px",
                       paddingBottom: "4px",
                       display: "inline-block",
-                    }}
+                    }} className="image4"
                   >
                     <img
                       height={36}
@@ -400,7 +400,7 @@ const Professional3 = () => {
                       paddingRight: "4px",
                       paddingBottom: "4px",
                       display: "inline-block",
-                    }}
+                    }} className="image5"
                   >
                     <img
                       height={36}

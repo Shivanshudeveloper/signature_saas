@@ -18,6 +18,7 @@ const Elegant3 = () => {
                       padding: "0px 15px 0px 0px",
                       verticalAlign: "top",
                     }}
+                    className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -57,6 +58,7 @@ const Elegant3 = () => {
                               font: "small-caps 600 1.4em Tahoma, Geneva, sans-serif",
                               color: "rgb(0, 0, 0)",
                             }}
+                            className="name1"
                           >
                             Casandra Modely
                           </td>
@@ -74,6 +76,7 @@ const Elegant3 = () => {
                                 fontFamily: "Tahoma, Geneva, sans-serif",
                                 fontWeight: 600,
                               }}
+                              className="name2"
                             >
                               Marketing Consultant
                               {/**/}
@@ -94,6 +97,7 @@ const Elegant3 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name3"
                               >
                                 +1 733 663 3362{" "}
                               </a>
@@ -114,6 +118,7 @@ const Elegant3 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name4"
                               >
                                 cas.modlely@marketfit.com
                               </a>
@@ -134,6 +139,7 @@ const Elegant3 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
+                                className="name5"
                               >
                                 marketfit.com
                               </a>
@@ -147,6 +153,7 @@ const Elegant3 = () => {
                               style={{
                                 fontFamily: "Tahoma, Geneva, sans-serif",
                               }}
+                              className="name6"
                             >
                               517 Robinson Lane, Athens
                             </div>
@@ -270,6 +277,7 @@ const Elegant3 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -319,6 +327,7 @@ const Elegant3 = () => {
                       borderRadius: "50px",
                     }}
                     href="https://mysignature.io/"
+                    className="name7"
                   >
                     Let's book a meeting to see how I can help
                   </a>

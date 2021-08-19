@@ -44,7 +44,7 @@ const Professional2 = () => {
                               paddingBottom: "1px",
                               font: 'small-caps 600 1.4em "Palatino Linotype", "Book Antiqua", Palatino, serif',
                               color: "rgb(126, 211, 33)",
-                            }}
+                            }} className="name"
                           >
                             Donny Clarkes
                           </td>
@@ -62,7 +62,7 @@ const Professional2 = () => {
                                 fontFamily:
                                   '"Palatino Linotype", "Book Antiqua", Palatino, serif',
                                 fontWeight: 600,
-                              }}
+                              }} className="name"
                             >
                               Logistics manager at GetDelivered
                             </div>
@@ -82,7 +82,7 @@ const Professional2 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }}
+                                }} className="name"
                               >
                                 +4 363 649 4642
                               </a>
@@ -103,7 +103,7 @@ const Professional2 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }}
+                                }} className="name"
                               >
                                 dc@getdelivered.com
                               </a>
@@ -124,7 +124,7 @@ const Professional2 = () => {
                                   textDecoration: "none",
                                   color: "#000001",
                                 }}
-                                target="_blank"
+                                target="_blank" className="name"
                               >
                                 getdelivered.com
                               </a>
@@ -138,7 +138,7 @@ const Professional2 = () => {
                               style={{
                                 fontFamily:
                                   '"Palatino Linotype", "Book Antiqua", Palatino, serif',
-                              }}
+                              }} className="name"
                             >
                               Richmond Staten Island, NY 10306 USA
                             </div>
@@ -262,6 +262,7 @@ const Professional2 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image1"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -308,7 +309,7 @@ const Professional2 = () => {
                             className="icon_addon-gps"
                           />
                         </td>
-                        <td style={{ fontSize: "14px", paddingLeft: "5px" }}>
+                        <td style={{ fontSize: "14px", paddingLeft: "5px" }} className="name">
                           Find the closest office to your location
                         </td>
                         <td style={{ paddingLeft: "5px" }}>
@@ -377,7 +378,7 @@ const Professional2 = () => {
                         paddingLeft: "5px",
                         verticalAlign: "middle",
                         fontSize: "14px",
-                      }}
+                      }} className="name"
                     >
                       Meet me on GoToMeeting
                     </span>
@@ -386,7 +387,7 @@ const Professional2 = () => {
               </tr>
               <tr style={{}}>
                 <td style={{ margin: "0.1px", paddingTop: "6px" }}>
-                  <a href="https://mysignature.io/" target="_blank">
+                  <a href="https://mysignature.io/" target="_blank" className="image2">
                     <img
                       alt="Meet me on GoToMeeting"
                       maxWidth={222}

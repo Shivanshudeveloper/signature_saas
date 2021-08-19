@@ -25,7 +25,7 @@ const Elegant4 = () => {
             >
               <tbody>
                 <tr>
-                  <td>
+                  <td className="image1">
                     <img
                       alt="created with MySignature.io"
                       maxWidth={188}
@@ -42,6 +42,7 @@ const Elegant4 = () => {
                         textTransform: "uppercase",
                         color: "rgb(255, 21, 167)",
                       }}
+                      className="name1"
                     >
                       Kate Winsort
                     </div>
@@ -49,7 +50,7 @@ const Elegant4 = () => {
                 </tr>
                 <tr>
                   <td style={{ margin: "0.1px", paddingBottom: "5px" }}>
-                    <div style={{ color: "rgb(77, 76, 76)" }}>
+                    <div style={{ color: "rgb(77, 76, 76)" }} className="name2">
                       Founder at XOXO Cosmetics
                     </div>
                   </td>
@@ -64,6 +65,7 @@ const Elegant4 = () => {
                         borderBottom: "1px solid rgb(235, 228, 228)",
                         display: "inline-block",
                       }}
+                      className="name3"
                     >
                       {/**/} {/**/} phone:
                       <a
@@ -72,6 +74,7 @@ const Elegant4 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
+                        className="name4"
                       >
                         8463 366 33
                       </a>
@@ -88,6 +91,7 @@ const Elegant4 = () => {
                         borderBottom: "1px solid rgb(235, 228, 228)",
                         display: "inline-block",
                       }}
+                      className="name5"
                     >
                       {/**/} {/**/} email:
                       <a
@@ -97,6 +101,7 @@ const Elegant4 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
+                        className="name6"
                       >
                         kate@xoxo.com
                       </a>
@@ -114,6 +119,7 @@ const Elegant4 = () => {
                         borderBottom: "1px solid rgb(235, 228, 228)",
                         display: "inline-block",
                       }}
+                      className="name7"
                     >
                       address: 5th Ave, fl. 3
                     </span>
@@ -126,6 +132,7 @@ const Elegant4 = () => {
                         href="http://xoxo.com"
                         style={{ textDecoration: "none", color: "#000001" }}
                         target="_blank"
+                        className="name8"
                       >
                         xoxo.com
                       </a>
@@ -260,6 +267,7 @@ const Elegant4 = () => {
                             <a
                               href="https://mysignature.io/editor/?utm_source=freepixel"
                               style={{}}
+                              className="image2"
                             >
                               <img src="https://img.mysignature.io/pixel/null/signature/" />
                             </a>

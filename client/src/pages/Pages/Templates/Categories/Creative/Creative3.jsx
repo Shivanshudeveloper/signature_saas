@@ -14,7 +14,7 @@ const Creative3 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px" }}>
+                <td style={{ margin: "0.1px" }} className="image1">
                   <img
                     style={{ paddingBottom: "5px" }}
                     src="https://img.mysignature.io/a/v1/f/5/e/f5e057d6-ca5f-5f9c-bfff-0e5cf56a60ac.png?uid=undefined1629063787227"
@@ -35,6 +35,7 @@ const Creative3 = () => {
                       padding: "0px 15px 0px 0px",
                       verticalAlign: "middle",
                     }}
+                    className="image2"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -174,6 +175,7 @@ const Creative3 = () => {
                               font: '600 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif',
                               color: "rgb(20, 186, 71)",
                             }}
+                            className="name1"
                           >
                             Camelia Poler
                           </td>
@@ -191,6 +193,7 @@ const Creative3 = () => {
                                 fontFamily:
                                   '"Lucida Sans Unicode", "Lucida Grande", sans-serif',
                               }}
+                              className="name2"
                             >
                               Healthy Nutrition Coach
                               {/**/}
@@ -213,6 +216,7 @@ const Creative3 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name3"
                               >
                                 cam@healthyvegan.com
                               </a>
@@ -234,6 +238,7 @@ const Creative3 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
+                                className="name4"
                               >
                                 healthyvegan.com
                               </a>
@@ -255,6 +260,7 @@ const Creative3 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image3"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -289,6 +295,7 @@ const Creative3 = () => {
                       paddingBottom: "4px",
                       display: "inline-block",
                     }}
+                    className="image4"
                   >
                     <img
                       height={35}
@@ -321,13 +328,13 @@ const Creative3 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px", width: "30px" }}>
+                <td style={{ margin: "0.1px", width: "30px" }} className="image5">
                   <img
                     src="https://img.mysignature.io/addons/v2/hand-leaves.png?uid=undefined"
                     alt="Save paper. Don’t print"
                   />
                 </td>
-                <td style={{ margin: "0.1px" }}>Save paper. Don’t print</td>
+                <td style={{ margin: "0.1px" }} className="name5">Save paper. Don’t print</td>
               </tr>
             </tbody>
           </table>

@@ -35,7 +35,7 @@ const Modern8 = () => {
                     >
                       <tbody>
                         <tr>
-                          <td style={{ margin: "0.1px", verticalAlign: "top" }}>
+                          <td style={{ margin: "0.1px", verticalAlign: "top" }} className="image1">
                             <img
                               alt="created with MySignature.io"
                               maxWidth={138}
@@ -55,6 +55,7 @@ const Modern8 = () => {
                                         font: "600 1.3em Arial, Helvetica, sans-serif",
                                         color: "rgb(74, 74, 74)",
                                       }}
+                                      className= "name1"
                                     >
                                       Jeremy Flatik
                                     </div>
@@ -114,6 +115,7 @@ const Modern8 = () => {
                                           textDecoration: "none",
                                           color: "rgb(74, 74, 74)",
                                         }}
+                                        className= "name2"
                                       >
                                         jeremy@reviews.com
                                       </a>
@@ -133,6 +135,7 @@ const Modern8 = () => {
                                           "Arial, Helvetica, sans-serif",
                                         color: "rgb(74, 74, 74)",
                                       }}
+                                      className= "name3"
                                     >
                                       Watch reviews{" "}
                                       <span>
@@ -143,6 +146,7 @@ const Modern8 = () => {
                                             color: "#4A4A4A",
                                           }}
                                           href="http://cccc"
+                                          className= "name4"
                                         >
                                           at SReviews
                                         </a>
@@ -268,7 +272,7 @@ const Modern8 = () => {
                           <td colSpan={2} className="s_pixel">
                             <a
                               href="https://mysignature.io/editor/?utm_source=freepixel"
-                              style={{}}
+                              style={{}} className="image2"
                             >
                               <img src="https://img.mysignature.io/pixel/null/signature/" />
                             </a>
@@ -307,6 +311,7 @@ const Modern8 = () => {
                       paddingBottom: "4px",
                       display: "inline-block",
                     }}
+                    className= "image3"
                   >
                     <img
                       height={36}
@@ -322,6 +327,7 @@ const Modern8 = () => {
                       paddingBottom: "4px",
                       display: "inline-block",
                     }}
+                    className="image4"
                   >
                     <img
                       height={36}
@@ -337,6 +343,7 @@ const Modern8 = () => {
                       paddingBottom: "4px",
                       display: "inline-block",
                     }}
+                    className="image5"
                   >
                     <img
                       height={36}

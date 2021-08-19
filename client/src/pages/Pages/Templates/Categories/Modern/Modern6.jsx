@@ -18,6 +18,7 @@ const Modern6 = () => {
                       padding: "0px 15px 0px 0px",
                       verticalAlign: "middle",
                     }}
+                    className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -156,6 +157,7 @@ const Modern6 = () => {
                               font: "600 1.2em Arial, Helvetica, sans-serif",
                               color: "rgb(53, 54, 61)",
                             }}
+                            className= "name1"
                           >
                             Justin Mccullough
                           </td>
@@ -172,6 +174,7 @@ const Modern6 = () => {
                               style={{
                                 fontFamily: "Arial, Helvetica, sans-serif",
                               }}
+                              className= "name2"
                             >
                               Personal Assistant at Zenith microsystems
                             </div>
@@ -190,6 +193,7 @@ const Modern6 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className= "name3"
                               >
                                 +809-890-75
                               </a>{" "}
@@ -212,6 +216,7 @@ const Modern6 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
+                                className= "name4"
                               >
                                 www.zenith.com
                               </a>
@@ -225,6 +230,7 @@ const Modern6 = () => {
                               style={{
                                 fontFamily: "Arial, Helvetica, sans-serif",
                               }}
+                              className= "name5"
                             >
                               984 E 9th St, Stuart, FL 36780
                             </div>
@@ -244,6 +250,7 @@ const Modern6 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -302,6 +309,7 @@ const Modern6 = () => {
                         verticalAlign: "middle",
                         fontSize: "14px",
                       }}
+                      className= "name6"
                     >
                       Meet me on Google Meet
                     </span>
@@ -310,7 +318,7 @@ const Modern6 = () => {
               </tr>
               <tr style={{}}>
                 <td style={{ margin: "0.1px", paddingTop: "5px" }}>
-                  <a href="https://mysignature.io/" target="_blank">
+                  <a href="https://mysignature.io/" target="_blank" className="image3">
                     <img
                       alt="Meet me on Google Meet"
                       maxWidth={219}
@@ -337,13 +345,13 @@ const Modern6 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px", width: "30px" }}>
+                <td style={{ margin: "0.1px", width: "30px" }} className="image4">
                   <img
                     src="https://img.mysignature.io/addons/v2/green-earth.png?uid=undefined"
                     alt="Please consider the environment before printing this email"
                   />
                 </td>
-                <td style={{ margin: "0.1px" }}>
+                <td style={{ margin: "0.1px" }} className= "name7">
                   Please consider the environment before printing this email
                 </td>
               </tr>

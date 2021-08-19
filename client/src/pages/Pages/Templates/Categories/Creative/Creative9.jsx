@@ -35,7 +35,7 @@ const Creative9 = () => {
                     >
                       <tbody>
                         <tr>
-                          <td style={{ margin: "0.1px", verticalAlign: "top" }}>
+                          <td style={{ margin: "0.1px", verticalAlign: "top" }} className="image1">
                             <img
                               alt="created with MySignature.io"
                               maxWidth={171}
@@ -55,6 +55,7 @@ const Creative9 = () => {
                                         font: '600 1.3em "Courier New", Courier, monospace',
                                         color: "rgb(0, 0, 0)",
                                       }}
+                                      className="name1"
                                     >
                                       Ray Flot
                                     </div>
@@ -105,6 +106,7 @@ const Creative9 = () => {
                                           '"Courier New", Courier, monospace',
                                         color: "rgb(0, 0, 0)",
                                       }}
+                                      className="name2"
                                     >
                                       Writer, Vlogger |{/**/}
                                     </div>
@@ -124,6 +126,7 @@ const Creative9 = () => {
                                           '"Courier New", Courier, monospace',
                                         color: "rgb(0, 0, 0)",
                                       }}
+                                      className="name3"
                                     >
                                       {/**/} {/**/} email:
                                       <a
@@ -133,6 +136,7 @@ const Creative9 = () => {
                                           textDecoration: "none",
                                           color: "rgb(0, 0, 0)",
                                         }}
+                                        className="name5"
                                       >
                                         ray@rayflot.com
                                       </a>
@@ -161,6 +165,7 @@ const Creative9 = () => {
                                           color: "#000000",
                                         }}
                                         target="_blank"
+                                        className="name6"
                                       >
                                         rayflot.com
                                       </a>
@@ -285,6 +290,7 @@ const Creative9 = () => {
                             <a
                               href="https://mysignature.io/editor/?utm_source=freepixel"
                               style={{}}
+                              className="image2"
                             >
                               <img src="https://img.mysignature.io/pixel/null/signature/" />
                             </a>
@@ -335,7 +341,7 @@ const Creative9 = () => {
                             className="icon_addon-play-video"
                           />
                         </td>
-                        <td style={{ fontSize: "15px", paddingLeft: "5px" }}>
+                        <td className="name7" style={{ fontSize: "15px", paddingLeft: "5px" }}>
                           LIVE SHOW: How to be happy
                         </td>
                         <td style={{ paddingLeft: "5px" }}>
@@ -347,6 +353,7 @@ const Creative9 = () => {
                               color: "#000000",
                               textDecoration: "none",
                             }}
+                            className="name8"
                           >
                             August 26th, 6 p.m.
                           </a>
@@ -397,6 +404,7 @@ const Creative9 = () => {
                       fontWeight: "bold",
                       borderRadius: "50px",
                     }}
+                    className="name9"
                     href="https://mysignature.io/"
                   >
                     Best Selling Book: Happines Guide

@@ -14,7 +14,7 @@ const Elegant1 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px" }}>
+                <td style={{ margin: "0.1px" }} className="image1">
                   <img
                     style={{ paddingBottom: "5px" }}
                     src="https://img.mysignature.io/a/v1/c/f/b/cfb324ae-1f0f-5ea1-a4bc-8aa87d54843d.png?uid=undefined1629063389428"
@@ -35,6 +35,7 @@ const Elegant1 = () => {
                       padding: "0px 15px 0px 0px",
                       verticalAlign: "top",
                     }}
+                    className="image2"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -75,6 +76,7 @@ const Elegant1 = () => {
                               font: 'small-caps 600 1.4em "Lucida Sans Unicode", "Lucida Grande", sans-serif',
                               color: "rgb(10, 37, 71)",
                             }}
+                            className="name1"
                           >
                             Carry Delinsky
                           </td>
@@ -93,6 +95,7 @@ const Elegant1 = () => {
                                   '"Lucida Sans Unicode", "Lucida Grande", sans-serif',
                                 fontWeight: 600,
                               }}
+                              className="name2"
                             >
                               Founder at Mada Jewellery
                             </div>
@@ -112,6 +115,7 @@ const Elegant1 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name3"
                               >
                                 +1 983 333 3739
                               </a>{" "}
@@ -134,6 +138,7 @@ const Elegant1 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name4"
                               >
                                 carry@mada.com
                               </a>
@@ -155,6 +160,7 @@ const Elegant1 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
+                                className="name5"
                               >
                                 mada.com
                               </a>
@@ -275,7 +281,7 @@ const Elegant1 = () => {
               <tbody>
                 <tr>
                   <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a target="_blank" href="https://mysignature.io/">
+                    <a target="_blank" href="https://mysignature.io/" className="image3">
                       <img
                         alt="created with MySignature.io"
                         maxWidth={338}
@@ -293,6 +299,7 @@ const Elegant1 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image4"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -340,7 +347,7 @@ const Elegant1 = () => {
                             className="icon_addon-gps"
                           />
                         </td>
-                        <td style={{ fontSize: "15px", paddingLeft: "5px" }}>
+                        <td className="name5" style={{ fontSize: "15px", paddingLeft: "5px" }}>
                           Find our store in your city
                         </td>
                         <td style={{ paddingLeft: "5px" }}>

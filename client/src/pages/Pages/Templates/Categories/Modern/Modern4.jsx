@@ -15,6 +15,7 @@ const Modern4 = () => {
                     valign="top"
                     maxWidth={148}
                     style={{ verticalAlign: "top" }}
+                    className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -52,6 +53,7 @@ const Modern4 = () => {
                               style={{
                                 fontFamily: "Verdana, Geneva, sans-serif",
                               }}
+                              className= "name1"
                             >
                               <span
                                 style={{
@@ -59,6 +61,7 @@ const Modern4 = () => {
                                   color: "rgb(114, 43, 182)",
                                   fontWeight: 600,
                                 }}
+                                className= "name2"
                               >
                                 Nyle Hope
                               </span>{" "}
@@ -72,6 +75,7 @@ const Modern4 = () => {
                               style={{
                                 fontFamily: "Verdana, Geneva, sans-serif",
                               }}
+                              className= "name3"
                             >
                               | Vortech {/**/}
                             </div>
@@ -84,6 +88,7 @@ const Modern4 = () => {
                               style={{
                                 fontFamily: "Verdana, Geneva, sans-serif",
                               }}
+                              className= "name4"
                             >
                               |{" "}
                               <span
@@ -91,6 +96,7 @@ const Modern4 = () => {
                                   fontWeight: 600,
                                   color: "rgb(114, 43, 182)",
                                 }}
+                                className= "name5"
                               >
                                 email:&nbsp;
                               </span>{" "}
@@ -101,6 +107,7 @@ const Modern4 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className= "name6"
                               >
                                 hope@vortech.com
                               </a>
@@ -131,6 +138,7 @@ const Modern4 = () => {
                                     color: "#000001",
                                   }}
                                   target="_blank"
+                                  className= "name7"
                                 >
                                   vortech.com
                                 </a>
@@ -145,6 +153,7 @@ const Modern4 = () => {
                               style={{
                                 fontFamily: "Verdana, Geneva, sans-serif",
                               }}
+                              className= "name8"
                             >
                               |{" "}
                               <span
@@ -152,6 +161,7 @@ const Modern4 = () => {
                                   fontWeight: 600,
                                   color: "rgb(114, 43, 182)",
                                 }}
+                                className= "name9"
                               >
                                 address:&nbsp;
                               </span>
@@ -288,7 +298,7 @@ const Modern4 = () => {
               <tbody>
                 <tr>
                   <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a target="_blank" href="https://mysignature.io/">
+                    <a target="_blank" href="https://mysignature.io/" className="image2">
                       <img
                         alt="created with MySignature.io"
                         maxWidth={476}
@@ -305,7 +315,8 @@ const Modern4 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}}
+                      style={{}} 
+                      className="image3"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>

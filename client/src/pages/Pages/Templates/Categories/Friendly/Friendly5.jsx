@@ -21,6 +21,7 @@ const Friendly5 = () => {
                               padding: "0px 8px 0px 0px",
                               verticalAlign: "top",
                             }}
+                            className="image1"
                           >
                             <img
                               alt="created with MySignature.io"
@@ -59,6 +60,7 @@ const Friendly5 = () => {
                                           "Tahoma, Geneva, sans-serif",
                                         color: "rgb(0, 0, 1)",
                                       }}
+                                      className="name1"
                                     >
                                       Adriana Jacobs
                                     </div>
@@ -77,6 +79,8 @@ const Friendly5 = () => {
                                           "Tahoma, Geneva, sans-serif",
                                         color: "rgb(0, 0, 1)",
                                       }}
+                                      className="name2"
+
                                     >
                                       HR Manager | Capitol Max
                                       {/**/}
@@ -103,6 +107,8 @@ const Friendly5 = () => {
                                             "Tahoma, Geneva, sans-serif",
                                           color: "rgb(0, 0, 1)",
                                         }}
+                                      className="name3"
+
                                       >
                                         +3 455-56-02
                                       </a>
@@ -134,6 +140,8 @@ const Friendly5 = () => {
                                           color: "#000001",
                                         }}
                                         target="_blank"
+                                      className="name4"
+
                                       >
                                         www.capitolmax.com
                                       </a>
@@ -161,6 +169,8 @@ const Friendly5 = () => {
                                             "Tahoma, Geneva, sans-serif",
                                           color: "rgb(0, 0, 1)",
                                         }}
+                                      className="name5"
+
                                       >
                                         Jacobs@capitomax.com
                                       </a>
@@ -300,7 +310,7 @@ const Friendly5 = () => {
               <tbody>
                 <tr>
                   <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a target="_blank" href="https://mysignature.io/">
+                    <a target="_blank" href="https://mysignature.io/" className="image2">
                       <img
                         alt="created with MySignature.io"
                         maxWidth={353}
@@ -318,6 +328,7 @@ const Friendly5 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image3"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>

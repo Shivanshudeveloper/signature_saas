@@ -14,7 +14,7 @@ const Creative5 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px" }}>
+                <td style={{ margin: "0.1px" }} className="image1">
                   <img
                     style={{ paddingBottom: "5px" }}
                     src="https://img.mysignature.io/a/v1/0/8/3/083a8a50-cbf3-5332-839f-e02a98b898fd.png?uid=undefined1629063836231"
@@ -38,6 +38,7 @@ const Creative5 = () => {
                               padding: "0px 8px 0px 0px",
                               verticalAlign: "top",
                             }}
+                            className="image2"
                           >
                             <img
                               alt="created with MySignature.io"
@@ -76,6 +77,7 @@ const Creative5 = () => {
                                           "Verdana, Geneva, sans-serif",
                                         color: "rgb(0, 0, 1)",
                                       }}
+                                      className="name1"
                                     >
                                       Sara Fischer
                                     </div>
@@ -94,6 +96,7 @@ const Creative5 = () => {
                                           "Verdana, Geneva, sans-serif",
                                         color: "rgb(0, 0, 1)",
                                       }}
+                                      className="name2"
                                     >
                                       Professional Photographer
                                       {/**/}
@@ -109,6 +112,8 @@ const Creative5 = () => {
                                           "Verdana, Geneva, sans-serif",
                                         color: "rgb(68, 139, 153)",
                                       }}
+                                      className="name3"
+
                                     >
                                       phone:&nbsp;
                                     </span>{" "}
@@ -121,6 +126,8 @@ const Creative5 = () => {
                                             "Verdana, Geneva, sans-serif",
                                           color: "rgb(0, 0, 1)",
                                         }}
+                                        className="name4"
+
                                       >
                                         433-88-90
                                       </a>
@@ -135,6 +142,8 @@ const Creative5 = () => {
                                           "Verdana, Geneva, sans-serif",
                                         color: "rgb(68, 139, 153)",
                                       }}
+                                      className="name5"
+
                                     >
                                       mobile:&nbsp;
                                     </span>{" "}
@@ -147,6 +156,8 @@ const Creative5 = () => {
                                             "Verdana, Geneva, sans-serif",
                                           color: "rgb(0, 0, 1)",
                                         }}
+                                        className="name6"
+
                                       >
                                         844-388-4309
                                       </a>
@@ -161,6 +172,8 @@ const Creative5 = () => {
                                           "Verdana, Geneva, sans-serif",
                                         color: "rgb(68, 139, 153)",
                                       }}
+                                      className="name7"
+
                                     >
                                       website:&nbsp;
                                     </span>{" "}
@@ -177,7 +190,9 @@ const Creative5 = () => {
                                           color: "#000001",
                                         }}
                                         target="_blank"
-                                      >
+                                        className="name8"
+
+                                    >
                                         saraphotos.io
                                       </a>
                                     </span>
@@ -191,6 +206,8 @@ const Creative5 = () => {
                                           "Verdana, Geneva, sans-serif",
                                         color: "rgb(68, 139, 153)",
                                       }}
+                                      className="name9"
+
                                     >
                                       email:&nbsp;
                                     </span>{" "}
@@ -204,6 +221,8 @@ const Creative5 = () => {
                                             "Verdana, Geneva, sans-serif",
                                           color: "rgb(0, 0, 1)",
                                         }}
+                                        className="name10"
+
                                       >
                                         info@saraphotos.io
                                       </a>
@@ -347,6 +366,7 @@ const Creative5 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image3"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -406,6 +426,8 @@ const Creative5 = () => {
                         verticalAlign: "middle",
                         fontSize: "17px",
                       }}
+                      className="name11"
+
                     >
                       Meet me on Google Hangouts
                     </span>
@@ -414,7 +436,7 @@ const Creative5 = () => {
               </tr>
               <tr style={{}}>
                 <td style={{ margin: "0.1px", paddingTop: "14px" }}>
-                  <a href="https://mysignature.io/" target="_blank">
+                  <a href="https://mysignature.io/" target="_blank" className="image4">
                     <img
                       alt="Meet me on Google Hangouts"
                       maxWidth={293}

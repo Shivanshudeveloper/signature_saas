@@ -21,6 +21,7 @@ const Elegant5 = () => {
                               padding: "0px 8px 0px 0px",
                               verticalAlign: "top",
                             }}
+                            className="image1"
                           >
                             <img
                               alt="created with MySignature.io"
@@ -59,6 +60,7 @@ const Elegant5 = () => {
                                           "Arial, Helvetica, sans-serif",
                                         color: "rgb(0, 0, 1)",
                                       }}
+                                      className="name1"
                                     >
                                       Sarah Smith
                                     </div>
@@ -77,6 +79,7 @@ const Elegant5 = () => {
                                           "Arial, Helvetica, sans-serif",
                                         color: "rgb(0, 0, 1)",
                                       }}
+                                      className="name2"
                                     >
                                       Owner | Cotella Consultings
                                       {/**/}
@@ -103,6 +106,7 @@ const Elegant5 = () => {
                                             "Arial, Helvetica, sans-serif",
                                           color: "rgb(0, 0, 1)",
                                         }}
+                                        className="name3"
                                       >
                                         644 848 6363
                                       </a>
@@ -134,6 +138,7 @@ const Elegant5 = () => {
                                           color: "#000001",
                                         }}
                                         target="_blank"
+                                        className="name4"
                                       >
                                         cotella.com
                                       </a>
@@ -161,6 +166,7 @@ const Elegant5 = () => {
                                             "Arial, Helvetica, sans-serif",
                                           color: "rgb(0, 0, 1)",
                                         }}
+                                        className="name5"
                                       >
                                         sarahs@cotella.com
                                       </a>
@@ -186,6 +192,7 @@ const Elegant5 = () => {
                                           "Arial, Helvetica, sans-serif",
                                         color: "rgb(0, 0, 1)",
                                       }}
+                                      className="name6"
                                     >
                                       84 Libron st
                                     </span>
@@ -323,7 +330,7 @@ const Elegant5 = () => {
               <tbody>
                 <tr>
                   <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a target="_blank" href="https://mysignature.io/">
+                    <a target="_blank" href="https://mysignature.io/" className="image2">
                       <img
                         alt="created with MySignature.io"
                         maxWidth={323}
@@ -341,6 +348,7 @@ const Elegant5 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image3"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>

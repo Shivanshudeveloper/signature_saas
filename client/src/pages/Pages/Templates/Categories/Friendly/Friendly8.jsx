@@ -19,6 +19,7 @@ const Friendly8 = () => {
                         padding: "0px 12px 0px 0px",
                         verticalAlign: "top",
                       }}
+                      className="image1"
                     >
                       <img
                         alt="created with MySignature.io"
@@ -58,6 +59,7 @@ const Friendly8 = () => {
                                   font: '600 1.3em "Comic Sans MS", cursive, sans-serif',
                                   color: "rgb(195, 95, 62)",
                                 }}
+                                className="name1"
                               >
                                 Kurt Marsel
                               </span>
@@ -76,6 +78,7 @@ const Friendly8 = () => {
                                   fontFamily:
                                     '"Comic Sans MS", cursive, sans-serif',
                                 }}
+                                className="name2"
                               >
                                 | Flourcourt bakery |
                               </div>
@@ -103,6 +106,7 @@ const Friendly8 = () => {
                                     textDecoration: "none",
                                     color: "rgb(0, 0, 1)",
                                   }}
+                                  className="name3"
                                 >
                                   +1 288 944 4473
                                 </a>
@@ -134,6 +138,7 @@ const Friendly8 = () => {
                                     textDecoration: "none",
                                     color: "rgb(0, 0, 1)",
                                   }}
+                                  className="name4"
                                 >
                                   kurt.baker@gmail.com
                                 </a>
@@ -147,6 +152,7 @@ const Friendly8 = () => {
                                   fontFamily:
                                     '"Comic Sans MS", cursive, sans-serif',
                                 }}
+                                className="name5"
                               >
                                 <span
                                   style={{
@@ -243,7 +249,7 @@ const Friendly8 = () => {
                 <tbody>
                   <tr>
                     <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                      <a target="_blank" href="https://mysignature.io/">
+                      <a target="_blank" href="https://mysignature.io/" className="image2">
                         <img
                           alt="created with MySignature.io"
                           maxWidth={446}
@@ -261,6 +267,7 @@ const Friendly8 = () => {
                       <a
                         href="https://mysignature.io/editor/?utm_source=freepixel"
                         style={{}}
+                        className="image3"
                       >
                         <img src="https://img.mysignature.io/pixel/null/signature/" />
                       </a>
@@ -310,6 +317,7 @@ const Friendly8 = () => {
                         borderRadius: "50px",
                       }}
                       href="https://mysignature.io/"
+                      className="name6"
                     >
                       Visit our cosy bakery! It will be delicious!
                     </a>

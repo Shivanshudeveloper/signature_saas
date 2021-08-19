@@ -18,6 +18,7 @@ const Elegant2 = () => {
                       padding: "0px 15px 0px 0px",
                       verticalAlign: "top",
                     }}
+                    className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -57,6 +58,7 @@ const Elegant2 = () => {
                               font: 'small-caps 600 1.4em "Courier New", Courier, monospace',
                               color: "rgb(65, 117, 5)",
                             }}
+                            className="name1"
                           >
                             Simon Kunst
                           </td>
@@ -74,6 +76,7 @@ const Elegant2 = () => {
                                 fontFamily: '"Courier New", Courier, monospace',
                                 fontWeight: 600,
                               }}
+                              className="name2"
                             >
                               Creative Director at FashionAdiction
                             </div>
@@ -94,6 +97,7 @@ const Elegant2 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name3"
                               >
                                 simon@fashionadiction.com
                               </a>
@@ -114,6 +118,7 @@ const Elegant2 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
+                                className="name4"
                               >
                                 fashionadiction.com
                               </a>
@@ -238,6 +243,7 @@ const Elegant2 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -284,7 +290,7 @@ const Elegant2 = () => {
                             className="icon_addon-photo"
                           />
                         </td>
-                        <td style={{ fontSize: "14px", paddingLeft: "5px" }}>
+                        <td className="name5" style={{ fontSize: "14px", paddingLeft: "5px" }}>
                           Check our last shoot and backstage
                         </td>
                         <td style={{ paddingLeft: "5px" }}>
@@ -296,6 +302,7 @@ const Elegant2 = () => {
                               color: "#417505",
                               textDecoration: "none",
                             }}
+                            className="name6"
                           >
                             here
                           </a>

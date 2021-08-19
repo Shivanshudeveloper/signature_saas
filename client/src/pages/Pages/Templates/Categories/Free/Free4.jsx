@@ -14,7 +14,7 @@ const Free4 = () => {
                   <td
                     maxWidth={157}
                     valign="top"
-                    style={{ padding: "0px 9px 0px 0px", verticalAlign: "top" }}
+                    style={{ padding: "0px 9px 0px 0px", verticalAlign: "top" }} className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -53,7 +53,7 @@ const Free4 = () => {
                               style={{
                                 font: "1.2em Arial, Helvetica, sans-serif",
                                 color: "rgb(99, 202, 204)",
-                              }}
+                              }} className = "name1"
                             >
                               Amara Decker,
                             </span>{" "}
@@ -61,7 +61,7 @@ const Free4 = () => {
                               style={{
                                 fontFamily: "Arial, Helvetica, sans-serif",
                                 color: "rgb(0, 0, 1)",
-                              }}
+                              }} className = "name2"
                             >
                               &nbsp;&nbsp;Travel Blogger
                             </span>
@@ -96,7 +96,7 @@ const Free4 = () => {
                                   textDecoration: "none",
                                   fontFamily: "Arial, Helvetica, sans-serif",
                                   color: "rgb(0, 0, 1)",
-                                }}
+                                }} className = "name3"
                               >
                                 +533-540-111
                               </a>
@@ -120,7 +120,7 @@ const Free4 = () => {
                                   textDecoration: "none",
                                   fontFamily: "Arial, Helvetica, sans-serif",
                                   color: "rgb(0, 0, 1)",
-                                }}
+                                }} className = "name4"
                               >
                                 +435-567-323
                               </a>
@@ -148,7 +148,7 @@ const Free4 = () => {
                                   textDecoration: "none",
                                   color: "#000001",
                                 }}
-                                target="_blank"
+                                target="_blank" className = "name5"
                               >
                                 medium/@amaratravels
                               </a>
@@ -173,7 +173,7 @@ const Free4 = () => {
                                   textDecoration: "none",
                                   fontFamily: "Arial, Helvetica, sans-serif",
                                   color: "rgb(0, 0, 1)",
-                                }}
+                                }} className = "name6"
                               >
                                 amara-decker@gmail.com
                               </a>
@@ -313,7 +313,7 @@ const Free4 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}}
+                      style={{}} className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -347,7 +347,7 @@ const Free4 = () => {
                       paddingRight: "4px",
                       paddingBottom: "4px",
                       display: "inline-block",
-                    }}
+                    }} className="image3"
                   >
                     <img
                       height={42}

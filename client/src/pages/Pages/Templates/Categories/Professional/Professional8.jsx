@@ -32,7 +32,7 @@ const Professional8 = () => {
                     >
                       <tbody>
                         <tr>
-                          <td style={{ margin: "0.1px", verticalAlign: "top" }}>
+                          <td style={{ margin: "0.1px", verticalAlign: "top" }} className="image1">
                             <img
                               alt="created with MySignature.io"
                               maxWidth={140}
@@ -51,7 +51,7 @@ const Professional8 = () => {
                                       style={{
                                         font: '600 1.3em "Trebuchet MS", Helvetica, sans-serif',
                                         color: "rgb(255, 255, 255)",
-                                      }}
+                                      }} className = "name1"
                                     >
                                       Roberta Traynor
                                     </div>
@@ -101,7 +101,7 @@ const Professional8 = () => {
                                         fontFamily:
                                           '"Trebuchet MS", Helvetica, sans-serif',
                                         color: "rgb(255, 255, 255)",
-                                      }}
+                                      }} className = "name2"
                                     >
                                       Teacher | Maclern University
                                     </div>
@@ -119,7 +119,7 @@ const Professional8 = () => {
                                         fontFamily:
                                           '"Trebuchet MS", Helvetica, sans-serif',
                                         color: "rgb(255, 255, 255)",
-                                      }}
+                                      }} className = "name3"
                                     >
                                       mobile:
                                       <a
@@ -127,7 +127,7 @@ const Professional8 = () => {
                                         style={{
                                           textDecoration: "none",
                                           color: "rgb(255, 255, 255)",
-                                        }}
+                                        }} className = "name4"
                                       >
                                         +4-074-20-77
                                       </a>{" "}
@@ -137,7 +137,7 @@ const Professional8 = () => {
                                         style={{
                                           textDecoration: "none",
                                           color: "rgb(255, 255, 255)",
-                                        }}
+                                        }} className = "name5"
                                       >
                                         +4-403-67-87
                                       </a>
@@ -165,7 +165,7 @@ const Professional8 = () => {
                                         style={{
                                           textDecoration: "none",
                                           color: "rgb(255, 255, 255)",
-                                        }}
+                                        }} className = "name6"
                                       >
                                         Traynor@mackernstud.org
                                       </a>
@@ -193,7 +193,7 @@ const Professional8 = () => {
                                           textDecoration: "none",
                                           color: "#FFFFFF",
                                         }}
-                                        target="_blank"
+                                        target="_blank" className = "name7"
                                       >
                                         www.mackernstud.org
                                       </a>
@@ -317,7 +317,7 @@ const Professional8 = () => {
                           <td colSpan={2} className="s_pixel">
                             <a
                               href="https://mysignature.io/editor/?utm_source=freepixel"
-                              style={{}}
+                              style={{}} className="image2"
                             >
                               <img src="https://img.mysignature.io/pixel/null/signature/" />
                             </a>
@@ -347,7 +347,7 @@ const Professional8 = () => {
             <tbody>
               <tr>
                 {/**/}
-                <td style={{ margin: "0.1px" }}>
+                <td style={{ margin: "0.1px" }} className = "name8">
                   Please consider the environment before printing this email
                 </td>
               </tr>

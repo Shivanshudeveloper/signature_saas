@@ -14,7 +14,7 @@ const Friendly4 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px" }}>
+                <td style={{ margin: "0.1px" }} className="image1">
                   <img
                     style={{ paddingBottom: "5px" }}
                     src="https://img.mysignature.io/a/v1/6/8/6/6868853a-512f-5d92-b648-fd4c3d868623.png?uid=undefined1629060993504"
@@ -42,7 +42,7 @@ const Friendly4 = () => {
             >
               <tbody>
                 <tr>
-                  <td>
+                  <td className="image2">
                     <img
                       alt="created with MySignature.io"
                       maxWidth={157}
@@ -59,6 +59,7 @@ const Friendly4 = () => {
                         textTransform: "uppercase",
                         color: "rgb(224, 16, 108)",
                       }}
+                      className="name1"
                     >
                       Marry &amp; Salim
                     </div>
@@ -71,6 +72,7 @@ const Friendly4 = () => {
                         font: 'small-caps 600 1.2em "Comic Sans MS", cursive, sans-serif',
                         color: "rgb(77, 76, 76)",
                       }}
+                      className="name2"
                     >
                       {/**/}
                       HappyShoppers
@@ -95,6 +97,7 @@ const Friendly4 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
+                        className="name3"
                       >
                         +1 733 953 6362
                       </a>
@@ -120,6 +123,7 @@ const Friendly4 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
+                        className="name4"
                       >
                         your@happyshopers.com
                       </a>
@@ -138,6 +142,7 @@ const Friendly4 = () => {
                         href="http://happyshopers.com"
                         style={{ textDecoration: "none", color: "#000001" }}
                         target="_blank"
+                        className="name5"
                       >
                         happyshopers.com
                       </a>
@@ -237,7 +242,7 @@ const Friendly4 = () => {
                       <tbody>
                         <tr>
                           <td>
-                            <a target="_blank" href="https://mysignature.io/">
+                            <a target="_blank" href="https://mysignature.io/ " className="image3">
                               <img
                                 alt="created with MySignature.io"
                                 maxWidth={353}
@@ -268,6 +273,7 @@ const Friendly4 = () => {
                             <a
                               href="https://mysignature.io/editor/?utm_source=freepixel"
                               style={{}}
+                              className="image4"
                             >
                               <img src="https://img.mysignature.io/pixel/null/signature/" />
                             </a>

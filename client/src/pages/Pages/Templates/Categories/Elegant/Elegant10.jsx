@@ -19,6 +19,7 @@ const Elegant10 = () => {
                       padding: "0px 15px 0px 0px",
                       verticalAlign: "top",
                     }}
+                    className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -59,6 +60,7 @@ const Elegant10 = () => {
                               font: 'small-caps 600 1.4em "Palatino Linotype", "Book Antiqua", Palatino, serif',
                               color: "rgb(158, 108, 134)",
                             }}
+                            className="name1"
                           >
                             Kate Mersyn
                           </td>
@@ -77,6 +79,7 @@ const Elegant10 = () => {
                                   '"Palatino Linotype", "Book Antiqua", Palatino, serif',
                                 fontWeight: 600,
                               }}
+                              className="name2"
                             >
                               Lawyer at Balance Leg
                             </div>
@@ -96,6 +99,7 @@ const Elegant10 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name3"
                               >
                                 +65-05-871
                               </a>{" "}
@@ -106,6 +110,7 @@ const Elegant10 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name4"
                               >
                                 +45-65-324
                               </a>
@@ -127,6 +132,7 @@ const Elegant10 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name5"
                               >
                                 kate@balanceleg.com
                               </a>
@@ -148,6 +154,7 @@ const Elegant10 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
+                                className="name6"
                               >
                                 www.balanceleg.com
                               </a>
@@ -268,7 +275,7 @@ const Elegant10 = () => {
               <tbody>
                 <tr>
                   <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a target="_blank" href="https://mysignature.io/">
+                    <a target="_blank" href="https://mysignature.io/" className="image2">
                       <img
                         alt="created with MySignature.io"
                         maxWidth={307}
@@ -286,6 +293,7 @@ const Elegant10 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image3"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>

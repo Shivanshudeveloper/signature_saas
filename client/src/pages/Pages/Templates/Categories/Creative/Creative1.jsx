@@ -13,6 +13,7 @@ const Creative1 = () => {
               <tbody>
                 <tr>
                   <td
+                    className="image1"
                     maxWidth={139}
                     valign="top"
                     style={{ padding: "0px 9px 0px 0px", verticalAlign: "top" }}
@@ -51,6 +52,7 @@ const Creative1 = () => {
                         <tr>
                           <td style={{ margin: "0.1px" }}>
                             <span
+                              className="name1"
                               style={{
                                 font: "1.2em Verdana, Geneva, sans-serif",
                                 color: "rgb(246, 68, 64)",
@@ -71,6 +73,7 @@ const Creative1 = () => {
                         <tr>
                           <td style={{ margin: "0.1px", padding: "5px 0px" }}>
                             <div
+                              className="name2"
                               style={{
                                 fontFamily: "Verdana, Geneva, sans-serif",
                                 color: "rgb(0, 0, 1)",
@@ -104,6 +107,7 @@ const Creative1 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
+                                className="name3"
                               >
                                 XOaliceOX.io
                               </a>
@@ -129,6 +133,7 @@ const Creative1 = () => {
                                   fontFamily: "Verdana, Geneva, sans-serif",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name4"
                               >
                                 collab@XOaliceOX.io
                               </a>
@@ -238,6 +243,7 @@ const Creative1 = () => {
                                         textAlign: "center",
                                         lineHeight: 1,
                                         backgroundColor: "#FFFFFF",
+                                        
                                       }}
                                     >
                                       <i
@@ -265,7 +271,7 @@ const Creative1 = () => {
               <tbody>
                 <tr>
                   <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a target="_blank" href="https://mysignature.io/">
+                    <a target="_blank" href="https://mysignature.io/" className="image2">
                       <img
                         alt="created with MySignature.io"
                         maxWidth={337}
@@ -282,7 +288,7 @@ const Creative1 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}}
+                      style={{}} className="image3"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>

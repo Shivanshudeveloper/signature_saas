@@ -14,7 +14,7 @@ const Free5 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px" }}>
+                <td style={{ margin: "0.1px" }} className = "image1"> 
                   <img
                     style={{ paddingBottom: "5px" }}
                     src="https://img.mysignature.io/a/v1/c/8/5/c85217ac-92b9-5bcf-838d-4fe36579e48f.png?uid=undefined1629064235564"
@@ -31,7 +31,7 @@ const Free5 = () => {
                   <td
                     valign="top"
                     maxWidth={162}
-                    style={{ verticalAlign: "top" }}
+                    style={{ verticalAlign: "top" }} className="image2"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -71,7 +71,7 @@ const Free5 = () => {
                                   fontSize: "1.2em",
                                   color: "rgb(66, 195, 193)",
                                   fontWeight: 600,
-                                }}
+                                }} className = "name1"
                               >
                                 Bred Traler
                               </span>{" "}
@@ -81,7 +81,7 @@ const Free5 = () => {
                         </tr>
                         <tr>
                           <td style={{ margin: "0.1px", paddingBottom: "4px" }}>
-                            <div style={{ fontFamily: "Georgia, serif" }}>
+                            <div style={{ fontFamily: "Georgia, serif" }} className = "name2">
                               {" "}
                               | Coral Coast Academy | History
                             </div>
@@ -104,7 +104,7 @@ const Free5 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }}
+                                }} className = "name3"
                               >
                                 +355-546-122
                               </a>
@@ -128,7 +128,8 @@ const Free5 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }}
+                                }}  
+                                className = "name4"
                               >
                                 453-32-656
                               </a>
@@ -153,7 +154,7 @@ const Free5 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }}
+                                }} className = "name5" 
                               >
                                 bredtraler@coastacadem.edu
                               </a>
@@ -179,7 +180,7 @@ const Free5 = () => {
                                     textDecoration: "none",
                                     color: "#000001",
                                   }}
-                                  target="_blank"
+                                  target="_blank" className = "name6"
                                 >
                                   www.coastacadem.edu
                                 </a>
@@ -316,7 +317,7 @@ const Free5 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}}
+                      style={{}} className="image3"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>

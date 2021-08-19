@@ -15,6 +15,7 @@ const Friendly2 = () => {
                     maxWidth={154}
                     valign="top"
                     style={{ padding: "0px 9px 0px 0px", verticalAlign: "top" }}
+                    className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -54,6 +55,7 @@ const Friendly2 = () => {
                                 font: '1.2em "Courier New", Courier, monospace',
                                 color: "rgb(235, 62, 145)",
                               }}
+                              className="name1"
                             >
                               Anny Parson
                             </span>{" "}
@@ -74,6 +76,7 @@ const Friendly2 = () => {
                                 fontFamily: '"Courier New", Courier, monospace',
                                 color: "rgb(0, 0, 1)",
                               }}
+                              className="name2"
                             >
                               Anny's Flowers
                               {/**/}
@@ -99,6 +102,7 @@ const Friendly2 = () => {
                                     '"Courier New", Courier, monospace',
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name3"
                               >
                                 838 3837 3344
                               </a>
@@ -128,6 +132,7 @@ const Friendly2 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
+                                className="name4"
                               >
                                 annysflowers.com
                               </a>
@@ -154,6 +159,7 @@ const Friendly2 = () => {
                                     '"Courier New", Courier, monospace',
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name5"
                               >
                                 anny@gmail.com
                               </a>
@@ -176,6 +182,7 @@ const Friendly2 = () => {
                                 fontFamily: '"Courier New", Courier, monospace',
                                 color: "rgb(0, 0, 1)",
                               }}
+                              className="name6"
                             >
                               5th Ave, fl. 3&nbsp;
                             </span>
@@ -188,6 +195,7 @@ const Friendly2 = () => {
                                 fontFamily: '"Courier New", Courier, monospace',
                                 color: "rgb(235, 62, 145)",
                               }}
+                              className="name7"
                             >
                               Wedding services
                             </span>{" "}
@@ -207,6 +215,7 @@ const Friendly2 = () => {
                                 fontFamily: '"Courier New", Courier, monospace',
                                 color: "rgb(0, 0, 1)",
                               }}
+                              className="name8"
                             >
                               454 6444 8844
                             </span>
@@ -376,6 +385,7 @@ const Friendly2 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -425,6 +435,7 @@ const Friendly2 = () => {
                       borderRadius: "1px",
                     }}
                     href="https://mysignature.io/"
+                    className="name9"
                   >
                     Two Hours Delivery. Order Now
                   </a>

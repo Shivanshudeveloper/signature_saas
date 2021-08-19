@@ -25,7 +25,7 @@ const Modern5 = () => {
             >
               <tbody>
                 <tr>
-                  <td>
+                  <td className="image1">
                     <img
                       alt="created with MySignature.io"
                       maxWidth={183}
@@ -42,6 +42,7 @@ const Modern5 = () => {
                         textTransform: "uppercase",
                         color: "rgb(26, 102, 194)",
                       }}
+                      className= "name1"
                     >
                       Jorge Wainwright
                     </div>
@@ -49,7 +50,8 @@ const Modern5 = () => {
                 </tr>
                 <tr>
                   <td style={{ margin: "0.1px", paddingBottom: "5px" }}>
-                    <div style={{ color: "rgb(77, 76, 76)" }}>
+                    <div style={{ color: "rgb(77, 76, 76)" }} className= "name2">
+                      
                       CEO at Wilingposter
                     </div>
                   </td>
@@ -64,6 +66,7 @@ const Modern5 = () => {
                         borderBottom: "1px solid rgb(235, 228, 228)",
                         display: "inline-block",
                       }}
+                      className= "name3"
                     >
                       mobile:
                       <a
@@ -72,6 +75,7 @@ const Modern5 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
+                        className= "name4"
                       >
                         +4-205-42-96
                       </a>{" "}
@@ -82,6 +86,7 @@ const Modern5 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
+                        className= "name5"
                       >
                         +3-245-32-55
                       </a>
@@ -107,6 +112,7 @@ const Modern5 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
+                        className= "name6"
                       >
                         jorge@wilingposter.com
                       </a>
@@ -121,6 +127,7 @@ const Modern5 = () => {
                         href="http://www.wilingposter.com"
                         style={{ textDecoration: "none", color: "#000001" }}
                         target="_blank"
+                        className= "name7"
                       >
                         www.wilingposter.com
                       </a>
@@ -285,7 +292,8 @@ const Modern5 = () => {
                           <td colSpan={2} className="s_pixel">
                             <a
                               href="https://mysignature.io/editor/?utm_source=freepixel"
-                              style={{}}
+                              style={{}} 
+                              className="image2"
                             >
                               <img src="https://img.mysignature.io/pixel/null/signature/" />
                             </a>
@@ -336,7 +344,7 @@ const Modern5 = () => {
                             className="icon_addon-schedule"
                           />
                         </td>
-                        <td style={{ fontSize: "17px", paddingLeft: "5px" }}>
+                        <td className= "name8" style={{ fontSize: "17px", paddingLeft: "5px" }}>
                           Book a meeting with our editorial team
                         </td>
                         <td style={{ paddingLeft: "5px" }}>
@@ -348,6 +356,7 @@ const Modern5 = () => {
                               color: "#017de8",
                               textDecoration: "none",
                             }}
+                            className= "name9"
                           >
                             now
                           </a>

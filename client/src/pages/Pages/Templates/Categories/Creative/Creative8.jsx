@@ -18,8 +18,10 @@ const Creative8 = () => {
                       padding: "0px 15px 0px 0px",
                       verticalAlign: "middle",
                     }}
+                    className="image1"
                   >
                     <img
+                      
                       alt="created with MySignature.io"
                       maxWidth={185}
                       style={{ width: "185px", maxWidth: "185px" }}
@@ -156,6 +158,7 @@ const Creative8 = () => {
                               font: "600 1.2em Tahoma",
                               color: "rgb(0, 0, 0)",
                             }}
+                            className="name1"
                           >
                             Joe Folen
                           </td>
@@ -168,7 +171,7 @@ const Creative8 = () => {
                               display: "block",
                             }}
                           >
-                            <div style={{ fontFamily: "Tahoma" }}>
+                            <div className="name2" style={{ fontFamily: "Tahoma" }}>
                               Graphic designer at BY&amp;Partners
                             </div>
                           </td>
@@ -182,6 +185,7 @@ const Creative8 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name3"
                               >
                                 +4 507 5780
                               </a>{" "}
@@ -192,6 +196,7 @@ const Creative8 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name4"
                               >
                                 +4 435 9503
                               </a>
@@ -208,6 +213,7 @@ const Creative8 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name5"
                               >
                                 folen@bypartners.com
                               </a>
@@ -224,6 +230,7 @@ const Creative8 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
+                                className="name6"
                               >
                                 www.bypartners.com
                               </a>
@@ -245,6 +252,7 @@ const Creative8 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -284,6 +292,7 @@ const Creative8 = () => {
                       paddingBottom: "4px",
                       display: "inline-block",
                     }}
+                    className="image3"
                   >
                     <img
                       height={48}
@@ -299,6 +308,7 @@ const Creative8 = () => {
                       paddingBottom: "4px",
                       display: "inline-block",
                     }}
+                    className="image4"
                   >
                     <img
                       height={48}

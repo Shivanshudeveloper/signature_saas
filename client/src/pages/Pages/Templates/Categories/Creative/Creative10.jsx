@@ -19,6 +19,7 @@ const Creative10 = () => {
                       padding: "0px 15px 0px 0px",
                       verticalAlign: "middle",
                     }}
+                    className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -157,6 +158,8 @@ const Creative10 = () => {
                               font: '600 1.2em "Courier New", Courier, monospace',
                               color: "rgb(254, 182, 0)",
                             }}
+                            className="name1"
+
                           >
                             Karen Shevans
                           </td>
@@ -173,6 +176,7 @@ const Creative10 = () => {
                               style={{
                                 fontFamily: '"Courier New", Courier, monospace',
                               }}
+                              className="name2"
                             >
                               Photographer
                               {/**/}
@@ -192,6 +196,7 @@ const Creative10 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name3"
                               >
                                 16 285 928 175
                               </a>{" "}
@@ -213,6 +218,7 @@ const Creative10 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name4"
                               >
                                 karen@photography.com
                               </a>
@@ -233,6 +239,7 @@ const Creative10 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
+                                className="name5"
                               >
                                 photography.com
                               </a>
@@ -249,8 +256,9 @@ const Creative10 = () => {
             <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
               <tbody>
                 <tr>
-                  <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a target="_blank" href="https://mysignature.io/">
+                  <td style={{ margin: "0.1px", paddingTop: "15px" }} >
+                    <a target="_blank" href="https://mysignature.io/" 
+                    className="image2">
                       <img
                         alt="created with MySignature.io"
                         maxWidth={350}
@@ -268,6 +276,8 @@ const Creative10 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image3"
+
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>

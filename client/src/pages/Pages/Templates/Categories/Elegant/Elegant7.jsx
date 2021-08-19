@@ -18,6 +18,7 @@ const Elegant7 = () => {
                       padding: "0px 15px 0px 0px",
                       verticalAlign: "top",
                     }}
+                    className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -57,6 +58,7 @@ const Elegant7 = () => {
                               font: "small-caps 600 1.4em Arial, Helvetica, sans-serif",
                               color: "rgb(92, 216, 237)",
                             }}
+                            className="name1"
                           >
                             Dillon Camry
                           </td>
@@ -74,6 +76,7 @@ const Elegant7 = () => {
                                 fontFamily: "Arial, Helvetica, sans-serif",
                                 fontWeight: 600,
                               }}
+                              className="name2"
                             >
                               Owner at Financial Consulting
                             </div>
@@ -92,6 +95,7 @@ const Elegant7 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name3"
                               >
                                 +1 983 333 3739
                               </a>{" "}
@@ -113,6 +117,7 @@ const Elegant7 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name4"
                               >
                                 dc@fin.consulting.com
                               </a>
@@ -133,6 +138,7 @@ const Elegant7 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
+                                className="name5"
                               >
                                 fin.consulting.com
                               </a>
@@ -253,7 +259,7 @@ const Elegant7 = () => {
               <tbody>
                 <tr>
                   <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a target="_blank" href="https://mysignature.io/">
+                    <a target="_blank" href="https://mysignature.io/" className="image2">
                       <img
                         alt="created with MySignature.io"
                         maxWidth={435}
@@ -271,6 +277,7 @@ const Elegant7 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image3"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -302,6 +309,7 @@ const Elegant7 = () => {
                     fontFamily: "Arial, Helvetica, sans-serif",
                     fontSize: "75%",
                   }}
+                  className="name6"
                 >
                   IMPORTANT: The contents of this email and any attachments are
                   confidential. It is strictly forbidden to share any part of

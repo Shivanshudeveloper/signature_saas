@@ -15,6 +15,7 @@ const Friendly9 = () => {
                     maxWidth={149}
                     valign="top"
                     style={{ padding: "0px 9px 0px 0px", verticalAlign: "top" }}
+                    className = "image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -54,6 +55,7 @@ const Friendly9 = () => {
                                 font: "1.2em Verdana, Geneva, sans-serif",
                                 color: "rgb(223, 16, 87)",
                               }}
+                              className="name1"
                             >
                               Mehdi Bolton
                             </span>{" "}
@@ -62,6 +64,8 @@ const Friendly9 = () => {
                                 fontFamily: "Verdana, Geneva, sans-serif",
                                 color: "rgb(0, 0, 1)",
                               }}
+                              className="name2"
+
                             >
                               &nbsp;&nbsp;Travel Blogger
                             </span>
@@ -74,6 +78,8 @@ const Friendly9 = () => {
                                 fontFamily: "Verdana, Geneva, sans-serif",
                                 color: "rgb(0, 0, 1)",
                               }}
+                              className="name3"
+
                             >
                               @mehdi_now
                               {/**/}
@@ -103,6 +109,8 @@ const Friendly9 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
+                              className="name4"
+
                               >
                                 mehdi.blog
                               </a>
@@ -128,6 +136,7 @@ const Friendly9 = () => {
                                   fontFamily: "Verdana, Geneva, sans-serif",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                              className="name5"
                               >
                                 mehdib@gmail.com
                               </a>
@@ -268,6 +277,7 @@ const Friendly9 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="iamge2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -301,6 +311,7 @@ const Friendly9 = () => {
                       paddingBottom: "4px",
                       display: "inline-block",
                     }}
+                    className="image3"
                   >
                     <img
                       height={35}
@@ -316,6 +327,7 @@ const Friendly9 = () => {
                       paddingBottom: "4px",
                       display: "inline-block",
                     }}
+                    className="image4"
                   >
                     <img
                       height={35}

@@ -23,7 +23,7 @@ const Modern10 = () => {
             >
               <tbody>
                 <tr>
-                  <td maxWidth={131}>
+                  <td maxWidth={131} className="image1">
                     <img
                       alt="created with MySignature.io"
                       maxWidth={131}
@@ -40,7 +40,7 @@ const Modern10 = () => {
                         letterSpacing: "0.4pt",
                         textTransform: "uppercase",
                         color: "rgb(74, 144, 226)",
-                      }}
+                      }} className= "name1"
                     >
                       Steve Burnett
                     </span>
@@ -52,7 +52,7 @@ const Modern10 = () => {
                       style={{
                         fontFamily: "Arial, Helvetica, sans-serif",
                         color: "rgb(0, 0, 1)",
-                      }}
+                      }} className= "name2"
                     >
                       Senior Legal Counsel at Legalead
                     </div>
@@ -105,8 +105,8 @@ const Modern10 = () => {
                       style={{
                         textDecoration: "none",
                         fontFamily: "Arial, Helvetica, sans-serif",
-                        color: "rgb(0, 0, 1)",
-                      }}
+                        color: "rgb(0,  0, 1)",
+                      }} className= "name3"
                     >
                       436-547-13
                     </a>
@@ -129,7 +129,7 @@ const Modern10 = () => {
                         textDecoration: "none",
                         fontFamily: "Arial, Helvetica, sans-serif",
                         color: "rgb(0, 0, 1)",
-                      }}
+                      }} className= "name4"
                     >
                       350-540-54
                     </a>
@@ -153,7 +153,7 @@ const Modern10 = () => {
                         textDecoration: "none",
                         fontFamily: "Arial, Helvetica, sans-serif",
                         color: "rgb(0, 0, 1)",
-                      }}
+                      }} className= "name5"
                     >
                       steave@legalead.com
                     </a>
@@ -179,7 +179,7 @@ const Modern10 = () => {
                           color: "#000001",
                           fontFamily: "Arial, Helvetica, sans-serif",
                         }}
-                        target="_blank"
+                        target="_blank" className= "name6"
                       >
                         www.legalead.com
                       </a>
@@ -201,7 +201,7 @@ const Modern10 = () => {
                       style={{
                         fontFamily: "Arial, Helvetica, sans-serif",
                         color: "rgb(0, 0, 1)",
-                      }}
+                      }} className= "name7"
                     >
                       Maine, 435 Avalon st, fl 6
                     </span>
@@ -364,7 +364,7 @@ const Modern10 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}}
+                      style={{}} className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -411,7 +411,7 @@ const Modern10 = () => {
                             className="icon_addon-time-calendar"
                           />
                         </td>
-                        <td style={{ fontSize: "14px", paddingLeft: "5px" }}>
+                        <td style={{ fontSize: "14px", paddingLeft: "5px" }} className= "name8">
                           Book a meeting
                         </td>
                         <td style={{ paddingLeft: "5px" }}>
@@ -422,7 +422,7 @@ const Modern10 = () => {
                               fontSize: "14px",
                               color: "#017de8",
                               textDecoration: "none",
-                            }}
+                            }} className= "name9"
                           >
                             here
                           </a>

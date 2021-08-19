@@ -15,7 +15,7 @@ const Creative2 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px" }}>
+                <td style={{ margin: "0.1px" }} className="image1">
                   <img
                     style={{ paddingBottom: "5px" }}
                     src="https://img.mysignature.io/a/v1/e/2/3/e230b86a-6a75-5818-811e-bec3e893c6ae.png?uid=undefined1629063758081"
@@ -36,6 +36,7 @@ const Creative2 = () => {
                       padding: "0px 12px 0px 0px",
                       verticalAlign: "top",
                     }}
+                    className="image2"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -73,6 +74,7 @@ const Creative2 = () => {
                                 font: "600 1.3em Verdana, Geneva, sans-serif",
                                 color: "rgb(70, 127, 0)",
                               }}
+                              className="name1"
                             >
                               Jac Drake
                             </span>
@@ -90,6 +92,7 @@ const Creative2 = () => {
                               style={{
                                 fontFamily: "Verdana, Geneva, sans-serif",
                               }}
+                              className="name2"
                             >
                               Explorer and Traveler |{/**/}
                             </div>
@@ -117,6 +120,7 @@ const Creative2 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name3"
                               >
                                 432 403 425
                               </a>
@@ -147,6 +151,7 @@ const Creative2 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name4"
                               >
                                 jacdrakein@gmail.com
                               </a>
@@ -159,6 +164,7 @@ const Creative2 = () => {
                               style={{
                                 fontFamily: "Verdana, Geneva, sans-serif",
                               }}
+                              className="name5"
                             >
                               <span
                                 style={{
@@ -290,6 +296,7 @@ const Creative2 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image3"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -377,6 +384,7 @@ const Creative2 = () => {
                               color: "#467F00",
                               textDecoration: "none",
                             }}
+                            className="name6"
                           >
                             Workaway.info
                           </a>

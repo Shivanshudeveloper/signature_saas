@@ -43,7 +43,7 @@ const Professional1 = () => {
                                       margin: "0.1px",
                                       font: '200 1.4em "Arial Black", Gadget, sans-serif',
                                       color: "rgb(0, 0, 0)",
-                                    }}
+                                    }} className="name1"
                                   >
                                     Kelly Brut
                                   </td>
@@ -59,7 +59,7 @@ const Professional1 = () => {
                                       style={{
                                         font: '200 1em "Arial Black", Gadget, sans-serif',
                                         color: "rgb(67, 54, 76)",
-                                      }}
+                                      }} className="name2"
                                     >
                                       Customer Support
                                     </div>
@@ -213,9 +213,9 @@ const Professional1 = () => {
                                       style={{
                                         fontFamily:
                                           '"Arial Black", Gadget, sans-serif',
-                                      }}
+                                      }} 
                                     >
-                                      {/**/} <span>hello@4seaseons.com</span>
+                                      {/**/} <span className="name3">hello@4seaseons.com</span>
                                       &nbsp;
                                       {/**/}
                                     </div>
@@ -240,7 +240,7 @@ const Professional1 = () => {
                                           textDecoration: "none",
                                           color: "#000000",
                                         }}
-                                        target="_blank"
+                                        target="_blank" className="name4"
                                       >
                                         4seaseons.com
                                       </a>
@@ -265,6 +265,7 @@ const Professional1 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image1"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -313,7 +314,7 @@ const Professional1 = () => {
                       fontWeight: "bold",
                       borderRadius: "50px",
                     }}
-                    href="https://mysignature.io/"
+                    href="https://mysignature.io/" className="name5"
                   >
                     Have we helped? Please rate us ☆☆☆☆☆
                   </a>
@@ -336,13 +337,13 @@ const Professional1 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px", width: "30px" }}>
+                <td style={{ margin: "0.1px", width: "30px" }} className="image2">
                   <img
                     src="https://img.mysignature.io/addons/v2/recycling.png?uid=undefined"
                     alt="We recycle! Bring old clothes to the closest store and get a discount for the next purchase. "
                   />
                 </td>
-                <td style={{ margin: "0.1px" }}>
+                <td style={{ margin: "0.1px" }} className="name6">
                   We recycle! Bring old clothes to the closest store and get a
                   discount for the next purchase.{" "}
                 </td>
@@ -376,6 +377,7 @@ const Professional1 = () => {
                       paddingBottom: "4px",
                       display: "inline-block",
                     }}
+                    className="image3"
                   >
                     <img
                       height={33}

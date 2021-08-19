@@ -18,7 +18,7 @@ const Professional10 = () => {
                     style={{
                       padding: "0px 15px 0px 0px",
                       verticalAlign: "middle",
-                    }}
+                    }} className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -157,7 +157,7 @@ const Professional10 = () => {
                               paddingBottom: "1px",
                               font: '600 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif',
                               color: "rgb(133, 68, 22)",
-                            }}
+                            }} className = "name1"
                           >
                             Joey Hope
                           </td>
@@ -174,7 +174,7 @@ const Professional10 = () => {
                               style={{
                                 fontFamily:
                                   '"Lucida Sans Unicode", "Lucida Grande", sans-serif',
-                              }}
+                              }} className = "name2"
                             >
                               Lawyer at Jurisk
                             </div>
@@ -192,8 +192,8 @@ const Professional10 = () => {
                                 href="tel:3942-600-39"
                                 style={{
                                   textDecoration: "none",
-                                  color: "rgb(0, 0, 1)",
-                                }}
+                                  color:  "rgb(0, 0, 1)",
+                                }} className = "name3"
                               >
                                 3942-600-39
                               </a>{" "}
@@ -203,7 +203,7 @@ const Professional10 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }}
+                                }} className = "name4"
                               >
                                 3242-404-36
                               </a>
@@ -224,7 +224,7 @@ const Professional10 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }}
+                                }} className = "name5"
                               >
                                 hope@joey@gmail.com
                               </a>
@@ -244,8 +244,8 @@ const Professional10 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "#000001",
-                                }}
-                                target="_blank"
+                                }} 
+                                target="_blank" className = "name6"
                               >
                                 www.jurisk.com
                               </a>
@@ -266,7 +266,7 @@ const Professional10 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}}
+                      style={{}} className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -318,7 +318,7 @@ const Professional10 = () => {
             <tbody>
               <tr>
                 {/**/}
-                <td style={{ margin: "0.1px" }}>
+                <td style={{ margin: "0.1px" }} className = "name7">
                   Please consider the environment before printing this email
                 </td>
               </tr>

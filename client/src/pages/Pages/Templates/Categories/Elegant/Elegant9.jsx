@@ -43,6 +43,7 @@ const Elegant9 = () => {
                                       font: "200 1.4em Tahoma, Geneva, sans-serif",
                                       color: "rgb(212, 8, 109)",
                                     }}
+                                    className="name1"
                                   >
                                     Regina Spils
                                   </td>
@@ -60,6 +61,7 @@ const Elegant9 = () => {
                                         font: "200 1em Tahoma, Geneva, sans-serif",
                                         color: "rgb(67, 54, 76)",
                                       }}
+                                      className="name2"
                                     >
                                       fashion blogger
                                     </div>
@@ -229,6 +231,7 @@ const Elegant9 = () => {
                                           textDecoration: "none",
                                           color: "rgb(0, 0, 1)",
                                         }}
+                                        className="name3"
                                       >
                                         regina@fashionnews.com
                                       </a>
@@ -255,6 +258,7 @@ const Elegant9 = () => {
                                           fontWeight: 600,
                                           color: "rgb(212, 8, 109)",
                                         }}
+                                        className="name4"
                                       >
                                         PARTENRSHIPS&nbsp;&nbsp;
                                       </span>{" "}
@@ -266,6 +270,7 @@ const Elegant9 = () => {
                                             color: "#000001",
                                           }}
                                           href="http://x"
+                                          className="name5"
                                         >
                                           544 646 2662
                                         </a>
@@ -296,6 +301,7 @@ const Elegant9 = () => {
                                           color: "#D4086D",
                                         }}
                                         target="_blank"
+                                        className="name6"
                                       >
                                         fashionnews.com
                                       </a>
@@ -316,7 +322,7 @@ const Elegant9 = () => {
               <tbody>
                 <tr>
                   <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a target="_blank" href="https://mysignature.io/">
+                    <a target="_blank" href="https://mysignature.io/" className="image1">
                       <img
                         alt="created with MySignature.io"
                         maxWidth={368}
@@ -334,6 +340,7 @@ const Elegant9 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>

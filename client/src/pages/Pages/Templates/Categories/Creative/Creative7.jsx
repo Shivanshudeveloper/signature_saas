@@ -22,7 +22,7 @@ const Creative7 = () => {
             >
               <tbody>
                 <tr>
-                  <td maxWidth={116}>
+                  <td maxWidth={116} className="image1">
                     <img
                       alt="created with MySignature.io"
                       maxWidth={116}
@@ -40,6 +40,7 @@ const Creative7 = () => {
                         textTransform: "uppercase",
                         color: "rgb(231, 142, 11)",
                       }}
+                      className="name1"
                     >
                       Fabio Fenton
                     </span>
@@ -52,6 +53,7 @@ const Creative7 = () => {
                         fontFamily: '"Trebuchet MS", Helvetica, sans-serif',
                         color: "rgb(0, 0, 1)",
                       }}
+                      className="name2"
                     >
                       Freelancer (Designer)
                       {/**/}
@@ -107,6 +109,7 @@ const Creative7 = () => {
                         fontFamily: '"Trebuchet MS", Helvetica, sans-serif',
                         color: "rgb(0, 0, 1)",
                       }}
+                      className="name3"
                     >
                       +543-324-55
                     </a>
@@ -130,6 +133,7 @@ const Creative7 = () => {
                         fontFamily: '"Trebuchet MS", Helvetica, sans-serif',
                         color: "rgb(0, 0, 1)",
                       }}
+                      className="name4"
                     >
                       +452-406-30
                     </a>
@@ -154,6 +158,7 @@ const Creative7 = () => {
                         fontFamily: '"Trebuchet MS", Helvetica, sans-serif',
                         color: "rgb(0, 0, 1)",
                       }}
+                      className="name5"
                     >
                       Fentonfabilo@gmail.com
                     </a>
@@ -289,6 +294,7 @@ const Creative7 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -329,6 +335,7 @@ const Creative7 = () => {
                       paddingBottom: "4px",
                       display: "inline-block",
                     }}
+                    className="image3"
                   >
                     <img
                       height={41}

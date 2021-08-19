@@ -18,6 +18,7 @@ const Friendly6 = () => {
                       padding: "0px 15px 0px 0px",
                       verticalAlign: "middle",
                     }}
+                    className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -157,6 +158,8 @@ const Friendly6 = () => {
                               font: '600 1.2em "Palatino Linotype", "Book Antiqua", Palatino, serif',
                               color: "rgb(11, 11, 11)",
                             }}
+                            className="name1"
+
                           >
                             Cara Reznor
                           </td>
@@ -174,6 +177,8 @@ const Friendly6 = () => {
                                 fontFamily:
                                   '"Palatino Linotype", "Book Antiqua", Palatino, serif',
                               }}
+                              className="name2"
+
                             >
                               Manager
                               {/**/}
@@ -195,6 +200,8 @@ const Friendly6 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name3"
+
                               >
                                 222 335 3632
                               </a>
@@ -216,6 +223,8 @@ const Friendly6 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
+                                className="name4"
+
                               >
                                 info@jameela.com
                               </a>
@@ -237,6 +246,8 @@ const Friendly6 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
+                                className="name5"
+
                               >
                                 jameela.com
                               </a>
@@ -251,6 +262,8 @@ const Friendly6 = () => {
                                 fontFamily:
                                   '"Palatino Linotype", "Book Antiqua", Palatino, serif',
                               }}
+                              className="name6"
+
                             >
                               55 Halsey St Brooklyn, NY 11216
                             </div>
@@ -270,6 +283,7 @@ const Friendly6 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -328,6 +342,8 @@ const Friendly6 = () => {
                         verticalAlign: "middle",
                         fontSize: "16px",
                       }}
+                      className="name7"
+
                     >
                       Meet me on Zoom
                     </span>
@@ -336,7 +352,7 @@ const Friendly6 = () => {
               </tr>
               <tr style={{}}>
                 <td style={{ margin: "0.1px", paddingTop: "8px" }}>
-                  <a href="https://mysignature.io/" target="_blank">
+                  <a href="https://mysignature.io/" target="_blank" className="image3">
                     <img
                       alt="Meet me on Zoom"
                       maxWidth={192}
@@ -363,13 +379,14 @@ const Friendly6 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px", width: "30px" }}>
+                <td style={{ margin: "0.1px", width: "30px" }} className="image4">
                   <img
                     src="https://img.mysignature.io/addons/v2/hand-leaves.png?uid=undefined"
                     alt="Please consider the environment before printing this email"
                   />
                 </td>
-                <td style={{ margin: "0.1px" }}>
+                <td style={{ margin: "0.1px" }}  className="name8"
+                                      >
                   Please consider the environment before printing this email
                 </td>
               </tr>

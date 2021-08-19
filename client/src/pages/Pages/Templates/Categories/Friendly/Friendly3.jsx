@@ -21,6 +21,7 @@ const Friendly3 = () => {
                               padding: "0px 8px 0px 0px",
                               verticalAlign: "top",
                             }}
+                            className="image1"
                           >
                             <img
                               alt="created with MySignature.io"
@@ -60,6 +61,7 @@ const Friendly3 = () => {
                                           '"Comic Sans MS", cursive, sans-serif',
                                         color: "rgb(0, 0, 1)",
                                       }}
+                                      className="name1"
                                     >
                                       Melissa Tean
                                     </div>
@@ -78,6 +80,7 @@ const Friendly3 = () => {
                                           '"Comic Sans MS", cursive, sans-serif',
                                         color: "rgb(0, 0, 1)",
                                       }}
+                                      className="name2"
                                     >
                                       {/**/}
                                       Kid's Corner Entertainment
@@ -106,6 +109,7 @@ const Friendly3 = () => {
                                             '"Comic Sans MS", cursive, sans-serif',
                                           color: "rgb(0, 0, 1)",
                                         }}
+                                        className="name3"
                                       >
                                         +1 226 353 3638
                                       </a>
@@ -136,6 +140,7 @@ const Friendly3 = () => {
                                           color: "#000001",
                                         }}
                                         target="_blank"
+                                        className="name4"
                                       >
                                         kidscorner.com
                                       </a>
@@ -163,6 +168,7 @@ const Friendly3 = () => {
                                             '"Comic Sans MS", cursive, sans-serif',
                                           color: "rgb(0, 0, 1)",
                                         }}
+                                        className="name5"
                                       >
                                         party@kidscorner.com
                                       </a>
@@ -274,6 +280,7 @@ const Friendly3 = () => {
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
                       style={{}}
+                      className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -308,6 +315,7 @@ const Friendly3 = () => {
                       paddingBottom: "4px",
                       display: "inline-block",
                     }}
+                    className="image3"
                   >
                     <img
                       height={41}
@@ -326,6 +334,7 @@ const Friendly3 = () => {
                       paddingBottom: "4px",
                       display: "inline-block",
                     }}
+                    className="image4"
                   >
                     <img
                       height={41}

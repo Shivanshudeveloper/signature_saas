@@ -14,7 +14,7 @@ const Professional4 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px" }}>
+                <td style={{ margin: "0.1px" }} className="image1">
                   <img
                     style={{ paddingBottom: "5px" }}
                     src="https://img.mysignature.io/a/v1/e/9/0/e906e3bb-42ba-5e39-9fb2-6b87f8bf2f72.png?uid=undefined1629061546264"
@@ -30,7 +30,7 @@ const Professional4 = () => {
                 <tr>
                   <td
                     maxWidth={188}
-                    valign="top"
+                    valign="top" className="image2"
                     style={{ padding: "0px 9px 0px 0px", verticalAlign: "top" }}
                   >
                     <img
@@ -70,7 +70,7 @@ const Professional4 = () => {
                               style={{
                                 font: "1.2em Georgia, serif",
                                 color: "rgb(161, 80, 26)",
-                              }}
+                              }} className = "name1"
                             >
                               Paolo Fox
                             </span>{" "}
@@ -78,7 +78,7 @@ const Professional4 = () => {
                               style={{
                                 fontFamily: "Georgia, serif",
                                 color: "rgb(0, 0, 1)",
-                              }}
+                              }} className = "name2"
                             >
                               &nbsp;&nbsp;HR Generalist
                             </span>
@@ -90,7 +90,7 @@ const Professional4 = () => {
                               style={{
                                 fontFamily: "Georgia, serif",
                                 color: "rgb(0, 0, 1)",
-                              }}
+                              }} className = "name3"
                             >
                               Greenshine
                               {/**/}
@@ -114,7 +114,7 @@ const Professional4 = () => {
                                   textDecoration: "none",
                                   fontFamily: "Georgia, serif",
                                   color: "rgb(0, 0, 1)",
-                                }}
+                                }} className = "name4"
                               >
                                 +12027953533
                               </a>
@@ -138,7 +138,7 @@ const Professional4 = () => {
                                   textDecoration: "none",
                                   fontFamily: "Georgia, serif",
                                   color: "rgb(0, 0, 1)",
-                                }}
+                                }} className = "name5"
                               >
                                 +12023893201
                               </a>
@@ -162,7 +162,7 @@ const Professional4 = () => {
                                   textDecoration: "none",
                                   color: "#000001",
                                 }}
-                                target="_blank"
+                                target="_blank" className = "name6"
                               >
                                 greenshine.com
                               </a>
@@ -187,7 +187,7 @@ const Professional4 = () => {
                                   textDecoration: "none",
                                   fontFamily: "Georgia, serif",
                                   color: "rgb(0, 0, 1)",
-                                }}
+                                }} className = "name7"
                               >
                                 hr@greenshine.com
                               </a>
@@ -323,7 +323,7 @@ const Professional4 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}}
+                      style={{}} className="image3"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -348,13 +348,13 @@ const Professional4 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px", width: "30px" }}>
+                <td style={{ margin: "0.1px", width: "30px" }} className="image4">
                   <img
                     src="https://img.mysignature.io/addons/v2/leaf.png?uid=undefined"
                     alt="Please consider the environment before printing this email"
                   />
                 </td>
-                <td style={{ margin: "0.1px" }}>
+                <td style={{ margin: "0.1px" }} className = "name8">
                   Please consider the environment before printing this email
                 </td>
               </tr>
