@@ -3,7 +3,6 @@ import React from "react";
 const Professional1 = () => {
   return (
     <div>
-      <div style={{ padding: "50px 0 0 50px" }}>Professional 1</div>
       {/* Professional 1 Start*/}
       <div id="signature-preview" className="o-signature-preview">
         <div>
@@ -43,7 +42,8 @@ const Professional1 = () => {
                                       margin: "0.1px",
                                       font: '200 1.4em "Arial Black", Gadget, sans-serif',
                                       color: "rgb(0, 0, 0)",
-                                    }} className="name1"
+                                    }}
+                                    className="name1"
                                   >
                                     Kelly Brut
                                   </td>
@@ -59,7 +59,8 @@ const Professional1 = () => {
                                       style={{
                                         font: '200 1em "Arial Black", Gadget, sans-serif',
                                         color: "rgb(67, 54, 76)",
-                                      }} className="name2"
+                                      }}
+                                      className="name2"
                                     >
                                       Customer Support
                                     </div>
@@ -213,9 +214,12 @@ const Professional1 = () => {
                                       style={{
                                         fontFamily:
                                           '"Arial Black", Gadget, sans-serif',
-                                      }} 
+                                      }}
                                     >
-                                      {/**/} <span className="name3">hello@4seaseons.com</span>
+                                      {/**/}{" "}
+                                      <span className="name3">
+                                        hello@4seaseons.com
+                                      </span>
                                       &nbsp;
                                       {/**/}
                                     </div>
@@ -240,7 +244,8 @@ const Professional1 = () => {
                                           textDecoration: "none",
                                           color: "#000000",
                                         }}
-                                        target="_blank" className="name4"
+                                        target="_blank"
+                                        className="name4"
                                       >
                                         4seaseons.com
                                       </a>
@@ -314,7 +319,8 @@ const Professional1 = () => {
                       fontWeight: "bold",
                       borderRadius: "50px",
                     }}
-                    href="https://mysignature.io/" className="name5"
+                    href="https://mysignature.io/"
+                    className="name5"
                   >
                     Have we helped? Please rate us ☆☆☆☆☆
                   </a>
@@ -337,7 +343,10 @@ const Professional1 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px", width: "30px" }} className="image2">
+                <td
+                  style={{ margin: "0.1px", width: "30px" }}
+                  className="image2"
+                >
                   <img
                     src="https://img.mysignature.io/addons/v2/recycling.png?uid=undefined"
                     alt="We recycle! Bring old clothes to the closest store and get a discount for the next purchase. "

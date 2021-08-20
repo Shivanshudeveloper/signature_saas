@@ -2,17 +2,13 @@ import React, { Component } from "react";
 import { Container, Row, Col, Card, CardBody, Button } from "reactstrap";
 import { useHistory } from "react-router";
 
-
 //Import Images
 import imgbg from "../../../assets/images/account/bg.png";
 import "./PageProfile.css";
 import Header from "./Header";
 import Dashboard from "./Dashboard";
 
-
-
 class PageProfile extends Component {
-
   scrollNavigation = () => {
     var doc = document.documentElement;
     var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
@@ -28,21 +24,21 @@ class PageProfile extends Component {
   render() {
     const logout = () => {
       sessionStorage.clear();
-        window.location.href = "/login"
+      window.location.href = "/login";
     };
     return (
       <React.Fragment>
         <section
           className="d-table w-100 bg-primary"
-          style={{ background: `url(${imgbg}) center center`,paddingBottom:"50px" }}
+          style={{
+            background: `url(${imgbg}) center center`,
+            paddingBottom: "50px",
+          }}
         >
-      <Header/>
-        <Dashboard/>
-      
+          <Header />
+          <Dashboard />
         </section>
-        <section>
-        
-        </section>
+        <section></section>
         {/* <section className="section" style={{ paddingTop: 0 }}>
           <Container className="mt-lg-3">
             <Row>
