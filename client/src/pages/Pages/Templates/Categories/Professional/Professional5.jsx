@@ -14,7 +14,7 @@ const Professional5 = () => {
                   <td
                     valign="top"
                     maxWidth={149}
-                    style={{ verticalAlign: "top" }} 
+                    style={{ verticalAlign: "top" }}
                     className="image1"
                   >
                     <img
@@ -59,11 +59,15 @@ const Professional5 = () => {
                                   fontSize: "1.2em",
                                   color: "rgb(89, 86, 151)",
                                   fontWeight: 600,
-                                }} className = "name"
+                                }}
+                                className="cardName"
                               >
                                 Viktor Fry
-                              </span>{" "}
-                              | Content Marketing Manager
+                              </span>
+                              |
+                              <span className="cardTitle">
+                                Content Marketing Manager
+                              </span>
                             </div>
                           </td>
                         </tr>
@@ -72,7 +76,8 @@ const Professional5 = () => {
                             <div
                               style={{
                                 fontFamily: "Verdana, Geneva, sans-serif",
-                              }} className = "name"
+                              }}
+                              className="name"
                             >
                               | Soulmart {/**/}
                             </div>
@@ -101,7 +106,8 @@ const Professional5 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name"
+                                }}
+                                className="cardEmail"
                               >
                                 fry@soulmart.io
                               </a>
@@ -120,7 +126,8 @@ const Professional5 = () => {
                                 style={{
                                   fontWeight: 600,
                                   color: "rgb(89, 86, 151)",
-                                }} className = "name"
+                                }}
+                                className="name"
                               >
                                 website:&nbsp;
                               </span>
@@ -131,7 +138,8 @@ const Professional5 = () => {
                                     textDecoration: "none",
                                     color: "#000001",
                                   }}
-                                  target="_blank" className = "name"
+                                  target="_blank"
+                                  className="cardWebsite"
                                 >
                                   soulmart.io
                                 </a>
@@ -160,7 +168,8 @@ const Professional5 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name"
+                                }}
+                                className="name"
                               >
                                 contact_fry
                               </a>
@@ -172,14 +181,16 @@ const Professional5 = () => {
                             <div
                               style={{
                                 fontFamily: "Verdana, Geneva, sans-serif",
-                              }} className = "name"
+                              }}
+                              className="name"
                             >
                               |{" "}
                               <span
                                 style={{
                                   fontWeight: 600,
                                   color: "rgb(89, 86, 151)",
-                                }} className = "name"
+                                }}
+                                className="name"
                               >
                                 address:&nbsp;
                               </span>
@@ -350,7 +361,8 @@ const Professional5 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}} className="image2"
+                      style={{}}
+                      className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -383,7 +395,8 @@ const Professional5 = () => {
                       paddingRight: "4px",
                       paddingBottom: "4px",
                       display: "inline-block",
-                    }} className="image3"
+                    }}
+                    className="image3"
                   >
                     <img
                       height={41}
@@ -400,7 +413,8 @@ const Professional5 = () => {
                       paddingRight: "4px",
                       paddingBottom: "4px",
                       display: "inline-block",
-                    }} className="image4"
+                    }}
+                    className="image4"
                   >
                     <img
                       height={41}

@@ -77,7 +77,7 @@ const Creative5 = () => {
                                           "Verdana, Geneva, sans-serif",
                                         color: "rgb(0, 0, 1)",
                                       }}
-                                      className="name1"
+                                      className="cardName"
                                     >
                                       Sara Fischer
                                     </div>
@@ -96,7 +96,7 @@ const Creative5 = () => {
                                           "Verdana, Geneva, sans-serif",
                                         color: "rgb(0, 0, 1)",
                                       }}
-                                      className="name2"
+                                      className="cardTitle"
                                     >
                                       Professional Photographer
                                       {/**/}
@@ -112,38 +112,6 @@ const Creative5 = () => {
                                           "Verdana, Geneva, sans-serif",
                                         color: "rgb(68, 139, 153)",
                                       }}
-                                      className="name3"
-
-                                    >
-                                      phone:&nbsp;
-                                    </span>{" "}
-                                    <span>
-                                      <a
-                                        href="tel:433-88-90"
-                                        style={{
-                                          textDecoration: "none",
-                                          fontFamily:
-                                            "Verdana, Geneva, sans-serif",
-                                          color: "rgb(0, 0, 1)",
-                                        }}
-                                        className="name4"
-
-                                      >
-                                        433-88-90
-                                      </a>
-                                    </span>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style={{ margin: "0.1px" }}>
-                                    <span
-                                      style={{
-                                        fontFamily:
-                                          "Verdana, Geneva, sans-serif",
-                                        color: "rgb(68, 139, 153)",
-                                      }}
-                                      className="name5"
-
                                     >
                                       mobile:&nbsp;
                                     </span>{" "}
@@ -156,8 +124,7 @@ const Creative5 = () => {
                                             "Verdana, Geneva, sans-serif",
                                           color: "rgb(0, 0, 1)",
                                         }}
-                                        className="name6"
-
+                                        className="cardPhone"
                                       >
                                         844-388-4309
                                       </a>
@@ -172,8 +139,6 @@ const Creative5 = () => {
                                           "Verdana, Geneva, sans-serif",
                                         color: "rgb(68, 139, 153)",
                                       }}
-                                      className="name7"
-
                                     >
                                       website:&nbsp;
                                     </span>{" "}
@@ -190,9 +155,8 @@ const Creative5 = () => {
                                           color: "#000001",
                                         }}
                                         target="_blank"
-                                        className="name8"
-
-                                    >
+                                        className="cardWebsite"
+                                      >
                                         saraphotos.io
                                       </a>
                                     </span>
@@ -207,7 +171,6 @@ const Creative5 = () => {
                                         color: "rgb(68, 139, 153)",
                                       }}
                                       className="name9"
-
                                     >
                                       email:&nbsp;
                                     </span>{" "}
@@ -221,8 +184,7 @@ const Creative5 = () => {
                                             "Verdana, Geneva, sans-serif",
                                           color: "rgb(0, 0, 1)",
                                         }}
-                                        className="name10"
-
+                                        className="cardEmail"
                                       >
                                         info@saraphotos.io
                                       </a>
@@ -427,7 +389,6 @@ const Creative5 = () => {
                         fontSize: "17px",
                       }}
                       className="name11"
-
                     >
                       Meet me on Google Hangouts
                     </span>
@@ -436,7 +397,11 @@ const Creative5 = () => {
               </tr>
               <tr style={{}}>
                 <td style={{ margin: "0.1px", paddingTop: "14px" }}>
-                  <a href="https://mysignature.io/" target="_blank" className="image4">
+                  <a
+                    href="https://mysignature.io/"
+                    target="_blank"
+                    className="image4"
+                  >
                     <img
                       alt="Meet me on Google Hangouts"
                       maxWidth={293}

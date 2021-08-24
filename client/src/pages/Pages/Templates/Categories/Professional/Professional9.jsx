@@ -17,7 +17,8 @@ const Professional9 = () => {
                     style={{
                       padding: "0px 15px 0px 0px",
                       verticalAlign: "top",
-                    }} className="image1"
+                    }}
+                    className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -56,7 +57,8 @@ const Professional9 = () => {
                               paddingBottom: "1px",
                               font: "small-caps 600 1.4em Verdana, Geneva, sans-serif",
                               color: "rgb(107, 182, 27)",
-                            }} className = "name1"
+                            }}
+                            className="cardName"
                           >
                             Lisa Wong
                           </td>
@@ -73,7 +75,8 @@ const Professional9 = () => {
                               style={{
                                 fontFamily: "Verdana, Geneva, sans-serif",
                                 fontWeight: 600,
-                              }} className = "name2"
+                              }}
+                              className="cardTitle"
                             >
                               Customer Support at WiseTour
                             </div>
@@ -92,7 +95,8 @@ const Professional9 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name3"
+                                }}
+                                className="cardTitle"
                               >
                                 343 636 2992
                               </a>
@@ -112,7 +116,8 @@ const Professional9 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name4"
+                                }}
+                                className="cardEmail"
                               >
                                 support@wisetour.com
                               </a>
@@ -132,7 +137,8 @@ const Professional9 = () => {
                                   textDecoration: "none",
                                   color: "#000001",
                                 }}
-                                target="_blank" className = "name5"
+                                target="_blank"
+                                className="cardWebsite"
                               >
                                 wisetour.com
                               </a>
@@ -256,7 +262,8 @@ const Professional9 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}} className="image2"
+                      style={{}}
+                      className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -303,7 +310,10 @@ const Professional9 = () => {
                             className="icon_addon-hands"
                           />
                         </td>
-                        <td style={{ fontSize: "14px", paddingLeft: "5px" }} className = "name6">
+                        <td
+                          style={{ fontSize: "14px", paddingLeft: "5px" }}
+                          className="name6"
+                        >
                           Do you need help?
                         </td>
                         <td style={{ paddingLeft: "5px" }}>
@@ -314,7 +324,8 @@ const Professional9 = () => {
                               fontSize: "14px",
                               color: "#6BB61B",
                               textDecoration: "none",
-                            }} className = "name7"
+                            }}
+                            className="name7"
                           >
                             Schedule consultation
                           </a>
@@ -347,7 +358,8 @@ const Professional9 = () => {
                     margin: "0.1px",
                     fontFamily: "Verdana, Geneva, sans-serif",
                     fontSize: "75%",
-                  }} className = "name8"
+                  }}
+                  className="name8"
                 >
                   IMPORTANT: The contents of this email and any attachments are
                   confidential. It is strictly forbidden to share any part of

@@ -32,7 +32,10 @@ const Creative4 = () => {
                     >
                       <tbody>
                         <tr>
-                          <td style={{ margin: "0.1px", verticalAlign: "top" }} className="image1">
+                          <td
+                            style={{ margin: "0.1px", verticalAlign: "top" }}
+                            className="image1"
+                          >
                             <img
                               alt="created with MySignature.io"
                               maxWidth={179}
@@ -52,7 +55,7 @@ const Creative4 = () => {
                                         font: '600 1.3em "Comic Sans MS", cursive, sans-serif',
                                         color: "rgb(255, 255, 255)",
                                       }}
-                                      className="name1"
+                                      className="cardName"
                                     >
                                       dj Emmi Wave
                                     </div>
@@ -103,7 +106,7 @@ const Creative4 = () => {
                                           '"Comic Sans MS", cursive, sans-serif',
                                         color: "rgb(255, 255, 255)",
                                       }}
-                                      className="name2"
+                                      className="cardTitle"
                                     >
                                       | ♫ BestRecords.com ♫
                                     </div>
@@ -132,7 +135,7 @@ const Creative4 = () => {
                                           textDecoration: "none",
                                           color: "rgb(255, 255, 255)",
                                         }}
-                                        className="name3"
+                                        className="cardEmail"
                                       >
                                         emmiwave@bestrecords.com
                                       </a>
@@ -152,7 +155,7 @@ const Creative4 = () => {
                                           '"Comic Sans MS", cursive, sans-serif',
                                         color: "rgb(255, 255, 255)",
                                       }}
-                                      className="name4"
+                                      className="cardPhone"
                                     >
                                       partnerships <span>+1 746 337 8333</span>{" "}
                                       {/**/} {/**/} <span />
@@ -330,7 +333,6 @@ const Creative4 = () => {
                       fontWeight: "bold",
                       borderRadius: "1px",
                     }}
-                    className="name5"
                     href="https://mysignature.io/"
                   >
                     Join live stream with Mat Zabia! 10/12/2020, Tuesday 10 p.m.

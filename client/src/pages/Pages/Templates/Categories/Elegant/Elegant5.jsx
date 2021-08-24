@@ -60,7 +60,7 @@ const Elegant5 = () => {
                                           "Arial, Helvetica, sans-serif",
                                         color: "rgb(0, 0, 1)",
                                       }}
-                                      className="name1"
+                                      className="cardName"
                                     >
                                       Sarah Smith
                                     </div>
@@ -79,7 +79,7 @@ const Elegant5 = () => {
                                           "Arial, Helvetica, sans-serif",
                                         color: "rgb(0, 0, 1)",
                                       }}
-                                      className="name2"
+                                      className="cardTitle"
                                     >
                                       Owner | Cotella Consultings
                                       {/**/}
@@ -106,7 +106,7 @@ const Elegant5 = () => {
                                             "Arial, Helvetica, sans-serif",
                                           color: "rgb(0, 0, 1)",
                                         }}
-                                        className="name3"
+                                        className="cardPhone"
                                       >
                                         644 848 6363
                                       </a>
@@ -138,7 +138,7 @@ const Elegant5 = () => {
                                           color: "#000001",
                                         }}
                                         target="_blank"
-                                        className="name4"
+                                        className="cardWebsite"
                                       >
                                         cotella.com
                                       </a>
@@ -166,7 +166,7 @@ const Elegant5 = () => {
                                             "Arial, Helvetica, sans-serif",
                                           color: "rgb(0, 0, 1)",
                                         }}
-                                        className="name5"
+                                        className="cardEmail"
                                       >
                                         sarahs@cotella.com
                                       </a>
@@ -330,7 +330,11 @@ const Elegant5 = () => {
               <tbody>
                 <tr>
                   <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a target="_blank" href="https://mysignature.io/" className="image2">
+                    <a
+                      target="_blank"
+                      href="https://mysignature.io/"
+                      className="image2"
+                    >
                       <img
                         alt="created with MySignature.io"
                         maxWidth={323}

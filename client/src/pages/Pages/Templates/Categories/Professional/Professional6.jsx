@@ -14,7 +14,8 @@ const Professional6 = () => {
                   <td
                     valign="top"
                     maxWidth={182}
-                    style={{ verticalAlign: "top" }} className="image1"
+                    style={{ verticalAlign: "top" }}
+                    className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -59,7 +60,7 @@ const Professional6 = () => {
                                   color: "rgb(144, 19, 254)",
                                   fontWeight: 600,
                                 }}
-                                className = "name1"
+                                className="name1"
                               >
                                 Arnas Deleon
                               </span>{" "}
@@ -72,7 +73,8 @@ const Professional6 = () => {
                             <div
                               style={{
                                 fontFamily: "Verdana, Geneva, sans-serif",
-                              }} className = "name2"
+                              }}
+                              className="name2"
                             >
                               | Mysticorps {/**/}
                             </div>
@@ -99,7 +101,8 @@ const Professional6 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name3"
+                                }}
+                                className="cardPhone"
                               >
                                 745-318-5933
                               </a>
@@ -129,7 +132,8 @@ const Professional6 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name4"
+                                }}
+                                className="cardEmail"
                               >
                                 arnas@mysticorps.net
                               </a>
@@ -159,7 +163,8 @@ const Professional6 = () => {
                                     textDecoration: "none",
                                     color: "#000001",
                                   }}
-                                  target="_blank" className = "name5"
+                                  target="_blank"
+                                  className="cardWebsite"
                                 >
                                   mysticorps.net
                                 </a>
@@ -188,7 +193,8 @@ const Professional6 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name6"
+                                }}
+                                className="name6"
                               >
                                 arnasdeleon
                               </a>
@@ -328,7 +334,8 @@ const Professional6 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}} className="image2"
+                      style={{}}
+                      className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -375,7 +382,10 @@ const Professional6 = () => {
                             className="icon_addon-list"
                           />
                         </td>
-                        <td style={{ fontSize: "18px", paddingLeft: "5px" }} className = "name7">
+                        <td
+                          style={{ fontSize: "18px", paddingLeft: "5px" }}
+                          className="name7"
+                        >
                           Book a Meeting with me
                         </td>
                         <td style={{ paddingLeft: "5px" }}>
@@ -386,7 +396,8 @@ const Professional6 = () => {
                               fontSize: "18px",
                               color: "#9013FE",
                               textDecoration: "none",
-                            }} className = "name8"
+                            }}
+                            className="name8"
                           >
                             here
                           </a>

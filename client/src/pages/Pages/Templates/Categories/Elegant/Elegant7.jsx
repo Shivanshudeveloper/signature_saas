@@ -58,7 +58,7 @@ const Elegant7 = () => {
                               font: "small-caps 600 1.4em Arial, Helvetica, sans-serif",
                               color: "rgb(92, 216, 237)",
                             }}
-                            className="name1"
+                            className="cardName"
                           >
                             Dillon Camry
                           </td>
@@ -76,7 +76,7 @@ const Elegant7 = () => {
                                 fontFamily: "Arial, Helvetica, sans-serif",
                                 fontWeight: 600,
                               }}
-                              className="name2"
+                              className="cardTitle"
                             >
                               Owner at Financial Consulting
                             </div>
@@ -95,7 +95,7 @@ const Elegant7 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name3"
+                                className="cardPhone"
                               >
                                 +1 983 333 3739
                               </a>{" "}
@@ -117,7 +117,7 @@ const Elegant7 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name4"
+                                className="cardEmail"
                               >
                                 dc@fin.consulting.com
                               </a>
@@ -138,7 +138,7 @@ const Elegant7 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
-                                className="name5"
+                                className="cardWebsite"
                               >
                                 fin.consulting.com
                               </a>
@@ -259,7 +259,11 @@ const Elegant7 = () => {
               <tbody>
                 <tr>
                   <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a target="_blank" href="https://mysignature.io/" className="image2">
+                    <a
+                      target="_blank"
+                      href="https://mysignature.io/"
+                      className="image2"
+                    >
                       <img
                         alt="created with MySignature.io"
                         maxWidth={435}

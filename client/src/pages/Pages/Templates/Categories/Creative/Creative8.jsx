@@ -21,7 +21,6 @@ const Creative8 = () => {
                     className="image1"
                   >
                     <img
-                      
                       alt="created with MySignature.io"
                       maxWidth={185}
                       style={{ width: "185px", maxWidth: "185px" }}
@@ -158,7 +157,7 @@ const Creative8 = () => {
                               font: "600 1.2em Tahoma",
                               color: "rgb(0, 0, 0)",
                             }}
-                            className="name1"
+                            className="cardName"
                           >
                             Joe Folen
                           </td>
@@ -171,7 +170,11 @@ const Creative8 = () => {
                               display: "block",
                             }}
                           >
-                            <div className="name2" style={{ fontFamily: "Tahoma" }}>
+                            <div
+                              className="cardTitle"
+                              style={{ fontFamily: "Tahoma" }}
+                              className="cardTitle"
+                            >
                               Graphic designer at BY&amp;Partners
                             </div>
                           </td>
@@ -185,20 +188,9 @@ const Creative8 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name3"
+                                className="cardPhone"
                               >
                                 +4 507 5780
-                              </a>{" "}
-                              ,{" "}
-                              <a
-                                href="tel:+4 435 9503"
-                                style={{
-                                  textDecoration: "none",
-                                  color: "rgb(0, 0, 1)",
-                                }}
-                                className="name4"
-                              >
-                                +4 435 9503
                               </a>
                             </div>
                           </td>
@@ -213,7 +205,7 @@ const Creative8 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name5"
+                                className="cardEmail"
                               >
                                 folen@bypartners.com
                               </a>
@@ -230,7 +222,7 @@ const Creative8 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
-                                className="name6"
+                                className="cardWebsite"
                               >
                                 www.bypartners.com
                               </a>

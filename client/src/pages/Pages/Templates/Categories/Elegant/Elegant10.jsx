@@ -60,7 +60,7 @@ const Elegant10 = () => {
                               font: 'small-caps 600 1.4em "Palatino Linotype", "Book Antiqua", Palatino, serif',
                               color: "rgb(158, 108, 134)",
                             }}
-                            className="name1"
+                            className="cardName"
                           >
                             Kate Mersyn
                           </td>
@@ -79,7 +79,7 @@ const Elegant10 = () => {
                                   '"Palatino Linotype", "Book Antiqua", Palatino, serif',
                                 fontWeight: 600,
                               }}
-                              className="name2"
+                              className="cardTitle"
                             >
                               Lawyer at Balance Leg
                             </div>
@@ -99,7 +99,6 @@ const Elegant10 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name3"
                               >
                                 +65-05-871
                               </a>{" "}
@@ -110,7 +109,7 @@ const Elegant10 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name4"
+                                className="cardPhone"
                               >
                                 +45-65-324
                               </a>
@@ -132,7 +131,7 @@ const Elegant10 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name5"
+                                className="cardEmail"
                               >
                                 kate@balanceleg.com
                               </a>
@@ -154,7 +153,7 @@ const Elegant10 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
-                                className="name6"
+                                className="cardWebsite"
                               >
                                 www.balanceleg.com
                               </a>
@@ -275,7 +274,11 @@ const Elegant10 = () => {
               <tbody>
                 <tr>
                   <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a target="_blank" href="https://mysignature.io/" className="image2">
+                    <a
+                      target="_blank"
+                      href="https://mysignature.io/"
+                      className="image2"
+                    >
                       <img
                         alt="created with MySignature.io"
                         maxWidth={307}

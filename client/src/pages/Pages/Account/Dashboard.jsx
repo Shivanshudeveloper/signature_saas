@@ -1600,30 +1600,30 @@ const Dashboard = () => {
     if (e.target.name === "name") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("name1")[0];
+        .children[0].getElementsByClassName("cardName")[0];
       if (renderName !== undefined) renderName.innerHTML = e.target.value;
     } else if (e.target.name === "position") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("name2")[0];
+        .children[0].getElementsByClassName("cardTitle")[0];
 
       if (renderName !== undefined) renderName.innerHTML = e.target.value;
     } else if (e.target.name === "email") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("name3")[0];
+        .children[0].getElementsByClassName("cardEmail")[0];
 
       if (renderName !== undefined) renderName.innerHTML = e.target.value;
     } else if (e.target.name === "website") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("name4")[0];
+        .children[0].getElementsByClassName("cardWebsite")[0];
 
       if (renderName !== undefined) renderName.innerHTML = e.target.value;
     } else if (e.target.name === "desc") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("name6")[0];
+        .children[0].getElementsByClassName("cardDesc")[0];
 
       if (renderName !== undefined) renderName.innerHTML = e.target.value;
     }

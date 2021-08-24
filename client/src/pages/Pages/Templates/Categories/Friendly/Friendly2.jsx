@@ -55,7 +55,7 @@ const Friendly2 = () => {
                                 font: '1.2em "Courier New", Courier, monospace',
                                 color: "rgb(235, 62, 145)",
                               }}
-                              className="name1"
+                              className="cardName"
                             >
                               Anny Parson
                             </span>{" "}
@@ -76,39 +76,14 @@ const Friendly2 = () => {
                                 fontFamily: '"Courier New", Courier, monospace',
                                 color: "rgb(0, 0, 1)",
                               }}
-                              className="name2"
+                              className="cardTitle"
                             >
                               Anny's Flowers
                               {/**/}
                             </div>
                           </td>
                         </tr>
-                        <tr>
-                          <td style={{ margin: "0.1px" }}>
-                            <span
-                              style={{
-                                fontFamily: '"Courier New", Courier, monospace',
-                                color: "rgb(0, 0, 1)",
-                              }}
-                            >
-                              p:&nbsp;
-                            </span>{" "}
-                            <span>
-                              <a
-                                href="tel:838 3837 3344"
-                                style={{
-                                  textDecoration: "none",
-                                  fontFamily:
-                                    '"Courier New", Courier, monospace',
-                                  color: "rgb(0, 0, 1)",
-                                }}
-                                className="name3"
-                              >
-                                838 3837 3344
-                              </a>
-                            </span>
-                          </td>
-                        </tr>
+
                         {/**/}
                         <tr>
                           <td style={{ margin: "0.1px" }}>
@@ -132,7 +107,7 @@ const Friendly2 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
-                                className="name4"
+                                className="cardWebsite"
                               >
                                 annysflowers.com
                               </a>
@@ -159,7 +134,7 @@ const Friendly2 = () => {
                                     '"Courier New", Courier, monospace',
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name5"
+                                className="cardEmail"
                               >
                                 anny@gmail.com
                               </a>
@@ -197,7 +172,7 @@ const Friendly2 = () => {
                               }}
                               className="name7"
                             >
-                              Wedding services
+                              Services
                             </span>{" "}
                             <span
                               style={{
@@ -215,7 +190,7 @@ const Friendly2 = () => {
                                 fontFamily: '"Courier New", Courier, monospace',
                                 color: "rgb(0, 0, 1)",
                               }}
-                              className="name8"
+                              className="cardPhone"
                             >
                               454 6444 8844
                             </span>

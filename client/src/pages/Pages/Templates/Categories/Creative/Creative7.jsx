@@ -40,7 +40,7 @@ const Creative7 = () => {
                         textTransform: "uppercase",
                         color: "rgb(231, 142, 11)",
                       }}
-                      className="name1"
+                      className="cardName"
                     >
                       Fabio Fenton
                     </span>
@@ -53,7 +53,7 @@ const Creative7 = () => {
                         fontFamily: '"Trebuchet MS", Helvetica, sans-serif',
                         color: "rgb(0, 0, 1)",
                       }}
-                      className="name2"
+                      className="cardTitle"
                     >
                       Freelancer (Designer)
                       {/**/}
@@ -99,7 +99,7 @@ const Creative7 = () => {
                         color: "rgb(231, 142, 11)",
                       }}
                     >
-                      T
+                      email
                     </span>
                     &nbsp;&nbsp;
                     <a
@@ -109,9 +109,9 @@ const Creative7 = () => {
                         fontFamily: '"Trebuchet MS", Helvetica, sans-serif',
                         color: "rgb(0, 0, 1)",
                       }}
-                      className="name3"
+                      className="cardEmail"
                     >
-                      +543-324-55
+                      email
                     </a>
                   </td>
                 </tr>
@@ -133,7 +133,7 @@ const Creative7 = () => {
                         fontFamily: '"Trebuchet MS", Helvetica, sans-serif',
                         color: "rgb(0, 0, 1)",
                       }}
-                      className="name4"
+                      className="cardPhone"
                     >
                       +452-406-30
                     </a>
@@ -147,7 +147,7 @@ const Creative7 = () => {
                         color: "rgb(231, 142, 11)",
                       }}
                     >
-                      E
+                      website
                     </span>
                     &nbsp;&nbsp;
                     <a
@@ -158,7 +158,7 @@ const Creative7 = () => {
                         fontFamily: '"Trebuchet MS", Helvetica, sans-serif',
                         color: "rgb(0, 0, 1)",
                       }}
-                      className="name5"
+                      className="cardWebsite"
                     >
                       Fentonfabilo@gmail.com
                     </a>

@@ -158,8 +158,7 @@ const Friendly6 = () => {
                               font: '600 1.2em "Palatino Linotype", "Book Antiqua", Palatino, serif',
                               color: "rgb(11, 11, 11)",
                             }}
-                            className="name1"
-
+                            className="cardName"
                           >
                             Cara Reznor
                           </td>
@@ -177,8 +176,7 @@ const Friendly6 = () => {
                                 fontFamily:
                                   '"Palatino Linotype", "Book Antiqua", Palatino, serif',
                               }}
-                              className="name2"
-
+                              className="cardTitle"
                             >
                               Manager
                               {/**/}
@@ -200,8 +198,7 @@ const Friendly6 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name3"
-
+                                className="cardPhone"
                               >
                                 222 335 3632
                               </a>
@@ -223,8 +220,7 @@ const Friendly6 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name4"
-
+                                className="cardEmail"
                               >
                                 info@jameela.com
                               </a>
@@ -246,8 +242,7 @@ const Friendly6 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
-                                className="name5"
-
+                                className="cardWebsite"
                               >
                                 jameela.com
                               </a>
@@ -263,7 +258,6 @@ const Friendly6 = () => {
                                   '"Palatino Linotype", "Book Antiqua", Palatino, serif',
                               }}
                               className="name6"
-
                             >
                               55 Halsey St Brooklyn, NY 11216
                             </div>
@@ -343,7 +337,6 @@ const Friendly6 = () => {
                         fontSize: "16px",
                       }}
                       className="name7"
-
                     >
                       Meet me on Zoom
                     </span>
@@ -352,7 +345,11 @@ const Friendly6 = () => {
               </tr>
               <tr style={{}}>
                 <td style={{ margin: "0.1px", paddingTop: "8px" }}>
-                  <a href="https://mysignature.io/" target="_blank" className="image3">
+                  <a
+                    href="https://mysignature.io/"
+                    target="_blank"
+                    className="image3"
+                  >
                     <img
                       alt="Meet me on Zoom"
                       maxWidth={192}
@@ -379,14 +376,16 @@ const Friendly6 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px", width: "30px" }} className="image4">
+                <td
+                  style={{ margin: "0.1px", width: "30px" }}
+                  className="image4"
+                >
                   <img
                     src="https://img.mysignature.io/addons/v2/hand-leaves.png?uid=undefined"
                     alt="Please consider the environment before printing this email"
                   />
                 </td>
-                <td style={{ margin: "0.1px" }}  className="name8"
-                                      >
+                <td style={{ margin: "0.1px" }} className="name8">
                   Please consider the environment before printing this email
                 </td>
               </tr>

@@ -63,7 +63,8 @@ const Modern9 = () => {
                                       margin: "0.1px",
                                       font: "200 1.4em Arial, Helvetica, sans-serif",
                                       color: "rgb(99, 204, 200)",
-                                    }} className= "name1"
+                                    }}
+                                    className="cardName"
                                   >
                                     Marissa Golvits
                                   </td>
@@ -79,7 +80,8 @@ const Modern9 = () => {
                                       style={{
                                         font: "200 1em Arial, Helvetica, sans-serif",
                                         color: "rgb(67, 54, 76)",
-                                      }} className= "name2"
+                                      }}
+                                      className="cardTitle"
                                     >
                                       Customer Success Manager
                                     </div>
@@ -96,7 +98,8 @@ const Modern9 = () => {
                                       style={{
                                         font: "200 1em Arial, Helvetica, sans-serif",
                                         color: "rgb(67, 54, 76)",
-                                      }} className= "name3"
+                                      }}
+                                      className="cardPhone"
                                     >
                                       at Gravity
                                     </div>
@@ -133,7 +136,8 @@ const Modern9 = () => {
                                       style={{
                                         fontFamily:
                                           "Arial, Helvetica, sans-serif",
-                                      }} className= "name4"
+                                      }}
+                                      className="cardEmail"
                                     >
                                       <span
                                         style={{
@@ -173,7 +177,8 @@ const Modern9 = () => {
                                         style={{
                                           color: "rgb(0, 0, 1)",
                                           textDecoration: "none",
-                                        }} className= "name5"
+                                        }}
+                                        className="name5"
                                       >
                                         767 454 9876
                                       </a>
@@ -216,7 +221,8 @@ const Modern9 = () => {
                                         style={{
                                           textDecoration: "none",
                                           color: "rgb(0, 0, 1)",
-                                        }} className= "name6"
+                                        }}
+                                        className="name6"
                                       >
                                         marissa@gravity.io
                                       </a>
@@ -251,7 +257,8 @@ const Modern9 = () => {
                                           textDecoration: "none",
                                           color: "#63CCC8",
                                         }}
-                                        target="_blank" className= "name7"
+                                        target="_blank"
+                                        className="name7"
                                       >
                                         gravity.io
                                       </a>
@@ -476,7 +483,8 @@ const Modern9 = () => {
                         paddingLeft: "5px",
                         verticalAlign: "middle",
                         fontSize: "14px",
-                      }} className= "name8"
+                      }}
+                      className="name8"
                     >
                       Meet me on Zoom
                     </span>
@@ -485,7 +493,11 @@ const Modern9 = () => {
               </tr>
               <tr style={{}}>
                 <td style={{ margin: "0.1px", paddingTop: "18px" }}>
-                  <a href="https://mysignature.io/" target="_blank" className="image3">
+                  <a
+                    href="https://mysignature.io/"
+                    target="_blank"
+                    className="image3"
+                  >
                     <img
                       alt="Meet me on Zoom"
                       maxWidth={173}

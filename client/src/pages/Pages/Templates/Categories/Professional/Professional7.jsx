@@ -17,7 +17,8 @@ const Professional7 = () => {
                     style={{
                       padding: "0px 15px 0px 0px",
                       verticalAlign: "middle",
-                    }} className="image1"
+                    }}
+                    className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -155,7 +156,8 @@ const Professional7 = () => {
                               paddingBottom: "1px",
                               font: '600 1.2em "Trebuchet MS"',
                               color: "rgb(245, 166, 35)",
-                            }} className = "name1"
+                            }}
+                            className="cardName"
                           >
                             Brenda Figueroa
                           </td>
@@ -168,7 +170,10 @@ const Professional7 = () => {
                               display: "block",
                             }}
                           >
-                            <div style={{ fontFamily: '"Trebuchet MS"' }} className = "name2">
+                            <div
+                              style={{ fontFamily: '"Trebuchet MS"' }}
+                              className="name2"
+                            >
                               Middle QA at Glaciarts
                             </div>
                           </td>
@@ -182,7 +187,8 @@ const Professional7 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name3"
+                                }}
+                                className="cardPhone"
                               >
                                 658-38-24
                               </a>
@@ -198,7 +204,8 @@ const Professional7 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name4"
+                                }}
+                                className="cardEmail"
                               >
                                 brenda@glaciarts.io
                               </a>
@@ -214,7 +221,8 @@ const Professional7 = () => {
                                   textDecoration: "none",
                                   color: "#000001",
                                 }}
-                                target="_blank" className = "name5"
+                                target="_blank"
+                                className="cardWebsite"
                               >
                                 glaciarts.io
                               </a>
@@ -231,8 +239,12 @@ const Professional7 = () => {
             <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
               <tbody>
                 <tr>
-                  <td style={{ margin: "0.1px", paddingTop: "15px" }} >
-                    <a target="_blank" href="https://mysignature.io/" className="image2">
+                  <td style={{ margin: "0.1px", paddingTop: "15px" }}>
+                    <a
+                      target="_blank"
+                      href="https://mysignature.io/"
+                      className="image2"
+                    >
                       <img
                         alt="created with MySignature.io"
                         maxWidth={353}
@@ -249,7 +261,8 @@ const Professional7 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}} className="image3"
+                      style={{}}
+                      className="image3"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>

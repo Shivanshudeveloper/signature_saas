@@ -59,7 +59,7 @@ const Friendly8 = () => {
                                   font: '600 1.3em "Comic Sans MS", cursive, sans-serif',
                                   color: "rgb(195, 95, 62)",
                                 }}
-                                className="name1"
+                                className="cardName"
                               >
                                 Kurt Marsel
                               </span>
@@ -78,7 +78,7 @@ const Friendly8 = () => {
                                   fontFamily:
                                     '"Comic Sans MS", cursive, sans-serif',
                                 }}
-                                className="name2"
+                                className="cardTitle"
                               >
                                 | Flourcourt bakery |
                               </div>
@@ -106,7 +106,7 @@ const Friendly8 = () => {
                                     textDecoration: "none",
                                     color: "rgb(0, 0, 1)",
                                   }}
-                                  className="name3"
+                                  className="cardPhone"
                                 >
                                   +1 288 944 4473
                                 </a>
@@ -138,7 +138,7 @@ const Friendly8 = () => {
                                     textDecoration: "none",
                                     color: "rgb(0, 0, 1)",
                                   }}
-                                  className="name4"
+                                  className="cardEmail"
                                 >
                                   kurt.baker@gmail.com
                                 </a>
@@ -152,7 +152,6 @@ const Friendly8 = () => {
                                   fontFamily:
                                     '"Comic Sans MS", cursive, sans-serif',
                                 }}
-                                className="name5"
                               >
                                 <span
                                   style={{
@@ -249,7 +248,11 @@ const Friendly8 = () => {
                 <tbody>
                   <tr>
                     <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                      <a target="_blank" href="https://mysignature.io/" className="image2">
+                      <a
+                        target="_blank"
+                        href="https://mysignature.io/"
+                        className="image2"
+                      >
                         <img
                           alt="created with MySignature.io"
                           maxWidth={446}

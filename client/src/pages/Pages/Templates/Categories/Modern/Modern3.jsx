@@ -25,7 +25,7 @@ const Modern3 = () => {
             >
               <tbody>
                 <tr>
-                  <td className="image1"> 
+                  <td className="image1">
                     <img
                       alt="created with MySignature.io"
                       maxWidth={154}
@@ -42,7 +42,7 @@ const Modern3 = () => {
                         textTransform: "uppercase",
                         color: "rgb(155, 155, 155)",
                       }}
-                      className= "name1"
+                      className="cardName"
                     >
                       Kaydan Padilla
                     </div>
@@ -50,7 +50,10 @@ const Modern3 = () => {
                 </tr>
                 <tr>
                   <td style={{ margin: "0.1px", paddingBottom: "5px" }}>
-                    <div style={{ color: "rgb(77, 76, 76)" }} className= "name2">
+                    <div
+                      style={{ color: "rgb(77, 76, 76)" }}
+                      className="cardTitle"
+                    >
                       Customer Support at Palm Therapy
                     </div>
                   </td>
@@ -65,7 +68,7 @@ const Modern3 = () => {
                         borderBottom: "1px solid rgb(235, 228, 228)",
                         display: "inline-block",
                       }}
-                      className= "name3"
+                      className="cardPhone"
                     >
                       {/**/} {/**/} phone:
                       <a
@@ -74,7 +77,7 @@ const Modern3 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
-                        className= "name4"
+                        className="cardEmail"
                       >
                         +1321400007
                       </a>
@@ -91,7 +94,7 @@ const Modern3 = () => {
                         borderBottom: "1px solid rgb(235, 228, 228)",
                         display: "inline-block",
                       }}
-                      className= "name5"
+                      className="name5"
                     >
                       {/**/} {/**/} email:
                       <a
@@ -101,7 +104,7 @@ const Modern3 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
-                        className= "name6"
+                        className="name6"
                       >
                         padilla@palmtherapy.com
                       </a>
@@ -116,7 +119,7 @@ const Modern3 = () => {
                         href="http://palmtherapy.com"
                         style={{ textDecoration: "none", color: "#000001" }}
                         target="_blank"
-                        className= "name7"
+                        className="name7"
                       >
                         palmtherapy.com
                       </a>

@@ -158,7 +158,7 @@ const Modern1 = () => {
                               font: '600 1.2em "Palatino Linotype", "Book Antiqua", Palatino, serif',
                               color: "rgb(74, 74, 74)",
                             }}
-                            className= "name1"
+                            className="cardName"
                           >
                             Amber Miles
                           </td>
@@ -176,7 +176,7 @@ const Modern1 = () => {
                                 fontFamily:
                                   '"Palatino Linotype", "Book Antiqua", Palatino, serif',
                               }}
-                              className= "name2"
+                              className="cardTitle"
                             >
                               Copywriter
                               {/**/}
@@ -198,7 +198,7 @@ const Modern1 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className= "name3"
+                                className="cardPhone"
                               >
                                 +1 987 223 7332
                               </a>
@@ -221,7 +221,7 @@ const Modern1 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
-                                className= "name4"
+                                className="cardEmail"
                               >
                                 amberwrites.com
                               </a>
@@ -292,7 +292,7 @@ const Modern1 = () => {
                       fontWeight: "bold",
                       borderRadius: "50px",
                     }}
-                    className= "name5"
+                    className="name5"
                     href="https://mysignature.io/"
                   >
                     Read my articles

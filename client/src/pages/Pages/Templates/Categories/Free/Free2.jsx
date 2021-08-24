@@ -14,7 +14,7 @@ const Free2 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px" }} className="image1" >
+                <td style={{ margin: "0.1px" }} className="image1">
                   <img
                     style={{ paddingBottom: "5px" }}
                     src="https://img.mysignature.io/a/v1/6/3/7/637a7eaa-d886-56d5-a803-38c50b20bf56.png?uid=undefined1629064184921"
@@ -34,7 +34,8 @@ const Free2 = () => {
                     style={{
                       padding: "0px 12px 0px 0px",
                       verticalAlign: "top",
-                    }} className="image2"
+                    }}
+                    className="image2"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -71,7 +72,8 @@ const Free2 = () => {
                               style={{
                                 font: '600 1.3em "Courier New", Courier, monospace',
                                 color: "rgb(17, 42, 62)",
-                              }} className = "name1"
+                              }}
+                              className="name1"
                             >
                               Winston Mellor
                             </span>
@@ -88,7 +90,8 @@ const Free2 = () => {
                             <div
                               style={{
                                 fontFamily: '"Courier New", Courier, monospace',
-                              }} className = "name2"
+                              }}
+                              className="cardTitle"
                             >
                               Freelancer | Photographer |
                             </div>
@@ -114,7 +117,8 @@ const Free2 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name3"
+                                }}
+                                className="cardPhone"
                               >
                                 +543-5090-19
                               </a>
@@ -141,7 +145,8 @@ const Free2 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name4"
+                                }}
+                                className="cardPhone"
                               >
                                 +546-5634-33
                               </a>
@@ -171,7 +176,8 @@ const Free2 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name5"
+                                }}
+                                className="cardEmail"
                               >
                                 winston-mellor@gmail.com
                               </a>
@@ -194,7 +200,8 @@ const Free2 = () => {
                                   textDecoration: "none",
                                   color: "#112A3E",
                                 }}
-                                target="_blank" className = "name6"
+                                target="_blank"
+                                className="cardWebsite"
                               >
                                 www.winstonmworks.com
                               </a>
@@ -317,7 +324,8 @@ const Free2 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}} className="image3"
+                      style={{}}
+                      className="image3"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>

@@ -30,7 +30,8 @@ const Professional4 = () => {
                 <tr>
                   <td
                     maxWidth={188}
-                    valign="top" className="image2"
+                    valign="top"
+                    className="image2"
                     style={{ padding: "0px 9px 0px 0px", verticalAlign: "top" }}
                   >
                     <img
@@ -70,7 +71,8 @@ const Professional4 = () => {
                               style={{
                                 font: "1.2em Georgia, serif",
                                 color: "rgb(161, 80, 26)",
-                              }} className = "name1"
+                              }}
+                              className="name1"
                             >
                               Paolo Fox
                             </span>{" "}
@@ -78,25 +80,26 @@ const Professional4 = () => {
                               style={{
                                 fontFamily: "Georgia, serif",
                                 color: "rgb(0, 0, 1)",
-                              }} className = "name2"
+                              }}
+                              className="cardTitle"
                             >
                               &nbsp;&nbsp;HR Generalist
                             </span>
                           </td>
                         </tr>
-                        <tr>
+                        {/* <tr>
                           <td style={{ margin: "0.1px", padding: "5px 0px" }}>
                             <div
                               style={{
                                 fontFamily: "Georgia, serif",
                                 color: "rgb(0, 0, 1)",
-                              }} className = "name3"
+                              }} className="cardTitle"
                             >
                               Greenshine
-                              {/**/}
+                              
                             </div>
                           </td>
-                        </tr>
+                        </tr> */}
                         <tr>
                           <td style={{ margin: "0.1px" }}>
                             <span
@@ -114,7 +117,8 @@ const Professional4 = () => {
                                   textDecoration: "none",
                                   fontFamily: "Georgia, serif",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name4"
+                                }}
+                                className="cardPhone"
                               >
                                 +12027953533
                               </a>
@@ -138,7 +142,8 @@ const Professional4 = () => {
                                   textDecoration: "none",
                                   fontFamily: "Georgia, serif",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name5"
+                                }}
+                                className="cardPhone"
                               >
                                 +12023893201
                               </a>
@@ -162,7 +167,8 @@ const Professional4 = () => {
                                   textDecoration: "none",
                                   color: "#000001",
                                 }}
-                                target="_blank" className = "name6"
+                                target="_blank"
+                                className="cardWebsite"
                               >
                                 greenshine.com
                               </a>
@@ -187,7 +193,8 @@ const Professional4 = () => {
                                   textDecoration: "none",
                                   fontFamily: "Georgia, serif",
                                   color: "rgb(0, 0, 1)",
-                                }} className = "name7"
+                                }}
+                                className="cardEmail"
                               >
                                 hr@greenshine.com
                               </a>
@@ -323,7 +330,8 @@ const Professional4 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}} className="image3"
+                      style={{}}
+                      className="image3"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -348,13 +356,16 @@ const Professional4 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px", width: "30px" }} className="image4">
+                <td
+                  style={{ margin: "0.1px", width: "30px" }}
+                  className="image4"
+                >
                   <img
                     src="https://img.mysignature.io/addons/v2/leaf.png?uid=undefined"
                     alt="Please consider the environment before printing this email"
                   />
                 </td>
-                <td style={{ margin: "0.1px" }} className = "name8">
+                <td style={{ margin: "0.1px" }} className="name8">
                   Please consider the environment before printing this email
                 </td>
               </tr>

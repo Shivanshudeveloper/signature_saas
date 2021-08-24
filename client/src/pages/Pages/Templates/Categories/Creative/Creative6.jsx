@@ -35,7 +35,10 @@ const Creative6 = () => {
                     >
                       <tbody>
                         <tr>
-                          <td style={{ margin: "0.1px", verticalAlign: "top" }} className="image1">
+                          <td
+                            style={{ margin: "0.1px", verticalAlign: "top" }}
+                            className="image1"
+                          >
                             <img
                               alt="created with MySignature.io"
                               maxWidth={200}
@@ -55,7 +58,7 @@ const Creative6 = () => {
                                         font: '600 1.3em "Lucida Sans Unicode"',
                                         color: "rgb(0, 0, 0)",
                                       }}
-                                      className="name1"
+                                      className="cardName"
                                     >
                                       Sanya Avila
                                     </div>
@@ -105,7 +108,7 @@ const Creative6 = () => {
                                         fontFamily: '"Lucida Sans Unicode"',
                                         color: "rgb(0, 0, 0)",
                                       }}
-                                      className="name2"
+                                      className="cardTitle"
                                     >
                                       Sales Manager | Pink Sports
                                     </div>
@@ -123,7 +126,6 @@ const Creative6 = () => {
                                         fontFamily: '"Lucida Sans Unicode"',
                                         color: "rgb(0, 0, 0)",
                                       }}
-                                      className="name3"
                                     >
                                       {/**/} {/**/} phone:
                                       <a
@@ -132,6 +134,7 @@ const Creative6 = () => {
                                           textDecoration: "none",
                                           color: "rgb(0, 0, 0)",
                                         }}
+                                        className="cardPhone"
                                       >
                                         +12027953213
                                       </a>
@@ -150,9 +153,8 @@ const Creative6 = () => {
                                         fontFamily: '"Lucida Sans Unicode"',
                                         color: "rgb(0, 0, 0)",
                                       }}
-                                      className="name4"
                                     >
-                                      {/**/} {/**/} email:
+                                      email:
                                       <a
                                         href="mailto:sales@pinksports.com"
                                         target="_blank"
@@ -160,6 +162,7 @@ const Creative6 = () => {
                                           textDecoration: "none",
                                           color: "rgb(0, 0, 0)",
                                         }}
+                                        className="cardEmail"
                                       >
                                         sales@pinksports.com
                                       </a>
@@ -187,7 +190,7 @@ const Creative6 = () => {
                                           color: "#000000",
                                         }}
                                         target="_blank"
-                                        className="name5"
+                                        className="cardWebsite"
                                       >
                                         pinksports.com
                                       </a>
@@ -311,7 +314,8 @@ const Creative6 = () => {
                           <td colSpan={2} className="s_pixel">
                             <a
                               href="https://mysignature.io/editor/?utm_source=freepixel"
-                              style={{}} className="image2"
+                              style={{}}
+                              className="image2"
                             >
                               <img src="https://img.mysignature.io/pixel/null/signature/" />
                             </a>

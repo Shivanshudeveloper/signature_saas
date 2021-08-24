@@ -21,7 +21,8 @@ const Free3 = () => {
                             style={{
                               padding: "0px 8px 0px 0px",
                               verticalAlign: "top",
-                            }} className="image1"
+                            }}
+                            className="image1"
                           >
                             <img
                               alt="created with MySignature.io"
@@ -59,7 +60,8 @@ const Free3 = () => {
                                         fontFamily:
                                           "Verdana, Geneva, sans-serif",
                                         color: "rgb(0, 0, 1)",
-                                      }} className = "name1"
+                                      }}
+                                      className="name1"
                                     >
                                       Jamila Richmond
                                     </div>
@@ -77,7 +79,8 @@ const Free3 = () => {
                                         fontFamily:
                                           "Verdana, Geneva, sans-serif",
                                         color: "rgb(0, 0, 1)",
-                                      }} className = "name2"
+                                      }}
+                                      className="cardTitle"
                                     >
                                       CMO
                                       {/**/}| Marketing
@@ -103,7 +106,8 @@ const Free3 = () => {
                                           fontFamily:
                                             "Verdana, Geneva, sans-serif",
                                           color: "rgb(0, 0, 1)",
-                                        }} className = "name3"
+                                        }}
+                                        className="cardPhone"
                                       >
                                         +54-254-54
                                       </a>
@@ -129,7 +133,8 @@ const Free3 = () => {
                                           fontFamily:
                                             "Verdana, Geneva, sans-serif",
                                           color: "rgb(0, 0, 1)",
-                                        }} className = "name4"
+                                        }}
+                                        className="cardPhone"
                                       >
                                         +45-563-80
                                       </a>
@@ -159,7 +164,8 @@ const Free3 = () => {
                                           textDecoration: "none",
                                           color: "#000001",
                                         }}
-                                        target="_blank" className = "name5"
+                                        target="_blank"
+                                        className="cardWebsite"
                                       >
                                         www.healthlife.com
                                       </a>
@@ -186,7 +192,8 @@ const Free3 = () => {
                                           fontFamily:
                                             "Verdana, Geneva, sans-serif",
                                           color: "rgb(0, 0, 1)",
-                                        }} className = "name6"
+                                        }}
+                                        className="cardEmail"
                                       >
                                         jamila@healthlife.com
                                       </a>
@@ -329,7 +336,8 @@ const Free3 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}} className="image2"
+                      style={{}}
+                      className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -354,13 +362,18 @@ const Free3 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px", width: "30px" }} className="image3">
+                <td
+                  style={{ margin: "0.1px", width: "30px" }}
+                  className="image3"
+                >
                   <img
                     src="https://img.mysignature.io/addons/v2/green-earth.png?uid=undefined"
                     alt="Save paper. Don’t print"
                   />
                 </td>
-                <td style={{ margin: "0.1px" }} className = "name7">Save paper. Don’t print</td>
+                <td style={{ margin: "0.1px" }} className="name7">
+                  Save paper. Don’t print
+                </td>
               </tr>
             </tbody>
           </table>
@@ -412,7 +425,8 @@ const Free3 = () => {
                         paddingLeft: "5px",
                         verticalAlign: "middle",
                         fontSize: "15px",
-                      }} className = "name8"
+                      }}
+                      className="name8"
                     >
                       Meet me on Google Hangouts
                     </span>
@@ -421,7 +435,11 @@ const Free3 = () => {
               </tr>
               <tr style={{}}>
                 <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                  <a href="https://mysignature.io/" target="_blank" className="image4">
+                  <a
+                    href="https://mysignature.io/"
+                    target="_blank"
+                    className="image4"
+                  >
                     <img
                       alt="Meet me on Google Hangouts"
                       maxWidth={256}

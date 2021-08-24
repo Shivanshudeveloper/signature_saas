@@ -35,7 +35,10 @@ const Creative9 = () => {
                     >
                       <tbody>
                         <tr>
-                          <td style={{ margin: "0.1px", verticalAlign: "top" }} className="image1">
+                          <td
+                            style={{ margin: "0.1px", verticalAlign: "top" }}
+                            className="image1"
+                          >
                             <img
                               alt="created with MySignature.io"
                               maxWidth={171}
@@ -55,7 +58,7 @@ const Creative9 = () => {
                                         font: '600 1.3em "Courier New", Courier, monospace',
                                         color: "rgb(0, 0, 0)",
                                       }}
-                                      className="name1"
+                                      className="cardName"
                                     >
                                       Ray Flot
                                     </div>
@@ -106,7 +109,7 @@ const Creative9 = () => {
                                           '"Courier New", Courier, monospace',
                                         color: "rgb(0, 0, 0)",
                                       }}
-                                      className="name2"
+                                      className="cardTitle"
                                     >
                                       Writer, Vlogger |{/**/}
                                     </div>
@@ -126,7 +129,6 @@ const Creative9 = () => {
                                           '"Courier New", Courier, monospace',
                                         color: "rgb(0, 0, 0)",
                                       }}
-                                      className="name3"
                                     >
                                       {/**/} {/**/} email:
                                       <a
@@ -136,7 +138,7 @@ const Creative9 = () => {
                                           textDecoration: "none",
                                           color: "rgb(0, 0, 0)",
                                         }}
-                                        className="name5"
+                                        className="cardEmail"
                                       >
                                         ray@rayflot.com
                                       </a>
@@ -165,7 +167,7 @@ const Creative9 = () => {
                                           color: "#000000",
                                         }}
                                         target="_blank"
-                                        className="name6"
+                                        className="cardWebsite"
                                       >
                                         rayflot.com
                                       </a>
@@ -341,7 +343,10 @@ const Creative9 = () => {
                             className="icon_addon-play-video"
                           />
                         </td>
-                        <td className="name7" style={{ fontSize: "15px", paddingLeft: "5px" }}>
+                        <td
+                          className="name7"
+                          style={{ fontSize: "15px", paddingLeft: "5px" }}
+                        >
                           LIVE SHOW: How to be happy
                         </td>
                         <td style={{ paddingLeft: "5px" }}>

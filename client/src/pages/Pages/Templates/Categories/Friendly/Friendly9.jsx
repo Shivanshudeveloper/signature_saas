@@ -15,7 +15,7 @@ const Friendly9 = () => {
                     maxWidth={149}
                     valign="top"
                     style={{ padding: "0px 9px 0px 0px", verticalAlign: "top" }}
-                    className = "image1"
+                    className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -55,7 +55,7 @@ const Friendly9 = () => {
                                 font: "1.2em Verdana, Geneva, sans-serif",
                                 color: "rgb(223, 16, 87)",
                               }}
-                              className="name1"
+                              className="cardName"
                             >
                               Mehdi Bolton
                             </span>{" "}
@@ -64,28 +64,26 @@ const Friendly9 = () => {
                                 fontFamily: "Verdana, Geneva, sans-serif",
                                 color: "rgb(0, 0, 1)",
                               }}
-                              className="name2"
-
+                              className="cardTitle"
                             >
                               &nbsp;&nbsp;Travel Blogger
                             </span>
                           </td>
                         </tr>
-                        <tr>
+                        {/* <tr>
                           <td style={{ margin: "0.1px", padding: "5px 0px" }}>
                             <div
                               style={{
                                 fontFamily: "Verdana, Geneva, sans-serif",
                                 color: "rgb(0, 0, 1)",
                               }}
-                              className="name3"
-
+                              
                             >
                               @mehdi_now
                               {/**/}
                             </div>
                           </td>
-                        </tr>
+                        </tr> */}
                         {/**/} {/**/}
                         <tr>
                           <td style={{ margin: "0.1px" }}>
@@ -109,8 +107,7 @@ const Friendly9 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
-                              className="name4"
-
+                                className="cardWebsite"
                               >
                                 mehdi.blog
                               </a>
@@ -136,7 +133,7 @@ const Friendly9 = () => {
                                   fontFamily: "Verdana, Geneva, sans-serif",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                              className="name5"
+                                className="cardEmail"
                               >
                                 mehdib@gmail.com
                               </a>

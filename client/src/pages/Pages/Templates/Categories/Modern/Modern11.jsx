@@ -15,7 +15,8 @@ const Modern11 = () => {
                   <td
                     valign="top"
                     maxWidth={140}
-                    style={{ verticalAlign: "top" }} className="image1"
+                    style={{ verticalAlign: "top" }}
+                    className="image1"
                   >
                     <img
                       alt="created with MySignature.io"
@@ -56,7 +57,7 @@ const Modern11 = () => {
                                   color: "rgb(0, 0, 0)",
                                   fontWeight: 600,
                                 }}
-                                className= "name1"
+                                className="cardName"
                               >
                                 Rebeca Bonilla
                               </span>{" "}
@@ -66,7 +67,10 @@ const Modern11 = () => {
                         </tr>
                         <tr>
                           <td style={{ margin: "0.1px", paddingBottom: "4px" }}>
-                            <div style={{ fontFamily: "Georgia, serif" }} className= "name2">
+                            <div
+                              style={{ fontFamily: "Georgia, serif" }}
+                              className="cardTitle"
+                            >
                               {" "}
                               | Lawfulle | Legal and Democratic Services
                             </div>
@@ -80,7 +84,8 @@ const Modern11 = () => {
                                 style={{
                                   fontWeight: 600,
                                   color: "rgb(0, 0, 0)",
-                                }} className= "name3"
+                                }}
+                                className="cardPhone"
                               >
                                 mobile:&nbsp;
                               </span>{" "}
@@ -89,7 +94,8 @@ const Modern11 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }} className= "name4"
+                                }}
+                                className="cardEmail"
                               >
                                 +2-535-656-12
                               </a>
@@ -104,7 +110,8 @@ const Modern11 = () => {
                                 style={{
                                   fontWeight: 600,
                                   color: "rgb(0, 0, 0)",
-                                }} className= "name5"
+                                }}
+                                className="name5"
                               >
                                 phone:&nbsp;
                               </span>{" "}
@@ -113,7 +120,8 @@ const Modern11 = () => {
                                 style={{
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
-                                }} className= "name6"
+                                }}
+                                className="name6"
                               >
                                 +2-450-450-32
                               </a>
@@ -129,7 +137,8 @@ const Modern11 = () => {
                                 style={{
                                   fontWeight: 600,
                                   color: "rgb(0, 0, 0)",
-                                }} className= "name7"
+                                }}
+                                className="name7"
                               >
                                 website:&nbsp;
                               </span>
@@ -140,7 +149,8 @@ const Modern11 = () => {
                                     textDecoration: "none",
                                     color: "#000001",
                                   }}
-                                  target="_blank" className= "name8"
+                                  target="_blank"
+                                  className="name8"
                                 >
                                   www.lawfulle.com
                                 </a>
@@ -246,7 +256,8 @@ const Modern11 = () => {
                   <td colSpan={2} className="s_pixel">
                     <a
                       href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}} className="image2"
+                      style={{}}
+                      className="image2"
                     >
                       <img src="https://img.mysignature.io/pixel/null/signature/" />
                     </a>
@@ -277,7 +288,8 @@ const Modern11 = () => {
                     margin: "0.1px",
                     fontFamily: "Georgia, serif",
                     fontSize: "75%",
-                  }} className= "name9"
+                  }}
+                  className="name9"
                 >
                   IMPORTANT: The contents of this email and any attachments are
                   confidential. It is strictly forbidden to share any part of

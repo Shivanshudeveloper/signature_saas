@@ -76,7 +76,7 @@ const Elegant1 = () => {
                               font: 'small-caps 600 1.4em "Lucida Sans Unicode", "Lucida Grande", sans-serif',
                               color: "rgb(10, 37, 71)",
                             }}
-                            className="name1"
+                            className="cardName"
                           >
                             Carry Delinsky
                           </td>
@@ -95,7 +95,7 @@ const Elegant1 = () => {
                                   '"Lucida Sans Unicode", "Lucida Grande", sans-serif',
                                 fontWeight: 600,
                               }}
-                              className="name2"
+                              className="cardTitle"
                             >
                               Founder at Mada Jewellery
                             </div>
@@ -115,7 +115,7 @@ const Elegant1 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name3"
+                                className="cardPhone"
                               >
                                 +1 983 333 3739
                               </a>{" "}
@@ -138,7 +138,7 @@ const Elegant1 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name4"
+                                className="cardEmail"
                               >
                                 carry@mada.com
                               </a>
@@ -160,7 +160,7 @@ const Elegant1 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
-                                className="name5"
+                                className="cardWebsite"
                               >
                                 mada.com
                               </a>
@@ -281,7 +281,11 @@ const Elegant1 = () => {
               <tbody>
                 <tr>
                   <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a target="_blank" href="https://mysignature.io/" className="image3">
+                    <a
+                      target="_blank"
+                      href="https://mysignature.io/"
+                      className="image3"
+                    >
                       <img
                         alt="created with MySignature.io"
                         maxWidth={338}
@@ -347,7 +351,7 @@ const Elegant1 = () => {
                             className="icon_addon-gps"
                           />
                         </td>
-                        <td className="name5" style={{ fontSize: "15px", paddingLeft: "5px" }}>
+                        <td style={{ fontSize: "15px", paddingLeft: "5px" }}>
                           Find our store in your city
                         </td>
                         <td style={{ paddingLeft: "5px" }}>

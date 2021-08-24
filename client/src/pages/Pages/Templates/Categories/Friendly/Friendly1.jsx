@@ -58,7 +58,7 @@ const Friendly1 = () => {
                               font: 'small-caps 600 1.4em "Trebuchet MS", Helvetica, sans-serif',
                               color: "rgb(0, 0, 0)",
                             }}
-                            className="name1"
+                            className="cardName"
                           >
                             Olivia Lanron
                           </td>
@@ -77,7 +77,7 @@ const Friendly1 = () => {
                                   '"Trebuchet MS", Helvetica, sans-serif',
                                 fontWeight: 600,
                               }}
-                              className="name2"
+                              className="cardTitle"
                             >
                               Airbnb Super Host
                               {/**/}
@@ -98,7 +98,7 @@ const Friendly1 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name3"
+                                className="cardPhone"
                               >
                                 +1 747 3847 4442
                               </a>{" "}
@@ -121,7 +121,7 @@ const Friendly1 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name4"
+                                className="cardEmail"
                               >
                                 olivia.airbnb@outlook.com
                               </a>
@@ -242,7 +242,11 @@ const Friendly1 = () => {
               <tbody>
                 <tr>
                   <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a target="_blank" href="https://mysignature.io/" className="image2">
+                    <a
+                      target="_blank"
+                      href="https://mysignature.io/"
+                      className="image2"
+                    >
                       <img
                         alt="created with MySignature.io"
                         maxWidth={409}
@@ -310,7 +314,6 @@ const Friendly1 = () => {
                       borderRadius: "50px",
                     }}
                     href="https://mysignature.io/"
-                    className="name5"
                   >
                     Check dates to stay in the best place to in New York
                     &gt;&gt;&gt;

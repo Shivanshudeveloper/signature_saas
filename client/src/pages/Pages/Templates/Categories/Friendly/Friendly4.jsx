@@ -59,7 +59,7 @@ const Friendly4 = () => {
                         textTransform: "uppercase",
                         color: "rgb(224, 16, 108)",
                       }}
-                      className="name1"
+                      className="cardName"
                     >
                       Marry &amp; Salim
                     </div>
@@ -72,7 +72,7 @@ const Friendly4 = () => {
                         font: 'small-caps 600 1.2em "Comic Sans MS", cursive, sans-serif',
                         color: "rgb(77, 76, 76)",
                       }}
-                      className="name2"
+                      className="cardTitle"
                     >
                       {/**/}
                       HappyShoppers
@@ -97,7 +97,7 @@ const Friendly4 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
-                        className="name3"
+                        className="cardPhone"
                       >
                         +1 733 953 6362
                       </a>
@@ -123,7 +123,7 @@ const Friendly4 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
-                        className="name4"
+                        className="cardEmail"
                       >
                         your@happyshopers.com
                       </a>
@@ -142,7 +142,7 @@ const Friendly4 = () => {
                         href="http://happyshopers.com"
                         style={{ textDecoration: "none", color: "#000001" }}
                         target="_blank"
-                        className="name5"
+                        className="cardWebsite"
                       >
                         happyshopers.com
                       </a>
@@ -242,7 +242,11 @@ const Friendly4 = () => {
                       <tbody>
                         <tr>
                           <td>
-                            <a target="_blank" href="https://mysignature.io/ " className="image3">
+                            <a
+                              target="_blank"
+                              href="https://mysignature.io/ "
+                              className="image3"
+                            >
                               <img
                                 alt="created with MySignature.io"
                                 maxWidth={353}

@@ -43,7 +43,7 @@ const Professional1 = () => {
                                       font: '200 1.4em "Arial Black", Gadget, sans-serif',
                                       color: "rgb(0, 0, 0)",
                                     }}
-                                    className="name1"
+                                    className="cardName"
                                   >
                                     Kelly Brut
                                   </td>
@@ -60,7 +60,7 @@ const Professional1 = () => {
                                         font: '200 1em "Arial Black", Gadget, sans-serif',
                                         color: "rgb(67, 54, 76)",
                                       }}
-                                      className="name2"
+                                      className="cardTitle"
                                     >
                                       Customer Support
                                     </div>
@@ -217,7 +217,7 @@ const Professional1 = () => {
                                       }}
                                     >
                                       {/**/}{" "}
-                                      <span className="name3">
+                                      <span className="cardEmail">
                                         hello@4seaseons.com
                                       </span>
                                       &nbsp;
@@ -245,7 +245,7 @@ const Professional1 = () => {
                                           color: "#000000",
                                         }}
                                         target="_blank"
-                                        className="name4"
+                                        className="cardEmail"
                                       >
                                         4seaseons.com
                                       </a>
@@ -320,7 +320,6 @@ const Professional1 = () => {
                       borderRadius: "50px",
                     }}
                     href="https://mysignature.io/"
-                    className="name5"
                   >
                     Have we helped? Please rate us ☆☆☆☆☆
                   </a>

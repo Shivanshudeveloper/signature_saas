@@ -74,7 +74,7 @@ const Creative2 = () => {
                                 font: "600 1.3em Verdana, Geneva, sans-serif",
                                 color: "rgb(70, 127, 0)",
                               }}
-                              className="name1"
+                              className="cardName"
                             >
                               Jac Drake
                             </span>
@@ -92,7 +92,7 @@ const Creative2 = () => {
                               style={{
                                 fontFamily: "Verdana, Geneva, sans-serif",
                               }}
-                              className="name2"
+                              className="cardTitle"
                             >
                               Explorer and Traveler |{/**/}
                             </div>
@@ -120,7 +120,7 @@ const Creative2 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name3"
+                                className="cardPhone"
                               >
                                 432 403 425
                               </a>
@@ -151,7 +151,7 @@ const Creative2 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name4"
+                                className="cardEmail"
                               >
                                 jacdrakein@gmail.com
                               </a>
@@ -164,7 +164,6 @@ const Creative2 = () => {
                               style={{
                                 fontFamily: "Verdana, Geneva, sans-serif",
                               }}
-                              className="name5"
                             >
                               <span
                                 style={{
@@ -384,7 +383,7 @@ const Creative2 = () => {
                               color: "#467F00",
                               textDecoration: "none",
                             }}
-                            className="name6"
+                            className="cardWebsite"
                           >
                             Workaway.info
                           </a>

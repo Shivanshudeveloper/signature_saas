@@ -61,7 +61,7 @@ const Friendly3 = () => {
                                           '"Comic Sans MS", cursive, sans-serif',
                                         color: "rgb(0, 0, 1)",
                                       }}
-                                      className="name1"
+                                      className="cardName"
                                     >
                                       Melissa Tean
                                     </div>
@@ -80,7 +80,7 @@ const Friendly3 = () => {
                                           '"Comic Sans MS", cursive, sans-serif',
                                         color: "rgb(0, 0, 1)",
                                       }}
-                                      className="name2"
+                                      className="cardTitle"
                                     >
                                       {/**/}
                                       Kid's Corner Entertainment
@@ -109,7 +109,7 @@ const Friendly3 = () => {
                                             '"Comic Sans MS", cursive, sans-serif',
                                           color: "rgb(0, 0, 1)",
                                         }}
-                                        className="name3"
+                                        className="cardPhone"
                                       >
                                         +1 226 353 3638
                                       </a>
@@ -140,7 +140,7 @@ const Friendly3 = () => {
                                           color: "#000001",
                                         }}
                                         target="_blank"
-                                        className="name4"
+                                        className="cardWebsite"
                                       >
                                         kidscorner.com
                                       </a>
@@ -168,7 +168,7 @@ const Friendly3 = () => {
                                             '"Comic Sans MS", cursive, sans-serif',
                                           color: "rgb(0, 0, 1)",
                                         }}
-                                        className="name5"
+                                        className="cardEmail"
                                       >
                                         party@kidscorner.com
                                       </a>

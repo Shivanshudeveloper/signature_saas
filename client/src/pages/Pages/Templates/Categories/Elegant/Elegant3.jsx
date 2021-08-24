@@ -58,7 +58,7 @@ const Elegant3 = () => {
                               font: "small-caps 600 1.4em Tahoma, Geneva, sans-serif",
                               color: "rgb(0, 0, 0)",
                             }}
-                            className="name1"
+                            className="cardName"
                           >
                             Casandra Modely
                           </td>
@@ -76,7 +76,7 @@ const Elegant3 = () => {
                                 fontFamily: "Tahoma, Geneva, sans-serif",
                                 fontWeight: 600,
                               }}
-                              className="name2"
+                              className="cardTitle"
                             >
                               Marketing Consultant
                               {/**/}
@@ -97,7 +97,7 @@ const Elegant3 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name3"
+                                className="cardPhone"
                               >
                                 +1 733 663 3362{" "}
                               </a>
@@ -118,7 +118,7 @@ const Elegant3 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name4"
+                                className="cardEmail"
                               >
                                 cas.modlely@marketfit.com
                               </a>
@@ -139,7 +139,7 @@ const Elegant3 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
-                                className="name5"
+                                className="cardWebsite"
                               >
                                 marketfit.com
                               </a>

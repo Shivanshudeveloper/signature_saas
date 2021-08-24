@@ -175,7 +175,7 @@ const Creative3 = () => {
                               font: '600 1.2em "Lucida Sans Unicode", "Lucida Grande", sans-serif',
                               color: "rgb(20, 186, 71)",
                             }}
-                            className="name1"
+                            className="cardName"
                           >
                             Camelia Poler
                           </td>
@@ -193,7 +193,7 @@ const Creative3 = () => {
                                 fontFamily:
                                   '"Lucida Sans Unicode", "Lucida Grande", sans-serif',
                               }}
-                              className="name2"
+                              className="cardTitle"
                             >
                               Healthy Nutrition Coach
                               {/**/}
@@ -216,7 +216,7 @@ const Creative3 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name3"
+                                className="cardEmail"
                               >
                                 cam@healthyvegan.com
                               </a>
@@ -238,7 +238,7 @@ const Creative3 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
-                                className="name4"
+                                className="cardWebsite"
                               >
                                 healthyvegan.com
                               </a>
@@ -328,13 +328,16 @@ const Creative3 = () => {
           >
             <tbody>
               <tr>
-                <td style={{ margin: "0.1px", width: "30px" }} className="image5">
+                <td
+                  style={{ margin: "0.1px", width: "30px" }}
+                  className="image5"
+                >
                   <img
                     src="https://img.mysignature.io/addons/v2/hand-leaves.png?uid=undefined"
                     alt="Save paper. Don’t print"
                   />
                 </td>
-                <td style={{ margin: "0.1px" }} className="name5">Save paper. Don’t print</td>
+                <td style={{ margin: "0.1px" }}>Save paper. Don’t print</td>
               </tr>
             </tbody>
           </table>

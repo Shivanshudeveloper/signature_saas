@@ -58,7 +58,7 @@ const Elegant2 = () => {
                               font: 'small-caps 600 1.4em "Courier New", Courier, monospace',
                               color: "rgb(65, 117, 5)",
                             }}
-                            className="name1"
+                            className="cardName"
                           >
                             Simon Kunst
                           </td>
@@ -76,7 +76,7 @@ const Elegant2 = () => {
                                 fontFamily: '"Courier New", Courier, monospace',
                                 fontWeight: 600,
                               }}
-                              className="name2"
+                              className="cardTitle"
                             >
                               Creative Director at FashionAdiction
                             </div>
@@ -97,7 +97,7 @@ const Elegant2 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name3"
+                                className="cardEmail"
                               >
                                 simon@fashionadiction.com
                               </a>
@@ -118,7 +118,7 @@ const Elegant2 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
-                                className="name4"
+                                className="cardWebsite"
                               >
                                 fashionadiction.com
                               </a>
@@ -290,7 +290,7 @@ const Elegant2 = () => {
                             className="icon_addon-photo"
                           />
                         </td>
-                        <td className="name5" style={{ fontSize: "14px", paddingLeft: "5px" }}>
+                        <td style={{ fontSize: "14px", paddingLeft: "5px" }}>
                           Check our last shoot and backstage
                         </td>
                         <td style={{ paddingLeft: "5px" }}>
@@ -302,7 +302,7 @@ const Elegant2 = () => {
                               color: "#417505",
                               textDecoration: "none",
                             }}
-                            className="name6"
+                            className="cardWebsite"
                           >
                             here
                           </a>

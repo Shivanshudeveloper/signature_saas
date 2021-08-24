@@ -44,7 +44,7 @@ const Professional2 = () => {
                               font: 'small-caps 600 1.4em "Palatino Linotype", "Book Antiqua", Palatino, serif',
                               color: "rgb(126, 211, 33)",
                             }}
-                            className="name"
+                            className="cardName"
                           >
                             Donny Clarkes
                           </td>
@@ -63,7 +63,7 @@ const Professional2 = () => {
                                   '"Palatino Linotype", "Book Antiqua", Palatino, serif',
                                 fontWeight: 600,
                               }}
-                              className="name"
+                              className="cardTitle"
                             >
                               Logistics manager at GetDelivered
                             </div>
@@ -84,7 +84,7 @@ const Professional2 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name"
+                                className="cardPhone"
                               >
                                 +4 363 649 4642
                               </a>
@@ -106,7 +106,7 @@ const Professional2 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="name"
+                                className="cardEmail"
                               >
                                 dc@getdelivered.com
                               </a>
@@ -128,7 +128,7 @@ const Professional2 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
-                                className="name"
+                                className="cardWebsite"
                               >
                                 getdelivered.com
                               </a>
