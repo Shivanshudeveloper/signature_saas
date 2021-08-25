@@ -3,7 +3,6 @@ import React from "react";
 const Creative2 = () => {
   return (
     <div>
-      <div style={{ padding: "50px 0 0 50px" }}>2) Creative 2</div>
       {/* Creative 2 Start*/}
       <div id="signature-preview" className="o-signature-preview">
         <div>
@@ -173,7 +172,9 @@ const Creative2 = () => {
                               >
                                 A:&nbsp;
                               </span>
-                              Florida, 4610 North Street, 32003
+                              <span className="cardAddress">
+                                Florida, 4610 North Street, 32003
+                              </span>
                             </div>
                           </td>
                         </tr>

@@ -85,7 +85,6 @@ const Modern11 = () => {
                                   fontWeight: 600,
                                   color: "rgb(0, 0, 0)",
                                 }}
-                                className="cardPhone"
                               >
                                 mobile:&nbsp;
                               </span>{" "}
@@ -95,35 +94,9 @@ const Modern11 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                                className="cardEmail"
+                                className="cardPhone"
                               >
                                 +2-535-656-12
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style={{ margin: "0.1px", padding: "1px 0px" }}>
-                            <div style={{ fontFamily: "Georgia, serif" }}>
-                              |{" "}
-                              <span
-                                style={{
-                                  fontWeight: 600,
-                                  color: "rgb(0, 0, 0)",
-                                }}
-                                className="name5"
-                              >
-                                phone:&nbsp;
-                              </span>{" "}
-                              <a
-                                href="tel:+2-450-450-32"
-                                style={{
-                                  textDecoration: "none",
-                                  color: "rgb(0, 0, 1)",
-                                }}
-                                className="name6"
-                              >
-                                +2-450-450-32
                               </a>
                             </div>
                           </td>
@@ -150,7 +123,7 @@ const Modern11 = () => {
                                     color: "#000001",
                                   }}
                                   target="_blank"
-                                  className="name8"
+                                  className="cardWebsite"
                                 >
                                   www.lawfulle.com
                                 </a>

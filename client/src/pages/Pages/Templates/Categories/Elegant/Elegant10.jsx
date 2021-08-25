@@ -99,19 +99,9 @@ const Elegant10 = () => {
                                   textDecoration: "none",
                                   color: "rgb(0, 0, 1)",
                                 }}
-                              >
-                                +65-05-871
-                              </a>{" "}
-                              ,{" "}
-                              <a
-                                href="tel:+45-65-324"
-                                style={{
-                                  textDecoration: "none",
-                                  color: "rgb(0, 0, 1)",
-                                }}
                                 className="cardPhone"
                               >
-                                +45-65-324
+                                +65-05-871
                               </a>
                             </div>
                           </td>

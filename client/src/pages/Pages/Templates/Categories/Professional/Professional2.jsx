@@ -143,7 +143,7 @@ const Professional2 = () => {
                                 fontFamily:
                                   '"Palatino Linotype", "Book Antiqua", Palatino, serif',
                               }}
-                              className="name"
+                              className="cardAddress"
                             >
                               Richmond Staten Island, NY 10306 USA
                             </div>
@@ -316,7 +316,7 @@ const Professional2 = () => {
                         </td>
                         <td
                           style={{ fontSize: "14px", paddingLeft: "5px" }}
-                          className="name"
+                          className="cardDesc"
                         >
                           Find the closest office to your location
                         </td>

@@ -133,31 +133,6 @@ const Professional4 = () => {
                                 color: "rgb(0, 0, 1)",
                               }}
                             >
-                              m:&nbsp;
-                            </span>{" "}
-                            <span>
-                              <a
-                                href="tel:+12023893201"
-                                style={{
-                                  textDecoration: "none",
-                                  fontFamily: "Georgia, serif",
-                                  color: "rgb(0, 0, 1)",
-                                }}
-                                className="cardPhone"
-                              >
-                                +12023893201
-                              </a>
-                            </span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style={{ margin: "0.1px" }}>
-                            <span
-                              style={{
-                                fontFamily: "Georgia, serif",
-                                color: "rgb(0, 0, 1)",
-                              }}
-                            >
                               w:&nbsp;
                             </span>{" "}
                             <span style={{ fontFamily: "Georgia, serif" }}>

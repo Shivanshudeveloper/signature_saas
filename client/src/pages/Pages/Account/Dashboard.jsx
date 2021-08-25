@@ -23,7 +23,7 @@ import ListItem from "@material-ui/core/ListItem";
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
 import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
+import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
 import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
@@ -1457,17 +1457,20 @@ const AllCategory = ({ edit }) => {
 
 const InputField = ({ label, name, value, onChange }) => {
   return (
-    <TextField
-      label={label}
-      fullWidth
-      name={name}
-      onChange={onChange}
-      value={value}
-      variant="filled"
-      size="small"
-      style={{ margin: "10px 0", marginLeft: "10px" }}
-      key="1234"
-    />
+    <FormGroup style={{ margin: "10px 0", width: "100%" }}>
+      <Label>{label}</Label>
+      <Input name={name} onChange={onChange} value={value} />
+    </FormGroup>
+    // <TextField
+    //   label={label}
+    //   fullWidth
+    //   name={name}
+    //   onChange={onChange}
+    //   value={value}
+    //   variant="filled"
+    //   size="small"
+    //   style={{ margin: "10px 0" }}
+    // />
   );
 };
 
@@ -1498,24 +1501,20 @@ const Dashboard = () => {
   const [file, setFile] = useState([]);
   const [filePath, setFilePath] = useState("");
   const [open, setOpen] = React.useState(false);
-  const [value, setValue] = React.useState(0);
   const [message, setMessage] = useState("");
   const [openSnack, setOpenSnack] = useState(false);
-  const [info, setInfo] = useState({
+  const initialState = {
     name: "",
     position: "",
     phone: "",
     email: "",
     website: "",
     desc: "",
-  });
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
+    address: "",
   };
+  const [info, setInfo] = useState(initialState);
 
   const edit = (e) => {
-    console.log(e.target.previousSibling.innerHTML);
     setCard(e.target.previousSibling.innerHTML);
     handleClickOpen();
   };
@@ -1526,6 +1525,7 @@ const Dashboard = () => {
 
   const handleClose = () => {
     setOpen(false);
+    setInfo(initialState);
   };
 
   const toggle = () => setModal(!modal);
@@ -1626,20 +1626,71 @@ const Dashboard = () => {
         .children[0].getElementsByClassName("cardDesc")[0];
 
       if (renderName !== undefined) renderName.innerHTML = e.target.value;
+    } else if (e.target.name === "phone") {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("cardPhone")[0];
+
+      if (renderName !== undefined) renderName.innerHTML = e.target.value;
+    } else if (e.target.name === "address") {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("cardAddress")[0];
+
+      if (renderName !== undefined) renderName.innerHTML = e.target.value;
     }
   };
 
-  console.log(info);
+  const [openCopy, setOpenCopy] = React.useState(false);
+  const handleClickCopy = () => {
+    setOpenCopy(true);
+  };
+
+  const handleCloseCopy = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpenCopy(false);
+  };
+
+  const copyToClipboard = () => {
+    const text = document.getElementsByClassName("renderPaper")[0].innerHTML;
+    console.log(text);
+    navigator.clipboard.writeText(text);
+    handleClickCopy();
+  };
 
   return (
     <>
+      <Snackbar
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "left",
+        }}
+        open={openCopy}
+        autoHideDuration={6000}
+        onClose={handleCloseCopy}
+        message="Copied to Clipboard"
+        action={
+          <React.Fragment>
+            <IconButton
+              size="small"
+              aria-label="close"
+              color="inherit"
+              onClick={handleCloseCopy}
+            >
+              <CloseIcon fontSize="small" />
+            </IconButton>
+          </React.Fragment>
+        }
+      />
       <Dialog
         fullScreen
         open={open}
         onClose={handleClose}
         TransitionComponent={Transition}
       >
-        <AppBar className={classes.appBar}></AppBar>
         <List>
           <ListItem style={{ display: "flex", justifyContent: "flex-end" }}>
             <IconButton
@@ -1651,135 +1702,99 @@ const Dashboard = () => {
               <CloseIcon />
             </IconButton>
           </ListItem>
-          <Divider />
-          <ListItem style={{ display: "flex", justifyContent: "space-around" }}>
-            <div>
-              <Paper
+
+          <ListItem
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+            }}
+          >
+            <Grid container spacing={2}>
+              <Grid
+                item
+                md={6}
                 style={{
-                  width: "550px",
-                  padding: "20px",
-                  height: "450px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
               >
-                <>
-                  <InputField
-                    label="Name"
-                    value={info.name}
-                    name="name"
-                    onChange={changeInfo}
-                  />
-                  <InputField
-                    label="Position"
-                    name="position"
-                    value={info.position}
-                    onChange={changeInfo}
-                  />
-                  <InputField
-                    label="Phone"
-                    name="phone"
-                    value={info.phone}
-                    onChange={changeInfo}
-                  />
-                  <InputField
-                    label="Email"
-                    name="email"
-                    value={info.email}
-                    onChange={changeInfo}
-                  />
-                  <InputField
-                    label="Website"
-                    name="website"
-                    value={info.website}
-                    onChange={changeInfo}
-                  />
-                  <InputField
-                    label="Description"
-                    name="desc"
-                    value={info.desc}
-                    onChange={changeInfo}
-                  />
-                </>
-                {/* <AppBar position="static">
-                  <Tabs
-                    value={value}
-                    onChange={handleChange}
-                    aria-label="simple tabs example"
-                  >
-                    <Tab label="General" {...a11yProps(0)} />
-                    <Tab label="Image" {...a11yProps(1)} />
-                    <Tab label="Social" {...a11yProps(2)} />
-                  </Tabs>
-                </AppBar> */}
-                {/* <TabPanel value={value} index={0}></TabPanel>
-                <TabPanel value={value} index={1}>
-                  <center>
-                    {file.length == 0 ? (
-                      <Dropzone onDrop={handleDrop}>
-                        {({ getRootProps, getInputProps }) => (
-                          <div {...getRootProps({ className: "dropzone" })}>
-                            <input {...getInputProps()} />
-                            <Button
-                              style={{ marginTop: "10px" }}
-                              size="large"
-                              color="primary"
-                              variant="outlined"
-                              fullWidth
-                            >
-                              Upload Profile Photo
-                            </Button>
-                          </div>
-                        )}
-                      </Dropzone>
-                    ) : (
-                      <Button
-                        style={{ marginTop: "10px" }}
-                        size="large"
-                        color="secondary"
-                        variant="contained"
-                        fullWidth
-                        onClick={() => setFile([])}
-                      >
-                        Remove Profile Photo
-                      </Button>
-                    )}
-                  </center>
-                </TabPanel>
-                <TabPanel value={value} index={2}> 
-                  <TextField
-                    label="Instagram"
-                    fullWidth
-                    variant="filled"
-                    size="small"
-                    style={{ margin: "10px 0", marginLeft: "10px" }}
-                  />
-                  <TextField
-                    label="Facebook"
-                    fullWidth
-                    variant="filled"
-                    size="small"
-                    style={{ margin: "10px 0", marginLeft: "10px" }}
-                  />
-                  <TextField
-                    label="Twitter"
-                    fullWidth
-                    variant="filled"
-                    size="small"
-                    style={{ margin: "10px 0", marginLeft: "10px" }}
-                  />
-                  <TextField
-                    label="LinkedIn"
-                    fullWidth
-                    variant="filled"
-                    size="small"
-                    style={{ margin: "10px 0", marginLeft: "10px" }}
-                  />
-                    </TabPanel> */}
-              </Paper>
-            </div>
-            <div>
-              <Paper className="renderPaper">{renderHTML(card)}</Paper>
-            </div>
+                <Paper
+                  style={{
+                    padding: "20px",
+                    width: "500px",
+                    borderRadius: "20px",
+                    background: "#e6ecf7",
+                  }}
+                >
+                  <>
+                    <Typography variant="h5" align="center">
+                      EDIT CARD
+                    </Typography>
+                    <Divider />
+                    <InputField
+                      label="Name"
+                      value={info.name}
+                      name="name"
+                      onChange={changeInfo}
+                    />
+                    <InputField
+                      label="Position"
+                      name="position"
+                      value={info.position}
+                      onChange={changeInfo}
+                    />
+                    <InputField
+                      label="Phone"
+                      name="phone"
+                      value={info.phone}
+                      onChange={changeInfo}
+                    />
+                    <InputField
+                      label="Email"
+                      name="email"
+                      value={info.email}
+                      onChange={changeInfo}
+                    />
+                    <InputField
+                      label="Website"
+                      name="website"
+                      value={info.website}
+                      onChange={changeInfo}
+                    />
+                    <InputField
+                      label="Description"
+                      name="desc"
+                      value={info.desc}
+                      onChange={changeInfo}
+                    />
+                    <InputField
+                      label="Address"
+                      name="address"
+                      value={info.address}
+                      onChange={changeInfo}
+                    />
+                  </>
+                </Paper>
+              </Grid>
+              <Grid
+                item
+                md={6}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Paper className="renderPaper" style={{ width: "max-content" }}>
+                  {renderHTML(card)}
+                </Paper>
+              </Grid>
+            </Grid>
           </ListItem>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Button onClick={copyToClipboard}>Copy HTML</Button>
+          </div>
         </List>
       </Dialog>
       <Container style={{ paddingTop: "20px" }}>

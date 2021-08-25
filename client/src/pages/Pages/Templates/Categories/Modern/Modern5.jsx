@@ -68,7 +68,6 @@ const Modern5 = () => {
                         borderBottom: "1px solid rgb(235, 228, 228)",
                         display: "inline-block",
                       }}
-                      className="cardPhone"
                     >
                       mobile:
                       <a
@@ -77,20 +76,9 @@ const Modern5 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
-                        className="cardEmail"
+                        className="cardPhone"
                       >
                         +4-205-42-96
-                      </a>{" "}
-                      | phone:
-                      <a
-                        href="tel:+3-245-32-55"
-                        style={{
-                          textDecoration: "none",
-                          color: "rgb(0, 0, 1)",
-                        }}
-                        className="name5"
-                      >
-                        +3-245-32-55
                       </a>
                     </span>
                   </td>
@@ -114,7 +102,7 @@ const Modern5 = () => {
                           textDecoration: "none",
                           color: "rgb(0, 0, 1)",
                         }}
-                        className="name6"
+                        className="cardEmail"
                       >
                         jorge@wilingposter.com
                       </a>
@@ -129,7 +117,7 @@ const Modern5 = () => {
                         href="http://www.wilingposter.com"
                         style={{ textDecoration: "none", color: "#000001" }}
                         target="_blank"
-                        className="name7"
+                        className="cardWebsite"
                       >
                         www.wilingposter.com
                       </a>

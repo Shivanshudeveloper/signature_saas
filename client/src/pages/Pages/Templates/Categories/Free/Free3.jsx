@@ -123,33 +123,6 @@ const Free3 = () => {
                                         color: "rgb(99, 204, 200)",
                                       }}
                                     >
-                                      mobile:&nbsp;
-                                    </span>{" "}
-                                    <span>
-                                      <a
-                                        href="tel:+45-563-80"
-                                        style={{
-                                          textDecoration: "none",
-                                          fontFamily:
-                                            "Verdana, Geneva, sans-serif",
-                                          color: "rgb(0, 0, 1)",
-                                        }}
-                                        className="cardPhone"
-                                      >
-                                        +45-563-80
-                                      </a>
-                                    </span>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style={{ margin: "0.1px" }}>
-                                    <span
-                                      style={{
-                                        fontFamily:
-                                          "Verdana, Geneva, sans-serif",
-                                        color: "rgb(99, 204, 200)",
-                                      }}
-                                    >
                                       website:&nbsp;
                                     </span>{" "}
                                     <span

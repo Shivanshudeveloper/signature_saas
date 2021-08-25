@@ -118,7 +118,7 @@ const Modern8 = () => {
                                           textDecoration: "none",
                                           color: "rgb(74, 74, 74)",
                                         }}
-                                        className="cardTitle"
+                                        className="cardEmail"
                                       >
                                         jeremy@reviews.com
                                       </a>
@@ -138,7 +138,7 @@ const Modern8 = () => {
                                           "Arial, Helvetica, sans-serif",
                                         color: "rgb(74, 74, 74)",
                                       }}
-                                      className="cardPhone"
+                                      className="cardDesc"
                                     >
                                       Watch reviews{" "}
                                       <span>

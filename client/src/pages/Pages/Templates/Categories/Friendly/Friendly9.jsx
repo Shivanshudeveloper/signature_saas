@@ -80,7 +80,7 @@ const Friendly9 = () => {
                               
                             >
                               @mehdi_now
-                              {/**/}
+                              {/*
                             </div>
                           </td>
                         </tr> */}

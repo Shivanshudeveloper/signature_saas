@@ -245,7 +245,7 @@ const Professional1 = () => {
                                           color: "#000000",
                                         }}
                                         target="_blank"
-                                        className="cardEmail"
+                                        className="cardWebsite"
                                       >
                                         4seaseons.com
                                       </a>
@@ -351,7 +351,7 @@ const Professional1 = () => {
                     alt="We recycle! Bring old clothes to the closest store and get a discount for the next purchase. "
                   />
                 </td>
-                <td style={{ margin: "0.1px" }} className="name6">
+                <td style={{ margin: "0.1px" }} className="cardDesc">
                   We recycle! Bring old clothes to the closest store and get a
                   discount for the next purchase.{" "}
                 </td>

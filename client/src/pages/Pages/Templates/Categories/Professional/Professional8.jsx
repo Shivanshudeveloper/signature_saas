@@ -138,17 +138,6 @@ const Professional8 = () => {
                                       >
                                         +4-074-20-77
                                       </a>{" "}
-                                      | phone:
-                                      <a
-                                        href="tel:+4-403-67-87"
-                                        style={{
-                                          textDecoration: "none",
-                                          color: "rgb(255, 255, 255)",
-                                        }}
-                                        className="cardPhone"
-                                      >
-                                        +4-403-67-87
-                                      </a>
                                     </div>
                                   </td>
                                 </tr>

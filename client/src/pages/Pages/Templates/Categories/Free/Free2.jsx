@@ -125,34 +125,7 @@ const Free2 = () => {
                             </div>
                           </td>
                         </tr>
-                        <tr>
-                          <td style={{ margin: "0.1px" }}>
-                            <div
-                              style={{
-                                fontFamily: '"Courier New", Courier, monospace',
-                              }}
-                            >
-                              <span
-                                style={{
-                                  fontWeight: 600,
-                                  color: "rgb(17, 42, 62)",
-                                }}
-                              >
-                                P:&nbsp;
-                              </span>{" "}
-                              <a
-                                href="tel:+546-5634-33"
-                                style={{
-                                  textDecoration: "none",
-                                  color: "rgb(0, 0, 1)",
-                                }}
-                                className="cardPhone"
-                              >
-                                +546-5634-33
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
+
                         {/**/}
                         <tr>
                           <td style={{ margin: "0.1px" }}>

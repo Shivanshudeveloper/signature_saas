@@ -115,30 +115,7 @@ const Modern10 = () => {
                     </a>
                   </td>
                 </tr>
-                <tr>
-                  <td style={{ margin: "0.1px", padding: "1px 0px" }}>
-                    <span
-                      style={{
-                        font: "600 1em Arial, Helvetica, sans-serif",
-                        color: "rgb(74, 144, 226)",
-                      }}
-                    >
-                      M
-                    </span>
-                    &nbsp;&nbsp;
-                    <a
-                      href="tel:350-540-54"
-                      style={{
-                        textDecoration: "none",
-                        fontFamily: "Arial, Helvetica, sans-serif",
-                        color: "rgb(0, 0, 1)",
-                      }}
-                      className="cardEmail"
-                    >
-                      350-540-54
-                    </a>
-                  </td>
-                </tr>
+
                 <tr>
                   <td style={{ margin: "0.1px", padding: "1px 0px" }}>
                     <span
@@ -158,7 +135,7 @@ const Modern10 = () => {
                         fontFamily: "Arial, Helvetica, sans-serif",
                         color: "rgb(0, 0, 1)",
                       }}
-                      className="name5"
+                      className="cardEmail"
                     >
                       steave@legalead.com
                     </a>
@@ -185,7 +162,7 @@ const Modern10 = () => {
                           fontFamily: "Arial, Helvetica, sans-serif",
                         }}
                         target="_blank"
-                        className="name6"
+                        className="cardWebsite"
                       >
                         www.legalead.com
                       </a>
@@ -208,7 +185,7 @@ const Modern10 = () => {
                         fontFamily: "Arial, Helvetica, sans-serif",
                         color: "rgb(0, 0, 1)",
                       }}
-                      className="name7"
+                      className="cardAddress"
                     >
                       Maine, 435 Avalon st, fl 6
                     </span>

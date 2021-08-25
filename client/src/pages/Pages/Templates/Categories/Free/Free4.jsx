@@ -90,7 +90,7 @@ const Free4 = () => {
                                 color: "rgb(0, 0, 1)",
                               }}
                             >
-                              p:&nbsp;
+                              m:&nbsp;
                             </span>{" "}
                             <span>
                               <a
@@ -103,31 +103,6 @@ const Free4 = () => {
                                 className="cardPhone"
                               >
                                 +533-540-111
-                              </a>
-                            </span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style={{ margin: "0.1px" }}>
-                            <span
-                              style={{
-                                fontFamily: "Arial, Helvetica, sans-serif",
-                                color: "rgb(0, 0, 1)",
-                              }}
-                            >
-                              m:&nbsp;
-                            </span>{" "}
-                            <span>
-                              <a
-                                href="tel:+435-567-323"
-                                style={{
-                                  textDecoration: "none",
-                                  fontFamily: "Arial, Helvetica, sans-serif",
-                                  color: "rgb(0, 0, 1)",
-                                }}
-                                className="cardPhone"
-                              >
-                                +435-567-323
                               </a>
                             </span>
                           </td>

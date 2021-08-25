@@ -126,31 +126,6 @@ const Free5 = () => {
                                   color: "rgb(66, 195, 193)",
                                 }}
                               >
-                                phone:&nbsp;
-                              </span>{" "}
-                              <a
-                                href="tel:453-32-656"
-                                style={{
-                                  textDecoration: "none",
-                                  color: "rgb(0, 0, 1)",
-                                }}
-                                className="cardPhone"
-                              >
-                                453-32-656
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style={{ margin: "0.1px", padding: "1px 0px" }}>
-                            <div style={{ fontFamily: "Georgia, serif" }}>
-                              |{" "}
-                              <span
-                                style={{
-                                  fontWeight: 600,
-                                  color: "rgb(66, 195, 193)",
-                                }}
-                              >
                                 email:&nbsp;
                               </span>{" "}
                               <a

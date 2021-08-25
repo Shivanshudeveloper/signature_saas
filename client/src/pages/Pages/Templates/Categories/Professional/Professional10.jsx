@@ -201,17 +201,6 @@ const Professional10 = () => {
                               >
                                 3942-600-39
                               </a>{" "}
-                              ,{" "}
-                              <a
-                                href="tel:3242-404-36"
-                                style={{
-                                  textDecoration: "none",
-                                  color: "rgb(0, 0, 1)",
-                                }}
-                                className="cardPhone"
-                              >
-                                3242-404-36
-                              </a>
                             </div>
                           </td>
                         </tr>
