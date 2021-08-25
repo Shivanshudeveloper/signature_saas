@@ -201,7 +201,7 @@ const Creative1 = () => {
                                   >
                                     <a
                                       target="_blank"
-                                      className="social_link  instagram"
+                                      className="social_link instagram"
                                       href="https://mysignature.io/"
                                       style={{
                                         display: "block",

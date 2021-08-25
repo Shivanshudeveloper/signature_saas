@@ -11,6 +11,7 @@ import {
   ModalBody,
   ModalFooter,
 } from "reactstrap";
+import PropTypes from "prop-types";
 import {
   Dropdown,
   DropdownToggle,
@@ -29,12 +30,10 @@ import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
 import CloseIcon from "@material-ui/icons/Close";
 import Slide from "@material-ui/core/Slide";
-import { makeStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Snackbar from "@material-ui/core/Snackbar";
-import Box from "@material-ui/core/Box";
 
 import { v4 as uuid4 } from "uuid";
 import Dropzone from "react-dropzone";
@@ -101,16 +100,11 @@ import Professional9 from "../Templates/Categories/Professional/Professional9";
 import Professional10 from "../Templates/Categories/Professional/Professional10";
 
 import { FormGroup, Label, Input } from "reactstrap";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogContentText from "@material-ui/core/DialogContentText";
 
-const useStyles = makeStyles((theme) => ({
-  appBar: {
-    position: "relative",
-  },
-  title: {
-    marginLeft: theme.spacing(2),
-    flex: 1,
-  },
-}));
+import axois from "axios";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -1455,54 +1449,18 @@ const AllCategory = ({ edit }) => {
   );
 };
 
-const InputField = ({ label, name, value, onChange }) => {
+const InputField = ({ label, name, value, onChange, xs }) => {
   return (
-    <FormGroup style={{ margin: "10px 0", width: "100%" }}>
-      <Label>{label}</Label>
-      <Input name={name} onChange={onChange} value={value} />
-    </FormGroup>
-    // <TextField
-    //   label={label}
-    //   fullWidth
-    //   name={name}
-    //   onChange={onChange}
-    //   value={value}
-    //   variant="filled"
-    //   size="small"
-    //   style={{ margin: "10px 0" }}
-    // />
+    <Grid item md={xs ? 4 : 12}>
+      <FormGroup style={{ margin: "10px 0", width: "100%" }}>
+        <Label>{label}</Label>
+        <Input name={name} onChange={onChange} value={value} />
+      </FormGroup>
+    </Grid>
   );
 };
 
 const Dashboard = () => {
-  function TabPanel(props) {
-    const { children, value, index, ...other } = props;
-    return (
-      <div
-        role="tabpanel"
-        hidden={value !== index}
-        id={`simple-tabpanel-${index}`}
-        aria-labelledby={`simple-tab-${index}`}
-        {...other}
-      >
-        {value === index && (
-          <Box p={3}>
-            <Typography>{children}</Typography>
-          </Box>
-        )}
-      </div>
-    );
-  }
-
-  const [modalCategory, setModalCategory] = useState("All");
-  const [modal, setModal] = useState(false);
-  const [card, setCard] = useState("");
-  const classes = useStyles();
-  const [file, setFile] = useState([]);
-  const [filePath, setFilePath] = useState("");
-  const [open, setOpen] = React.useState(false);
-  const [message, setMessage] = useState("");
-  const [openSnack, setOpenSnack] = useState(false);
   const initialState = {
     name: "",
     position: "",
@@ -1511,11 +1469,65 @@ const Dashboard = () => {
     website: "",
     desc: "",
     address: "",
+    instagram: "",
+    twitter: "",
+    facebook: "",
   };
+
+  const initialStatus = {
+    isInsta: false,
+    isFacebook: false,
+    isTwitter: false,
+    isPin: false,
+  };
+  const [modalCategory, setModalCategory] = useState("All");
+  const [modal, setModal] = useState(false);
+  const [card, setCard] = useState("");
+  const [file, setFile] = useState([]);
+  const [filePath, setFilePath] = useState("");
+  const [open, setOpen] = React.useState(false);
+  const [message, setMessage] = useState("");
+  const [message1, setMessage1] = useState("");
+  const [openSnack, setOpenSnack] = useState(false);
+  const [openHTML, setOpenHTML] = React.useState(false);
+  const [html, setHtml] = useState("");
   const [info, setInfo] = useState(initialState);
+  const [status, setStatus] = useState(initialStatus);
+  const [isInsta, setisInsta] = useState(false);
+  const [isFacebook, setisFacebook] = useState(false);
+  const [isTwitter, setisTwitter] = useState(false);
+  const [signData, setSignData] = useState([]);
+
+  useEffect(() => {
+    const userId = localStorage.getItem("userId");
+    axois
+      .get(`http://localhost:5000/card/getsign?userId=${userId}`)
+      .then((res) => setSignData(res.data));
+  }, []);
+
+  const checkFields = async () => {
+    const SP = await document.querySelector("#signature-preview");
+    const checkI = SP.children[0].getElementsByClassName("fa-instagram")[0];
+    console.log(checkI);
+    if (checkI !== undefined) {
+      setisInsta(true);
+      console.log("insta");
+    }
+    const checkF = SP.children[0].getElementsByClassName("fa-facebook")[0];
+    if (checkF !== undefined) {
+      setisFacebook(true);
+      console.log("face");
+    }
+    const checkT = SP.children[0].getElementsByClassName("fa-twitter")[0];
+    if (checkT !== undefined) {
+      setisTwitter(true);
+      console.log("twitter");
+    }
+  };
 
   const edit = (e) => {
     setCard(e.target.previousSibling.innerHTML);
+    checkFields();
     handleClickOpen();
   };
 
@@ -1526,6 +1538,10 @@ const Dashboard = () => {
   const handleClose = () => {
     setOpen(false);
     setInfo(initialState);
+    setStatus(initialStatus);
+    setisInsta(false);
+    setisFacebook(false);
+    setisTwitter(false);
   };
 
   const toggle = () => setModal(!modal);
@@ -1539,13 +1555,6 @@ const Dashboard = () => {
     }
     setOpenSnack(false);
   };
-
-  function a11yProps(index) {
-    return {
-      id: `simple-tab-${index}`,
-      "aria-controls": `simple-tabpanel-${index}`,
-    };
-  }
 
   useEffect(() => {
     if (file.length > 0) {
@@ -1638,11 +1647,28 @@ const Dashboard = () => {
         .children[0].getElementsByClassName("cardAddress")[0];
 
       if (renderName !== undefined) renderName.innerHTML = e.target.value;
+    } else if (e.target.name === "instagram") {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("fa-instagram")[0]?.parentElement;
+      if (renderName !== undefined) renderName.href = e.target.value;
+    } else if (e.target.name === "facebook") {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("fa-facebook")[0]?.parentElement;
+      if (renderName !== undefined) renderName.href = e.target.value;
+    } else if (e.target.name === "twitter") {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("fa-twitter")[0]?.parentElement;
+      if (renderName !== undefined) renderName.href = e.target.value;
     }
   };
 
   const [openCopy, setOpenCopy] = React.useState(false);
+
   const handleClickCopy = () => {
+    setMessage1("Copied To Clipboard");
     setOpenCopy(true);
   };
 
@@ -1656,9 +1682,34 @@ const Dashboard = () => {
 
   const copyToClipboard = () => {
     const text = document.getElementsByClassName("renderPaper")[0].innerHTML;
-    console.log(text);
     navigator.clipboard.writeText(text);
     handleClickCopy();
+  };
+
+  const handleClickOpenHTML = () => {
+    const text = document.getElementsByClassName("renderPaper")[0].innerHTML;
+    setHtml(text);
+    setOpenHTML(true);
+  };
+
+  const handleCloseHTML = () => {
+    setOpenHTML(false);
+  };
+
+  const saveCard = () => {
+    const text = document.getElementsByClassName("renderPaper")[0].innerHTML;
+    const userId = localStorage.getItem("userId");
+    axois
+      .post(`http://localhost:5000/card/save`, { text, userId })
+      .then((res) => {
+        setMessage1("Saved To Database");
+        setOpenCopy(true);
+        handleClose();
+        handleCloseHTML();
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
@@ -1671,7 +1722,7 @@ const Dashboard = () => {
         open={openCopy}
         autoHideDuration={6000}
         onClose={handleCloseCopy}
-        message="Copied to Clipboard"
+        message={message1}
         action={
           <React.Fragment>
             <IconButton
@@ -1685,6 +1736,29 @@ const Dashboard = () => {
           </React.Fragment>
         }
       />
+      <Dialog
+        open={openHTML}
+        onClose={handleCloseHTML}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            {html}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleCloseHTML} color="primary">
+            Close
+          </Button>
+          <Button onClick={copyToClipboard} color="primary" autoFocus>
+            Copy HTML
+          </Button>
+          <Button onClick={saveCard} color="primary" autoFocus>
+            Save To Database
+          </Button>
+        </DialogActions>
+      </Dialog>
       <Dialog
         fullScreen
         open={open}
@@ -1722,49 +1796,55 @@ const Dashboard = () => {
                 <Paper
                   style={{
                     padding: "20px",
-                    width: "500px",
+                    width: "700px",
                     borderRadius: "20px",
                     background: "#e6ecf7",
                   }}
                 >
-                  <>
-                    <Typography variant="h5" align="center">
-                      EDIT CARD
-                    </Typography>
-                    <Divider />
+                  <Typography variant="h5" align="center">
+                    EDIT CARD
+                  </Typography>
+                  <Divider />
+                  <Grid container spacing={2}>
                     <InputField
                       label="Name"
                       value={info.name}
                       name="name"
                       onChange={changeInfo}
+                      xs
                     />
                     <InputField
                       label="Position"
                       name="position"
                       value={info.position}
                       onChange={changeInfo}
+                      xs
                     />
                     <InputField
                       label="Phone"
                       name="phone"
                       value={info.phone}
+                      xs
                       onChange={changeInfo}
                     />
                     <InputField
                       label="Email"
                       name="email"
                       value={info.email}
+                      xs
                       onChange={changeInfo}
                     />
                     <InputField
                       label="Website"
                       name="website"
+                      xs
                       value={info.website}
                       onChange={changeInfo}
                     />
                     <InputField
                       label="Description"
                       name="desc"
+                      xs
                       value={info.desc}
                       onChange={changeInfo}
                     />
@@ -1774,7 +1854,31 @@ const Dashboard = () => {
                       value={info.address}
                       onChange={changeInfo}
                     />
-                  </>
+                    {isInsta && (
+                      <InputField
+                        label="Instagram"
+                        name="instagram"
+                        value={info.instagram}
+                        onChange={changeInfo}
+                      />
+                    )}
+                    {isFacebook && (
+                      <InputField
+                        label="Facebook"
+                        name="facebook"
+                        value={info.facebook}
+                        onChange={changeInfo}
+                      />
+                    )}
+                    {isTwitter && (
+                      <InputField
+                        label="Twitter"
+                        name="twitter"
+                        value={info.twitter}
+                        onChange={changeInfo}
+                      />
+                    )}
+                  </Grid>
                 </Paper>
               </Grid>
               <Grid
@@ -1792,11 +1896,18 @@ const Dashboard = () => {
               </Grid>
             </Grid>
           </ListItem>
-          <div style={{ display: "flex", justifyContent: "center" }}>
-            <Button onClick={copyToClipboard}>Copy HTML</Button>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "15px",
+            }}
+          >
+            <Button onClick={handleClickOpenHTML}>Get HTML</Button>
           </div>
         </List>
       </Dialog>
+
       <Container style={{ paddingTop: "20px" }}>
         <Row>
           <Col lg="12">
@@ -1819,20 +1930,41 @@ const Dashboard = () => {
                       </Button>
                     </div>
                   </Col>
-                  <Col lg="12" md="12" className="align-items-center">
-                    <div style={{ display: "flex", justifyContent: "center" }}>
-                      <img
-                        src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1625283900/tracker/No_data-pana_vf9vqu.svg"
-                        style={{ maxHeight: "200px" }}
-                        alt="No Signature Found"
-                      />
-                    </div>
-                  </Col>
-                  <Col lg="12" md="12" className="align-items-center">
-                    <div style={{ display: "flex", justifyContent: "center" }}>
-                      <h6>No Signatures Found</h6>
-                    </div>
-                  </Col>
+                  {signData?.length === 0 ? (
+                    <>
+                      <Col lg="12" md="12" className="align-items-center">
+                        <div
+                          style={{ display: "flex", justifyContent: "center" }}
+                        >
+                          <img
+                            src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1625283900/tracker/No_data-pana_vf9vqu.svg"
+                            style={{ maxHeight: "200px" }}
+                            alt="No Signature Found"
+                          />
+                        </div>
+                      </Col>
+                      <Col lg="12" md="12" className="align-items-center">
+                        <div
+                          style={{ display: "flex", justifyContent: "center" }}
+                        >
+                          <h6>No Signatures Found</h6>
+                        </div>
+                      </Col>
+                    </>
+                  ) : (
+                    signData.map((sign) => (
+                      <div
+                        key={sign._id}
+                        style={{
+                          margin: "10px 0",
+                          display: "flex",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <Card>{renderHTML(sign.cardHTML)}</Card>
+                      </div>
+                    ))
+                  )}
                 </Row>
               </CardBody>
             </Card>
