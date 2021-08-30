@@ -112,7 +112,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const Example = (props) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [selected, setSelected] = useState("Select Signature");
+  const [selected, setSelected] = useState("Friendly");
   const toggle = () => setDropdownOpen((prevState) => !prevState);
   const handleChange = (se) => {
     setSelected(se.target.value);
@@ -1480,7 +1480,7 @@ const Dashboard = () => {
     isTwitter: false,
     isPin: false,
   };
-  const [modalCategory, setModalCategory] = useState("All");
+  const [modalCategory, setModalCategory] = useState("Friendly");
   const [modal, setModal] = useState(false);
   const [card, setCard] = useState("");
   const [file, setFile] = useState([]);
@@ -1499,6 +1499,7 @@ const Dashboard = () => {
   const [isFacebook, setisFacebook] = useState(false);
   const [isTwitter, setisTwitter] = useState(false);
   const [signData, setSignData] = useState([]);
+  const [hasSubmitted, setHasSubmitted] = useState(false);
 
   useEffect(() => {
     const userId = localStorage.getItem("userId");
@@ -1541,7 +1542,6 @@ const Dashboard = () => {
     .getElementsByClassName("renderPaper")[0]
     ?.children[0]?.getElementsByClassName("cardPhoto");
   const renderPhotoLen = renderPhoto?.length;
-  console.log(renderPhotoLen);
 
   const handleClose = () => {
     setOpen(false);
@@ -1650,7 +1650,6 @@ const Dashboard = () => {
             const renderName = document
               .getElementsByClassName("renderPaper")[0]
               .children[0].getElementsByClassName("cardPhoto")[0];
-            console.log(renderName);
             if (renderName !== undefined) renderName.src = fp;
           }
         );
@@ -1750,9 +1749,9 @@ const Dashboard = () => {
   };
 
   const handleClickOpenHTML = () => {
+    setHasSubmitted(true);
     const text = document.getElementsByClassName("renderPaper")[0].innerHTML;
     setHtml(text);
-    setOpenHTML(true);
   };
 
   const handleCloseHTML = () => {
@@ -1799,29 +1798,7 @@ const Dashboard = () => {
           </React.Fragment>
         }
       />
-      <Dialog
-        open={openHTML}
-        onClose={handleCloseHTML}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-      >
-        <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-            {html}
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleCloseHTML} color="primary">
-            Close
-          </Button>
-          <Button onClick={copyToClipboard} color="primary" autoFocus>
-            Copy HTML
-          </Button>
-          <Button onClick={saveCard} color="primary" autoFocus>
-            Save To Database
-          </Button>
-        </DialogActions>
-      </Dialog>
+
       <Dialog
         fullScreen
         open={open}
@@ -1853,116 +1830,98 @@ const Dashboard = () => {
                 style={{
                   display: "flex",
                   justifyContent: "center",
-                  alignItems: "center",
+                  // alignItems: "center",
                 }}
               >
-                <Paper
-                  style={{
-                    padding: "20px",
-                    width: "700px",
-                    borderRadius: "20px",
-                    background: "#e6ecf7",
-                  }}
-                >
-                  <Typography variant="h5" align="center">
-                    EDIT CARD
-                  </Typography>
-                  <Divider />
-                  <Grid container spacing={2}>
-                    <InputField
-                      label="Name"
-                      value={info.name}
-                      name="name"
-                      onChange={changeInfo}
-                      xs
-                    />
-                    <InputField
-                      label="Position"
-                      name="position"
-                      value={info.position}
-                      onChange={changeInfo}
-                      xs
-                    />
-                    <InputField
-                      label="Phone"
-                      name="phone"
-                      value={info.phone}
-                      xs
-                      onChange={changeInfo}
-                    />
-                    <InputField
-                      label="Email"
-                      name="email"
-                      value={info.email}
-                      xs
-                      onChange={changeInfo}
-                    />
-                    <InputField
-                      label="Website"
-                      name="website"
-                      xs
-                      value={info.website}
-                      onChange={changeInfo}
-                    />
-                    <InputField
-                      label="Description"
-                      name="desc"
-                      xs
-                      value={info.desc}
-                      onChange={changeInfo}
-                    />
-                    <InputField
-                      label="Address"
-                      name="address"
-                      value={info.address}
-                      onChange={changeInfo}
-                    />
-                    {isInsta && (
+                {!hasSubmitted ? (
+                  <Paper
+                    style={{
+                      padding: "20px",
+                      width: "700px",
+                      borderRadius: "20px",
+                      background: "#e6ecf7",
+                    }}
+                  >
+                    <Typography variant="h5" align="center">
+                      EDIT CARD
+                    </Typography>
+                    <Divider />
+                    <Grid container spacing={2}>
                       <InputField
-                        label="Instagram"
-                        name="instagram"
-                        value={info.instagram}
+                        label="Name"
+                        value={info.name}
+                        name="name"
+                        onChange={changeInfo}
+                        xs
+                      />
+                      <InputField
+                        label="Position"
+                        name="position"
+                        value={info.position}
+                        onChange={changeInfo}
+                        xs
+                      />
+                      <InputField
+                        label="Phone"
+                        name="phone"
+                        value={info.phone}
+                        xs
                         onChange={changeInfo}
                       />
-                    )}
-                    {isFacebook && (
                       <InputField
-                        label="Facebook"
-                        name="facebook"
-                        value={info.facebook}
+                        label="Email"
+                        name="email"
+                        value={info.email}
+                        xs
                         onChange={changeInfo}
                       />
-                    )}
-                    {isTwitter && (
                       <InputField
-                        label="Twitter"
-                        name="twitter"
-                        value={info.twitter}
+                        label="Website"
+                        name="website"
+                        xs
+                        value={info.website}
                         onChange={changeInfo}
                       />
-                    )}
-                  </Grid>
-                  <center>
-                    <Dropzone onDrop={handleDrop}>
-                      {({ getRootProps, getInputProps }) => (
-                        <div {...getRootProps({ className: "dropzone" })}>
-                          <input {...getInputProps()} />
-                          <Button
-                            style={{ marginTop: "10px" }}
-                            size="large"
-                            color="primary"
-                            variant="outlined"
-                            fullWidth
-                          >
-                            Add Image
-                          </Button>
-                        </div>
+                      <InputField
+                        label="Description"
+                        name="desc"
+                        xs
+                        value={info.desc}
+                        onChange={changeInfo}
+                      />
+                      <InputField
+                        label="Address"
+                        name="address"
+                        value={info.address}
+                        onChange={changeInfo}
+                      />
+                      {isInsta && (
+                        <InputField
+                          label="Instagram"
+                          name="instagram"
+                          value={info.instagram}
+                          onChange={changeInfo}
+                        />
                       )}
-                    </Dropzone>
-                  </center>
-                  {renderPhotoLen === 1 && (
+                      {isFacebook && (
+                        <InputField
+                          label="Facebook"
+                          name="facebook"
+                          value={info.facebook}
+                          onChange={changeInfo}
+                        />
+                      )}
+                      {isTwitter && (
+                        <InputField
+                          label="Twitter"
+                          name="twitter"
+                          value={info.twitter}
+                          onChange={changeInfo}
+                        />
+                      )}
+                    </Grid>
                     <center>
-                      <Dropzone onDrop={handleDrop1}>
+                      <Dropzone onDrop={handleDrop}>
                         {({ getRootProps, getInputProps }) => (
                           <div {...getRootProps({ className: "dropzone" })}>
                             <input {...getInputProps()} />
@@ -1970,17 +1929,147 @@ const Dashboard = () => {
                               style={{ marginTop: "10px" }}
                               size="large"
                               color="primary"
-                              // variant=""
+                              variant="outlined"
                               fullWidth
                             >
-                              Change Second Image
+                              Add Image
                             </Button>
                           </div>
                         )}
                       </Dropzone>
                     </center>
-                  )}
-                </Paper>
+                    {renderPhotoLen === 1 && (
+                      <center>
+                        <Dropzone onDrop={handleDrop1}>
+                          {({ getRootProps, getInputProps }) => (
+                            <div {...getRootProps({ className: "dropzone" })}>
+                              <input {...getInputProps()} />
+                              <Button
+                                style={{ marginTop: "10px" }}
+                                size="large"
+                                color="primary"
+                                outline
+                                fullWidth
+                              >
+                                Change Second Image
+                              </Button>
+                            </div>
+                          )}
+                        </Dropzone>
+                      </center>
+                    )}
+                  </Paper>
+                ) : (
+                  <Paper
+                    style={{
+                      padding: "32px",
+                      width: "700px",
+                      borderRadius: "14px",
+                      background: "#e6ecf7",
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <div>
+                      <Typography variant="h5">
+                        Liked your signature? Share it on your social media.
+                      </Typography>
+                      <Button
+                        style={{ marginTop: "20px" }}
+                        color="primary"
+                        fullWidth
+                      >
+                        Facebook
+                      </Button>
+                      <Button
+                        style={{ marginTop: "20px", marginLeft: "10px" }}
+                        color="primary"
+                        fullWidth
+                      >
+                        Instagram
+                      </Button>
+                      <br />
+                      <br />
+                      <Typography variant="h6">How to install?</Typography>
+                      <div
+                        style={{
+                          border: "1px solid black",
+                          padding: "10px",
+                          borderRadius: "10px",
+                          width: "fit-content",
+                          marginTop: "10px",
+                          cursor: "pointer",
+                          boxShadow: "5px 10px 18px #888888",
+                        }}
+                        onClick={() => setOpenHTML(true)}
+                      >
+                        Get Source Code
+                      </div>
+                      {openHTML && (
+                        <>
+                          <div
+                            style={{
+                              maxHeight: "140px",
+                              overflowY: "scroll",
+                              margin: "15px 0",
+                              background: "white",
+                              padding: "5px",
+                            }}
+                          >
+                            {html}
+                          </div>
+                          <div
+                            style={{
+                              display: "flex",
+                              justifyContent: "flex-end",
+                              margin: "10px 0",
+                            }}
+                          >
+                            <Button
+                              onClick={() => setOpenHTML(false)}
+                              color="primary"
+                              size="sm"
+                              outline
+                              style={{ marginRight: "8px" }}
+                            >
+                              Close
+                            </Button>
+                            <Button
+                              onClick={copyToClipboard}
+                              color="primary"
+                              size="sm"
+                              autoFocus
+                            >
+                              Copy HTML
+                            </Button>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      {hasSubmitted && (
+                        <Button
+                          onClick={() => {
+                            setHasSubmitted(false);
+                            setOpenHTML(false);
+                          }}
+                          color="primary"
+                        >
+                          Back to Edit
+                        </Button>
+                      )}
+                      <Button onClick={saveCard} color="primary" autoFocus>
+                        Save To My Signatures
+                      </Button>
+                    </div>
+                  </Paper>
+                )}
               </Grid>
               <Grid
                 item
@@ -2004,7 +2093,11 @@ const Dashboard = () => {
               marginTop: "15px",
             }}
           >
-            <Button onClick={handleClickOpenHTML}>Get HTML</Button>
+            {!hasSubmitted && (
+              <Button onClick={handleClickOpenHTML} color="primary">
+                Save Card
+              </Button>
+            )}
           </div>
         </List>
       </Dialog>
@@ -2100,7 +2193,7 @@ const Dashboard = () => {
           </ModalBody>
           <ModalFooter>
             <Button color="primary" onClick={toggle}>
-              Select Signature
+              Friendly
             </Button>{" "}
             <Button color="secondary" onClick={toggle}>
               Cancel
