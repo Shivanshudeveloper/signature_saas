@@ -100,9 +100,7 @@ import Professional9 from "../Templates/Categories/Professional/Professional9";
 import Professional10 from "../Templates/Categories/Professional/Professional10";
 
 import { FormGroup, Label, Input } from "reactstrap";
-import DialogActions from "@material-ui/core/DialogActions";
-import DialogContent from "@material-ui/core/DialogContent";
-import DialogContentText from "@material-ui/core/DialogContentText";
+import { useHistory } from "react-router-dom";
 
 import axois from "axios";
 
@@ -1500,6 +1498,7 @@ const Dashboard = () => {
   const [isTwitter, setisTwitter] = useState(false);
   const [signData, setSignData] = useState([]);
   const [hasSubmitted, setHasSubmitted] = useState(false);
+  const history = useHistory();
 
   useEffect(() => {
     const userId = localStorage.getItem("userId");
@@ -1768,6 +1767,7 @@ const Dashboard = () => {
         setOpenCopy(true);
         handleClose();
         handleCloseHTML();
+        history.push("/dashboard");
       })
       .catch((error) => {
         console.log(error);
@@ -2146,18 +2146,20 @@ const Dashboard = () => {
                       </Col>
                     </>
                   ) : (
-                    signData.map((sign) => (
-                      <div
-                        key={sign._id}
-                        style={{
-                          margin: "10px 0",
-                          display: "flex",
-                          justifyContent: "center",
-                        }}
-                      >
-                        <Card>{renderHTML(sign.cardHTML)}</Card>
-                      </div>
-                    ))
+                    <Grid container spacing={2} style={{ marginTop: "20px" }}>
+                      {signData.map((sign) => (
+                        <Grid
+                          item
+                          md={6}
+                          style={{
+                            margin: "10px 0",
+                          }}
+                          className="displayCard"
+                        >
+                          {renderHTML(sign.cardHTML)}
+                        </Grid>
+                      ))}
+                    </Grid>
                   )}
                 </Row>
               </CardBody>

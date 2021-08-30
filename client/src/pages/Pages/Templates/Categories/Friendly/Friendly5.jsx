@@ -315,6 +315,7 @@ const Friendly5 = () => {
                       <img
                         alt="created with MySignature.io"
                         className="cardPhoto"
+                        style={{ maxHeight: "100px" }}
                         maxWidth={353}
                         src="https://img.mysignature.io/b/9/c/6/9c6c8864-ecd8-54e4-a1dc-2b6bf2710a2c.png?time=1613560965"
                       />

@@ -278,7 +278,7 @@ const Creative1 = () => {
                       <img
                         alt="created with MySignature.io"
                         className="cardPhoto"
-                        className="cardPhoto"
+                        style={{ maxHeight: "100px" }}
                         maxWidth={337}
                         src="https://img.mysignature.io/b/1/2/7/12794976-051e-5b58-a5e3-93f13fb5eb1f.png?time=1613563138"
                       />

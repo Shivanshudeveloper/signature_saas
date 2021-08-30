@@ -10,3 +10,13 @@
   border: 2px solid blue;
   cursor: pointer;
 }
+
+.displayCard > div {
+  box-shadow: 5px 10px 18px #c2c0c0;
+  transition: 0.4s;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* .displayCard:hover {
+} */

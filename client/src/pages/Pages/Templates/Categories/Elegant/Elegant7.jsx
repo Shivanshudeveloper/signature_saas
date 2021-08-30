@@ -268,6 +268,7 @@ const Elegant7 = () => {
                       <img
                         alt="created with MySignature.io"
                         className="cardPhoto"
+                        style={{ maxHeight: "100px" }}
                         maxWidth={435}
                         src="https://img.mysignature.io/b/c/a/a/caafa683-54ec-5ae4-88ba-de0bc1aa1fac.png?time=1613559277"
                       />
