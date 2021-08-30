@@ -243,6 +243,7 @@ const Friendly1 = () => {
                 >
                   <img
                     alt="created with MySignature.io"
+                    className="cardPhoto"
                     maxWidth={409}
                     src="https://img.mysignature.io/b/2/3/0/230b3885-145e-557d-8c71-f3cb65ae984e.png?time=1613563218"
                   />

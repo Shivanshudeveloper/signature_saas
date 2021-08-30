@@ -264,7 +264,7 @@ const Creative10 = () => {
                     >
                       <img
                         alt="created with MySignature.io"
-                        className="cardProfile"
+                        className="cardPhoto"
                         maxWidth={350}
                         src="https://img.mysignature.io/b/9/7/b/97bb48f7-13b0-5fd4-8dda-4249428c06b5.png?time=1613563018"
                       />

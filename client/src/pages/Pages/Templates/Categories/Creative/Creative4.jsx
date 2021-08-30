@@ -42,7 +42,6 @@ const Creative4 = () => {
                               maxWidth={179}
                               style={{ width: "179px", maxWidth: "179px" }}
                               src="https://img.mysignature.io/p/6/c/d/6cd4e680-196d-5d83-a3a6-67182aa13694.png?time=1610636165"
-                              className="cardProfile"
                             />
                           </td>
                           <td style={{ margin: "0.1px", paddingLeft: "15px" }}>
@@ -336,6 +335,7 @@ const Creative4 = () => {
                       borderRadius: "1px",
                     }}
                     href="https://mysignature.io/"
+                    className="cardDesc"
                   >
                     Join live stream with Mat Zabia! 10/12/2020, Tuesday 10 p.m.
                   </a>

@@ -46,7 +46,6 @@ const Creative5 = () => {
                               maxWidth={145}
                               style={{ width: "145px", maxWidth: "145px" }}
                               src="https://img.mysignature.io/p/d/3/a/d3ae1176-e09d-596f-8fcf-ea28b7a5155c.png?time=1610637090"
-                              className="cardProfile"
                             />
                           </td>
                           <td

@@ -1484,7 +1484,9 @@ const Dashboard = () => {
   const [modal, setModal] = useState(false);
   const [card, setCard] = useState("");
   const [file, setFile] = useState([]);
+  const [file1, setFile1] = useState([]);
   const [filePath, setFilePath] = useState("");
+  const [filePath1, setFilePath1] = useState("");
   const [open, setOpen] = React.useState(false);
   const [message, setMessage] = useState("");
   const [message1, setMessage1] = useState("");
@@ -1535,6 +1537,12 @@ const Dashboard = () => {
     setOpen(true);
   };
 
+  const renderPhoto = document
+    .getElementsByClassName("renderPaper")[0]
+    ?.children[0]?.getElementsByClassName("cardPhoto");
+  const renderPhotoLen = renderPhoto?.length;
+  console.log(renderPhotoLen);
+
   const handleClose = () => {
     setOpen(false);
     setInfo(initialState);
@@ -1563,6 +1571,13 @@ const Dashboard = () => {
       console.log("N");
     }
   }, [file]);
+  useEffect(() => {
+    if (file1.length > 0) {
+      onSubmit1();
+    } else {
+      console.log("N");
+    }
+  }, [file1]);
 
   const onSubmit = () => {
     if (file.length > 0) {
@@ -1604,9 +1619,52 @@ const Dashboard = () => {
       setMessage("No File Selected Yet");
     }
   };
+  const onSubmit1 = () => {
+    if (file1.length > 0) {
+      file1.forEach((file) => {
+        const timeStamp = Date.now();
+        var uniquetwoKey = uuid4();
+        uniquetwoKey = uniquetwoKey + timeStamp;
+        const uploadTask = storage
+          .ref(`pictures/products/${uniquetwoKey}/${file.name}`)
+          .put(file);
+        uploadTask.on(
+          "state_changed",
+          (snapshot) => {
+            const progress = Math.round(
+              (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+            );
+            handleClick();
+            setMessage(`Uploading ${progress} %`);
+          },
+          (error) => {
+            setMessage(error);
+            handleClick();
+          },
+          async () => {
+            // When the Storage gets Completed
+            const fp = await uploadTask.snapshot.ref.getDownloadURL();
+            setFilePath1(fp);
+            handleClick();
+            setMessage("File Uploaded");
+            const renderName = document
+              .getElementsByClassName("renderPaper")[0]
+              .children[0].getElementsByClassName("cardPhoto")[0];
+            console.log(renderName);
+            if (renderName !== undefined) renderName.src = fp;
+          }
+        );
+      });
+    } else {
+      setMessage("No File Selected Yet");
+    }
+  };
 
   const handleDrop = async (acceptedFiles) => {
     setFile(acceptedFiles.map((file) => file));
+  };
+  const handleDrop1 = async (acceptedFiles) => {
+    setFile1(acceptedFiles.map((file) => file));
   };
 
   const changeInfo = (e) => {
@@ -1902,6 +1960,26 @@ const Dashboard = () => {
                       )}
                     </Dropzone>
                   </center>
+                  {renderPhotoLen === 1 && (
+                    <center>
+                      <Dropzone onDrop={handleDrop1}>
+                        {({ getRootProps, getInputProps }) => (
+                          <div {...getRootProps({ className: "dropzone" })}>
+                            <input {...getInputProps()} />
+                            <Button
+                              style={{ marginTop: "10px" }}
+                              size="large"
+                              color="primary"
+                              // variant=""
+                              fullWidth
+                            >
+                              Change Second Image
+                            </Button>
+                          </div>
+                        )}
+                      </Dropzone>
+                    </center>
+                  )}
                 </Paper>
               </Grid>
               <Grid

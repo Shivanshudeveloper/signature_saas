@@ -328,6 +328,7 @@ const Elegant9 = () => {
                     >
                       <img
                         alt="created with MySignature.io"
+                        className="cardPhoto"
                         className="cardProfile"
                         maxWidth={368}
                         src="https://img.mysignature.io/b/b/f/c/bfcf967c-6b64-5c12-a27c-c31c8baceaf3.png?time=1613562917"
