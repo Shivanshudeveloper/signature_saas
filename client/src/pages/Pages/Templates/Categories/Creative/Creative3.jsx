@@ -39,9 +39,11 @@ const Creative3 = () => {
                   >
                     <img
                       alt="created with MySignature.io"
+                      className="cardProfile"
                       maxWidth={137}
                       style={{ width: "137px", maxWidth: "137px" }}
                       src="https://img.mysignature.io/p/b/6/4/b648ec8e-360a-5dc1-9dc6-013afc68f2b9.png?time=1613563173"
+                      className="cardProfile"
                     />
                   </td>
                   <td

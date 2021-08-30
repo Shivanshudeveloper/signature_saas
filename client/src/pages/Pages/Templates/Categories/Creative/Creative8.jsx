@@ -22,6 +22,7 @@ const Creative8 = () => {
                   >
                     <img
                       alt="created with MySignature.io"
+                      className="cardProfile"
                       maxWidth={185}
                       style={{ width: "185px", maxWidth: "185px" }}
                       src="https://img.mysignature.io/p/f/1/9/f19a6ae2-a1ec-50f1-b219-ec2e1818d467.png?time=1610637277"

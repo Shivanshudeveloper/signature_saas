@@ -41,6 +41,7 @@ const Modern8 = () => {
                           >
                             <img
                               alt="created with MySignature.io"
+                              className="cardProfile"
                               maxWidth={138}
                               style={{ width: "138px", maxWidth: "138px" }}
                               src="https://img.mysignature.io/p/8/4/b/84b17a8d-81e7-50a6-946e-8da5193dabbb.png?time=1610637336"

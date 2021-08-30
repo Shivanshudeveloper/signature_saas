@@ -28,6 +28,7 @@ const Modern3 = () => {
                   <td className="image1">
                     <img
                       alt="created with MySignature.io"
+                      className="cardProfile"
                       maxWidth={154}
                       style={{ width: "154px", maxWidth: "154px" }}
                       src="https://img.mysignature.io/p/a/f/e/afeef554-e1bf-5b5d-b0d1-062e88f384eb.png?time=1610637074"

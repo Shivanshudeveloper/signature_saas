@@ -48,6 +48,7 @@ const Modern9 = () => {
                                   >
                                     <img
                                       alt="created with MySignature.io"
+                                      className="cardProfile"
                                       maxWidth={92}
                                       style={{
                                         width: "92px",

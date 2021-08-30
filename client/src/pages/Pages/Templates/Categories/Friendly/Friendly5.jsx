@@ -25,6 +25,7 @@ const Friendly5 = () => {
                           >
                             <img
                               alt="created with MySignature.io"
+                              className="cardProfile"
                               maxWidth={117}
                               style={{ width: "117px", maxWidth: "117px" }}
                               src="https://img.mysignature.io/p/9/c/6/9c6c8864-ecd8-54e4-a1dc-2b6bf2710a2c.png?time=1613560965"
@@ -313,6 +314,7 @@ const Friendly5 = () => {
                     >
                       <img
                         alt="created with MySignature.io"
+                        className="cardProfile"
                         maxWidth={353}
                         src="https://img.mysignature.io/b/9/c/6/9c6c8864-ecd8-54e4-a1dc-2b6bf2710a2c.png?time=1613560965"
                       />

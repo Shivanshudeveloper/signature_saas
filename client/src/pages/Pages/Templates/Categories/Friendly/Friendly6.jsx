@@ -22,6 +22,7 @@ const Friendly6 = () => {
                   >
                     <img
                       alt="created with MySignature.io"
+                      className="cardProfile"
                       maxWidth={134}
                       style={{ width: "134px", maxWidth: "134px" }}
                       src="https://img.mysignature.io/p/0/4/f/04fb926f-0e9a-5d52-86d0-7073e01eb8e6.png?time=1613563234"

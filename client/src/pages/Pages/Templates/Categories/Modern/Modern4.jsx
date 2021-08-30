@@ -19,6 +19,7 @@ const Modern4 = () => {
                   >
                     <img
                       alt="created with MySignature.io"
+                      className="cardProfile"
                       maxWidth={148}
                       style={{ width: "148px", maxWidth: "148px" }}
                       src="https://img.mysignature.io/p/6/1/1/611f5ed1-5a04-572c-9f66-219871079bae.png?time=1613560757"
@@ -305,6 +306,7 @@ const Modern4 = () => {
                     >
                       <img
                         alt="created with MySignature.io"
+                        className="cardProfile"
                         maxWidth={476}
                         src="https://img.mysignature.io/b/6/1/1/611f5ed1-5a04-572c-9f66-219871079bae.png?time=1613560757"
                       />

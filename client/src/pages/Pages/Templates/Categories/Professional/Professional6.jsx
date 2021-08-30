@@ -19,6 +19,7 @@ const Professional6 = () => {
                   >
                     <img
                       alt="created with MySignature.io"
+                      className="cardProfile"
                       maxWidth={182}
                       style={{ width: "182px", maxWidth: "182px" }}
                       src="https://img.mysignature.io/p/2/8/7/287e6bc7-fe66-5123-98dc-b28470cd2110.png?time=1610637050"

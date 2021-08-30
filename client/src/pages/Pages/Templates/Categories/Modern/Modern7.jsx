@@ -25,6 +25,7 @@ const Modern7 = () => {
                           >
                             <img
                               alt="created with MySignature.io"
+                              className="cardProfile"
                               maxWidth={126}
                               style={{ width: "126px", maxWidth: "126px" }}
                               src="https://img.mysignature.io/p/e/f/9/ef9afb0c-8552-56b0-bb52-1d54fe74732d.png?time=1610637318"

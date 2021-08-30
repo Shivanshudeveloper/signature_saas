@@ -19,6 +19,7 @@ const Free4 = () => {
                   >
                     <img
                       alt="created with MySignature.io"
+                      className="cardProfile"
                       maxWidth={157}
                       style={{ width: "157px", maxWidth: "157px" }}
                       src="https://img.mysignature.io/p/9/a/9/9a9be290-0f29-5353-93bb-02fdce1659bb.png?time=1610636674"

@@ -23,6 +23,7 @@ const Elegant10 = () => {
                   >
                     <img
                       alt="created with MySignature.io"
+                      className="cardProfile"
                       maxWidth={144}
                       style={{ width: "144px", maxWidth: "144px" }}
                       src="https://img.mysignature.io/p/7/8/7/787e4d14-5a8f-59c1-b90c-aebd7691eeb1.png?time=1613563036"
@@ -271,6 +272,7 @@ const Elegant10 = () => {
                     >
                       <img
                         alt="created with MySignature.io"
+                        className="cardProfile"
                         maxWidth={307}
                         src="https://img.mysignature.io/b/7/8/7/787e4d14-5a8f-59c1-b90c-aebd7691eeb1.png?time=1613563036"
                       />

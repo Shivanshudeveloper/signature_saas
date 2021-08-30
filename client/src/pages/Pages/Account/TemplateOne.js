@@ -13,6 +13,7 @@ const TemplateOne = () => {
                 <td valign="top" width="153" className="td1">
                   <img
                     alt="created with MySignature.io"
+                    className="cardProfile"
                     width="153"
                     className="img1"
                     src="https://img.mysignature.io/p/2/3/0/230b3885-145e-557d-8c71-f3cb65ae984e.png?time=1613563218"
@@ -112,6 +113,7 @@ const TemplateOne = () => {
                   <a target="_blank" href="https://mysignature.io/">
                     <img
                       alt="created with MySignature.io"
+                      className="cardProfile"
                       width="409"
                       src="https://img.mysignature.io/b/2/3/0/230b3885-145e-557d-8c71-f3cb65ae984e.png?time=1613563218"
                     />

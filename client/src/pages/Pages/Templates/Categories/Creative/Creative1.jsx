@@ -19,9 +19,11 @@ const Creative1 = () => {
                   >
                     <img
                       alt="created with MySignature.io"
+                      className="cardProfile"
                       maxWidth={139}
                       style={{ width: "139px", maxWidth: "139px" }}
                       src="https://img.mysignature.io/p/1/2/7/12794976-051e-5b58-a5e3-93f13fb5eb1f.png?time=1613563138"
+                      className="cardProfile"
                     />
                   </td>
                   <td
@@ -276,6 +278,7 @@ const Creative1 = () => {
                     >
                       <img
                         alt="created with MySignature.io"
+                        className="cardProfile"
                         maxWidth={337}
                         src="https://img.mysignature.io/b/1/2/7/12794976-051e-5b58-a5e3-93f13fb5eb1f.png?time=1613563138"
                       />

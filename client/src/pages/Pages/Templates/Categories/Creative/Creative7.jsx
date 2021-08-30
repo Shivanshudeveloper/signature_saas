@@ -25,6 +25,7 @@ const Creative7 = () => {
                   <td maxWidth={116} className="image1">
                     <img
                       alt="created with MySignature.io"
+                      className="cardProfile"
                       maxWidth={116}
                       style={{ width: "116px", maxWidth: "116px" }}
                       src="https://img.mysignature.io/p/7/5/5/755c6ebf-bcdb-517c-a4a0-d2083bd83644.png?time=1610637222"

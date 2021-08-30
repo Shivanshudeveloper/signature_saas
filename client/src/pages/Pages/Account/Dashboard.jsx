@@ -1592,6 +1592,11 @@ const Dashboard = () => {
             setFilePath(fp);
             handleClick();
             setMessage("File Uploaded");
+            const renderName = document
+              .getElementsByClassName("renderPaper")[0]
+              .children[0].getElementsByClassName("cardProfile")[0];
+            console.log(renderName);
+            if (renderName !== undefined) renderName.src = fp;
           }
         );
       });
@@ -1879,6 +1884,24 @@ const Dashboard = () => {
                       />
                     )}
                   </Grid>
+                  <center>
+                    <Dropzone onDrop={handleDrop}>
+                      {({ getRootProps, getInputProps }) => (
+                        <div {...getRootProps({ className: "dropzone" })}>
+                          <input {...getInputProps()} />
+                          <Button
+                            style={{ marginTop: "10px" }}
+                            size="large"
+                            color="primary"
+                            variant="outlined"
+                            fullWidth
+                          >
+                            Add Image
+                          </Button>
+                        </div>
+                      )}
+                    </Dropzone>
+                  </center>
                 </Paper>
               </Grid>
               <Grid

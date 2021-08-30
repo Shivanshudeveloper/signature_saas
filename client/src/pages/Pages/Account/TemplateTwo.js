@@ -28,6 +28,7 @@ const TemplateTwo = () => {
                       >
                         <img
                           alt="created with MySignature.io"
+                          className="cardProfile"
                           width="151"
                           style={{
                             maxWidth: "151px",
