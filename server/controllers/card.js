@@ -19,7 +19,8 @@ export const saveCard = async (req, res) => {
   });
   try {
     await newCard.save();
-    res.status(201).json(newCard);
+    const allCards = await Card.find({ userId: userId });
+    res.status(201).json(allCards);
   } catch (error) {
     res.status(409).json({ message: error.message });
   }

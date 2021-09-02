@@ -3,8 +3,6 @@ import React from "react";
 const Friendly10 = () => {
   return (
     <div>
-      10) Friendly 10
-      {/*Friendly 10 Start */}
       <div>
         <table
           cellSpacing={0}
@@ -170,9 +168,9 @@ const Friendly10 = () => {
                       color: "rgb(25, 149, 248)",
                     }}
                   >
-                    S
+                    About Me
                   </span>{" "}
-                  <span>amelia.cw</span>
+                  <span className="cardDesc">amelia</span>
                 </td>
               </tr>
               {/**/}
