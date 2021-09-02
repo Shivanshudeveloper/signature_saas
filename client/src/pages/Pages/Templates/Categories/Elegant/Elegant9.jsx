@@ -2,404 +2,398 @@ import React from "react";
 
 const Elegant9 = () => {
   return (
-    <div>
-      9) Elegant 9{/* Elegant 9 Start*/}
-      <div id="signature-preview" className="o-signature-preview">
+    <div id="signature-preview" className="o-signature-preview">
+      <div>
+        {/**/}
         <div>
-          {/**/}
-          <div>
-            <table cellSpacing={0} maxWidth={550} cellPadding={0} border={0}>
-              <tbody>
-                <tr>
-                  <td style={{ margin: "0.1px" }}>
-                    <table cellSpacing={0} cellPadding={0} border={0}>
-                      <tbody>
-                        <tr>
-                          <td
-                            valign="top"
+          <table cellSpacing={0} maxWidth={550} cellPadding={0} border={0}>
+            <tbody>
+              <tr>
+                <td style={{ margin: "0.1px" }}>
+                  <table cellSpacing={0} cellPadding={0} border={0}>
+                    <tbody>
+                      <tr>
+                        <td
+                          valign="top"
+                          style={{
+                            verticalAlign: "top",
+                            fontSize: "1em",
+                            padding: "0px 20px 0px 7px",
+                            borderRight: "3px solid rgb(212, 8, 109)",
+                          }}
+                        >
+                          <table
+                            cellSpacing={0}
+                            cellPadding={0}
+                            border={0}
                             style={{
-                              verticalAlign: "top",
-                              fontSize: "1em",
-                              padding: "0px 20px 0px 7px",
-                              borderRight: "3px solid rgb(212, 8, 109)",
+                              lineHeight: "1.4",
+                              fontFamily: "Tahoma, Geneva, sans-serif",
+                              fontSize: "84%",
+                              color: "rgb(0, 0, 1)",
                             }}
                           >
-                            <table
-                              cellSpacing={0}
-                              cellPadding={0}
-                              border={0}
-                              style={{
-                                lineHeight: "1.4",
-                                fontFamily: "Tahoma, Geneva, sans-serif",
-                                fontSize: "84%",
-                                color: "rgb(0, 0, 1)",
-                              }}
-                            >
-                              <tbody>
-                                <tr>
-                                  <td
+                            <tbody>
+                              <tr>
+                                <td
+                                  style={{
+                                    margin: "0.1px",
+                                    font: "200 1.4em Tahoma, Geneva, sans-serif",
+                                    color: "rgb(212, 8, 109)",
+                                  }}
+                                  className="cardName"
+                                >
+                                  Regina Spils
+                                </td>
+                              </tr>
+                              {/**/}
+                              <tr>
+                                <td
+                                  style={{
+                                    margin: "0.1px",
+                                    paddingTop: "2px",
+                                  }}
+                                >
+                                  <div
                                     style={{
-                                      margin: "0.1px",
-                                      font: "200 1.4em Tahoma, Geneva, sans-serif",
-                                      color: "rgb(212, 8, 109)",
+                                      font: "200 1em Tahoma, Geneva, sans-serif",
+                                      color: "rgb(67, 54, 76)",
                                     }}
-                                    className="cardName"
+                                    className="cardTitle"
                                   >
-                                    Regina Spils
-                                  </td>
-                                </tr>
-                                {/**/}
-                                <tr>
-                                  <td
-                                    style={{
-                                      margin: "0.1px",
-                                      paddingTop: "2px",
-                                    }}
+                                    fashion blogger
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style={{
+                                    margin: "0.1px",
+                                    paddingTop: "10px",
+                                  }}
+                                >
+                                  <table
+                                    cellSpacing={0}
+                                    cellPadding={0}
+                                    border={0}
                                   >
-                                    <div
-                                      style={{
-                                        font: "200 1em Tahoma, Geneva, sans-serif",
-                                        color: "rgb(67, 54, 76)",
-                                      }}
-                                      className="cardTitle"
-                                    >
-                                      fashion blogger
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    style={{
-                                      margin: "0.1px",
-                                      paddingTop: "10px",
-                                    }}
-                                  >
-                                    <table
-                                      cellSpacing={0}
-                                      cellPadding={0}
-                                      border={0}
-                                    >
-                                      <tbody>
-                                        <tr>
-                                          <td
-                                            style={{
-                                              margin: "0.1px",
-                                              fontFamily: "Arial",
-                                              padding: "0 6px 0 0",
-                                            }}
-                                          >
-                                            <a
-                                              target="_blank"
-                                              className="social_link  instagram"
-                                              href="https://mysignature.io/"
-                                              style={{
-                                                display: "block",
-                                                borderRadius: "15%",
-                                                width: "20px",
-                                                height: "20px",
-                                                textAlign: "center",
-                                                lineHeight: 1,
-                                                backgroundColor: "#D4086D",
-                                              }}
-                                            >
-                                              <i
-                                                style={{
-                                                  padding: "4px 0 0 1px",
-                                                  fontSize: "12px",
-                                                  color: "#ffffff",
-                                                }}
-                                                className="fa fa-instagram icon"
-                                              />
-                                            </a>
-                                          </td>
-                                          <td
-                                            style={{
-                                              margin: "0.1px",
-                                              fontFamily: "Arial",
-                                              padding: "0 6px 0 0",
-                                            }}
-                                          >
-                                            <a
-                                              target="_blank"
-                                              className="social_link  youtube"
-                                              href="https://mysignature.io/"
-                                              style={{
-                                                display: "block",
-                                                borderRadius: "15%",
-                                                width: "20px",
-                                                height: "20px",
-                                                textAlign: "center",
-                                                lineHeight: 1,
-                                                backgroundColor: "#D4086D",
-                                              }}
-                                            >
-                                              <i
-                                                style={{
-                                                  padding: "4px 0 0 1px",
-                                                  fontSize: "12px",
-                                                  color: "#ffffff",
-                                                }}
-                                                className="fa fa-youtube icon"
-                                              />
-                                            </a>
-                                          </td>
-                                          <td
-                                            style={{
-                                              margin: "0.1px",
-                                              fontFamily: "Arial",
-                                              padding: "0 6px 0 0",
-                                            }}
-                                          >
-                                            <a
-                                              target="_blank"
-                                              className="social_link  amazon"
-                                              href="https://mysignature.io/"
-                                              style={{
-                                                display: "block",
-                                                borderRadius: "15%",
-                                                width: "20px",
-                                                height: "20px",
-                                                textAlign: "center",
-                                                lineHeight: 1,
-                                                backgroundColor: "#D4086D",
-                                              }}
-                                            >
-                                              <i
-                                                style={{
-                                                  padding: "4px 0 0 1px",
-                                                  fontSize: "12px",
-                                                  color: "#ffffff",
-                                                }}
-                                                className="fa fa-amazon icon"
-                                              />
-                                            </a>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                          <td
-                            valign="center"
-                            style={{
-                              margin: "0.1px",
-                              fontSize: "1em",
-                              padding: "0px 0px 0px 20px",
-                            }}
-                          >
-                            <table
-                              cellSpacing={0}
-                              cellPadding={0}
-                              border={0}
-                              style={{
-                                lineHeight: "1.4",
-                                fontFamily: "Tahoma, Geneva, sans-serif",
-                                fontSize: "84%",
-                                color: "rgb(0, 0, 1)",
-                              }}
-                            >
-                              {/**/} {/**/}
-                              <tbody>
-                                <tr>
-                                  <td
-                                    style={{
-                                      margin: "0.1px",
-                                      padding: "2px 0px 0px",
-                                    }}
-                                  >
-                                    <div
-                                      style={{
-                                        fontFamily:
-                                          "Tahoma, Geneva, sans-serif",
-                                      }}
-                                    >
-                                      <span
-                                        style={{
-                                          fontWeight: 600,
-                                          color: "rgb(212, 8, 109)",
-                                        }}
-                                      >
-                                        E&nbsp;&nbsp;
-                                      </span>{" "}
-                                      <a
-                                        href="mailto:regina@fashionnews.com"
-                                        target="_blank"
-                                        style={{
-                                          textDecoration: "none",
-                                          color: "rgb(0, 0, 1)",
-                                        }}
-                                        className="cardEmail"
-                                      >
-                                        regina@fashionnews.com
-                                      </a>
-                                      &nbsp;
-                                      {/**/}
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    style={{
-                                      margin: "0.1px",
-                                      padding: "2px 0px 0px",
-                                    }}
-                                  >
-                                    <div
-                                      style={{
-                                        fontFamily:
-                                          "Tahoma, Geneva, sans-serif",
-                                      }}
-                                    >
-                                      <span
-                                        style={{
-                                          fontWeight: 600,
-                                          color: "rgb(212, 8, 109)",
-                                        }}
-                                      >
-                                        PARTENRSHIPS&nbsp;&nbsp;
-                                      </span>{" "}
-                                      <span>
-                                        <a
-                                          target="_blank"
+                                    <tbody>
+                                      <tr>
+                                        <td
                                           style={{
-                                            textDecoration: "none",
-                                            color: "#000001",
+                                            margin: "0.1px",
+                                            fontFamily: "Arial",
+                                            padding: "0 6px 0 0",
                                           }}
-                                          href="http://x"
-                                          className="cardPhone"
                                         >
-                                          544 646 2662
-                                        </a>
-                                      </span>
-                                      &nbsp;
-                                      {/**/} <span />
-                                      &nbsp;
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td
+                                          <a
+                                            target="_blank"
+                                            className="social_link  instagram"
+                                            href="https://mysignature.io/"
+                                            style={{
+                                              display: "block",
+                                              borderRadius: "15%",
+                                              width: "20px",
+                                              height: "20px",
+                                              textAlign: "center",
+                                              lineHeight: 1,
+                                              backgroundColor: "#D4086D",
+                                            }}
+                                          >
+                                            <i
+                                              style={{
+                                                padding: "4px 0 0 1px",
+                                                fontSize: "12px",
+                                                color: "#ffffff",
+                                              }}
+                                              className="fa fa-instagram icon"
+                                            />
+                                          </a>
+                                        </td>
+                                        <td
+                                          style={{
+                                            margin: "0.1px",
+                                            fontFamily: "Arial",
+                                            padding: "0 6px 0 0",
+                                          }}
+                                        >
+                                          <a
+                                            target="_blank"
+                                            className="social_link  youtube"
+                                            href="https://mysignature.io/"
+                                            style={{
+                                              display: "block",
+                                              borderRadius: "15%",
+                                              width: "20px",
+                                              height: "20px",
+                                              textAlign: "center",
+                                              lineHeight: 1,
+                                              backgroundColor: "#D4086D",
+                                            }}
+                                          >
+                                            <i
+                                              style={{
+                                                padding: "4px 0 0 1px",
+                                                fontSize: "12px",
+                                                color: "#ffffff",
+                                              }}
+                                              className="fa fa-youtube icon"
+                                            />
+                                          </a>
+                                        </td>
+                                        <td
+                                          style={{
+                                            margin: "0.1px",
+                                            fontFamily: "Arial",
+                                            padding: "0 6px 0 0",
+                                          }}
+                                        >
+                                          <a
+                                            target="_blank"
+                                            className="social_link  amazon"
+                                            href="https://mysignature.io/"
+                                            style={{
+                                              display: "block",
+                                              borderRadius: "15%",
+                                              width: "20px",
+                                              height: "20px",
+                                              textAlign: "center",
+                                              lineHeight: 1,
+                                              backgroundColor: "#D4086D",
+                                            }}
+                                          >
+                                            <i
+                                              style={{
+                                                padding: "4px 0 0 1px",
+                                                fontSize: "12px",
+                                                color: "#ffffff",
+                                              }}
+                                              className="fa fa-amazon icon"
+                                            />
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <td
+                          valign="center"
+                          style={{
+                            margin: "0.1px",
+                            fontSize: "1em",
+                            padding: "0px 0px 0px 20px",
+                          }}
+                        >
+                          <table
+                            cellSpacing={0}
+                            cellPadding={0}
+                            border={0}
+                            style={{
+                              lineHeight: "1.4",
+                              fontFamily: "Tahoma, Geneva, sans-serif",
+                              fontSize: "84%",
+                              color: "rgb(0, 0, 1)",
+                            }}
+                          >
+                            {/**/} {/**/}
+                            <tbody>
+                              <tr>
+                                <td
+                                  style={{
+                                    margin: "0.1px",
+                                    padding: "2px 0px 0px",
+                                  }}
+                                >
+                                  <div
                                     style={{
-                                      margin: "0.1px",
-                                      padding: "2px 0px 0px",
+                                      fontFamily: "Tahoma, Geneva, sans-serif",
                                     }}
                                   >
-                                    <div
+                                    <span
                                       style={{
-                                        fontFamily:
-                                          "Tahoma, Geneva, sans-serif",
+                                        fontWeight: 600,
+                                        color: "rgb(212, 8, 109)",
                                       }}
                                     >
+                                      E&nbsp;&nbsp;
+                                    </span>{" "}
+                                    <a
+                                      href="mailto:regina@fashionnews.com"
+                                      target="_blank"
+                                      style={{
+                                        textDecoration: "none",
+                                        color: "rgb(0, 0, 1)",
+                                      }}
+                                      className="cardEmail"
+                                    >
+                                      regina@fashionnews.com
+                                    </a>
+                                    &nbsp;
+                                    {/**/}
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style={{
+                                    margin: "0.1px",
+                                    padding: "2px 0px 0px",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      fontFamily: "Tahoma, Geneva, sans-serif",
+                                    }}
+                                  >
+                                    <span
+                                      style={{
+                                        fontWeight: 600,
+                                        color: "rgb(212, 8, 109)",
+                                      }}
+                                    >
+                                      PARTENRSHIPS&nbsp;&nbsp;
+                                    </span>{" "}
+                                    <span>
                                       <a
-                                        href="http://fashionnews.com"
+                                        target="_blank"
                                         style={{
                                           textDecoration: "none",
-                                          color: "#D4086D",
+                                          color: "#000001",
                                         }}
-                                        target="_blank"
-                                        className="cardWebsite"
+                                        href="http://x"
+                                        className="cardPhone"
                                       >
-                                        fashionnews.com
+                                        544 646 2662
                                       </a>
-                                    </div>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
-              <tbody>
-                <tr>
-                  <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                    <a
-                      target="_blank"
-                      href="https://mysignature.io/"
-                      className="image1"
-                    >
-                      <img
-                        alt="created with MySignature.io"
-                        className="cardPhoto"
-                        style={{ maxHeight: "100px" }}
-                        className="cardProfile"
-                        maxWidth={368}
-                        src="https://img.mysignature.io/b/b/f/c/bfcf967c-6b64-5c12-a27c-c31c8baceaf3.png?time=1613562917"
-                      />
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
-              <tbody>
-                <tr style={{ fontSize: "1px" }}>
-                  <td colSpan={2} className="s_pixel">
-                    <a
-                      href="https://mysignature.io/editor/?utm_source=freepixel"
-                      style={{}}
-                      className="image2"
-                    >
-                      <img src="https://img.mysignature.io/pixel/null/signature/" />
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          {/*fragment#51c6264937#head*/}
-          <table
-            cellSpacing={0}
-            cellPadding={0}
-            border={0}
-            fragment="51c6264937"
-            style={{
-              width: "500px",
-              color: "gray",
-              fontFamily: "Arial",
-              lineHeight: 1,
-              fontSize: "12px",
-            }}
-          >
-            <tbody>
-              <tr>
-                <td style={{ paddingTop: "5px", margin: "0.1px" }}>
-                  {/**/}
-                  {/**/}
-                  {/**/}
-                  {/**/}
-                  {/**/}
+                                    </span>
+                                    &nbsp;
+                                    {/**/} <span />
+                                    &nbsp;
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style={{
+                                    margin: "0.1px",
+                                    padding: "2px 0px 0px",
+                                  }}
+                                >
+                                  <div
+                                    style={{
+                                      fontFamily: "Tahoma, Geneva, sans-serif",
+                                    }}
+                                  >
+                                    <a
+                                      href="http://fashionnews.com"
+                                      style={{
+                                        textDecoration: "none",
+                                        color: "#D4086D",
+                                      }}
+                                      target="_blank"
+                                      className="cardWebsite"
+                                    >
+                                      fashionnews.com
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </td>
               </tr>
             </tbody>
           </table>
-          {/**/}
-          <table fragment="51c6264937">
+          <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
             <tbody>
               <tr>
-                <td
-                  style={{
-                    margin: "0.1px",
-                    lineHeight: "1px",
-                    fontSize: "1px",
-                    height: "1px",
-                  }}
-                >
-                  &nbsp;
+                <td style={{ margin: "0.1px", paddingTop: "15px" }}>
+                  <a
+                    target="_blank"
+                    href="https://mysignature.io/"
+                    className="image1"
+                  >
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardPhoto"
+                      style={{ maxHeight: "100px" }}
+                      className="cardProfile"
+                      maxWidth={368}
+                      src="https://img.mysignature.io/b/b/f/c/bfcf967c-6b64-5c12-a27c-c31c8baceaf3.png?time=1613562917"
+                    />
+                  </a>
                 </td>
               </tr>
             </tbody>
           </table>
-          {/*fragment#51c6264937#tail*/}
+          <table maxWidth={500} cellSpacing={0} cellPadding={0} border={0}>
+            <tbody>
+              <tr style={{ fontSize: "1px" }}>
+                <td colSpan={2} className="s_pixel">
+                  <a
+                    href="https://mysignature.io/editor/?utm_source=freepixel"
+                    style={{}}
+                    className="image2"
+                  >
+                    <img src="https://img.mysignature.io/pixel/null/signature/" />
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+        {/*fragment#51c6264937#head*/}
+        <table
+          cellSpacing={0}
+          cellPadding={0}
+          border={0}
+          fragment="51c6264937"
+          style={{
+            width: "500px",
+            color: "gray",
+            fontFamily: "Arial",
+            lineHeight: 1,
+            fontSize: "12px",
+          }}
+        >
+          <tbody>
+            <tr>
+              <td style={{ paddingTop: "5px", margin: "0.1px" }}>
+                {/**/}
+                {/**/}
+                {/**/}
+                {/**/}
+                {/**/}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        {/**/}
+        <table fragment="51c6264937">
+          <tbody>
+            <tr>
+              <td
+                style={{
+                  margin: "0.1px",
+                  lineHeight: "1px",
+                  fontSize: "1px",
+                  height: "1px",
+                }}
+              >
+                &nbsp;
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        {/*fragment#51c6264937#tail*/}
       </div>
     </div>
   );

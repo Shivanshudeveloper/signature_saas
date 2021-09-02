@@ -12,6 +12,7 @@ import {
   ModalFooter,
 } from "reactstrap";
 import PropTypes from "prop-types";
+import { useDropzone } from "react-dropzone";
 import {
   Dropdown,
   DropdownToggle,
@@ -98,6 +99,17 @@ import Professional7 from "../Templates/Categories/Professional/Professional7";
 import Professional8 from "../Templates/Categories/Professional/Professional8";
 import Professional9 from "../Templates/Categories/Professional/Professional9";
 import Professional10 from "../Templates/Categories/Professional/Professional10";
+
+import {
+  TabContent,
+  TabPane,
+  Nav,
+  NavItem,
+  NavLink,
+  CardTitle,
+  CardText,
+} from "reactstrap";
+import classnames from "classnames";
 
 import { FormGroup, Label, Input } from "reactstrap";
 import { useHistory } from "react-router-dom";
@@ -1449,7 +1461,7 @@ const AllCategory = ({ edit }) => {
 
 const InputField = ({ label, name, value, onChange, xs }) => {
   return (
-    <Grid item md={xs ? 4 : 12}>
+    <Grid item md={12}>
       <FormGroup style={{ margin: "10px 0", width: "100%" }}>
         <Label>{label}</Label>
         <Input name={name} onChange={onChange} value={value} />
@@ -1470,14 +1482,17 @@ const Dashboard = () => {
     instagram: "",
     twitter: "",
     facebook: "",
+    youtube: "",
+    yelp: "",
+    linkedin: "",
+    trip: "",
+    med: "",
+    tele: "",
+    tumb: "",
+    sky: "",
+    github: "",
   };
 
-  const initialStatus = {
-    isInsta: false,
-    isFacebook: false,
-    isTwitter: false,
-    isPin: false,
-  };
   const [modalCategory, setModalCategory] = useState("Friendly");
   const [modal, setModal] = useState(false);
   const [card, setCard] = useState("");
@@ -1492,10 +1507,7 @@ const Dashboard = () => {
   const [openHTML, setOpenHTML] = React.useState(false);
   const [html, setHtml] = useState("");
   const [info, setInfo] = useState(initialState);
-  const [status, setStatus] = useState(initialStatus);
-  const [isInsta, setisInsta] = useState(false);
-  const [isFacebook, setisFacebook] = useState(false);
-  const [isTwitter, setisTwitter] = useState(false);
+
   const [signData, setSignData] = useState([]);
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const history = useHistory();
@@ -1506,164 +1518,6 @@ const Dashboard = () => {
       .get(`http://localhost:5000/card/getsign?userId=${userId}`)
       .then((res) => setSignData(res.data));
   }, []);
-
-  const checkFields = async () => {
-    const SP = await document.querySelector("#signature-preview");
-    const checkI = SP.children[0].getElementsByClassName("fa-instagram")[0];
-    console.log(checkI);
-    if (checkI !== undefined) {
-      setisInsta(true);
-      console.log("insta");
-    }
-    const checkF = SP.children[0].getElementsByClassName("fa-facebook")[0];
-    if (checkF !== undefined) {
-      setisFacebook(true);
-      console.log("face");
-    }
-    const checkT = SP.children[0].getElementsByClassName("fa-twitter")[0];
-    if (checkT !== undefined) {
-      setisTwitter(true);
-      console.log("twitter");
-    }
-  };
-
-  const edit = (e) => {
-    setCard(e.target.previousSibling.innerHTML);
-    checkFields();
-    handleClickOpen();
-  };
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const renderPhoto = document
-    .getElementsByClassName("renderPaper")[0]
-    ?.children[0]?.getElementsByClassName("cardPhoto");
-  const renderPhotoLen = renderPhoto?.length;
-
-  const handleClose = () => {
-    setOpen(false);
-    setInfo(initialState);
-    setStatus(initialStatus);
-    setisInsta(false);
-    setisFacebook(false);
-    setisTwitter(false);
-  };
-
-  const toggle = () => setModal(!modal);
-
-  const handleClick = () => {
-    setOpenSnack(true);
-  };
-  const handleCloseSnack = (event, reason) => {
-    if (reason === "clickaway") {
-      return;
-    }
-    setOpenSnack(false);
-  };
-
-  useEffect(() => {
-    if (file.length > 0) {
-      onSubmit();
-    } else {
-      console.log("N");
-    }
-  }, [file]);
-  useEffect(() => {
-    if (file1.length > 0) {
-      onSubmit1();
-    } else {
-      console.log("N");
-    }
-  }, [file1]);
-
-  const onSubmit = () => {
-    if (file.length > 0) {
-      file.forEach((file) => {
-        const timeStamp = Date.now();
-        var uniquetwoKey = uuid4();
-        uniquetwoKey = uniquetwoKey + timeStamp;
-        const uploadTask = storage
-          .ref(`pictures/products/${uniquetwoKey}/${file.name}`)
-          .put(file);
-        uploadTask.on(
-          "state_changed",
-          (snapshot) => {
-            const progress = Math.round(
-              (snapshot.bytesTransferred / snapshot.totalBytes) * 100
-            );
-            handleClick();
-            setMessage(`Uploading ${progress} %`);
-          },
-          (error) => {
-            setMessage(error);
-            handleClick();
-          },
-          async () => {
-            // When the Storage gets Completed
-            const fp = await uploadTask.snapshot.ref.getDownloadURL();
-            setFilePath(fp);
-            handleClick();
-            setMessage("File Uploaded");
-            const renderName = document
-              .getElementsByClassName("renderPaper")[0]
-              .children[0].getElementsByClassName("cardProfile")[0];
-            console.log(renderName);
-            if (renderName !== undefined) renderName.src = fp;
-          }
-        );
-      });
-    } else {
-      setMessage("No File Selected Yet");
-    }
-  };
-  const onSubmit1 = () => {
-    if (file1.length > 0) {
-      file1.forEach((file) => {
-        const timeStamp = Date.now();
-        var uniquetwoKey = uuid4();
-        uniquetwoKey = uniquetwoKey + timeStamp;
-        const uploadTask = storage
-          .ref(`pictures/products/${uniquetwoKey}/${file.name}`)
-          .put(file);
-        uploadTask.on(
-          "state_changed",
-          (snapshot) => {
-            const progress = Math.round(
-              (snapshot.bytesTransferred / snapshot.totalBytes) * 100
-            );
-            handleClick();
-            setMessage(`Uploading ${progress} %`);
-          },
-          (error) => {
-            setMessage(error);
-            handleClick();
-          },
-          async () => {
-            // When the Storage gets Completed
-            const fp = await uploadTask.snapshot.ref.getDownloadURL();
-            setFilePath1(fp);
-            handleClick();
-            setMessage("File Uploaded");
-            const renderName = document
-              .getElementsByClassName("renderPaper")[0]
-              .children[0].getElementsByClassName("cardPhoto")[0];
-            if (renderName !== undefined) renderName.src = fp;
-          }
-        );
-      });
-    } else {
-      setMessage("No File Selected Yet");
-    }
-  };
-
-  const handleDrop = async (acceptedFiles) => {
-    setFile(acceptedFiles.map((file) => file));
-  };
-  const handleDrop1 = async (acceptedFiles) => {
-    setFile1(acceptedFiles.map((file) => file));
-  };
 
   const changeInfo = (e) => {
     setInfo({ ...info, [e.target.name]: e.target.value });
@@ -1723,7 +1577,238 @@ const Dashboard = () => {
         .getElementsByClassName("renderPaper")[0]
         .children[0].getElementsByClassName("fa-twitter")[0]?.parentElement;
       if (renderName !== undefined) renderName.href = e.target.value;
+    } else if (e.target.name === "whatsapp") {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("fa-whatsapp")[0]?.parentElement;
+      if (renderName !== undefined) renderName.href = e.target.value;
+    } else if (e.target.name === "youtube") {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("fa-youtube")[0]?.parentElement;
+      if (renderName !== undefined) renderName.href = e.target.value;
+    } else if (e.target.name === "yelp") {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("fa-yelp")[0]?.parentElement;
+      if (renderName !== undefined) renderName.href = e.target.value;
+    } else if (e.target.name === "linkedin") {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("fa-linkedin")[0]?.parentElement;
+      if (renderName !== undefined) renderName.href = e.target.value;
+    } else if (e.target.name === "trip") {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("fa-tripadvisor")[0]?.parentElement;
+      if (renderName !== undefined) renderName.href = e.target.value;
+    } else if (e.target.name === "med") {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("fa-medium")[0]?.parentElement;
+      if (renderName !== undefined) renderName.href = e.target.value;
+    } else if (e.target.name === "tele") {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("fa-telegram")[0]?.parentElement;
+      if (renderName !== undefined) renderName.href = e.target.value;
+    } else if (e.target.name === "tumb") {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("fa-tumblr")[0]?.parentElement;
+      if (renderName !== undefined) renderName.href = e.target.value;
     }
+  };
+
+  const [isInsta, setisInsta] = useState(false);
+  const [isFacebook, setisFacebook] = useState(false);
+  const [isTwitter, setisTwitter] = useState(false);
+  const [isWhats, setisWhats] = useState(false);
+  const [isYou, setisYou] = useState(false);
+  const [isYelp, setisYelp] = useState(false);
+  const [isLinkedin, setisLinkedin] = useState(false);
+  const [isTrip, setisTrip] = useState(false);
+  const [isMed, setisMed] = useState(false);
+  const [isTele, setisTele] = useState(false);
+  const [isTumb, setisTumb] = useState(false);
+  const [isSky, setisSky] = useState(false);
+  const [isGit, setisGit] = useState(false);
+
+  const checkFields = async () => {
+    const SP = await document.getElementsByClassName("renderPaper");
+
+    const checkI = SP[0].children[0].getElementsByClassName("fa-instagram");
+    if (checkI.length > 0) setisInsta(true);
+
+    const checkF = SP[0].children[0].getElementsByClassName("fa-facebook");
+    if (checkF.length > 0) setisFacebook(true);
+
+    const checkT = SP[0].children[0].getElementsByClassName("fa-twitter");
+    if (checkT.length > 0) setisTwitter(true);
+
+    const checkW = SP[0].children[0].getElementsByClassName("fa-whatsapp");
+    if (checkW.length > 0) setisWhats(true);
+
+    const checkY = SP[0].children[0].getElementsByClassName("fa-youtube");
+    if (checkY.length > 0) setisYou(true);
+
+    const checkYelp = SP[0].children[0].getElementsByClassName("fa-yelp");
+    if (checkYelp.length > 0) setisYelp(true);
+
+    const checkLinkedin =
+      SP[0].children[0].getElementsByClassName("fa-linkedin");
+    if (checkLinkedin.length > 0) setisLinkedin(true);
+
+    const checkTrip =
+      SP[0].children[0].getElementsByClassName("fa-tripadvisor");
+    if (checkTrip.length > 0) setisTrip(true);
+
+    const checkMed = SP[0].children[0].getElementsByClassName("fa-medium");
+    if (checkMed.length > 0) setisMed(true);
+
+    const checkTele = SP[0].children[0].getElementsByClassName("fa-telegram");
+    if (checkTele.length > 0) setisTele(true);
+
+    const checkTumb = SP[0].children[0].getElementsByClassName("fa-tumblr");
+    if (checkTumb.length > 0) setisTumb(true);
+
+    const checkSky = SP[0].children[0].getElementsByClassName("fa-skype");
+    if (checkSky.length > 0) setisSky(true);
+
+    const checkGit = SP[0].children[0].getElementsByClassName("fa-github");
+    if (checkGit.length > 0) setisGit(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setInfo(initialState);
+    setisInsta(false);
+    setisFacebook(false);
+    setisTwitter(false);
+    setisWhats(false);
+    setisYou(false);
+    setisYelp(false);
+    setisLinkedin(false);
+    setisTrip(false);
+    setisMed(false);
+    setisTele(false);
+    setisTumb(false);
+    setisGit(false);
+    setisSky(false);
+  };
+
+  const edit = (e) => {
+    setCard(e.target.previousSibling.innerHTML);
+    checkFields();
+    handleClickOpen();
+  };
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const renderPhoto = document
+    .getElementsByClassName("renderPaper")[0]
+    ?.children[0]?.getElementsByClassName("cardPhoto");
+  const renderPhotoLen = renderPhoto?.length;
+
+  const toggle = () => setModal(!modal);
+
+  const handleClick = () => {
+    setOpenSnack(true);
+  };
+  const handleCloseSnack = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpenSnack(false);
+  };
+
+  const onSubmit = () => {
+    if (file.length > 0) {
+      file.forEach((file) => {
+        const timeStamp = Date.now();
+        var uniquetwoKey = uuid4();
+        uniquetwoKey = uniquetwoKey + timeStamp;
+        const uploadTask = storage
+          .ref(`pictures/products/${uniquetwoKey}/${file.name}`)
+          .put(file);
+        uploadTask.on(
+          "state_changed",
+          (snapshot) => {
+            const progress = Math.round(
+              (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+            );
+            handleClick();
+            setMessage(`Uploading ${progress} %`);
+          },
+          (error) => {
+            setMessage(error);
+            handleClick();
+          },
+          async () => {
+            // When the Storage gets Completed
+            const fp = await uploadTask.snapshot.ref.getDownloadURL();
+            setFilePath(fp);
+            handleClick();
+            setMessage("File Uploaded");
+            const renderName = document
+              .getElementsByClassName("renderPaper")[0]
+              .children[0].getElementsByClassName("cardProfile")[0];
+
+            if (renderName !== undefined) renderName.src = fp;
+          }
+        );
+      });
+    } else {
+      setMessage("No File Selected Yet");
+    }
+  };
+  const onSubmit1 = () => {
+    if (file1.length > 0) {
+      file1.forEach((file) => {
+        const timeStamp = Date.now();
+        var uniquetwoKey = uuid4();
+        uniquetwoKey = uniquetwoKey + timeStamp;
+        const uploadTask = storage
+          .ref(`pictures/products/${uniquetwoKey}/${file.name}`)
+          .put(file);
+        uploadTask.on(
+          "state_changed",
+          (snapshot) => {
+            const progress = Math.round(
+              (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+            );
+            handleClick();
+            setMessage(`Uploading ${progress} %`);
+          },
+          (error) => {
+            setMessage(error);
+            handleClick();
+          },
+          async () => {
+            // When the Storage gets Completed
+            const fp = await uploadTask.snapshot.ref.getDownloadURL();
+            setFilePath1(fp);
+            handleClick();
+            setMessage("File Uploaded");
+            const renderName = document
+              .getElementsByClassName("renderPaper")[0]
+              .children[0].getElementsByClassName("cardPhoto")[0];
+            if (renderName !== undefined) renderName.src = fp;
+          }
+        );
+      });
+    } else {
+      setMessage("No File Selected Yet");
+    }
+  };
+
+  const handleDrop = async (acceptedFiles) => {
+    setFile(acceptedFiles.map((file) => file));
+  };
+  const handleDrop1 = async (acceptedFiles) => {
+    setFile1(acceptedFiles.map((file) => file));
   };
 
   const [openCopy, setOpenCopy] = React.useState(false);
@@ -1763,16 +1848,68 @@ const Dashboard = () => {
     axois
       .post(`http://localhost:5000/card/save`, { text, userId })
       .then((res) => {
-        setMessage1("Saved To Database");
+        console.log(res);
+        setSignData(res.data);
+        setMessage1("Saved Successfully");
         setOpenCopy(true);
         handleClose();
         handleCloseHTML();
+        setHasSubmitted(false);
+        setOpenHTML(false);
         history.push("/dashboard");
       })
       .catch((error) => {
         console.log(error);
       });
   };
+
+  const [activeTab, setActiveTab] = useState("1");
+
+  const toggleTab = (tab) => {
+    if (activeTab !== tab) setActiveTab(tab);
+  };
+
+  function OuterDropzone(props) {
+    const { getRootProps, getInputProps } = useDropzone({
+      onDrop: (files) => handleDrop(files),
+    });
+
+    return (
+      <div className="container">
+        <div {...getRootProps({ className: "dropzone" })}>
+          <input {...getInputProps()} />
+          <p>Upload Profile Photo</p>
+        </div>
+      </div>
+    );
+  }
+
+  function InnerDropzone(props) {
+    const { getRootProps, getInputProps } = useDropzone({
+      onDrop: (files) => handleDrop1(files),
+    });
+    return (
+      <div {...getRootProps({ className: "dropzone" })}>
+        <input {...getInputProps()} />
+        <p>Upload Second Photo</p>
+      </div>
+    );
+  }
+
+  useEffect(() => {
+    if (file.length > 0) {
+      onSubmit();
+    } else {
+      console.log("N");
+    }
+  }, [file]);
+  useEffect(() => {
+    if (file1.length > 0) {
+      onSubmit1();
+    } else {
+      console.log("N");
+    }
+  }, [file1]);
 
   return (
     <>
@@ -1839,125 +1976,261 @@ const Dashboard = () => {
                       padding: "20px",
                       width: "700px",
                       borderRadius: "20px",
-                      background: "#e6ecf7",
+                      // background: "#e6ecf7",
+                      boxShadow: "none",
                     }}
                   >
-                    <Typography variant="h5" align="center">
+                    <Typography
+                      variant="h5"
+                      align="center"
+                      style={{ marginBottom: "15px" }}
+                    >
                       EDIT CARD
                     </Typography>
-                    <Divider />
-                    <Grid container spacing={2}>
-                      <InputField
-                        label="Name"
-                        value={info.name}
-                        name="name"
-                        onChange={changeInfo}
-                        xs
-                      />
-                      <InputField
-                        label="Position"
-                        name="position"
-                        value={info.position}
-                        onChange={changeInfo}
-                        xs
-                      />
-                      <InputField
-                        label="Phone"
-                        name="phone"
-                        value={info.phone}
-                        xs
-                        onChange={changeInfo}
-                      />
-                      <InputField
-                        label="Email"
-                        name="email"
-                        value={info.email}
-                        xs
-                        onChange={changeInfo}
-                      />
-                      <InputField
-                        label="Website"
-                        name="website"
-                        xs
-                        value={info.website}
-                        onChange={changeInfo}
-                      />
-                      <InputField
-                        label="Description"
-                        name="desc"
-                        xs
-                        value={info.desc}
-                        onChange={changeInfo}
-                      />
-                      <InputField
-                        label="Address"
-                        name="address"
-                        value={info.address}
-                        onChange={changeInfo}
-                      />
-                      {isInsta && (
-                        <InputField
-                          label="Instagram"
-                          name="instagram"
-                          value={info.instagram}
-                          onChange={changeInfo}
-                        />
-                      )}
-                      {isFacebook && (
-                        <InputField
-                          label="Facebook"
-                          name="facebook"
-                          value={info.facebook}
-                          onChange={changeInfo}
-                        />
-                      )}
-                      {isTwitter && (
-                        <InputField
-                          label="Twitter"
-                          name="twitter"
-                          value={info.twitter}
-                          onChange={changeInfo}
-                        />
-                      )}
-                    </Grid>
-                    <center>
-                      <Dropzone onDrop={handleDrop}>
-                        {({ getRootProps, getInputProps }) => (
-                          <div {...getRootProps({ className: "dropzone" })}>
-                            <input {...getInputProps()} />
-                            <Button
-                              style={{ marginTop: "10px" }}
-                              size="large"
-                              color="primary"
-                              variant="outlined"
-                              fullWidth
-                            >
-                              Add Image
-                            </Button>
-                          </div>
-                        )}
-                      </Dropzone>
-                    </center>
-                    {renderPhotoLen === 1 && (
-                      <center>
-                        <Dropzone onDrop={handleDrop1}>
-                          {({ getRootProps, getInputProps }) => (
-                            <div {...getRootProps({ className: "dropzone" })}>
-                              <input {...getInputProps()} />
-                              <Button
-                                style={{ marginTop: "10px" }}
-                                size="large"
-                                color="primary"
-                                outline
-                                fullWidth
-                              >
-                                Change Second Image
-                              </Button>
-                            </div>
-                          )}
-                        </Dropzone>
-                      </center>
-                    )}
+
+                    <Nav tabs>
+                      <NavItem>
+                        <NavLink
+                          className={classnames({ active: activeTab === "1" })}
+                          onClick={() => {
+                            toggleTab("1");
+                          }}
+                        >
+                          General
+                        </NavLink>
+                      </NavItem>
+                      <NavItem>
+                        <NavLink
+                          className={classnames({ active: activeTab === "2" })}
+                          onClick={() => {
+                            toggleTab("2");
+                          }}
+                        >
+                          Social Links
+                        </NavLink>
+                      </NavItem>
+                      <NavItem>
+                        <NavLink
+                          className={classnames({ active: activeTab === "3" })}
+                          onClick={() => {
+                            toggleTab("3");
+                          }}
+                        >
+                          Images
+                        </NavLink>
+                      </NavItem>
+                    </Nav>
+                    <TabContent activeTab={activeTab}>
+                      <TabPane tabId="1">
+                        <Row>
+                          <Col
+                            sm="12"
+                            style={{
+                              background: "rgb(230, 236, 247)",
+                              margin: "0 12px",
+                              width: "97%",
+                              padding: "10px 12px",
+                            }}
+                          >
+                            <InputField
+                              label="Name"
+                              value={info.name}
+                              name="name"
+                              onChange={changeInfo}
+                            />
+                            <InputField
+                              label="Position"
+                              name="position"
+                              value={info.position}
+                              onChange={changeInfo}
+                            />
+                            <InputField
+                              label="Phone"
+                              name="phone"
+                              value={info.phone}
+                              onChange={changeInfo}
+                            />
+                            <InputField
+                              label="Email"
+                              name="email"
+                              value={info.email}
+                              onChange={changeInfo}
+                            />
+                            <InputField
+                              label="Website"
+                              name="website"
+                              value={info.website}
+                              onChange={changeInfo}
+                            />
+                            <InputField
+                              label="Description"
+                              name="desc"
+                              value={info.desc}
+                              onChange={changeInfo}
+                            />
+                            <InputField
+                              label="Address"
+                              name="address"
+                              value={info.address}
+                              onChange={changeInfo}
+                            />
+                          </Col>
+                        </Row>
+                      </TabPane>
+                      <TabPane tabId="2">
+                        <Row>
+                          <Col
+                            sm="12"
+                            style={{
+                              background: "rgb(230, 236, 247)",
+                              margin: "0 12px",
+                              width: "97%",
+                              padding: "10px 12px",
+                            }}
+                          >
+                            {isInsta && (
+                              <InputField
+                                label="Instagram"
+                                name="instagram"
+                                value={info.instagram}
+                                onChange={changeInfo}
+                              />
+                            )}
+                            {isFacebook && (
+                              <InputField
+                                label="Facebook"
+                                name="facebook"
+                                value={info.facebook}
+                                onChange={changeInfo}
+                              />
+                            )}
+                            {isTwitter && (
+                              <InputField
+                                label="Twitter"
+                                name="twitter"
+                                value={info.twitter}
+                                onChange={changeInfo}
+                              />
+                            )}
+                            {isWhats && (
+                              <InputField
+                                label="Whatsapp"
+                                name="whatsapp"
+                                value={info.whatsapp}
+                                onChange={changeInfo}
+                              />
+                            )}
+                            {isYou && (
+                              <InputField
+                                label="Youtube Link"
+                                name="youtube"
+                                value={info.youtube}
+                                onChange={changeInfo}
+                              />
+                            )}
+                            {isYelp && (
+                              <InputField
+                                label="Yelp"
+                                name="yelp"
+                                value={info.yelp}
+                                onChange={changeInfo}
+                              />
+                            )}
+                            {isLinkedin && (
+                              <InputField
+                                label="Linkedin"
+                                name="linkedin"
+                                value={info.linkedin}
+                                onChange={changeInfo}
+                              />
+                            )}
+                            {isTrip && (
+                              <InputField
+                                label="Trip Advisor"
+                                name="trip"
+                                value={info.trip}
+                                onChange={changeInfo}
+                              />
+                            )}
+                            {isMed && (
+                              <InputField
+                                label="Medium"
+                                name="med"
+                                value={info.med}
+                                onChange={changeInfo}
+                              />
+                            )}
+                            {isTele && (
+                              <InputField
+                                label="Telegram"
+                                name="tele"
+                                value={info.tele}
+                                onChange={changeInfo}
+                              />
+                            )}
+                            {isTumb && (
+                              <InputField
+                                label="Tumbl"
+                                name="tumb"
+                                value={info.tumb}
+                                onChange={changeInfo}
+                              />
+                            )}
+                            {isSky && (
+                              <InputField
+                                label="Skype"
+                                name="sky"
+                                value={info.sky}
+                                onChange={changeInfo}
+                              />
+                            )}
+                            {isGit && (
+                              <InputField
+                                label="Github"
+                                name="github"
+                                value={info.github}
+                                onChange={changeInfo}
+                              />
+                            )}
+                          </Col>
+                        </Row>
+                      </TabPane>
+                      <TabPane tabId="3">
+                        <Row>
+                          <Col
+                            sm="12"
+                            style={{
+                              background: "rgb(230, 236, 247)",
+                              padding: "30px 10px",
+                              margin: "0 12px",
+                              width: "97%",
+                            }}
+                          >
+                            {file.length > 0 ? (
+                              <center>
+                                <Button onClick={() => setFile([])}>
+                                  Remove Profile Photo
+                                </Button>
+                              </center>
+                            ) : (
+                              <OuterDropzone />
+                            )}
+                            {renderPhotoLen === 1 && file1.length > 0 ? (
+                              <center>
+                                <Button
+                                  onClick={() => setFile1([])}
+                                  style={{ margin: "20px 0" }}
+                                >
+                                  Remove Second Photo
+                                </Button>
+                              </center>
+                            ) : (
+                              <InnerDropzone />
+                            )}
+                          </Col>
+                        </Row>
+                      </TabPane>
+                    </TabContent>
                   </Paper>
                 ) : (
                   <Paper
@@ -1969,6 +2242,7 @@ const Dashboard = () => {
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
+                      boxShadow: "none",
                     }}
                   >
                     <div>
@@ -2059,6 +2333,7 @@ const Dashboard = () => {
                             setHasSubmitted(false);
                             setOpenHTML(false);
                           }}
+                          style={{ marginTop: "10px" }}
                           color="primary"
                         >
                           Back to Edit
@@ -2080,7 +2355,10 @@ const Dashboard = () => {
                   alignItems: "center",
                 }}
               >
-                <Paper className="renderPaper" style={{ width: "max-content" }}>
+                <Paper
+                  className="renderPaper"
+                  style={{ width: "max-content", boxShadow: "none" }}
+                >
                   {renderHTML(card)}
                 </Paper>
               </Grid>
@@ -2147,12 +2425,13 @@ const Dashboard = () => {
                     </>
                   ) : (
                     <Grid container spacing={2} style={{ marginTop: "20px" }}>
-                      {signData.map((sign) => (
+                      {signData?.map((sign) => (
                         <Grid
                           item
                           md={6}
                           style={{
                             margin: "10px 0",
+                            // border: "1px solid black",
                           }}
                           className="displayCard"
                         >
@@ -2194,9 +2473,9 @@ const Dashboard = () => {
             </Row>
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={toggle}>
+            {/* <Button color="primary" onClick={toggle}>
               Friendly
-            </Button>{" "}
+            </Button>{" "} */}
             <Button color="secondary" onClick={toggle}>
               Cancel
             </Button>

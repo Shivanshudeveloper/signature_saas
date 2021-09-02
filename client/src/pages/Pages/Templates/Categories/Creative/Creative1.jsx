@@ -3,7 +3,6 @@ import React from "react";
 const Creative1 = () => {
   return (
     <div>
-      {/* Creative 1 Start*/}
       <div id="signature-preview" className="o-signature-preview">
         <div>
           {/**/}
