@@ -72,7 +72,7 @@ const Free2 = () => {
                               font: '600 1.3em "Courier New", Courier, monospace',
                               color: "rgb(17, 42, 62)",
                             }}
-                            className="name1"
+                            className="cardName"
                           >
                             Winston Mellor
                           </span>

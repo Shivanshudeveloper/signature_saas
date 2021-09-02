@@ -314,7 +314,7 @@ const Elegant7 = () => {
                   fontFamily: "Arial, Helvetica, sans-serif",
                   fontSize: "75%",
                 }}
-                className="name6"
+                className="cardDesc"
               >
                 IMPORTANT: The contents of this email and any attachments are
                 confidential. It is strictly forbidden to share any part of this

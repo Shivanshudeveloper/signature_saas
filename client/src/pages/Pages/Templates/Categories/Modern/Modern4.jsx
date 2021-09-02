@@ -52,7 +52,6 @@ const Modern4 = () => {
                             style={{
                               fontFamily: "Verdana, Geneva, sans-serif",
                             }}
-                            className="cardName"
                           >
                             <span
                               style={{
@@ -60,11 +59,10 @@ const Modern4 = () => {
                                 color: "rgb(114, 43, 182)",
                                 fontWeight: 600,
                               }}
-                              className="cardTitle"
+                              className="cardName"
                             >
                               Nyle Hope
                             </span>{" "}
-                            | Head of Marketing
                           </div>
                         </td>
                       </tr>
@@ -74,7 +72,7 @@ const Modern4 = () => {
                             style={{
                               fontFamily: "Verdana, Geneva, sans-serif",
                             }}
-                            className="cardPhone"
+                            className="cardTitle"
                           >
                             | Vortech {/**/}
                           </div>
@@ -87,7 +85,6 @@ const Modern4 = () => {
                             style={{
                               fontFamily: "Verdana, Geneva, sans-serif",
                             }}
-                            className="cardEmail"
                           >
                             |{" "}
                             <span
@@ -106,7 +103,7 @@ const Modern4 = () => {
                                 textDecoration: "none",
                                 color: "rgb(0, 0, 1)",
                               }}
-                              className="name6"
+                              className="cardEmail"
                             >
                               hope@vortech.com
                             </a>
@@ -137,7 +134,7 @@ const Modern4 = () => {
                                   color: "#000001",
                                 }}
                                 target="_blank"
-                                className="name7"
+                                className="cardWebsite"
                               >
                                 vortech.com
                               </a>
@@ -164,7 +161,9 @@ const Modern4 = () => {
                             >
                               address:&nbsp;
                             </span>
-                            3413 Post Farm Road, Atlanta
+                            <span className="cardAddress">
+                              3413 Post Farm Road, Atlanta
+                            </span>
                           </div>
                         </td>
                       </tr>

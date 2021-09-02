@@ -54,7 +54,7 @@ const Free4 = () => {
                               font: "1.2em Arial, Helvetica, sans-serif",
                               color: "rgb(99, 202, 204)",
                             }}
-                            className="name1"
+                            className="cardName"
                           >
                             Amara Decker,
                           </span>{" "}
@@ -128,7 +128,7 @@ const Free4 = () => {
                                 color: "#000001",
                               }}
                               target="_blank"
-                              className="name5"
+                              className="cardWebsite"
                             >
                               medium/@amaratravels
                             </a>
@@ -336,6 +336,7 @@ const Free4 = () => {
                     height={42}
                     src="https://img.mysignature.io/addons/v2/instagram_v3_shape3_i.png?uid=undefined"
                     alt="instagram"
+                    className="fa-instagram"
                   />
                 </a>
                 {/**/}

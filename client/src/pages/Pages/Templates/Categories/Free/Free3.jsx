@@ -58,7 +58,7 @@ const Free3 = () => {
                                       fontFamily: "Verdana, Geneva, sans-serif",
                                       color: "rgb(0, 0, 1)",
                                     }}
-                                    className="name1"
+                                    className="cardName"
                                   >
                                     Jamila Richmond
                                   </div>
@@ -331,9 +331,10 @@ const Free3 = () => {
                 <img
                   src="https://img.mysignature.io/addons/v2/green-earth.png?uid=undefined"
                   alt="Save paper. Don’t print"
+                  className="cardPhoto"
                 />
               </td>
-              <td style={{ margin: "0.1px" }} className="name7">
+              <td style={{ margin: "0.1px" }} className="cardDesc">
                 Save paper. Don’t print
               </td>
             </tr>
@@ -388,7 +389,7 @@ const Free3 = () => {
                       verticalAlign: "middle",
                       fontSize: "15px",
                     }}
-                    className="name8"
+                    className="cardAddress"
                   >
                     Meet me on Google Hangouts
                   </span>

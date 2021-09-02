@@ -82,25 +82,7 @@ const Modern9 = () => {
                                     }}
                                     className="cardTitle"
                                   >
-                                    Customer Success Manager
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td
-                                  style={{
-                                    margin: "0.1px",
-                                    paddingTop: "2px",
-                                  }}
-                                >
-                                  <div
-                                    style={{
-                                      font: "200 1em Arial, Helvetica, sans-serif",
-                                      color: "rgb(67, 54, 76)",
-                                    }}
-                                    className="cardPhone"
-                                  >
-                                    at Gravity
+                                    Customer Success Manager at Gravity
                                   </div>
                                 </td>
                               </tr>
@@ -136,7 +118,6 @@ const Modern9 = () => {
                                       fontFamily:
                                         "Arial, Helvetica, sans-serif",
                                     }}
-                                    className="cardEmail"
                                   >
                                     <span
                                       style={{
@@ -146,7 +127,9 @@ const Modern9 = () => {
                                     >
                                       A&nbsp;&nbsp;
                                     </span>
-                                    814 Mission Str 600
+                                    <span className="cardAddress">
+                                      814 Mission Str 600
+                                    </span>
                                   </div>
                                 </td>
                               </tr>
@@ -177,7 +160,7 @@ const Modern9 = () => {
                                         color: "rgb(0, 0, 1)",
                                         textDecoration: "none",
                                       }}
-                                      className="name5"
+                                      className="cardPhone"
                                     >
                                       767 454 9876
                                     </a>
@@ -221,7 +204,7 @@ const Modern9 = () => {
                                         textDecoration: "none",
                                         color: "rgb(0, 0, 1)",
                                       }}
-                                      className="name6"
+                                      className="cardEmail"
                                     >
                                       marissa@gravity.io
                                     </a>
@@ -257,7 +240,7 @@ const Modern9 = () => {
                                         color: "#63CCC8",
                                       }}
                                       target="_blank"
-                                      className="name7"
+                                      className="cardWebsite"
                                     >
                                       gravity.io
                                     </a>
@@ -483,7 +466,7 @@ const Modern9 = () => {
                       verticalAlign: "middle",
                       fontSize: "14px",
                     }}
-                    className="name8"
+                    className="cardDesc"
                   >
                     Meet me on Zoom
                   </span>

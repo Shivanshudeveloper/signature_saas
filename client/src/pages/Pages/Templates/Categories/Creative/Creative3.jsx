@@ -301,6 +301,7 @@ const Creative3 = () => {
                     height={35}
                     src="https://img.mysignature.io/addons/v2/youtube_v2_shape1_b.png?uid=undefined"
                     alt="youtube"
+                    className="fa-youtube"
                   />
                 </a>
                 {/**/}
@@ -332,9 +333,12 @@ const Creative3 = () => {
                 <img
                   src="https://img.mysignature.io/addons/v2/hand-leaves.png?uid=undefined"
                   alt="Save paper. Don’t print"
+                  className="cardPhoto"
                 />
               </td>
-              <td style={{ margin: "0.1px" }}>Save paper. Don’t print</td>
+              <td style={{ margin: "0.1px" }} className="cardDesc">
+                Save paper. Don’t print
+              </td>
             </tr>
           </tbody>
         </table>

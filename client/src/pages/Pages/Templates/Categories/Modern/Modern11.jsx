@@ -59,7 +59,6 @@ const Modern11 = () => {
                             >
                               Rebeca Bonilla
                             </span>{" "}
-                            | Assistant Director
                           </div>
                         </td>
                       </tr>
@@ -260,7 +259,7 @@ const Modern11 = () => {
                   fontFamily: "Georgia, serif",
                   fontSize: "75%",
                 }}
-                className="name9"
+                className="cardDesc"
               >
                 IMPORTANT: The contents of this email and any attachments are
                 confidential. It is strictly forbidden to share any part of this

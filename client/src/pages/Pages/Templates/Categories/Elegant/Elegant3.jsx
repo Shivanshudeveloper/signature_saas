@@ -152,7 +152,7 @@ const Elegant3 = () => {
                             style={{
                               fontFamily: "Tahoma, Geneva, sans-serif",
                             }}
-                            className="name6"
+                            className="cardAddress"
                           >
                             517 Robinson Lane, Athens
                           </div>
@@ -326,7 +326,7 @@ const Elegant3 = () => {
                     borderRadius: "50px",
                   }}
                   href="https://mysignature.io/"
-                  className="name7"
+                  className="cardDesc"
                 >
                   Let's book a meeting to see how I can help
                 </a>

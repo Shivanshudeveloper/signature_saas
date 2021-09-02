@@ -130,7 +130,7 @@ const Modern2 = () => {
                         fontFamily: '"Courier New", Courier, monospace',
                       }}
                       target="_blank"
-                      className="cardEmail"
+                      className="cardWebsite"
                     >
                       edge.com
                     </a>
@@ -207,7 +207,7 @@ const Modern2 = () => {
                       </td>
                       <td
                         style={{ fontSize: "14px", paddingLeft: "5px" }}
-                        className="name5"
+                        className="cardDesc"
                       >
                         Book a meeting
                       </td>

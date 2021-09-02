@@ -335,6 +335,7 @@ const Creative7 = () => {
                     height={41}
                     src="https://img.mysignature.io/addons/v2/behance_v1_shape1_i.png?uid=undefined"
                     alt="behance"
+                    className="cardPhoto"
                   />
                 </a>
               </td>

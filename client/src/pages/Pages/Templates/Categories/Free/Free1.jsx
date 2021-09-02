@@ -58,7 +58,7 @@ const Free1 = () => {
                                       fontFamily: "Tahoma, Geneva, sans-serif",
                                       color: "rgb(0, 0, 1)",
                                     }}
-                                    className="name1"
+                                    className="cardName"
                                   >
                                     Susie Larson
                                   </div>
@@ -76,7 +76,7 @@ const Free1 = () => {
                                       fontFamily: "Tahoma, Geneva, sans-serif",
                                       color: "rgb(0, 0, 1)",
                                     }}
-                                    className="name6"
+                                    className="cardTitle"
                                   >
                                     Personal Trainer | Coachyous
                                     {/**/}
@@ -183,7 +183,7 @@ const Free1 = () => {
                                       fontFamily: "Tahoma, Geneva, sans-serif",
                                       color: "rgb(0, 0, 1)",
                                     }}
-                                    className="name5"
+                                    className="cardAddress"
                                   >
                                     FL, Bradenton, 4245 Monroe Avenue
                                   </span>
@@ -248,6 +248,7 @@ const Free1 = () => {
                     height={40}
                     src="https://img.mysignature.io/addons/v2/instagram_v3_shape3_i.png?uid=undefined"
                     alt="instagram"
+                    className="fa-instagram"
                   />
                 </a>
                 <a
@@ -263,6 +264,7 @@ const Free1 = () => {
                   <img
                     height={40}
                     src="https://img.mysignature.io/addons/v2/facebook_v3_shape3_i.png?uid=undefined"
+                    className="fa-facebook"
                     alt="facebook"
                   />
                 </a>

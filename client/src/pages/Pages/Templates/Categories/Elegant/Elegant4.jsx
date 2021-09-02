@@ -120,7 +120,7 @@ const Elegant4 = () => {
                       borderBottom: "1px solid rgb(235, 228, 228)",
                       display: "inline-block",
                     }}
-                    className="name7"
+                    className="cardAddress"
                   >
                     address: 5th Ave, fl. 3
                   </span>

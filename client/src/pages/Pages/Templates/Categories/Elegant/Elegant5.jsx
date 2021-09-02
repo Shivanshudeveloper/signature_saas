@@ -191,7 +191,7 @@ const Elegant5 = () => {
                                         "Arial, Helvetica, sans-serif",
                                       color: "rgb(0, 0, 1)",
                                     }}
-                                    className="name6"
+                                    className="cardAddress"
                                   >
                                     84 Libron st
                                   </span>

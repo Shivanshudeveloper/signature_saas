@@ -240,7 +240,7 @@ const Elegant8 = () => {
                       verticalAlign: "middle",
                       fontSize: "15px",
                     }}
-                    className="name7"
+                    className="cardDesc"
                   >
                     Meet me on Zoom
                   </span>

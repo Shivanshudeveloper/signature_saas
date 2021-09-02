@@ -215,7 +215,7 @@ const Modern6 = () => {
                                 color: "#000001",
                               }}
                               target="_blank"
-                              className="cardEmail"
+                              className="cardWebsite"
                             >
                               www.zenith.com
                             </a>
@@ -229,7 +229,7 @@ const Modern6 = () => {
                             style={{
                               fontFamily: "Arial, Helvetica, sans-serif",
                             }}
-                            className="name5"
+                            className="cardAddress"
                           >
                             984 E 9th St, Stuart, FL 36780
                           </div>
@@ -308,7 +308,7 @@ const Modern6 = () => {
                       verticalAlign: "middle",
                       fontSize: "14px",
                     }}
-                    className="name6"
+                    className="cardDesc"
                   >
                     Meet me on Google Meet
                   </span>

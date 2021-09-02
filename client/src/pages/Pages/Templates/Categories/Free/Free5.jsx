@@ -72,7 +72,7 @@ const Free5 = () => {
                                 color: "rgb(66, 195, 193)",
                                 fontWeight: 600,
                               }}
-                              className="cardTitle"
+                              className="cardName"
                             >
                               Bred Traler | Public School Teacher
                             </span>{" "}
@@ -85,7 +85,6 @@ const Free5 = () => {
                             style={{ fontFamily: "Georgia, serif" }}
                             className="cardTitle"
                           >
-                            {" "}
                             | Coral Coast Academy | History
                           </div>
                         </td>

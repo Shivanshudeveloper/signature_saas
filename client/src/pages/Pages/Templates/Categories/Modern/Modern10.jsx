@@ -391,7 +391,7 @@ const Modern10 = () => {
                       </td>
                       <td
                         style={{ fontSize: "14px", paddingLeft: "5px" }}
-                        className="name8"
+                        className="cardDesc"
                       >
                         Book a meeting
                       </td>

@@ -340,24 +340,10 @@ const Creative9 = () => {
                         />
                       </td>
                       <td
-                        className="name7"
+                        className="cardDesc"
                         style={{ fontSize: "15px", paddingLeft: "5px" }}
                       >
                         LIVE SHOW: How to be happy
-                      </td>
-                      <td style={{ paddingLeft: "5px" }}>
-                        <a
-                          target="_blank"
-                          href="https://mysignature.io/"
-                          style={{
-                            fontSize: "15px",
-                            color: "#000000",
-                            textDecoration: "none",
-                          }}
-                          className="name8"
-                        >
-                          August 26th, 6 p.m.
-                        </a>
                       </td>
                     </tr>
                   </tbody>
@@ -405,7 +391,7 @@ const Creative9 = () => {
                     fontWeight: "bold",
                     borderRadius: "50px",
                   }}
-                  className="name9"
+                  className="cardAddress"
                   href="https://mysignature.io/"
                 >
                   Best Selling Book: Happines Guide

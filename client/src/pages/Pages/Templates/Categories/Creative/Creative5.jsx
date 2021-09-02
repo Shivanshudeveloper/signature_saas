@@ -17,6 +17,7 @@ const Creative5 = () => {
                   style={{ paddingBottom: "5px" }}
                   src="https://img.mysignature.io/a/v1/0/8/3/083a8a50-cbf3-5332-839f-e02a98b898fd.png?uid=undefined1629063836231"
                   alt="Kind regards,"
+                  className="cardPhoto"
                 />
               </td>
             </tr>
@@ -381,7 +382,7 @@ const Creative5 = () => {
                       verticalAlign: "middle",
                       fontSize: "17px",
                     }}
-                    className="name11"
+                    className="cardDesc"
                   >
                     Meet me on Google Hangouts
                   </span>

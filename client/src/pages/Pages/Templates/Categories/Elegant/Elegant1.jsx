@@ -352,7 +352,10 @@ const Elegant1 = () => {
                           className="icon_addon-gps"
                         />
                       </td>
-                      <td style={{ fontSize: "15px", paddingLeft: "5px" }}>
+                      <td
+                        style={{ fontSize: "15px", paddingLeft: "5px" }}
+                        className="cardDesc"
+                      >
                         Find our store in your city
                       </td>
                       <td style={{ paddingLeft: "5px" }}>

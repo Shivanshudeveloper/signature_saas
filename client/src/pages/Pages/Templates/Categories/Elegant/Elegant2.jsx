@@ -289,22 +289,11 @@ const Elegant2 = () => {
                           className="icon_addon-photo"
                         />
                       </td>
-                      <td style={{ fontSize: "14px", paddingLeft: "5px" }}>
+                      <td
+                        style={{ fontSize: "14px", paddingLeft: "5px" }}
+                        className="cardDesc"
+                      >
                         Check our last shoot and backstage
-                      </td>
-                      <td style={{ paddingLeft: "5px" }}>
-                        <a
-                          target="_blank"
-                          href="https://mysignature.io/"
-                          style={{
-                            fontSize: "14px",
-                            color: "#417505",
-                            textDecoration: "none",
-                          }}
-                          className="cardWebsite"
-                        >
-                          here
-                        </a>
                       </td>
                     </tr>
                   </tbody>

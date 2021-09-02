@@ -289,9 +289,10 @@ const Creative8 = () => {
                     height={48}
                     src="https://img.mysignature.io/addons/v2/behance_v2_shape1_i.png?uid=undefined"
                     alt="behance"
+                    className="cardPhoto"
                   />
                 </a>
-                <a
+                {/* <a
                   target="_blank"
                   href="https://mysignature.io/"
                   style={{
@@ -306,7 +307,7 @@ const Creative8 = () => {
                     src="https://img.mysignature.io/addons/v2/dribbble_v3_shape1_i.png?uid=undefined"
                     alt="dribbble"
                   />
-                </a>
+                </a> */}
               </td>
             </tr>
           </tbody>

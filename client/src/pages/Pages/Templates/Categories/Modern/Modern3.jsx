@@ -103,7 +103,7 @@ const Modern3 = () => {
                         textDecoration: "none",
                         color: "rgb(0, 0, 1)",
                       }}
-                      className="name6"
+                      className="cardEmail"
                     >
                       padilla@palmtherapy.com
                     </a>
@@ -118,7 +118,7 @@ const Modern3 = () => {
                       href="http://palmtherapy.com"
                       style={{ textDecoration: "none", color: "#000001" }}
                       target="_blank"
-                      className="name7"
+                      className="cardWebsite"
                     >
                       palmtherapy.com
                     </a>
