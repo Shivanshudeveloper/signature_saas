@@ -35,7 +35,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Snackbar from "@material-ui/core/Snackbar";
-
+import { API_SERVICES } from './config';
 import { v4 as uuid4 } from "uuid";
 import Dropzone from "react-dropzone";
 import { firestore, storage } from "../../../Firebase/index";
@@ -1504,7 +1504,7 @@ const Dashboard = () => {
   const [message, setMessage] = useState("");
   const [message1, setMessage1] = useState("");
   const [openSnack, setOpenSnack] = useState(false);
-  const [openHTML, setOpenHTML] = React.useState(false);
+  const [openHTML, setOpenHTML] = React.useState(true);
   const [html, setHtml] = useState("");
   const [info, setInfo] = useState(initialState);
 
@@ -1515,7 +1515,7 @@ const Dashboard = () => {
   useEffect(() => {
     const userId = localStorage.getItem("userId");
     axois
-      .get(`http://localhost:5000/card/getsign?userId=${userId}`)
+      .get(`${API_SERVICES}/card/getsign?userId=${userId}`)
       .then((res) => setSignData(res.data));
   }, []);
 
@@ -1846,7 +1846,7 @@ const Dashboard = () => {
     const text = document.getElementsByClassName("renderPaper")[0].innerHTML;
     const userId = localStorage.getItem("userId");
     axois
-      .post(`http://localhost:5000/card/save`, { text, userId })
+      .post(`${API_SERVICES}/card/save`, { text, userId })
       .then((res) => {
         console.log(res);
         setSignData(res.data);
@@ -1891,7 +1891,7 @@ const Dashboard = () => {
     return (
       <div {...getRootProps({ className: "dropzone" })}>
         <input {...getInputProps()} />
-        <p>Upload Second Photo</p>
+        <p>Upload Picture</p>
       </div>
     );
   }
@@ -2252,16 +2252,10 @@ const Dashboard = () => {
                       <Button
                         style={{ marginTop: "20px" }}
                         color="primary"
-                        fullWidth
+                        block
+                        href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"
                       >
                         Facebook
-                      </Button>
-                      <Button
-                        style={{ marginTop: "20px", marginLeft: "10px" }}
-                        color="primary"
-                        fullWidth
-                      >
-                        Instagram
                       </Button>
                       <br />
                       <br />
@@ -2300,7 +2294,7 @@ const Dashboard = () => {
                               margin: "10px 0",
                             }}
                           >
-                            <Button
+                            {/* <Button
                               onClick={() => setOpenHTML(false)}
                               color="primary"
                               size="sm"
@@ -2308,10 +2302,11 @@ const Dashboard = () => {
                               style={{ marginRight: "8px" }}
                             >
                               Close
-                            </Button>
+                            </Button> */}
                             <Button
                               onClick={copyToClipboard}
                               color="primary"
+                              outline
                               size="sm"
                               autoFocus
                             >
@@ -2321,6 +2316,7 @@ const Dashboard = () => {
                         </>
                       )}
                     </div>
+                    <br />
                     <div
                       style={{
                         display: "flex",
@@ -2333,14 +2329,14 @@ const Dashboard = () => {
                             setHasSubmitted(false);
                             setOpenHTML(false);
                           }}
-                          style={{ marginTop: "10px" }}
+                          style={{ marginTop: "20px" }}
                           color="primary"
                         >
                           Back to Edit
                         </Button>
                       )}
-                      <Button onClick={saveCard} color="primary" autoFocus>
-                        Save To My Signatures
+                      <Button onClick={saveCard}  color="primary">
+                        Save to My Signatures
                       </Button>
                     </div>
                   </Paper>
@@ -2372,8 +2368,8 @@ const Dashboard = () => {
             }}
           >
             {!hasSubmitted && (
-              <Button onClick={handleClickOpenHTML} color="primary">
-                Save Card
+              <Button color="primary" size="lg" block onClick={handleClickOpenHTML} >
+                Save Signature
               </Button>
             )}
           </div>
