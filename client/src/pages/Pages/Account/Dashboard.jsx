@@ -1513,7 +1513,7 @@ const Dashboard = () => {
   const history = useHistory();
 
   useEffect(() => {
-    const userId = localStorage.getItem("userId");
+    const userId = sessionStorage.getItem("userId");
     axois
       .get(`${API_SERVICES}/card/getsign?userId=${userId}`)
       .then((res) => setSignData(res.data));
@@ -1844,7 +1844,7 @@ const Dashboard = () => {
 
   const saveCard = () => {
     const text = document.getElementsByClassName("renderPaper")[0].innerHTML;
-    const userId = localStorage.getItem("userId");
+    const userId = sessionStorage.getItem("userId");
     axois
       .post(`${API_SERVICES}/card/save`, { text, userId })
       .then((res) => {
