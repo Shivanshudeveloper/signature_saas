@@ -2470,7 +2470,7 @@ const Dashboard = () => {
                                 style={{ marginTop: "5px" }}
                                 onClick={async () => {
                                   await axios
-                                    .delete(
+                                    .get(
                                       `${API_SERVICES}/card/delete/${sign._id}`
                                     )
                                     .then(() => {

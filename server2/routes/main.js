@@ -2,8 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { v4: uuidv4 } = require("uuid");
 // Getting Module
-const Card = require('../models/card');
-
+const Card = require("../models/card");
 
 const stripe = require("stripe")(
   "sk_test_51IdwfeH8KzFo5uc9YHKzp2HOPkZJvH0ij0qhWeg0wQ17G73o5fVJYjMkWOfAmWUgjVZe0DesJvrQKbmAPSacXsVP00qMXnEqFr"
@@ -24,9 +23,8 @@ router.get("/test", (req, res) => {
   res.send("Working");
 });
 
-
-router.get('/getsign', async (req, res) => {
-  res.setHeader('Content-Type', 'application/json');
+router.get("/getsign", async (req, res) => {
+  res.setHeader("Content-Type", "application/json");
   const { userId } = req.query;
   const getCards = await Card.find({ userId: userId });
   try {
@@ -34,11 +32,10 @@ router.get('/getsign', async (req, res) => {
   } catch (error) {
     res.status(409).json({ message: error.message });
   }
-  
 });
 
-router.post('/save', async (req, res) => {
-  res.setHeader('Content-Type', 'application/json');
+router.post("/save", async (req, res) => {
+  res.setHeader("Content-Type", "application/json");
   const { text, userId } = req.body;
   const newCard = new Card({
     cardHTML: text,
@@ -54,5 +51,16 @@ router.post('/save', async (req, res) => {
   }
 });
 
+router.get("/delete/:id", async (req, res) => {
+  res.setHeader("Content-Type", "application/json");
+  const { id: id } = req.params;
+  try {
+    await Card.findByIdAndDelete(id);
+    res.status(201).json({ message: "Card Deleted" });
+  } catch (error) {
+    console.log(error);
+    res.status(409).json({ message: error.message });
+  }
+});
 
 module.exports = router;
