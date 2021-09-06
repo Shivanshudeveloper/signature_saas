@@ -25,3 +25,14 @@ export const saveCard = async (req, res) => {
     res.status(409).json({ message: error.message });
   }
 };
+
+export const deleteCard = async (req, res) => {
+  const { id: id } = req.params;
+  try {
+    await Card.findByIdAndDelete(id);
+    res.status(201).json({ message: "Card Deleted" });
+  } catch (error) {
+    console.log(error);
+    res.status(409).json({ message: error.message });
+  }
+};

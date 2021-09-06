@@ -20,19 +20,13 @@ import {
   DropdownItem,
 } from "reactstrap";
 import Dialog from "@material-ui/core/Dialog";
-import ListItemText from "@material-ui/core/ListItemText";
 import ListItem from "@material-ui/core/ListItem";
 import List from "@material-ui/core/List";
-import Divider from "@material-ui/core/Divider";
-import AppBar from "@material-ui/core/AppBar";
 import Grid from "@material-ui/core/Grid";
-import IconButton from "@material-ui/core/IconButton";
 import Paper from "@material-ui/core/Paper";
-import TextField from "@material-ui/core/TextField";
+import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
 import Slide from "@material-ui/core/Slide";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Snackbar from "@material-ui/core/Snackbar";
 import { API_SERVICES } from "./config";
@@ -40,6 +34,8 @@ import { v4 as uuid4 } from "uuid";
 import Dropzone from "react-dropzone";
 import { firestore, storage } from "../../../Firebase/index";
 import renderHTML from "react-render-html";
+import FileCopyIcon from "@material-ui/icons/FileCopy";
+import DeleteIcon from "@material-ui/icons/Delete";
 
 // IMPORTS
 import "./Dashboard.css";
@@ -114,7 +110,7 @@ import classnames from "classnames";
 import { FormGroup, Label, Input } from "reactstrap";
 import { useHistory } from "react-router-dom";
 
-import axois from "axios";
+import axios from "axios";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -1513,11 +1509,15 @@ const Dashboard = () => {
   const history = useHistory();
 
   useEffect(() => {
+    getCards();
+  }, []);
+
+  const getCards = () => {
     const userId = sessionStorage.getItem("userId");
-    axois
+    axios
       .get(`${API_SERVICES}/card/getsign?userId=${userId}`)
       .then((res) => setSignData(res.data));
-  }, []);
+  };
 
   const changeInfo = (e) => {
     setInfo({ ...info, [e.target.name]: e.target.value });
@@ -1845,7 +1845,7 @@ const Dashboard = () => {
   const saveCard = () => {
     const text = document.getElementsByClassName("renderPaper")[0].innerHTML;
     const userId = sessionStorage.getItem("userId");
-    axois
+    axios
       .post(`${API_SERVICES}/card/save`, { text, userId })
       .then((res) => {
         console.log(res);
@@ -2345,7 +2345,12 @@ const Dashboard = () => {
                           Back to Edit
                         </Button>
                       )}
-                      <Button onClick={saveCard} color="primary">
+                      <Button
+                        style={{ marginTop: "20px" }}
+                        onClick={saveCard}
+                        color="primary"
+                        size="small"
+                      >
                         Save to My Signatures
                       </Button>
                     </div>
@@ -2446,7 +2451,39 @@ const Dashboard = () => {
                           }}
                           className="displayCard"
                         >
-                          {renderHTML(sign.cardHTML)}
+                          <Grid
+                            style={{ display: "flex", flexDirection: "row" }}
+                          >
+                            <Grid item md={10}>
+                              {renderHTML(sign.cardHTML)}
+                            </Grid>
+                            <Grid item md={1}>
+                              <IconButton
+                                onClick={() => {
+                                  navigator.clipboard.writeText(sign.cardHTML);
+                                  handleClickCopy();
+                                }}
+                              >
+                                <FileCopyIcon />
+                              </IconButton>
+                              <IconButton
+                                style={{ marginTop: "5px" }}
+                                onClick={async () => {
+                                  await axios
+                                    .delete(
+                                      `${API_SERVICES}/card/delete/${sign._id}`
+                                    )
+                                    .then(() => {
+                                      getCards();
+                                      setMessage1("Card Deleted");
+                                      setOpenCopy(true);
+                                    });
+                                }}
+                              >
+                                <DeleteIcon />
+                              </IconButton>
+                            </Grid>
+                          </Grid>
                         </Grid>
                       ))}
                     </Grid>
