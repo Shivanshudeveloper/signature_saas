@@ -1852,10 +1852,11 @@ const Dashboard = () => {
         setSignData(res.data);
         setMessage1("Saved Successfully");
         setOpenCopy(true);
-        handleClose();
         handleCloseHTML();
         setHasSubmitted(false);
         setOpenHTML(false);
+        toggle();
+        handleClose();
         history.push("/dashboard");
       })
       .catch((error) => {
