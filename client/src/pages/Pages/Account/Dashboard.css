@@ -24,6 +24,8 @@
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   background: #e6ecf7;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .col-sm-12 {
   border-bottom-left-radius: 10px;

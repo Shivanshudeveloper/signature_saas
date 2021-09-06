@@ -229,7 +229,7 @@ const Professional5 = () => {
                                 >
                                   <a
                                     target="_blank"
-                                    className="social_link  quora"
+                                    className="social_link"
                                     href="https://mysignature.io/"
                                     style={{
                                       display: "block",
@@ -247,7 +247,7 @@ const Professional5 = () => {
                                         fontSize: "14px",
                                         color: "#595697",
                                       }}
-                                      className="icon icon-quora icon"
+                                      className="fa fa-whatsapp icon"
                                     />
                                   </a>
                                 </td>

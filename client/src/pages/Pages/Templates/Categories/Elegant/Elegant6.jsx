@@ -109,7 +109,113 @@ const Elegant6 = () => {
                                   </div>
                                 </td>
                               </tr>
-                              {/**/} {/**/} {/**/} {/**/}
+                              <tr>
+                                <td>
+                                  <table
+                                    cellSpacing={0}
+                                    cellPadding={0}
+                                    border={0}
+                                  >
+                                    <tbody>
+                                      <tr>
+                                        <td
+                                          style={{
+                                            margin: "0.1px",
+                                            fontFamily: "Arial",
+                                            padding: "0 4px 0 0",
+                                          }}
+                                        >
+                                          <a
+                                            target="_blank"
+                                            className="social_link is-brand whatsapp"
+                                            href="https://mysignature.io/"
+                                            style={{
+                                              display: "block",
+                                              borderRadius: "50%",
+                                              width: "24px",
+                                              height: "24px",
+                                              textAlign: "center",
+                                              lineHeight: 1,
+                                              backgroundColor: "#25d366",
+                                            }}
+                                          >
+                                            <i
+                                              style={{
+                                                padding: "4px 0 0 1px",
+                                                fontSize: "16px",
+                                                color: "#ffffff",
+                                              }}
+                                              className="fa fa-whatsapp fa"
+                                            />
+                                          </a>
+                                        </td>
+                                        <td
+                                          style={{
+                                            margin: "0.1px",
+                                            fontFamily: "Arial",
+                                            padding: "0 4px 0 0",
+                                          }}
+                                        >
+                                          <a
+                                            target="_blank"
+                                            className="social_link is-brand airbnb"
+                                            href="https://mysignature.io/"
+                                            style={{
+                                              display: "block",
+                                              borderRadius: "50%",
+                                              width: "24px",
+                                              height: "24px",
+                                              textAlign: "center",
+                                              lineHeight: 1,
+                                              backgroundColor: "#fd5c63",
+                                            }}
+                                          >
+                                            <i
+                                              style={{
+                                                padding: "4px 0 0 1px",
+                                                fontSize: "16px",
+                                                color: "#ffffff",
+                                              }}
+                                              className="fa fa-instagram fa"
+                                            />
+                                          </a>
+                                        </td>
+                                        <td
+                                          style={{
+                                            margin: "0.1px",
+                                            fontFamily: "Arial",
+                                            padding: "0 4px 0 0",
+                                          }}
+                                        >
+                                          <a
+                                            target="_blank"
+                                            className="social_link is-brand instagram"
+                                            href="https://mysignature.io/"
+                                            style={{
+                                              display: "block",
+                                              borderRadius: "50%",
+                                              width: "24px",
+                                              height: "24px",
+                                              textAlign: "center",
+                                              lineHeight: 1,
+                                              backgroundColor: "#3f729b",
+                                            }}
+                                          >
+                                            <i
+                                              style={{
+                                                padding: "4px 0 0 1px",
+                                                fontSize: "16px",
+                                                color: "#ffffff",
+                                              }}
+                                              className="fa fa-facebook fa"
+                                            />
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
                               <tr>
                                 <td
                                   style={{

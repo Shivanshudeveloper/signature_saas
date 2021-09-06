@@ -35,7 +35,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Snackbar from "@material-ui/core/Snackbar";
-import { API_SERVICES } from './config';
+import { API_SERVICES } from "./config";
 import { v4 as uuid4 } from "uuid";
 import Dropzone from "react-dropzone";
 import { firestore, storage } from "../../../Firebase/index";
@@ -1942,8 +1942,14 @@ const Dashboard = () => {
         onClose={handleClose}
         TransitionComponent={Transition}
       >
-        <List>
-          <ListItem style={{ display: "flex", justifyContent: "flex-end" }}>
+        <List style={{ background: "#f1f2f9", height: "100%" }}>
+          <ListItem
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              background: "#f1f2f9",
+            }}
+          >
             <IconButton
               edge="start"
               color="inherit"
@@ -1958,6 +1964,9 @@ const Dashboard = () => {
             style={{
               display: "flex",
               justifyContent: "space-around",
+              background: "#f1f2f9",
+              height: "100%",
+              alignItems: "baseline",
             }}
           >
             <Grid container spacing={2}>
@@ -1989,7 +1998,7 @@ const Dashboard = () => {
                     </Typography>
 
                     <Nav tabs>
-                      <NavItem>
+                      <NavItem style={{ outline: "none" }}>
                         <NavLink
                           className={classnames({ active: activeTab === "1" })}
                           onClick={() => {
@@ -1999,7 +2008,7 @@ const Dashboard = () => {
                           General
                         </NavLink>
                       </NavItem>
-                      <NavItem>
+                      <NavItem style={{ outline: "none" }}>
                         <NavLink
                           className={classnames({ active: activeTab === "2" })}
                           onClick={() => {
@@ -2009,7 +2018,7 @@ const Dashboard = () => {
                           Social Links
                         </NavLink>
                       </NavItem>
-                      <NavItem>
+                      <NavItem style={{ outline: "none" }}>
                         <NavLink
                           className={classnames({ active: activeTab === "3" })}
                           onClick={() => {
@@ -2026,7 +2035,7 @@ const Dashboard = () => {
                           <Col
                             sm="12"
                             style={{
-                              background: "rgb(230, 236, 247)",
+                              // background: "rgb(230, 236, 247)",
                               margin: "0 12px",
                               width: "97%",
                               padding: "10px 12px",
@@ -2082,7 +2091,7 @@ const Dashboard = () => {
                           <Col
                             sm="12"
                             style={{
-                              background: "rgb(230, 236, 247)",
+                              // background: "rgb(230, 236, 247)",
                               margin: "0 12px",
                               width: "97%",
                               padding: "10px 12px",
@@ -2200,7 +2209,7 @@ const Dashboard = () => {
                           <Col
                             sm="12"
                             style={{
-                              background: "rgb(230, 236, 247)",
+                              // background: "rgb(230, 236, 247)",
                               padding: "30px 10px",
                               margin: "0 12px",
                               width: "97%",
@@ -2253,7 +2262,8 @@ const Dashboard = () => {
                         style={{ marginTop: "20px" }}
                         color="primary"
                         block
-                        href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"
+                        href="https://www.facebook.com/sharer/sharer.php?u=example.org"
+                        target="_blank"
                       >
                         Facebook
                       </Button>
@@ -2335,7 +2345,7 @@ const Dashboard = () => {
                           Back to Edit
                         </Button>
                       )}
-                      <Button onClick={saveCard}  color="primary">
+                      <Button onClick={saveCard} color="primary">
                         Save to My Signatures
                       </Button>
                     </div>
@@ -2348,31 +2358,36 @@ const Dashboard = () => {
                 style={{
                   display: "flex",
                   justifyContent: "center",
-                  alignItems: "center",
+                  alignItems: "flex-start",
                 }}
               >
                 <Paper
                   className="renderPaper"
-                  style={{ width: "max-content", boxShadow: "none" }}
+                  style={{ padding: "10px", borderRadius: "20px" }}
                 >
-                  {renderHTML(card)}
+                  <div style={{ width: "max-content" }}>{renderHTML(card)}</div>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "flex-end",
+                      marginTop: "15px",
+                    }}
+                  >
+                    {!hasSubmitted && (
+                      <Button
+                        color="primary"
+                        size="md"
+                        block
+                        onClick={handleClickOpenHTML}
+                      >
+                        Save Signature
+                      </Button>
+                    )}
+                  </div>
                 </Paper>
               </Grid>
             </Grid>
           </ListItem>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginTop: "15px",
-            }}
-          >
-            {!hasSubmitted && (
-              <Button color="primary" size="lg" block onClick={handleClickOpenHTML} >
-                Save Signature
-              </Button>
-            )}
-          </div>
         </List>
       </Dialog>
 
