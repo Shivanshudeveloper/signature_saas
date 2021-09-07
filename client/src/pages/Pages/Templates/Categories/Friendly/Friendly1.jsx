@@ -16,13 +16,15 @@ const Friendly1 = () => {
                 }}
                 className="image1"
               >
-                <img
-                  alt="created with MySignature.io"
-                  className="cardProfile"
-                  maxWidth={153}
-                  style={{ width: "153px", maxWidth: "153px" }}
-                  src="https://img.mysignature.io/p/2/3/0/230b3885-145e-557d-8c71-f3cb65ae984e.png?time=1613563218"
-                />
+                <a target="_blank" className="cardProfileHREF">
+                  <img
+                    alt="created with MySignature.io"
+                    className="cardProfile"
+                    maxWidth={153}
+                    style={{ width: "153px", maxWidth: "153px" }}
+                    src="https://img.mysignature.io/p/2/3/0/230b3885-145e-557d-8c71-f3cb65ae984e.png?time=1613563218"
+                  />
+                </a>
               </td>
               <td
                 valign="top"
@@ -236,11 +238,7 @@ const Friendly1 = () => {
           <tbody>
             <tr>
               <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                <a
-                  target="_blank"
-                  href="https://mysignature.io/"
-                  className="image2"
-                >
+                <a target="_blank" className="cardPhotoHREF">
                   <img
                     alt="created with MySignature.io"
                     className="cardPhoto"

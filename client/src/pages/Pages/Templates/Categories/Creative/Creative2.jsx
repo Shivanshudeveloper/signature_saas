@@ -36,13 +36,15 @@ const Creative2 = () => {
                     }}
                     className="image2"
                   >
-                    <img
-                      alt="created with MySignature.io"
-                      className="cardProfile"
-                      maxWidth={168}
-                      style={{ width: "168px", maxWidth: "168px" }}
-                      src="https://img.mysignature.io/p/6/4/d/64d5e276-ec30-5e25-8bf2-5257aa31b3cf.png?time=1613563156"
-                    />
+                    <a target="_blank" className="cardProfileHREF">
+                      <img
+                        alt="created with MySignature.io"
+                        className="cardProfile"
+                        maxWidth={168}
+                        style={{ width: "168px", maxWidth: "168px" }}
+                        src="https://img.mysignature.io/p/6/4/d/64d5e276-ec30-5e25-8bf2-5257aa31b3cf.png?time=1613563156"
+                      />
+                    </a>
                   </td>
                   <td
                     valign="top"

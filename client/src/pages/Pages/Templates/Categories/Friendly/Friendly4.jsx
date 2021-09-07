@@ -41,13 +41,15 @@ const Friendly4 = () => {
             <tbody>
               <tr>
                 <td className="image2">
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={157}
-                    style={{ width: "157px", maxWidth: "157px" }}
-                    src="https://img.mysignature.io/p/d/f/8/df8dbd3a-0253-5cb6-9595-c954c48ba33e.png?time=1613558962"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={157}
+                      style={{ width: "157px", maxWidth: "157px" }}
+                      src="https://img.mysignature.io/p/d/f/8/df8dbd3a-0253-5cb6-9595-c954c48ba33e.png?time=1613558962"
+                    />
+                  </a>
                 </td>
               </tr>
               <tr>
@@ -241,16 +243,11 @@ const Friendly4 = () => {
                     <tbody>
                       <tr>
                         <td>
-                          <a
-                            target="_blank"
-                            href="https://mysignature.io/ "
-                            className="image3"
-                          >
+                          <a target="_blank" className="cardPhotoHREF">
                             <img
                               alt="created with MySignature.io"
                               className="cardPhoto"
                               style={{ maxHeight: "100px" }}
-                              className="cardProfile"
                               maxWidth={353}
                               src="https://img.mysignature.io/b/d/f/8/df8dbd3a-0253-5cb6-9595-c954c48ba33e.png?time=1613558962"
                             />

@@ -18,13 +18,15 @@ const Professional7 = () => {
                   }}
                   className="image1"
                 >
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={122}
-                    style={{ width: "122px", maxWidth: "122px" }}
-                    src="https://img.mysignature.io/p/1/1/c/11cd652a-e231-5b80-9b28-db3b30d07070.png?time=1613560857"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={122}
+                      style={{ width: "122px", maxWidth: "122px" }}
+                      src="https://img.mysignature.io/p/1/1/c/11cd652a-e231-5b80-9b28-db3b30d07070.png?time=1613560857"
+                    />
+                  </a>
                 </td>
                 <td
                   valign="middle"
@@ -239,11 +241,7 @@ const Professional7 = () => {
             <tbody>
               <tr>
                 <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                  <a
-                    target="_blank"
-                    href="https://mysignature.io/"
-                    className="image2"
-                  >
+                  <a target="_blank" className="cardPhotoHREF">
                     <img
                       alt="created with MySignature.io"
                       className="cardPhoto"

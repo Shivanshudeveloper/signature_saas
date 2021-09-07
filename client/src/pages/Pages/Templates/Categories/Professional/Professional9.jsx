@@ -18,13 +18,15 @@ const Professional9 = () => {
                   }}
                   className="image1"
                 >
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={156}
-                    style={{ width: "156px", maxWidth: "156px" }}
-                    src="https://img.mysignature.io/p/d/f/6/df6a97c9-21d9-5a3a-aa45-be2a0add7fab.png?time=1610637596"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={156}
+                      style={{ width: "156px", maxWidth: "156px" }}
+                      src="https://img.mysignature.io/p/d/f/6/df6a97c9-21d9-5a3a-aa45-be2a0add7fab.png?time=1610637596"
+                    />
+                  </a>
                 </td>
                 <td
                   valign="top"

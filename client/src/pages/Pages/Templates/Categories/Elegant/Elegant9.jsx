@@ -316,16 +316,11 @@ const Elegant9 = () => {
             <tbody>
               <tr>
                 <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                  <a
-                    target="_blank"
-                    href="https://mysignature.io/"
-                    className="image1"
-                  >
+                  <a target="_blank" className="cardPhotoHREF">
                     <img
                       alt="created with MySignature.io"
                       className="cardPhoto"
                       style={{ maxHeight: "100px" }}
-                      className="cardProfile"
                       maxWidth={368}
                       src="https://img.mysignature.io/b/b/f/c/bfcf967c-6b64-5c12-a27c-c31c8baceaf3.png?time=1613562917"
                     />

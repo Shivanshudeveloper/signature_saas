@@ -21,13 +21,15 @@ const Elegant5 = () => {
                           }}
                           className="image1"
                         >
-                          <img
-                            alt="created with MySignature.io"
-                            className="cardProfile"
-                            maxWidth={105}
-                            style={{ width: "105px", maxWidth: "105px" }}
-                            src="https://img.mysignature.io/p/1/5/c/15c6506a-0e7f-5f82-a369-770ef5c64afd.png?time=1613562958"
-                          />
+                          <a target="_blank" className="cardProfileHREF">
+                            <img
+                              alt="created with MySignature.io"
+                              className="cardProfile"
+                              maxWidth={105}
+                              style={{ width: "105px", maxWidth: "105px" }}
+                              src="https://img.mysignature.io/p/1/5/c/15c6506a-0e7f-5f82-a369-770ef5c64afd.png?time=1613562958"
+                            />
+                          </a>
                         </td>
                         <td
                           valign="top"
@@ -329,11 +331,7 @@ const Elegant5 = () => {
             <tbody>
               <tr>
                 <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                  <a
-                    target="_blank"
-                    href="https://mysignature.io/"
-                    className="image2"
-                  >
+                  <a target="_blank" className="cardPhotoHREF">
                     <img
                       alt="created with MySignature.io"
                       className="cardPhoto"

@@ -24,13 +24,15 @@ const Elegant4 = () => {
             <tbody>
               <tr>
                 <td className="image1">
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={188}
-                    style={{ width: "188px", maxWidth: "188px" }}
-                    src="https://img.mysignature.io/p/c/d/2/cd2f7a98-ee7e-5e35-8076-ab6e3c3f87f0.png?time=1610637352"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={188}
+                      style={{ width: "188px", maxWidth: "188px" }}
+                      src="https://img.mysignature.io/p/c/d/2/cd2f7a98-ee7e-5e35-8076-ab6e3c3f87f0.png?time=1610637352"
+                    />
+                  </a>
                 </td>
               </tr>
               <tr>

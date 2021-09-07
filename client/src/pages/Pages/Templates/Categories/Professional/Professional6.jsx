@@ -15,13 +15,15 @@ const Professional6 = () => {
                   style={{ verticalAlign: "top" }}
                   className="image1"
                 >
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={182}
-                    style={{ width: "182px", maxWidth: "182px" }}
-                    src="https://img.mysignature.io/p/2/8/7/287e6bc7-fe66-5123-98dc-b28470cd2110.png?time=1610637050"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={182}
+                      style={{ width: "182px", maxWidth: "182px" }}
+                      src="https://img.mysignature.io/p/2/8/7/287e6bc7-fe66-5123-98dc-b28470cd2110.png?time=1610637050"
+                    />
+                  </a>
                 </td>
                 <td
                   valign="top"

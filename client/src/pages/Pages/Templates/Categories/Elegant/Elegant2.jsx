@@ -18,13 +18,15 @@ const Elegant2 = () => {
                   }}
                   className="image1"
                 >
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={179}
-                    style={{ width: "179px", maxWidth: "179px" }}
-                    src="https://img.mysignature.io/p/e/2/a/e2a6988c-6498-527e-abe7-9f95c4828124.png?time=1613559151"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={179}
+                      style={{ width: "179px", maxWidth: "179px" }}
+                      src="https://img.mysignature.io/p/e/2/a/e2a6988c-6498-527e-abe7-9f95c4828124.png?time=1613559151"
+                    />
+                  </a>
                 </td>
                 <td
                   valign="top"

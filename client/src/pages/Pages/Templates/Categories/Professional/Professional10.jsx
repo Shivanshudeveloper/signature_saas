@@ -18,6 +18,7 @@ const Professional10 = () => {
                   }}
                   className="image1"
                 >
+                  <a target="_blank" className="cardProfileHREF"></a>
                   <img
                     alt="created with MySignature.io"
                     className="cardProfile"

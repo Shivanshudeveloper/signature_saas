@@ -15,13 +15,15 @@ const Modern4 = () => {
                   style={{ verticalAlign: "top" }}
                   className="image1"
                 >
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={148}
-                    style={{ width: "148px", maxWidth: "148px" }}
-                    src="https://img.mysignature.io/p/6/1/1/611f5ed1-5a04-572c-9f66-219871079bae.png?time=1613560757"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={148}
+                      style={{ width: "148px", maxWidth: "148px" }}
+                      src="https://img.mysignature.io/p/6/1/1/611f5ed1-5a04-572c-9f66-219871079bae.png?time=1613560757"
+                    />
+                  </a>
                 </td>
                 <td
                   valign="top"
@@ -296,16 +298,11 @@ const Modern4 = () => {
             <tbody>
               <tr>
                 <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                  <a
-                    target="_blank"
-                    href="https://mysignature.io/"
-                    className="image2"
-                  >
+                  <a target="_blank" className="cardPhotoHREF">
                     <img
                       alt="created with MySignature.io"
                       className="cardPhoto"
                       style={{ maxHeight: "100px" }}
-                      className="cardProfile"
                       maxWidth={476}
                       src="https://img.mysignature.io/b/6/1/1/611f5ed1-5a04-572c-9f66-219871079bae.png?time=1613560757"
                     />

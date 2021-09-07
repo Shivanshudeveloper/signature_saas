@@ -18,13 +18,15 @@ const Creative8 = () => {
                   }}
                   className="image1"
                 >
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={185}
-                    style={{ width: "185px", maxWidth: "185px" }}
-                    src="https://img.mysignature.io/p/f/1/9/f19a6ae2-a1ec-50f1-b219-ec2e1818d467.png?time=1610637277"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={185}
+                      style={{ width: "185px", maxWidth: "185px" }}
+                      src="https://img.mysignature.io/p/f/1/9/f19a6ae2-a1ec-50f1-b219-ec2e1818d467.png?time=1610637277"
+                    />
+                  </a>
                 </td>
                 <td
                   valign="middle"
@@ -277,13 +279,12 @@ const Creative8 = () => {
                 {/**/}
                 <a
                   target="_blank"
-                  href="https://mysignature.io/"
                   style={{
                     paddingRight: "4px",
                     paddingBottom: "4px",
                     display: "inline-block",
                   }}
-                  className="image3"
+                  className="cardPhotoHREF"
                 >
                   <img
                     height={48}

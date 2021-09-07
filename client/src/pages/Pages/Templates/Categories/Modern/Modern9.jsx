@@ -44,16 +44,21 @@ const Modern9 = () => {
                                   }}
                                   className="image1"
                                 >
-                                  <img
-                                    alt="created with MySignature.io"
-                                    className="cardProfile"
-                                    maxWidth={92}
-                                    style={{
-                                      width: "92px",
-                                      maxWidth: "92px",
-                                    }}
-                                    src="https://img.mysignature.io/p/3/1/a/31a6799e-8110-53c6-9db7-3aa9d1c7749e.png?time=1613562991"
-                                  />
+                                  <a
+                                    target="_blank"
+                                    className="cardProfileHREF"
+                                  >
+                                    <img
+                                      alt="created with MySignature.io"
+                                      className="cardProfile"
+                                      maxWidth={92}
+                                      style={{
+                                        width: "92px",
+                                        maxWidth: "92px",
+                                      }}
+                                      src="https://img.mysignature.io/p/3/1/a/31a6799e-8110-53c6-9db7-3aa9d1c7749e.png?time=1613562991"
+                                    />
+                                  </a>
                                 </td>
                               </tr>
                               <tr>

@@ -32,13 +32,15 @@ const Free5 = () => {
                   style={{ verticalAlign: "top" }}
                   className="image2"
                 >
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={162}
-                    style={{ width: "162px", maxWidth: "162px" }}
-                    src="https://img.mysignature.io/p/2/2/3/2239f27b-c47b-580f-b9aa-208ff8f9f3de.png?time=1610636685"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={162}
+                      style={{ width: "162px", maxWidth: "162px" }}
+                      src="https://img.mysignature.io/p/2/2/3/2239f27b-c47b-580f-b9aa-208ff8f9f3de.png?time=1610636685"
+                    />
+                  </a>
                 </td>
                 <td
                   valign="top"

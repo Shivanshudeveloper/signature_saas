@@ -21,13 +21,15 @@ const Free3 = () => {
                           }}
                           className="image1"
                         >
-                          <img
-                            alt="created with MySignature.io"
-                            className="cardProfile"
-                            maxWidth={134}
-                            style={{ width: "134px", maxWidth: "134px" }}
-                            src="https://img.mysignature.io/p/2/7/8/278c157b-393d-575d-922a-16951a60d918.png?time=1610636659"
-                          />
+                          <a target="_blank" className="cardProfileHREF">
+                            <img
+                              alt="created with MySignature.io"
+                              className="cardProfile"
+                              maxWidth={134}
+                              style={{ width: "134px", maxWidth: "134px" }}
+                              src="https://img.mysignature.io/p/2/7/8/278c157b-393d-575d-922a-16951a60d918.png?time=1610636659"
+                            />
+                          </a>
                         </td>
                         <td
                           valign="top"
@@ -328,11 +330,13 @@ const Free3 = () => {
           <tbody>
             <tr>
               <td style={{ margin: "0.1px", width: "30px" }} className="image3">
-                <img
-                  src="https://img.mysignature.io/addons/v2/green-earth.png?uid=undefined"
-                  alt="Save paper. Don’t print"
-                  className="cardPhoto"
-                />
+                <a target="_blank" className="cardPhotoHREF">
+                  <img
+                    src="https://img.mysignature.io/addons/v2/green-earth.png?uid=undefined"
+                    alt="Save paper. Don’t print"
+                    className="cardPhoto"
+                  />
+                </a>
               </td>
               <td style={{ margin: "0.1px" }} className="cardDesc">
                 Save paper. Don’t print

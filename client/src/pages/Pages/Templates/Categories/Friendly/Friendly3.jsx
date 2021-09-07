@@ -22,13 +22,15 @@ const Friendly3 = () => {
                             }}
                             className="image1"
                           >
-                            <img
-                              alt="created with MySignature.io"
-                              className="cardProfile"
-                              maxWidth={151}
-                              style={{ width: "151px", maxWidth: "151px" }}
-                              src="https://img.mysignature.io/p/4/f/a/4fad9901-d24d-5770-8c52-afbc59e0ffaa.png?time=1613563316"
-                            />
+                            <a target="_blank" className="cardProfileHREF">
+                              <img
+                                alt="created with MySignature.io"
+                                className="cardProfile"
+                                maxWidth={151}
+                                style={{ width: "151px", maxWidth: "151px" }}
+                                src="https://img.mysignature.io/p/4/f/a/4fad9901-d24d-5770-8c52-afbc59e0ffaa.png?time=1613563316"
+                              />
+                            </a>
                           </td>
                           <td
                             valign="top"

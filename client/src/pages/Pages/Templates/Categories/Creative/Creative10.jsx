@@ -18,13 +18,15 @@ const Creative10 = () => {
                   }}
                   className="image1"
                 >
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={134}
-                    style={{ width: "134px", maxWidth: "134px" }}
-                    src="https://img.mysignature.io/p/9/7/b/97bb48f7-13b0-5fd4-8dda-4249428c06b5.png?time=1613563018"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={134}
+                      style={{ width: "134px", maxWidth: "134px" }}
+                      src="https://img.mysignature.io/p/9/7/b/97bb48f7-13b0-5fd4-8dda-4249428c06b5.png?time=1613563018"
+                    />
+                  </a>
                 </td>
                 <td
                   valign="middle"
@@ -253,11 +255,7 @@ const Creative10 = () => {
             <tbody>
               <tr>
                 <td style={{ margin: "0.1px", paddingTop: "15px" }}>
-                  <a
-                    target="_blank"
-                    href="https://mysignature.io/"
-                    className="image2"
-                  >
+                  <a target="_blank" className="cardPhotoHREF">
                     <img
                       alt="created with MySignature.io"
                       className="cardPhoto"

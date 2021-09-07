@@ -37,13 +37,15 @@ const Modern8 = () => {
                           style={{ margin: "0.1px", verticalAlign: "top" }}
                           className="image1"
                         >
-                          <img
-                            alt="created with MySignature.io"
-                            className="cardProfile"
-                            maxWidth={138}
-                            style={{ width: "138px", maxWidth: "138px" }}
-                            src="https://img.mysignature.io/p/8/4/b/84b17a8d-81e7-50a6-946e-8da5193dabbb.png?time=1610637336"
-                          />
+                          <a target="_blank" className="cardProfileHREF">
+                            <img
+                              alt="created with MySignature.io"
+                              className="cardProfile"
+                              maxWidth={138}
+                              style={{ width: "138px", maxWidth: "138px" }}
+                              src="https://img.mysignature.io/p/8/4/b/84b17a8d-81e7-50a6-946e-8da5193dabbb.png?time=1610637336"
+                            />
+                          </a>
                         </td>
                         <td style={{ margin: "0.1px", paddingLeft: "15px" }}>
                           <table>

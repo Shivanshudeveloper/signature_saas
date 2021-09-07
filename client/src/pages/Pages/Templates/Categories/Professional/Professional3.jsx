@@ -37,13 +37,15 @@ const Professional3 = () => {
                           style={{ margin: "0.1px", verticalAlign: "top" }}
                           className="image1"
                         >
-                          <img
-                            alt="created with MySignature.io"
-                            className="cardProfile"
-                            maxWidth={200}
-                            style={{ width: "200px", maxWidth: "200px" }}
-                            src="https://img.mysignature.io/p/b/7/4/b7447a62-843d-5e10-90ed-cec23a4178b3.png?time=1610636358"
-                          />
+                          <a target="_blank" className="cardProfileHREF">
+                            <img
+                              alt="created with MySignature.io"
+                              className="cardProfile"
+                              maxWidth={200}
+                              style={{ width: "200px", maxWidth: "200px" }}
+                              src="https://img.mysignature.io/p/b/7/4/b7447a62-843d-5e10-90ed-cec23a4178b3.png?time=1610636358"
+                            />
+                          </a>
                         </td>
                         <td style={{ margin: "0.1px", paddingLeft: "15px" }}>
                           <table>

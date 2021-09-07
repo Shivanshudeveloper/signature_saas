@@ -13,12 +13,14 @@ const Creative5 = () => {
           <tbody>
             <tr>
               <td style={{ margin: "0.1px" }} className="image1">
-                <img
-                  style={{ paddingBottom: "5px" }}
-                  src="https://img.mysignature.io/a/v1/0/8/3/083a8a50-cbf3-5332-839f-e02a98b898fd.png?uid=undefined1629063836231"
-                  alt="Kind regards,"
-                  className="cardPhoto"
-                />
+                <a target="_blank" className="cardPhotoHREF">
+                  <img
+                    style={{ paddingBottom: "5px" }}
+                    src="https://img.mysignature.io/a/v1/0/8/3/083a8a50-cbf3-5332-839f-e02a98b898fd.png?uid=undefined1629063836231"
+                    alt="Kind regards,"
+                    className="cardPhoto"
+                  />
+                </a>
               </td>
             </tr>
           </tbody>
@@ -39,13 +41,15 @@ const Creative5 = () => {
                           }}
                           className="image2"
                         >
-                          <img
-                            alt="created with MySignature.io"
-                            className="cardProfile"
-                            maxWidth={145}
-                            style={{ width: "145px", maxWidth: "145px" }}
-                            src="https://img.mysignature.io/p/d/3/a/d3ae1176-e09d-596f-8fcf-ea28b7a5155c.png?time=1610637090"
-                          />
+                          <a target="_blank" className="cardProfileHREF">
+                            <img
+                              alt="created with MySignature.io"
+                              className="cardProfile"
+                              maxWidth={145}
+                              style={{ width: "145px", maxWidth: "145px" }}
+                              src="https://img.mysignature.io/p/d/3/a/d3ae1176-e09d-596f-8fcf-ea28b7a5155c.png?time=1610637090"
+                            />
+                          </a>
                         </td>
                         <td
                           valign="top"

@@ -21,13 +21,15 @@ const Modern2 = () => {
             <tbody>
               <tr>
                 <td maxWidth={100} className="image1">
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={100}
-                    style={{ width: "100px", maxWidth: "100px" }}
-                    src="https://img.mysignature.io/p/c/6/9/c691a29a-a87f-541f-bada-5163ced316c7.png?time=1613559834"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={100}
+                      style={{ width: "100px", maxWidth: "100px" }}
+                      src="https://img.mysignature.io/p/c/6/9/c691a29a-a87f-541f-bada-5163ced316c7.png?time=1613559834"
+                    />
+                  </a>
                 </td>
               </tr>
               <tr>

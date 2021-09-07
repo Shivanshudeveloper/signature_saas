@@ -38,13 +38,15 @@ const Friendly10 = () => {
             <tbody>
               <tr>
                 <td maxWidth={174} className="image2">
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={174}
-                    style={{ width: "174px", maxWidth: "174px" }}
-                    src="https://img.mysignature.io/p/2/d/1/2d13c468-ba78-5da5-933d-69b0d142c106.png?time=1613562978"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={174}
+                      style={{ width: "174px", maxWidth: "174px" }}
+                      src="https://img.mysignature.io/p/2/d/1/2d13c468-ba78-5da5-933d-69b0d142c106.png?time=1613562978"
+                    />
+                  </a>
                 </td>
               </tr>
               <tr>

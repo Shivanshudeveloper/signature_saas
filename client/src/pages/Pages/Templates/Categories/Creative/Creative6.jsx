@@ -37,13 +37,15 @@ const Creative6 = () => {
                           style={{ margin: "0.1px", verticalAlign: "top" }}
                           className="image1"
                         >
-                          <img
-                            alt="created with MySignature.io"
-                            className="cardProfile"
-                            maxWidth={200}
-                            style={{ width: "200px", maxWidth: "200px" }}
-                            src="https://img.mysignature.io/p/0/2/5/0256c04c-1505-5ee2-9335-e35f5570ba4f.png?time=1610637107"
-                          />
+                          <a target="_blank" className="cardProfileHREF">
+                            <img
+                              alt="created with MySignature.io"
+                              className="cardProfile"
+                              maxWidth={200}
+                              style={{ width: "200px", maxWidth: "200px" }}
+                              src="https://img.mysignature.io/p/0/2/5/0256c04c-1505-5ee2-9335-e35f5570ba4f.png?time=1610637107"
+                            />
+                          </a>
                         </td>
                         <td style={{ margin: "0.1px", paddingLeft: "15px" }}>
                           <table>

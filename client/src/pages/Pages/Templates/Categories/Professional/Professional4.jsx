@@ -32,13 +32,15 @@ const Professional4 = () => {
                   className="image2"
                   style={{ padding: "0px 9px 0px 0px", verticalAlign: "top" }}
                 >
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={188}
-                    style={{ width: "188px", maxWidth: "188px" }}
-                    src="https://img.mysignature.io/p/d/a/c/dac638f9-ec7a-5576-b8ed-2fbef1d0245e.png?time=1610636696"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={188}
+                      style={{ width: "188px", maxWidth: "188px" }}
+                      src="https://img.mysignature.io/p/d/a/c/dac638f9-ec7a-5576-b8ed-2fbef1d0245e.png?time=1610636696"
+                    />
+                  </a>
                 </td>
                 <td
                   valign="top"
@@ -331,11 +333,13 @@ const Professional4 = () => {
           <tbody>
             <tr>
               <td style={{ margin: "0.1px", width: "30px" }} className="image4">
-                <img
-                  src="https://img.mysignature.io/addons/v2/leaf.png?uid=undefined"
-                  alt="Please consider the environment before printing this email"
-                  className="cardPhoto"
-                />
+                <a target="_blank" className="cardPhotoHREF">
+                  <img
+                    src="https://img.mysignature.io/addons/v2/leaf.png?uid=undefined"
+                    alt="Please consider the environment before printing this email"
+                    className="cardPhoto"
+                  />
+                </a>
               </td>
               <td style={{ margin: "0.1px" }} className="cardDesc">
                 Please consider the environment before printing this email

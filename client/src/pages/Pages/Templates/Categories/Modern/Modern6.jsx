@@ -18,13 +18,15 @@ const Modern6 = () => {
                   }}
                   className="image1"
                 >
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={119}
-                    style={{ width: "119px", maxWidth: "119px" }}
-                    src="https://img.mysignature.io/p/c/f/1/cf188c51-6819-5d3c-99ce-8b399123d99b.png?time=1610637263"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={119}
+                      style={{ width: "119px", maxWidth: "119px" }}
+                      src="https://img.mysignature.io/p/c/f/1/cf188c51-6819-5d3c-99ce-8b399123d99b.png?time=1610637263"
+                    />
+                  </a>
                 </td>
                 <td
                   valign="middle"

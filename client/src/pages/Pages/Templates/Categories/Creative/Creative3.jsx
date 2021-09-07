@@ -35,14 +35,15 @@ const Creative3 = () => {
                   }}
                   className="image2"
                 >
-                  <img
-                    alt="created with MySignature.io"
-                    className="cardProfile"
-                    maxWidth={137}
-                    style={{ width: "137px", maxWidth: "137px" }}
-                    src="https://img.mysignature.io/p/b/6/4/b648ec8e-360a-5dc1-9dc6-013afc68f2b9.png?time=1613563173"
-                    className="cardProfile"
-                  />
+                  <a target="_blank" className="cardProfileHREF">
+                    <img
+                      alt="created with MySignature.io"
+                      className="cardProfile"
+                      maxWidth={137}
+                      style={{ width: "137px", maxWidth: "137px" }}
+                      src="https://img.mysignature.io/p/b/6/4/b648ec8e-360a-5dc1-9dc6-013afc68f2b9.png?time=1613563173"
+                    />
+                  </a>
                 </td>
                 <td
                   valign="middle"
@@ -330,11 +331,13 @@ const Creative3 = () => {
           <tbody>
             <tr>
               <td style={{ margin: "0.1px", width: "30px" }} className="image5">
-                <img
-                  src="https://img.mysignature.io/addons/v2/hand-leaves.png?uid=undefined"
-                  alt="Save paper. Don’t print"
-                  className="cardPhoto"
-                />
+                <a target="_blank" className="cardPhotoHREF">
+                  <img
+                    src="https://img.mysignature.io/addons/v2/hand-leaves.png?uid=undefined"
+                    alt="Save paper. Don’t print"
+                    className="cardPhoto"
+                  />
+                </a>
               </td>
               <td style={{ margin: "0.1px" }} className="cardDesc">
                 Save paper. Don’t print

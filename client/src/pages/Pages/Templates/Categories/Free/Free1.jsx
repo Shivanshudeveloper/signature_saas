@@ -21,13 +21,15 @@ const Free1 = () => {
                           }}
                           className="image1"
                         >
-                          <img
-                            alt="created with MySignature.io"
-                            className="cardProfile"
-                            maxWidth={142}
-                            style={{ width: "142px", maxWidth: "142px" }}
-                            src="https://img.mysignature.io/p/2/e/a/2ea3f89b-4f96-5593-aad1-667b87c5eb78.png?time=1610636472"
-                          />
+                          <a target="_blank" className="cardProfileHREF">
+                            <img
+                              alt="created with MySignature.io"
+                              className="cardProfile"
+                              maxWidth={142}
+                              style={{ width: "142px", maxWidth: "142px" }}
+                              src="https://img.mysignature.io/p/2/e/a/2ea3f89b-4f96-5593-aad1-667b87c5eb78.png?time=1610636472"
+                            />
+                          </a>
                         </td>
                         <td
                           valign="top"

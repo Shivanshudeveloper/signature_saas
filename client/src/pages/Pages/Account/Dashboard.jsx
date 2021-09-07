@@ -1504,6 +1504,17 @@ const Dashboard = () => {
   const [html, setHtml] = useState("");
   const [info, setInfo] = useState(initialState);
 
+  const [cardProfileURL, setCardProfileURL] = useState("");
+  const [cardPhotoURL, setCardPhotoURL] = useState("");
+
+  const cardProfile = document
+    .getElementsByClassName("renderPaper")[0]
+    ?.children[0].getElementsByClassName("cardProfile")[0]?.src;
+
+  const cardPhoto = document
+    .getElementsByClassName("renderPaper")[0]
+    ?.children[0].getElementsByClassName("cardPhoto")[0]?.src;
+
   const [signData, setSignData] = useState([]);
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const history = useHistory();
@@ -1695,6 +1706,8 @@ const Dashboard = () => {
     setisTumb(false);
     setisGit(false);
     setisSky(false);
+    setCardProfileURL("");
+    setCardPhotoURL("");
   };
 
   const edit = (e) => {
@@ -1876,11 +1889,9 @@ const Dashboard = () => {
     });
 
     return (
-      <div className="container">
-        <div {...getRootProps({ className: "dropzone" })}>
-          <input {...getInputProps()} />
-          <p>Upload Profile Photo</p>
-        </div>
+      <div {...getRootProps({ className: "dropzone" })}>
+        <input {...getInputProps()} />
+        <p>Upload Profile Photo</p>
       </div>
     );
   }
@@ -1911,6 +1922,38 @@ const Dashboard = () => {
       console.log("N");
     }
   }, [file1]);
+
+  const changeProfile = () => {
+    if (cardProfileURL.length > 0) {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("cardProfileHREF")[0];
+
+      if (renderName !== undefined) renderName.href = cardProfileURL;
+      setMessage1("URL Applied");
+      setOpenCopy(true);
+      setCardProfileURL("");
+    } else {
+      setMessage1("Please enter URL");
+      setOpenCopy(true);
+    }
+  };
+
+  const changeSecondPhoto = () => {
+    if (cardPhotoURL.length > 0) {
+      const renderName = document
+        .getElementsByClassName("renderPaper")[0]
+        .children[0].getElementsByClassName("cardPhotoHREF")[0];
+
+      if (renderName !== undefined) renderName.href = cardPhotoURL;
+      setMessage1("URL Applied");
+      setOpenCopy(true);
+      setCardPhotoURL("");
+    } else {
+      setMessage1("Please enter URL");
+      setOpenCopy(true);
+    }
+  };
 
   return (
     <>
@@ -1966,7 +2009,7 @@ const Dashboard = () => {
               display: "flex",
               justifyContent: "space-around",
               background: "#f1f2f9",
-              height: "100%",
+              minHeight: "100%",
               alignItems: "baseline",
             }}
           >
@@ -2216,6 +2259,12 @@ const Dashboard = () => {
                               width: "97%",
                             }}
                           >
+                            <h4>Profile Photo</h4>
+                            <img
+                              src={cardProfile}
+                              alt="No Profile Photo..."
+                              width="100"
+                            />
                             {file.length > 0 ? (
                               <center>
                                 <Button onClick={() => setFile([])}>
@@ -2225,7 +2274,38 @@ const Dashboard = () => {
                             ) : (
                               <OuterDropzone />
                             )}
-                            {renderPhotoLen === 1 && file1.length > 0 ? (
+                            <Label>Add Link</Label>
+                            <Grid
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "space-between",
+                              }}
+                            >
+                              <Grid item md={9}>
+                                <FormGroup
+                                  style={{ margin: "10px 0", width: "100%" }}
+                                >
+                                  <Input
+                                    onChange={(e) =>
+                                      setCardProfileURL(e.target.value)
+                                    }
+                                    value={cardProfileURL}
+                                  />
+                                </FormGroup>
+                              </Grid>
+                              <Grid item md={3}>
+                                <Button
+                                  color="primary"
+                                  onClick={changeProfile}
+                                  style={{ marginLeft: "15px" }}
+                                >
+                                  Add Link
+                                </Button>
+                              </Grid>
+                            </Grid>
+
+                            {renderPhotoLen === 1 && file1.length > 0 && (
                               <center>
                                 <Button
                                   onClick={() => setFile1([])}
@@ -2234,8 +2314,51 @@ const Dashboard = () => {
                                   Remove Second Photo
                                 </Button>
                               </center>
-                            ) : (
-                              <InnerDropzone />
+                            )}
+                            {cardPhoto !== undefined && (
+                              <>
+                                <hr />
+                                <h4>Second Photo</h4>
+                                <img
+                                  src={cardPhoto}
+                                  alt="No Second Photo..."
+                                  width="220"
+                                />
+                                <InnerDropzone />
+                                <Label>Add Link</Label>
+                                <Grid
+                                  style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "space-between",
+                                  }}
+                                >
+                                  <Grid item md={9}>
+                                    <FormGroup
+                                      style={{
+                                        margin: "10px 0",
+                                        width: "100%",
+                                      }}
+                                    >
+                                      <Input
+                                        onChange={(e) =>
+                                          setCardPhotoURL(e.target.value)
+                                        }
+                                        value={cardPhotoURL}
+                                      />
+                                    </FormGroup>
+                                  </Grid>
+                                  <Grid item md={3}>
+                                    <Button
+                                      color="primary"
+                                      onClick={changeSecondPhoto}
+                                      style={{ marginLeft: "15px" }}
+                                    >
+                                      Add Link
+                                    </Button>
+                                  </Grid>
+                                </Grid>
+                              </>
                             )}
                           </Col>
                         </Row>
