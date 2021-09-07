@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+// import { ChromePicker } from "react-color";
+import { Chrome } from "@uiw/react-color";
 import {
   Container,
   Row,
@@ -36,7 +38,7 @@ import { firestore, storage } from "../../../Firebase/index";
 import renderHTML from "react-render-html";
 import FileCopyIcon from "@material-ui/icons/FileCopy";
 import DeleteIcon from "@material-ui/icons/Delete";
-
+import ClearIcon from "@material-ui/icons/Clear";
 // IMPORTS
 import "./Dashboard.css";
 import Friendly1 from "../Templates/Categories/Friendly/Friendly1";
@@ -106,9 +108,16 @@ import {
   CardText,
 } from "reactstrap";
 import classnames from "classnames";
-
+import Accordion from "@material-ui/core/Accordion";
+import AccordionSummary from "@material-ui/core/AccordionSummary";
+import AccordionDetails from "@material-ui/core/AccordionDetails";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import Radio from "@material-ui/core/Radio";
+import RadioGroup from "@material-ui/core/RadioGroup";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 import { FormGroup, Label, Input } from "reactstrap";
 import { useHistory } from "react-router-dom";
+import Slider from "@material-ui/core/Slider";
 
 import axios from "axios";
 
@@ -1509,11 +1518,11 @@ const Dashboard = () => {
 
   const cardProfile = document
     .getElementsByClassName("renderPaper")[0]
-    ?.children[0].getElementsByClassName("cardProfile")[0]?.src;
+    ?.children[1].getElementsByClassName("cardProfile")[0]?.src;
 
   const cardPhoto = document
     .getElementsByClassName("renderPaper")[0]
-    ?.children[0].getElementsByClassName("cardPhoto")[0]?.src;
+    ?.children[1].getElementsByClassName("cardPhoto")[0]?.src;
 
   const [signData, setSignData] = useState([]);
   const [hasSubmitted, setHasSubmitted] = useState(false);
@@ -1535,98 +1544,98 @@ const Dashboard = () => {
     if (e.target.name === "name") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("cardName")[0];
+        .children[1].getElementsByClassName("cardName")[0];
       if (renderName !== undefined) renderName.innerHTML = e.target.value;
     } else if (e.target.name === "position") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("cardTitle")[0];
+        .children[1].getElementsByClassName("cardTitle")[0];
 
       if (renderName !== undefined) renderName.innerHTML = e.target.value;
     } else if (e.target.name === "email") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("cardEmail")[0];
+        .children[1].getElementsByClassName("cardEmail")[0];
 
       if (renderName !== undefined) renderName.innerHTML = e.target.value;
     } else if (e.target.name === "website") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("cardWebsite")[0];
+        .children[1].getElementsByClassName("cardWebsite")[0];
 
       if (renderName !== undefined) renderName.innerHTML = e.target.value;
     } else if (e.target.name === "desc") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("cardDesc")[0];
+        .children[1].getElementsByClassName("cardDesc")[0];
 
       if (renderName !== undefined) renderName.innerHTML = e.target.value;
     } else if (e.target.name === "phone") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("cardPhone")[0];
+        .children[1].getElementsByClassName("cardPhone")[0];
 
       if (renderName !== undefined) renderName.innerHTML = e.target.value;
     } else if (e.target.name === "address") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("cardAddress")[0];
+        .children[1].getElementsByClassName("cardAddress")[0];
 
       if (renderName !== undefined) renderName.innerHTML = e.target.value;
     } else if (e.target.name === "instagram") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("fa-instagram")[0]?.parentElement;
+        .children[1].getElementsByClassName("fa-instagram")[0]?.parentElement;
       if (renderName !== undefined) renderName.href = e.target.value;
     } else if (e.target.name === "facebook") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("fa-facebook")[0]?.parentElement;
+        .children[1].getElementsByClassName("fa-facebook")[0]?.parentElement;
       if (renderName !== undefined) renderName.href = e.target.value;
     } else if (e.target.name === "twitter") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("fa-twitter")[0]?.parentElement;
+        .children[1].getElementsByClassName("fa-twitter")[0]?.parentElement;
       if (renderName !== undefined) renderName.href = e.target.value;
     } else if (e.target.name === "whatsapp") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("fa-whatsapp")[0]?.parentElement;
+        .children[1].getElementsByClassName("fa-whatsapp")[0]?.parentElement;
       if (renderName !== undefined) renderName.href = e.target.value;
     } else if (e.target.name === "youtube") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("fa-youtube")[0]?.parentElement;
+        .children[1].getElementsByClassName("fa-youtube")[0]?.parentElement;
       if (renderName !== undefined) renderName.href = e.target.value;
     } else if (e.target.name === "yelp") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("fa-yelp")[0]?.parentElement;
+        .children[1].getElementsByClassName("fa-yelp")[0]?.parentElement;
       if (renderName !== undefined) renderName.href = e.target.value;
     } else if (e.target.name === "linkedin") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("fa-linkedin")[0]?.parentElement;
+        .children[1].getElementsByClassName("fa-linkedin")[0]?.parentElement;
       if (renderName !== undefined) renderName.href = e.target.value;
     } else if (e.target.name === "trip") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("fa-tripadvisor")[0]?.parentElement;
+        .children[1].getElementsByClassName("fa-tripadvisor")[0]?.parentElement;
       if (renderName !== undefined) renderName.href = e.target.value;
     } else if (e.target.name === "med") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("fa-medium")[0]?.parentElement;
+        .children[1].getElementsByClassName("fa-medium")[0]?.parentElement;
       if (renderName !== undefined) renderName.href = e.target.value;
     } else if (e.target.name === "tele") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("fa-telegram")[0]?.parentElement;
+        .children[1].getElementsByClassName("fa-telegram")[0]?.parentElement;
       if (renderName !== undefined) renderName.href = e.target.value;
     } else if (e.target.name === "tumb") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("fa-tumblr")[0]?.parentElement;
+        .children[1].getElementsByClassName("fa-tumblr")[0]?.parentElement;
       if (renderName !== undefined) renderName.href = e.target.value;
     }
   };
@@ -1648,45 +1657,45 @@ const Dashboard = () => {
   const checkFields = async () => {
     const SP = await document.getElementsByClassName("renderPaper");
 
-    const checkI = SP[0].children[0].getElementsByClassName("fa-instagram");
+    const checkI = SP[0].children[1].getElementsByClassName("fa-instagram");
     if (checkI.length > 0) setisInsta(true);
 
-    const checkF = SP[0].children[0].getElementsByClassName("fa-facebook");
+    const checkF = SP[0].children[1].getElementsByClassName("fa-facebook");
     if (checkF.length > 0) setisFacebook(true);
 
-    const checkT = SP[0].children[0].getElementsByClassName("fa-twitter");
+    const checkT = SP[0].children[1].getElementsByClassName("fa-twitter");
     if (checkT.length > 0) setisTwitter(true);
 
-    const checkW = SP[0].children[0].getElementsByClassName("fa-whatsapp");
+    const checkW = SP[0].children[1].getElementsByClassName("fa-whatsapp");
     if (checkW.length > 0) setisWhats(true);
 
-    const checkY = SP[0].children[0].getElementsByClassName("fa-youtube");
+    const checkY = SP[0].children[1].getElementsByClassName("fa-youtube");
     if (checkY.length > 0) setisYou(true);
 
-    const checkYelp = SP[0].children[0].getElementsByClassName("fa-yelp");
+    const checkYelp = SP[0].children[1].getElementsByClassName("fa-yelp");
     if (checkYelp.length > 0) setisYelp(true);
 
     const checkLinkedin =
-      SP[0].children[0].getElementsByClassName("fa-linkedin");
+      SP[0].children[1].getElementsByClassName("fa-linkedin");
     if (checkLinkedin.length > 0) setisLinkedin(true);
 
     const checkTrip =
-      SP[0].children[0].getElementsByClassName("fa-tripadvisor");
+      SP[0].children[1].getElementsByClassName("fa-tripadvisor");
     if (checkTrip.length > 0) setisTrip(true);
 
-    const checkMed = SP[0].children[0].getElementsByClassName("fa-medium");
+    const checkMed = SP[0].children[1].getElementsByClassName("fa-medium");
     if (checkMed.length > 0) setisMed(true);
 
-    const checkTele = SP[0].children[0].getElementsByClassName("fa-telegram");
+    const checkTele = SP[0].children[1].getElementsByClassName("fa-telegram");
     if (checkTele.length > 0) setisTele(true);
 
-    const checkTumb = SP[0].children[0].getElementsByClassName("fa-tumblr");
+    const checkTumb = SP[0].children[1].getElementsByClassName("fa-tumblr");
     if (checkTumb.length > 0) setisTumb(true);
 
-    const checkSky = SP[0].children[0].getElementsByClassName("fa-skype");
+    const checkSky = SP[0].children[1].getElementsByClassName("fa-skype");
     if (checkSky.length > 0) setisSky(true);
 
-    const checkGit = SP[0].children[0].getElementsByClassName("fa-github");
+    const checkGit = SP[0].children[1].getElementsByClassName("fa-github");
     if (checkGit.length > 0) setisGit(true);
   };
 
@@ -1708,12 +1717,14 @@ const Dashboard = () => {
     setisSky(false);
     setCardProfileURL("");
     setCardPhotoURL("");
+    setFinalSign("");
+    setSignOffOptions("");
   };
 
   const edit = (e) => {
     setCard(e.target.previousSibling.innerHTML);
-    checkFields();
     handleClickOpen();
+    checkFields();
   };
 
   const handleClickOpen = () => {
@@ -1722,7 +1733,7 @@ const Dashboard = () => {
 
   const renderPhoto = document
     .getElementsByClassName("renderPaper")[0]
-    ?.children[0]?.getElementsByClassName("cardPhoto");
+    ?.children[1]?.getElementsByClassName("cardPhoto");
   const renderPhotoLen = renderPhoto?.length;
 
   const toggle = () => setModal(!modal);
@@ -1767,7 +1778,7 @@ const Dashboard = () => {
             setMessage("File Uploaded");
             const renderName = document
               .getElementsByClassName("renderPaper")[0]
-              .children[0].getElementsByClassName("cardProfile")[0];
+              .children[1].getElementsByClassName("cardProfile")[0];
 
             if (renderName !== undefined) renderName.src = fp;
           }
@@ -1807,7 +1818,7 @@ const Dashboard = () => {
             setMessage("File Uploaded");
             const renderName = document
               .getElementsByClassName("renderPaper")[0]
-              .children[0].getElementsByClassName("cardPhoto")[0];
+              .children[1].getElementsByClassName("cardPhoto")[0];
             if (renderName !== undefined) renderName.src = fp;
           }
         );
@@ -1927,7 +1938,7 @@ const Dashboard = () => {
     if (cardProfileURL.length > 0) {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("cardProfileHREF")[0];
+        .children[1].getElementsByClassName("cardProfileHREF")[0];
 
       if (renderName !== undefined) renderName.href = cardProfileURL;
       setMessage1("URL Applied");
@@ -1943,7 +1954,7 @@ const Dashboard = () => {
     if (cardPhotoURL.length > 0) {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
-        .children[0].getElementsByClassName("cardPhotoHREF")[0];
+        .children[1].getElementsByClassName("cardPhotoHREF")[0];
 
       if (renderName !== undefined) renderName.href = cardPhotoURL;
       setMessage1("URL Applied");
@@ -1953,6 +1964,66 @@ const Dashboard = () => {
       setMessage1("Please enter URL");
       setOpenCopy(true);
     }
+  };
+
+  const [signOff, setSignOff] = useState("");
+  const [finalSign, setFinalSign] = useState("");
+  const [signOffOptions, setSignOffOptions] = useState("");
+  const [backgroundColor, setBackgroundColor] = useState("");
+  const [fontSize, setFontSize] = useState("");
+  const [disclaimer, setDisclaimer] = useState("");
+  const [disc, setDisc] = useState("");
+
+  const handleDisclaimer = () => {
+    if (disc.length === 0)
+      setDisclaimer(
+        "IMPORTANT: The contents of this email and any attachments are confidential. It is strictly forbidden to share any part of this message with any third party, without a written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion, so that we can ensure such a mistake does not occur in the future."
+      );
+  };
+
+  const radioStyle = {
+    display: "flex",
+    justifyContent: "space-between",
+    margin: "5px 25px",
+  };
+
+  const handleTextChange = async (e) => {
+    setSignOff(e.target.value);
+    setFinalSign(e.target.value);
+  };
+
+  const handleRadioChange = async (e) => {
+    setSignOffOptions(e.target.value);
+    setFinalSign(e.target.value);
+    setSignOff("");
+  };
+
+  const RadioOption = ({ name }) => {
+    return (
+      <>
+        <FormControlLabel value={name} control={<Radio />} label={name} />
+        <br />
+      </>
+    );
+  };
+
+  const valuetext = (value) => {
+    setFontSize(`${value}px`);
+    return `${value}`;
+  };
+
+  useEffect(() => {
+    const ff = document.getElementsByClassName("finalSignP")[0];
+    if (ff !== undefined) ff.style.fontSize = fontSize;
+  }, [fontSize]);
+
+  const removeStyle = {
+    background: "#e6ecf7",
+    padding: "5px",
+    margin: "5px 0",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
   };
 
   return (
@@ -2070,6 +2141,16 @@ const Dashboard = () => {
                           }}
                         >
                           Images
+                        </NavLink>
+                      </NavItem>
+                      <NavItem style={{ outline: "none" }}>
+                        <NavLink
+                          className={classnames({ active: activeTab === "4" })}
+                          onClick={() => {
+                            toggleTab("4");
+                          }}
+                        >
+                          Add Ons
                         </NavLink>
                       </NavItem>
                     </Nav>
@@ -2363,6 +2444,192 @@ const Dashboard = () => {
                           </Col>
                         </Row>
                       </TabPane>
+                      <TabPane tabId="4">
+                        <Row>
+                          <Col
+                            sm="12"
+                            style={{
+                              // background: "rgb(230, 236, 247)",
+                              margin: "0 12px",
+                              width: "97%",
+                              padding: "10px 12px",
+                            }}
+                          >
+                            {/* <Container
+                              maxWidth="sm"
+                              style={{
+                                display: "flex",
+                                flexDirection: "column",
+                              }}
+                            >
+                              {finalSign !== "" && (
+                                <Button
+                                  color="danger"
+                                  onClick={() => {
+                                    setFinalSign("");
+                                    setSignOffOptions("");
+                                  }}
+                                  style={{ margin: "5px 20px" }}
+                                >
+                                  Remove Sign Off
+                                </Button>
+                              )}
+                              {disclaimer !== "" && (
+                                <Button
+                                  color="danger"
+                                  onClick={() => {
+                                    setDisclaimer("");
+                                    setDisc("");
+                                  }}
+                                  style={{ margin: "5px 20px" }}
+                                >
+                                  Remove Disclaimer
+                                </Button>
+                              )}
+                            </Container> */}
+                            <div>
+                              {finalSign !== "" && (
+                                <div style={removeStyle}>
+                                  <Label style={{ margin: "0 10px" }}>
+                                    Remove Sign Off
+                                  </Label>
+                                  <IconButton
+                                    onClick={() => {
+                                      setFinalSign("");
+                                      setSignOffOptions("");
+                                    }}
+                                  >
+                                    <ClearIcon />
+                                  </IconButton>
+                                </div>
+                              )}
+                              {disclaimer !== "" && (
+                                <div style={removeStyle}>
+                                  <Label style={{ margin: "0 10px" }}>
+                                    Remove Disclaimer
+                                  </Label>
+                                  <IconButton
+                                    onClick={() => {
+                                      setDisclaimer("");
+                                      setDisc("");
+                                    }}
+                                  >
+                                    <ClearIcon />
+                                  </IconButton>
+                                </div>
+                              )}
+                            </div>
+                            <h4>Add Ons</h4>
+                            <Accordion style={{ background: "#e6ecf7" }}>
+                              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                <Typography>Sign Off</Typography>
+                              </AccordionSummary>
+                              <AccordionDetails>
+                                <Container>
+                                  <FormGroup
+                                    style={{ margin: "10px 0", width: "100%" }}
+                                  >
+                                    <Label>Text</Label>
+                                    <Input
+                                      onChange={handleTextChange}
+                                      value={signOff}
+                                    />
+                                  </FormGroup>
+                                  <RadioGroup
+                                    aria-label="gender"
+                                    name="gender1"
+                                    value={signOffOptions}
+                                    onChange={handleRadioChange}
+                                  >
+                                    <div style={radioStyle}>
+                                      <div>
+                                        <RadioOption name="Happy Holidays!" />
+                                        <RadioOption name="Sincerely, " />
+                                        <RadioOption name="Best Regards, " />
+                                      </div>
+                                      <div>
+                                        <RadioOption name="Regards, " />
+                                        <RadioOption name="Best, " />
+                                        <RadioOption name="Kind Regards, " />
+                                      </div>
+                                      <div>
+                                        <RadioOption name="Thanks, " />
+                                        <RadioOption name="Best Wishes, " />
+                                      </div>
+                                    </div>
+                                  </RadioGroup>
+                                  <hr />
+                                  <Grid style={{ display: "flex" }}>
+                                    <Grid item md={6}>
+                                      <Label>Font Size</Label>
+                                      <br />
+                                      <Slider
+                                        defaultValue={20}
+                                        getAriaValueText={valuetext}
+                                        onChange={(e) => console.log(e)}
+                                        aria-labelledby="discrete-slider"
+                                        valueLabelDisplay="auto"
+                                        step={2}
+                                        marks
+                                        min={16}
+                                        max={40}
+                                        style={{
+                                          width: "90%",
+                                          marginTop: "15px",
+                                        }}
+                                      />
+                                    </Grid>
+                                    <Grid item md={6}>
+                                      <Label style={{ marginBottom: "10px" }}>
+                                        Font Color
+                                      </Label>
+                                      <Chrome
+                                        color={backgroundColor}
+                                        onChange={(color) => {
+                                          setBackgroundColor(color.hex);
+                                          document.getElementsByClassName(
+                                            "finalSignP"
+                                          )[0].style.color = color.hex;
+                                        }}
+                                      />
+                                    </Grid>
+                                  </Grid>
+                                </Container>
+                              </AccordionDetails>
+                            </Accordion>
+                            <Accordion
+                              style={{ background: "#e6ecf7" }}
+                              onClick={(e) => {
+                                if (
+                                  e.target.className.includes("expanded") ===
+                                  false
+                                )
+                                  handleDisclaimer();
+                              }}
+                            >
+                              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                <Typography>Disclaimer</Typography>
+                              </AccordionSummary>
+                              <AccordionDetails>
+                                <FormGroup style={{ width: "100%" }}>
+                                  <Label for="disclaimer">
+                                    Customer Disclaimer
+                                  </Label>
+                                  <Input
+                                    type="textarea"
+                                    id="disclaimer"
+                                    value={disc}
+                                    onChange={(e) => {
+                                      setDisc(e.target.value);
+                                      setDisclaimer(e.target.value);
+                                    }}
+                                  />
+                                </FormGroup>
+                              </AccordionDetails>
+                            </Accordion>
+                          </Col>
+                        </Row>
+                      </TabPane>
                     </TabContent>
                   </Paper>
                 ) : (
@@ -2428,15 +2695,6 @@ const Dashboard = () => {
                               margin: "10px 0",
                             }}
                           >
-                            {/* <Button
-                              onClick={() => setOpenHTML(false)}
-                              color="primary"
-                              size="sm"
-                              outline
-                              style={{ marginRight: "8px" }}
-                            >
-                              Close
-                            </Button> */}
                             <Button
                               onClick={copyToClipboard}
                               color="primary"
@@ -2490,11 +2748,24 @@ const Dashboard = () => {
                   alignItems: "flex-start",
                 }}
               >
-                <Paper
-                  className="renderPaper"
-                  style={{ padding: "10px", borderRadius: "20px" }}
-                >
-                  <div style={{ width: "max-content" }}>{renderHTML(card)}</div>
+                <Paper style={{ padding: "20px", borderRadius: "20px" }}>
+                  <div className="renderPaper">
+                    <p
+                      className="finalSignP"
+                      style={{
+                        margin: "10px 5px",
+                        fontSize: "20px",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      {finalSign}
+                    </p>
+                    <div style={{ width: "max-content" }}>
+                      {renderHTML(card)}
+                    </div>
+                    {disclaimer}
+                  </div>
+
                   <div
                     style={{
                       display: "flex",
