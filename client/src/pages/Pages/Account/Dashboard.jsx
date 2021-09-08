@@ -2026,6 +2026,35 @@ const Dashboard = () => {
     alignItems: "center",
   };
 
+  const [imageLink, setImageLink] = useState("");
+  const [imageURL, setImageURL] = useState("");
+  const [imageWidth, setImageWidth] = useState("");
+  const [imageMargin, setImageMargin] = useState("");
+
+  const valuetext1 = (value) => {
+    setImageWidth(`${value}`);
+    return `${value}`;
+  };
+  const valuetext2 = (value) => {
+    setImageMargin(`${value}px`);
+    return `${value}`;
+  };
+
+  const SectionThree = ({ name, link }) => {
+    return (
+      <Grid item md={6}>
+        <Button
+          outline
+          color="primary"
+          style={{ width: "100%" }}
+          onClick={() => setImageLink(link)}
+        >
+          {name}
+        </Button>
+      </Grid>
+    );
+  };
+
   return (
     <>
       <Snackbar
@@ -2455,38 +2484,6 @@ const Dashboard = () => {
                               padding: "10px 12px",
                             }}
                           >
-                            {/* <Container
-                              maxWidth="sm"
-                              style={{
-                                display: "flex",
-                                flexDirection: "column",
-                              }}
-                            >
-                              {finalSign !== "" && (
-                                <Button
-                                  color="danger"
-                                  onClick={() => {
-                                    setFinalSign("");
-                                    setSignOffOptions("");
-                                  }}
-                                  style={{ margin: "5px 20px" }}
-                                >
-                                  Remove Sign Off
-                                </Button>
-                              )}
-                              {disclaimer !== "" && (
-                                <Button
-                                  color="danger"
-                                  onClick={() => {
-                                    setDisclaimer("");
-                                    setDisc("");
-                                  }}
-                                  style={{ margin: "5px 20px" }}
-                                >
-                                  Remove Disclaimer
-                                </Button>
-                              )}
-                            </Container> */}
                             <div>
                               {finalSign !== "" && (
                                 <div style={removeStyle}>
@@ -2512,6 +2509,21 @@ const Dashboard = () => {
                                     onClick={() => {
                                       setDisclaimer("");
                                       setDisc("");
+                                    }}
+                                  >
+                                    <ClearIcon />
+                                  </IconButton>
+                                </div>
+                              )}
+                              {imageLink !== "" && (
+                                <div style={removeStyle}>
+                                  <Label style={{ margin: "0 10px" }}>
+                                    Remove Image
+                                  </Label>
+                                  <IconButton
+                                    onClick={() => {
+                                      setImageLink("");
+                                      setImageURL("");
                                     }}
                                   >
                                     <ClearIcon />
@@ -2566,7 +2578,6 @@ const Dashboard = () => {
                                       <Slider
                                         defaultValue={20}
                                         getAriaValueText={valuetext}
-                                        onChange={(e) => console.log(e)}
                                         aria-labelledby="discrete-slider"
                                         valueLabelDisplay="auto"
                                         step={2}
@@ -2623,6 +2634,84 @@ const Dashboard = () => {
                                       setDisc(e.target.value);
                                       setDisclaimer(e.target.value);
                                     }}
+                                  />
+                                </FormGroup>
+                              </AccordionDetails>
+                            </Accordion>
+                            <Accordion style={{ background: "#e6ecf7" }}>
+                              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                                <Typography>Add Images</Typography>
+                              </AccordionSummary>
+                              <AccordionDetails
+                                style={{
+                                  display: "flex",
+                                  flexDirection: "column",
+                                }}
+                              >
+                                <Grid
+                                  style={{ display: "flex" }}
+                                  container
+                                  spacing={2}
+                                >
+                                  <SectionThree
+                                    name="GoToMeeting"
+                                    link="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1631069792/signature/gotomeeting_c4ddqp.png"
+                                  />
+                                  <SectionThree
+                                    name="Google Hangouts"
+                                    link="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1631069792/signature/google_jsyaqf.png"
+                                  />
+                                  <SectionThree
+                                    name="Skype"
+                                    link="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1631069792/signature/skype_hgvnpf.png"
+                                  />
+                                  <SectionThree
+                                    name="Google Meet"
+                                    link="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1631069792/signature/googlemeet_bceykh.png"
+                                  />
+                                  <SectionThree
+                                    name="Zoom"
+                                    link="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1631069792/signature/zoom_ak5g5g.png"
+                                  />
+                                </Grid>
+                                <FormGroup
+                                  style={{ width: "100%", marginTop: "15px" }}
+                                >
+                                  <Label for="button">Button URL</Label>
+                                  <Input
+                                    id="button"
+                                    value={imageURL}
+                                    onChange={(e) =>
+                                      setImageURL(e.target.value)
+                                    }
+                                  />
+                                  <Label style={{ marginTop: "15px" }}>
+                                    Height
+                                  </Label>
+                                  <br />
+                                  <Slider
+                                    defaultValue={220}
+                                    getAriaValueText={valuetext1}
+                                    aria-labelledby="discrete-slider"
+                                    valueLabelDisplay="auto"
+                                    step={5}
+                                    marks
+                                    min={150}
+                                    max={300}
+                                  />
+                                  <Label style={{ marginTop: "15px" }}>
+                                    Margin Top
+                                  </Label>
+                                  <br />
+                                  <Slider
+                                    defaultValue={14}
+                                    getAriaValueText={valuetext2}
+                                    aria-labelledby="discrete-slider"
+                                    valueLabelDisplay="auto"
+                                    step={2}
+                                    marks
+                                    min={2}
+                                    max={30}
                                   />
                                 </FormGroup>
                               </AccordionDetails>
@@ -2763,7 +2852,14 @@ const Dashboard = () => {
                     <div style={{ width: "max-content" }}>
                       {renderHTML(card)}
                     </div>
-                    {disclaimer}
+                    <div style={{ margin: "10px" }}>{disclaimer}</div>
+                    {imageLink.length != "" && (
+                      <div style={{ marginTop: imageMargin }}>
+                        <a className="meetme" href={imageURL}>
+                          <img src={imageLink} width={imageWidth} />
+                        </a>
+                      </div>
+                    )}
                   </div>
 
                   <div
