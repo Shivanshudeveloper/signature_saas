@@ -2054,6 +2054,26 @@ const Dashboard = () => {
       </Grid>
     );
   };
+  const [CTAText, setCTAText] = useState("");
+  const [CTAUrl, setCTAUrl] = useState("");
+  const [isCTA, setIsCTA] = useState("");
+  const [CTABorderR, setCTABorderR] = useState("");
+  const [CTAMarginT, setCTAMarginT] = useState("");
+  const [backgroundColorCTA, setBackgroundColorCTA] = useState("#5a6d90");
+  const [textColorCTA, setTextColorCTA] = useState("#fff");
+
+  const handleCTAChange = () => {
+    setIsCTA(true);
+  };
+
+  const CTABorder = (value) => {
+    setCTABorderR(`${value * 3}px`);
+    return `${value}`;
+  };
+  const CTAMargin = (value) => {
+    setCTAMarginT(`${value}px`);
+    return `${value}`;
+  };
 
   return (
     <>
@@ -2518,7 +2538,7 @@ const Dashboard = () => {
                               {imageLink !== "" && (
                                 <div style={removeStyle}>
                                   <Label style={{ margin: "0 10px" }}>
-                                    Remove Image
+                                    Remove Video Conferences
                                   </Label>
                                   <IconButton
                                     onClick={() => {
@@ -2530,10 +2550,31 @@ const Dashboard = () => {
                                   </IconButton>
                                 </div>
                               )}
+                              {isCTA && (
+                                <div style={removeStyle}>
+                                  <Label style={{ margin: "0 10px" }}>
+                                    Remove CTA
+                                  </Label>
+                                  <IconButton
+                                    onClick={() => {
+                                      setCTAText("");
+                                      setCTAUrl("");
+                                      setIsCTA(false);
+                                      setCTABorderR("");
+                                      setCTAMarginT("");
+                                      setBackgroundColorCTA("#5a6d90");
+                                      setTextColorCTA("#fff");
+                                    }}
+                                  >
+                                    <ClearIcon />
+                                  </IconButton>
+                                </div>
+                              )}
                             </div>
                             <h4>Add Ons</h4>
                             <Accordion style={{ background: "#e6ecf7" }}>
-                              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                              <AccordionSummary>
+                                {/* <AccordionSummary expandIcon={<ExpandMoreIcon />}> */}
                                 <Typography>Sign Off</Typography>
                               </AccordionSummary>
                               <AccordionDetails>
@@ -2612,13 +2653,15 @@ const Dashboard = () => {
                               style={{ background: "#e6ecf7" }}
                               onClick={(e) => {
                                 if (
-                                  e.target.className.includes("expanded") ===
-                                  false
+                                  String(e.target.className).includes(
+                                    "expanded"
+                                  ) === false
                                 )
                                   handleDisclaimer();
                               }}
                             >
-                              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                              <AccordionSummary>
+                                {/* <AccordionSummary expandIcon={<ExpandMoreIcon />}> */}
                                 <Typography>Disclaimer</Typography>
                               </AccordionSummary>
                               <AccordionDetails>
@@ -2639,8 +2682,9 @@ const Dashboard = () => {
                               </AccordionDetails>
                             </Accordion>
                             <Accordion style={{ background: "#e6ecf7" }}>
-                              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                                <Typography>Add Images</Typography>
+                              <AccordionSummary>
+                                {/* <AccordionSummary expandIcon={<ExpandMoreIcon />}> */}
+                                <Typography>Video Conferences</Typography>
                               </AccordionSummary>
                               <AccordionDetails
                                 style={{
@@ -2714,6 +2758,105 @@ const Dashboard = () => {
                                     max={30}
                                   />
                                 </FormGroup>
+                              </AccordionDetails>
+                            </Accordion>
+                            <Accordion
+                              style={{ background: "#e6ecf7" }}
+                              onClick={(e) => {
+                                if (
+                                  String(e.target.className).includes(
+                                    "expanded"
+                                  ) === false
+                                )
+                                  handleCTAChange();
+                              }}
+                            >
+                              <AccordionSummary>
+                                {/* <AccordionSummary expandIcon={<ExpandMoreIcon />}> */}
+                                <Typography>CTA</Typography>
+                              </AccordionSummary>
+                              <AccordionDetails
+                                style={{
+                                  display: "flex",
+                                  flexDirection: "column",
+                                }}
+                              >
+                                <Label
+                                  for="button"
+                                  style={{ width: "100%", marginTop: "15px" }}
+                                >
+                                  Button Text
+                                </Label>
+                                <Input
+                                  id="button"
+                                  value={CTAText}
+                                  onChange={(e) => setCTAText(e.target.value)}
+                                />
+                                <Label
+                                  for="button"
+                                  style={{ width: "100%", marginTop: "15px" }}
+                                >
+                                  Button URL
+                                </Label>
+                                <Input
+                                  id="button"
+                                  value={CTAUrl}
+                                  onChange={(e) => setCTAUrl(e.target.value)}
+                                />
+                                <Grid container spacing={2}>
+                                  <Grid item md={12}>
+                                    <Label style={{ marginTop: "15px" }}>
+                                      Shape
+                                    </Label>
+                                    <br />
+                                    <Slider
+                                      defaultValue={2}
+                                      getAriaValueText={CTABorder}
+                                      aria-labelledby="discrete-slider"
+                                      valueLabelDisplay="auto"
+                                      step={1}
+                                      marks
+                                      min={0}
+                                      max={7}
+                                    />
+                                    <Label style={{ marginTop: "15px" }}>
+                                      Margin Top
+                                    </Label>
+                                    <br />
+                                    <Slider
+                                      defaultValue={14}
+                                      getAriaValueText={CTAMargin}
+                                      aria-labelledby="discrete-slider"
+                                      valueLabelDisplay="auto"
+                                      step={2}
+                                      marks
+                                      min={2}
+                                      max={30}
+                                    />
+                                  </Grid>
+                                  <Grid item md={6}>
+                                    <Label style={{ marginBottom: "10px" }}>
+                                      Background Color
+                                    </Label>
+                                    <Chrome
+                                      color={backgroundColorCTA}
+                                      onChange={(color) =>
+                                        setBackgroundColorCTA(color.hex)
+                                      }
+                                    />
+                                  </Grid>
+                                  <Grid item md={6}>
+                                    <Label style={{ marginBottom: "10px" }}>
+                                      Text Color
+                                    </Label>
+                                    <Chrome
+                                      color={textColorCTA}
+                                      onChange={(color) =>
+                                        setTextColorCTA(color.hex)
+                                      }
+                                    />
+                                  </Grid>
+                                </Grid>
                               </AccordionDetails>
                             </Accordion>
                           </Col>
@@ -2853,10 +2996,30 @@ const Dashboard = () => {
                       {renderHTML(card)}
                     </div>
                     <div style={{ margin: "10px" }}>{disclaimer}</div>
-                    {imageLink.length != "" && (
+                    {imageLink != "" && (
                       <div style={{ marginTop: imageMargin }}>
                         <a className="meetme" href={imageURL}>
                           <img src={imageLink} width={imageWidth} />
+                        </a>
+                      </div>
+                    )}
+                    {isCTA && (
+                      <div style={{ marginTop: "10px" }}>
+                        <a href={CTAUrl}>
+                          <button
+                            className="CTAButton"
+                            style={{
+                              border: "none",
+                              outline: "none",
+                              padding: "10px 18px",
+                              borderRadius: CTABorderR,
+                              marginTop: CTAMarginT,
+                              backgroundColor: backgroundColorCTA,
+                              color: textColorCTA,
+                            }}
+                          >
+                            {CTAText}
+                          </button>
                         </a>
                       </div>
                     )}
