@@ -97,6 +97,7 @@ import Professional7 from "../Templates/Categories/Professional/Professional7";
 import Professional8 from "../Templates/Categories/Professional/Professional8";
 import Professional9 from "../Templates/Categories/Professional/Professional9";
 import Professional10 from "../Templates/Categories/Professional/Professional10";
+import { AvForm, AvField } from "availity-reactstrap-validation";
 
 import {
   TabContent,
@@ -2161,10 +2162,16 @@ const Dashboard = () => {
                       EDIT CARD
                     </Typography>
 
-                    <Nav tabs>
+                    <Nav 
+                    pills
+                    justified
+                    className="flex-column flex-sm-row rounded"
+                    id="pills-tab"
+                    role="tablist"
+                    >
                       <NavItem style={{ outline: "none" }}>
                         <NavLink
-                          className={classnames({ active: activeTab === "1" })}
+                          className={classnames({ active: activeTab === "1" }) + " rounded"}
                           onClick={() => {
                             toggleTab("1");
                           }}
@@ -2174,7 +2181,7 @@ const Dashboard = () => {
                       </NavItem>
                       <NavItem style={{ outline: "none" }}>
                         <NavLink
-                          className={classnames({ active: activeTab === "2" })}
+                          className={classnames({ active: activeTab === "2" }) + " rounded"}
                           onClick={() => {
                             toggleTab("2");
                           }}
@@ -2184,7 +2191,7 @@ const Dashboard = () => {
                       </NavItem>
                       <NavItem style={{ outline: "none" }}>
                         <NavLink
-                          className={classnames({ active: activeTab === "3" })}
+                          className={classnames({ active: activeTab === "3" }) + " rounded"}
                           onClick={() => {
                             toggleTab("3");
                           }}
@@ -2194,7 +2201,7 @@ const Dashboard = () => {
                       </NavItem>
                       <NavItem style={{ outline: "none" }}>
                         <NavLink
-                          className={classnames({ active: activeTab === "4" })}
+                          className={classnames({ active: activeTab === "4" }) + " rounded"}
                           onClick={() => {
                             toggleTab("4");
                           }}
@@ -2215,12 +2222,15 @@ const Dashboard = () => {
                               padding: "10px 12px",
                             }}
                           >
+
                             <InputField
+                              className="form-control ps-5"
                               label="Name"
                               value={info.name}
                               name="name"
                               onChange={changeInfo}
                             />
+
                             <InputField
                               label="Position"
                               name="position"
