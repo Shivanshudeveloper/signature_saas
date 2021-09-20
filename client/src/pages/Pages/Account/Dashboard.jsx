@@ -13,6 +13,8 @@ import {
   ModalBody,
   ModalFooter,
 } from "reactstrap";
+import ListItemText from "@material-ui/core/ListItemText";
+import Divider from "@material-ui/core/Divider";
 import PropTypes from "prop-types";
 import { useDropzone } from "react-dropzone";
 import {
@@ -22,18 +24,21 @@ import {
   DropdownItem,
 } from "reactstrap";
 import Dialog from "@material-ui/core/Dialog";
+import { DialogTitle, DialogContent, DialogActions } from "@material-ui/core";
 import ListItem from "@material-ui/core/ListItem";
 import List from "@material-ui/core/List";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import IconButton from "@material-ui/core/IconButton";
+import { Button as MButton } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import Slide from "@material-ui/core/Slide";
 import Typography from "@material-ui/core/Typography";
 import Snackbar from "@material-ui/core/Snackbar";
 import { API_SERVICES } from "./config";
 import { v4 as uuid4 } from "uuid";
-import Dropzone from "react-dropzone";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
 import { firestore, storage } from "../../../Firebase/index";
 import renderHTML from "react-render-html";
 import FileCopyIcon from "@material-ui/icons/FileCopy";
@@ -1720,6 +1725,10 @@ const Dashboard = () => {
     setCardPhotoURL("");
     setFinalSign("");
     setSignOffOptions("");
+    setSocialImages([]);
+    setMenuName("");
+    handleCloseFive();
+    setMarketLinks(initialMarket);
   };
 
   const edit = (e) => {
@@ -2055,6 +2064,54 @@ const Dashboard = () => {
       </Grid>
     );
   };
+
+  const [menuName, setMenuName] = useState("");
+  const [openFive, setOpenFive] = React.useState(false);
+
+  const handleClickFive = () => {
+    setOpenFive(true);
+  };
+
+  const handleCloseFive = () => {
+    setOpenFive(false);
+  };
+
+  const [socialImages, setSocialImages] = useState([]);
+
+  const SectionFive = ({ name }) => {
+    return (
+      <Grid item md={6}>
+        <MButton
+          aria-controls="basic-menu"
+          aria-haspopup="true"
+          aria-expanded={open ? "true" : undefined}
+          onClick={() => {
+            handleClickFive();
+            setMenuName(name);
+          }}
+          fullWidth
+          variant="outlined"
+          color="primary"
+        >
+          {name}
+        </MButton>
+      </Grid>
+    );
+  };
+  const [linkHREF, setLinkHREF] = useState("");
+  const addSocial = (num) => {
+    setSocialImages([
+      ...socialImages,
+      {
+        url: `https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/${menuName}${num}.png`,
+        href: linkHREF,
+      },
+    ]);
+    setMenuName("");
+    handleCloseFive();
+    setLinkHREF("");
+  };
+
   const [CTAText, setCTAText] = useState("");
   const [CTAUrl, setCTAUrl] = useState("");
   const [isCTA, setIsCTA] = useState("");
@@ -2062,6 +2119,37 @@ const Dashboard = () => {
   const [CTAMarginT, setCTAMarginT] = useState("");
   const [backgroundColorCTA, setBackgroundColorCTA] = useState("#5a6d90");
   const [textColorCTA, setTextColorCTA] = useState("#fff");
+
+  const initialMarket = [
+    {
+      name: "Amazon",
+      url: "https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/amazon1.png",
+      link: "",
+    },
+    {
+      name: "App Store",
+      url: "https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/appstore1.png",
+      link: "",
+    },
+    {
+      name: "EBay",
+      url: "https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/ebay1.png",
+      link: "",
+    },
+    {
+      name: "Google My Buisness",
+      url: "https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/googlemy.png",
+      link: "",
+    },
+    {
+      name: "Google Play Store",
+      url: "https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/googleplay.png",
+      link: "",
+    },
+  ];
+
+  const [marketLinks, setMarketLinks] = useState(initialMarket);
+  console.log();
 
   const handleCTAChange = () => {
     setIsCTA(true);
@@ -2073,6 +2161,17 @@ const Dashboard = () => {
   };
   const CTAMargin = (value) => {
     setCTAMarginT(`${value}px`);
+    return `${value}`;
+  };
+
+  const [socialW, setSocialW] = useState(1);
+  const SocialWidth = (value) => {
+    setSocialW(`${value}`);
+    return `${value}`;
+  };
+  const [marketW, setMarketW] = useState(1);
+  const MarketWidth = (value) => {
+    setMarketW(`${value}`);
     return `${value}`;
   };
 
@@ -2162,16 +2261,19 @@ const Dashboard = () => {
                       EDIT CARD
                     </Typography>
 
-                    <Nav 
-                    pills
-                    justified
-                    className="flex-column flex-sm-row rounded"
-                    id="pills-tab"
-                    role="tablist"
+                    <Nav
+                      pills
+                      justified
+                      className="flex-column flex-sm-row rounded"
+                      id="pills-tab"
+                      role="tablist"
                     >
                       <NavItem style={{ outline: "none" }}>
                         <NavLink
-                          className={classnames({ active: activeTab === "1" }) + " rounded"}
+                          className={
+                            classnames({ active: activeTab === "1" }) +
+                            " rounded"
+                          }
                           onClick={() => {
                             toggleTab("1");
                           }}
@@ -2181,7 +2283,10 @@ const Dashboard = () => {
                       </NavItem>
                       <NavItem style={{ outline: "none" }}>
                         <NavLink
-                          className={classnames({ active: activeTab === "2" }) + " rounded"}
+                          className={
+                            classnames({ active: activeTab === "2" }) +
+                            " rounded"
+                          }
                           onClick={() => {
                             toggleTab("2");
                           }}
@@ -2191,7 +2296,10 @@ const Dashboard = () => {
                       </NavItem>
                       <NavItem style={{ outline: "none" }}>
                         <NavLink
-                          className={classnames({ active: activeTab === "3" }) + " rounded"}
+                          className={
+                            classnames({ active: activeTab === "3" }) +
+                            " rounded"
+                          }
                           onClick={() => {
                             toggleTab("3");
                           }}
@@ -2201,7 +2309,10 @@ const Dashboard = () => {
                       </NavItem>
                       <NavItem style={{ outline: "none" }}>
                         <NavLink
-                          className={classnames({ active: activeTab === "4" }) + " rounded"}
+                          className={
+                            classnames({ active: activeTab === "4" }) +
+                            " rounded"
+                          }
                           onClick={() => {
                             toggleTab("4");
                           }}
@@ -2222,7 +2333,6 @@ const Dashboard = () => {
                               padding: "10px 12px",
                             }}
                           >
-
                             <InputField
                               className="form-control ps-5"
                               label="Name"
@@ -2508,7 +2618,6 @@ const Dashboard = () => {
                           <Col
                             sm="12"
                             style={{
-                              // background: "rgb(230, 236, 247)",
                               margin: "0 12px",
                               width: "97%",
                               padding: "10px 12px",
@@ -2574,6 +2683,22 @@ const Dashboard = () => {
                                       setCTAMarginT("");
                                       setBackgroundColorCTA("#5a6d90");
                                       setTextColorCTA("#fff");
+                                    }}
+                                  >
+                                    <ClearIcon />
+                                  </IconButton>
+                                </div>
+                              )}
+
+                              {socialImages.length > 0 && (
+                                <div style={removeStyle}>
+                                  <Label style={{ margin: "0 10px" }}>
+                                    Remove Social Links
+                                  </Label>
+                                  <IconButton
+                                    onClick={() => {
+                                      setSocialImages([]);
+                                      setLinkHREF("");
                                     }}
                                   >
                                     <ClearIcon />
@@ -2869,6 +2994,266 @@ const Dashboard = () => {
                                 </Grid>
                               </AccordionDetails>
                             </Accordion>
+                            <Accordion style={{ background: "#e6ecf7" }}>
+                              <AccordionSummary>
+                                {/* <AccordionSummary expandIcon={<ExpandMoreIcon />}> */}
+                                <Typography>Social Links</Typography>
+                              </AccordionSummary>
+                              <AccordionDetails
+                                style={{
+                                  display: "flex",
+                                  flexDirection: "column",
+                                }}
+                              >
+                                <>
+                                  <Grid
+                                    style={{
+                                      display: "flex",
+                                      alignItems: "center",
+                                      margin: "5px 0",
+                                    }}
+                                    container
+                                    spacing={2}
+                                  >
+                                    <SectionFive name="facebook" />
+                                    <SectionFive name="instagram" />
+                                    <SectionFive name="twitter" />
+                                    <SectionFive name="linkedin" />
+                                    <SectionFive name="pinterest" />
+                                    <SectionFive name="behance" />
+                                    <SectionFive name="youtube" />
+                                    <SectionFive name="patreon" />
+                                    <SectionFive name="dribble" />
+                                  </Grid>
+
+                                  <Label style={{ marginTop: "15px" }}>
+                                    Width
+                                  </Label>
+                                  <br />
+                                  <Slider
+                                    defaultValue={3}
+                                    getAriaValueText={SocialWidth}
+                                    aria-labelledby="discrete-slider"
+                                    valueLabelDisplay="auto"
+                                    step={1}
+                                    marks
+                                    min={1}
+                                    max={6}
+                                  />
+
+                                  <Dialog
+                                    open={openFive}
+                                    onClose={handleCloseFive}
+                                    maxWidth="xs"
+                                    fullWidth
+                                  >
+                                    <DialogTitle id="alert-dialog-title">
+                                      {"Choose"}
+                                    </DialogTitle>
+                                    <DialogContent>
+                                      <Input
+                                        value={linkHREF}
+                                        onChange={(e) =>
+                                          setLinkHREF(e.target.value)
+                                        }
+                                      />
+                                      <List
+                                        style={{
+                                          display: "flex",
+                                          flexDirection: "column",
+                                          alignItems: "center",
+                                        }}
+                                      >
+                                        <ListItem
+                                          button
+                                          onClick={() => addSocial(1)}
+                                          style={{
+                                            textTransform: "capitalize",
+                                            width: "fit-content",
+                                          }}
+                                        >
+                                          <img
+                                            src={`https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/${menuName}1.png`}
+                                            width="170"
+                                          />
+                                        </ListItem>
+                                        <ListItem
+                                          button
+                                          onClick={() => addSocial(2)}
+                                          style={{
+                                            textTransform: "capitalize",
+                                            width: "fit-content",
+                                          }}
+                                        >
+                                          <img
+                                            src={`https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/${menuName}2.png`}
+                                            width="170"
+                                          />
+                                        </ListItem>
+                                        <ListItem
+                                          button
+                                          onClick={() => addSocial(3)}
+                                          style={{
+                                            textTransform: "capitalize",
+                                            width: "fit-content",
+                                          }}
+                                        >
+                                          <img
+                                            src={`https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/${menuName}3.png`}
+                                            width="170"
+                                          />
+                                        </ListItem>
+                                        <Divider />
+                                      </List>
+                                    </DialogContent>
+                                    <DialogActions>
+                                      <MButton onClick={handleCloseFive}>
+                                        Close
+                                      </MButton>
+                                    </DialogActions>
+                                  </Dialog>
+                                </>
+                              </AccordionDetails>
+                            </Accordion>
+                            <Accordion style={{ background: "#e6ecf7" }}>
+                              <AccordionSummary>
+                                {/* <AccordionSummary expandIcon={<ExpandMoreIcon />}> */}
+                                <Typography>MarketPlace and Retail</Typography>
+                              </AccordionSummary>
+                              <AccordionDetails
+                                style={{
+                                  display: "flex",
+                                  flexDirection: "column",
+                                }}
+                              >
+                                <>
+                                  <Grid
+                                    style={{
+                                      display: "flex",
+                                      alignItems: "center",
+                                      margin: "5px 0",
+                                    }}
+                                    container
+                                    spacing={2}
+                                  >
+                                    {marketLinks.map((market) => (
+                                      <>
+                                        <Grid item md={4}>
+                                          <img
+                                            style={{
+                                              width: "60%",
+                                            }}
+                                            src={market.url}
+                                          />
+                                        </Grid>
+                                        <Grid item md={8}>
+                                          <Input
+                                            value={market.link}
+                                            onChange={(e) => {
+                                              setMarketLinks(
+                                                marketLinks.map((el) =>
+                                                  el.name === market.name
+                                                    ? {
+                                                        ...el,
+                                                        link: e.target.value,
+                                                      }
+                                                    : el
+                                                )
+                                              );
+                                            }}
+                                          />
+                                        </Grid>
+                                      </>
+                                    ))}
+                                  </Grid>
+                                  <Label style={{ marginTop: "15px" }}>
+                                    Width
+                                  </Label>
+                                  <br />
+                                  <Slider
+                                    defaultValue={3}
+                                    getAriaValueText={MarketWidth}
+                                    aria-labelledby="discrete-slider"
+                                    valueLabelDisplay="auto"
+                                    step={1}
+                                    marks
+                                    min={1}
+                                    max={6}
+                                  />
+                                  <Dialog
+                                    open={openFive}
+                                    onClose={handleCloseFive}
+                                    maxWidth="xs"
+                                    fullWidth
+                                  >
+                                    <DialogTitle id="alert-dialog-title">
+                                      {"Choose"}
+                                    </DialogTitle>
+                                    <DialogContent>
+                                      <Input
+                                        value={linkHREF}
+                                        onChange={(e) =>
+                                          setLinkHREF(e.target.value)
+                                        }
+                                      />
+                                      <List
+                                        style={{
+                                          display: "flex",
+                                          flexDirection: "column",
+                                          alignItems: "center",
+                                        }}
+                                      >
+                                        <ListItem
+                                          button
+                                          onClick={() => addSocial(1)}
+                                          style={{
+                                            textTransform: "capitalize",
+                                            width: "fit-content",
+                                          }}
+                                        >
+                                          <img
+                                            src={`https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/${menuName}1.png`}
+                                            width="170"
+                                          />
+                                        </ListItem>
+                                        <ListItem
+                                          button
+                                          onClick={() => addSocial(2)}
+                                          style={{
+                                            textTransform: "capitalize",
+                                            width: "fit-content",
+                                          }}
+                                        >
+                                          <img
+                                            src={`https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/${menuName}2.png`}
+                                            width="170"
+                                          />
+                                        </ListItem>
+                                        <ListItem
+                                          button
+                                          onClick={() => addSocial(3)}
+                                          style={{
+                                            textTransform: "capitalize",
+                                            width: "fit-content",
+                                          }}
+                                        >
+                                          <img
+                                            src={`https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/${menuName}3.png`}
+                                            width="170"
+                                          />
+                                        </ListItem>
+                                        <Divider />
+                                      </List>
+                                    </DialogContent>
+                                    <DialogActions>
+                                      <MButton onClick={handleCloseFive}>
+                                        Close
+                                      </MButton>
+                                    </DialogActions>
+                                  </Dialog>
+                                </>
+                              </AccordionDetails>
+                            </Accordion>
                           </Col>
                         </Row>
                       </TabPane>
@@ -3013,6 +3398,57 @@ const Dashboard = () => {
                         </a>
                       </div>
                     )}
+
+                    {socialImages.length > 0 && (
+                      <Grid
+                        style={{
+                          marginTop: "10px",
+                          display: "flex",
+                          maxWidth: "500px",
+                        }}
+                        container
+                        spacing={2}
+                      >
+                        {socialImages.map((image) => (
+                          <Grid item md={socialW}>
+                            <a href={image.href}>
+                              <img
+                                src={image.url}
+                                style={{ width: "-webkit-fill-available" }}
+                              />
+                            </a>
+                          </Grid>
+                        ))}
+                      </Grid>
+                    )}
+
+                    <Grid
+                      style={{
+                        marginTop: "10px",
+                        display: "flex",
+                        maxWidth: "500px",
+                      }}
+                      container
+                      spacing={2}
+                    >
+                      {marketLinks.map((market) => {
+                        return (
+                          <>
+                            {market.link !== "" && (
+                              <Grid item md={marketW}>
+                                <a href={market.link}>
+                                  <img
+                                    src={market.url}
+                                    style={{ width: "-webkit-fill-available" }}
+                                  />
+                                </a>
+                              </Grid>
+                            )}
+                          </>
+                        );
+                      })}
+                    </Grid>
+
                     {isCTA && (
                       <div style={{ marginTop: "10px" }}>
                         <a href={CTAUrl}>
