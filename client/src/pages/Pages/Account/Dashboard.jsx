@@ -2098,6 +2098,51 @@ const Dashboard = () => {
       </Grid>
     );
   };
+
+  const [greenMessage, setGreenMessage] = useState("");
+  const [greenImage, setGreenImage] = useState(
+    "https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632191783/signature/green1.png"
+  );
+  const [greenMessageSize, setGreenMessageSize] = useState("14px");
+
+  const GreenImage = ({ num }) => {
+    return (
+      <Grid item md={2}>
+        <MButton
+          onClick={() => {
+            setGreenImage(
+              `https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632191783/signature/green${num}.png`
+            );
+          }}
+          fullWidth
+          variant="outlined"
+          color="primary"
+          style={{ height: "40px" }}
+        >
+          <img
+            src={`https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632191783/signature/green${num}.png`}
+          />
+        </MButton>
+      </Grid>
+    );
+  };
+
+  const SectionSeven = ({ name, message }) => {
+    return (
+      <Grid item md={4}>
+        <MButton
+          onClick={() => {
+            setGreenMessage(message);
+          }}
+          fullWidth
+          variant="outlined"
+          color="primary"
+        >
+          {name}
+        </MButton>
+      </Grid>
+    );
+  };
   const [linkHREF, setLinkHREF] = useState("");
   const addSocial = (num) => {
     setSocialImages([
@@ -2172,6 +2217,10 @@ const Dashboard = () => {
   const [marketW, setMarketW] = useState(1);
   const MarketWidth = (value) => {
     setMarketW(`${value}`);
+    return `${value}`;
+  };
+  const GreenWidth = (value) => {
+    setGreenMessageSize(`${value}px`);
     return `${value}`;
   };
 
@@ -2699,6 +2748,25 @@ const Dashboard = () => {
                                     onClick={() => {
                                       setSocialImages([]);
                                       setLinkHREF("");
+                                    }}
+                                  >
+                                    <ClearIcon />
+                                  </IconButton>
+                                </div>
+                              )}
+
+                              {greenMessage !== "" && (
+                                <div style={removeStyle}>
+                                  <Label style={{ margin: "0 10px" }}>
+                                    Remove Green Message
+                                  </Label>
+                                  <IconButton
+                                    onClick={() => {
+                                      setGreenMessage("");
+                                      setGreenImage(
+                                        "https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632191783/signature/green1.png"
+                                      );
+                                      setGreenMessageSize("14px");
                                     }}
                                   >
                                     <ClearIcon />
@@ -3254,6 +3322,162 @@ const Dashboard = () => {
                                 </>
                               </AccordionDetails>
                             </Accordion>
+                            <Accordion style={{ background: "#e6ecf7" }}>
+                              <AccordionSummary>
+                                {/* <AccordionSummary expandIcon={<ExpandMoreIcon />}> */}
+                                <Typography>Green Message</Typography>
+                              </AccordionSummary>
+                              <AccordionDetails
+                                style={{
+                                  display: "flex",
+                                  flexDirection: "column",
+                                }}
+                              >
+                                <>
+                                  <Grid
+                                    style={{
+                                      display: "flex",
+                                      alignItems: "center",
+                                      margin: "5px 0",
+                                    }}
+                                    container
+                                    spacing={2}
+                                  >
+                                    <SectionSeven
+                                      name="Message 1"
+                                      message="Please consider the environment before printing this email"
+                                    />
+                                    <SectionSeven
+                                      name="Message 2"
+                                      message="Please don’t print this email"
+                                    />
+                                    <SectionSeven
+                                      name="Message 3"
+                                      message="Save paper. Don’t print"
+                                    />
+                                  </Grid>
+
+                                  <Grid
+                                    style={{
+                                      display: "flex",
+                                      alignItems: "center",
+                                      margin: "5px 0",
+                                    }}
+                                    container
+                                    spacing={2}
+                                  >
+                                    <GreenImage num="1" />
+                                    <GreenImage num="2" />
+                                    <GreenImage num="3" />
+                                    <GreenImage num="4" />
+                                    <GreenImage num="5" />
+                                    <GreenImage num="6" />
+                                    <GreenImage num="7" />
+                                    <GreenImage num="8" />
+                                  </Grid>
+
+                                  <FormGroup style={{ width: "100%" }}>
+                                    <Label for="disclaimer">
+                                      Custom Green Message
+                                    </Label>
+                                    <Input
+                                      type="textarea"
+                                      value={greenMessage}
+                                      onChange={(e) => {
+                                        setGreenMessage(e.target.value);
+                                      }}
+                                    />
+                                  </FormGroup>
+
+                                  <Label style={{ marginTop: "15px" }}>
+                                    Font Size
+                                  </Label>
+                                  <br />
+                                  <Slider
+                                    defaultValue={14}
+                                    getAriaValueText={GreenWidth}
+                                    aria-labelledby="discrete-slider"
+                                    valueLabelDisplay="auto"
+                                    step={1}
+                                    marks
+                                    min={10}
+                                    max={20}
+                                  />
+
+                                  <Dialog
+                                    open={openFive}
+                                    onClose={handleCloseFive}
+                                    maxWidth="xs"
+                                    fullWidth
+                                  >
+                                    <DialogTitle id="alert-dialog-title">
+                                      {"Choose"}
+                                    </DialogTitle>
+                                    <DialogContent>
+                                      <Input
+                                        value={linkHREF}
+                                        onChange={(e) =>
+                                          setLinkHREF(e.target.value)
+                                        }
+                                      />
+                                      <List
+                                        style={{
+                                          display: "flex",
+                                          flexDirection: "column",
+                                          alignItems: "center",
+                                        }}
+                                      >
+                                        <ListItem
+                                          button
+                                          onClick={() => addSocial(1)}
+                                          style={{
+                                            textTransform: "capitalize",
+                                            width: "fit-content",
+                                          }}
+                                        >
+                                          <img
+                                            src={`https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/${menuName}1.png`}
+                                            width="170"
+                                          />
+                                        </ListItem>
+                                        <ListItem
+                                          button
+                                          onClick={() => addSocial(2)}
+                                          style={{
+                                            textTransform: "capitalize",
+                                            width: "fit-content",
+                                          }}
+                                        >
+                                          <img
+                                            src={`https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/${menuName}2.png`}
+                                            width="170"
+                                          />
+                                        </ListItem>
+                                        <ListItem
+                                          button
+                                          onClick={() => addSocial(3)}
+                                          style={{
+                                            textTransform: "capitalize",
+                                            width: "fit-content",
+                                          }}
+                                        >
+                                          <img
+                                            src={`https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632122362/signature/${menuName}3.png`}
+                                            width="170"
+                                          />
+                                        </ListItem>
+                                        <Divider />
+                                      </List>
+                                    </DialogContent>
+                                    <DialogActions>
+                                      <MButton onClick={handleCloseFive}>
+                                        Close
+                                      </MButton>
+                                    </DialogActions>
+                                  </Dialog>
+                                </>
+                              </AccordionDetails>
+                            </Accordion>
                           </Col>
                         </Row>
                       </TabPane>
@@ -3391,11 +3615,33 @@ const Dashboard = () => {
                       {renderHTML(card)}
                     </div>
                     <div style={{ margin: "10px" }}>{disclaimer}</div>
+
                     {imageLink != "" && (
                       <div style={{ marginTop: imageMargin }}>
                         <a className="meetme" href={imageURL}>
                           <img src={imageLink} width={imageWidth} />
                         </a>
+                      </div>
+                    )}
+
+                    {greenMessage != "" && (
+                      <div
+                        style={{
+                          marginTop: "15px",
+                          display: "flex",
+                          alignItems: "center",
+                        }}
+                      >
+                        <img src={greenImage} width="20" />
+                        <p
+                          style={{
+                            fontSize: greenMessageSize,
+                            marginBottom: 0,
+                            marginLeft: "10px",
+                          }}
+                        >
+                          {greenMessage}
+                        </p>
                       </div>
                     )}
 
