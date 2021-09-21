@@ -1507,6 +1507,7 @@ const Dashboard = () => {
   const [modalCategory, setModalCategory] = useState("Friendly");
   const [modal, setModal] = useState(false);
   const [card, setCard] = useState("");
+  const [originalCard, setOriginalCard] = useState("");
   const [file, setFile] = useState([]);
   const [file1, setFile1] = useState([]);
   const [filePath, setFilePath] = useState("");
@@ -1517,6 +1518,7 @@ const Dashboard = () => {
   const [openSnack, setOpenSnack] = useState(false);
   const [openHTML, setOpenHTML] = React.useState(true);
   const [html, setHtml] = useState("");
+
   const [info, setInfo] = useState(initialState);
 
   const [cardProfileURL, setCardProfileURL] = useState("");
@@ -1733,6 +1735,7 @@ const Dashboard = () => {
 
   const edit = (e) => {
     setCard(e.target.previousSibling.innerHTML);
+    setOriginalCard(e.target.previousSibling.innerHTML);
     handleClickOpen();
     checkFields();
   };
@@ -2224,6 +2227,55 @@ const Dashboard = () => {
     return `${value}`;
   };
 
+  const [layoutFontSize, setLayoutFontSize] = useState("12px");
+  const [layoutTopColor, setLayoutTopColor] = useState("#000");
+
+  useEffect(async () => {
+    const layout = await document
+      .getElementsByClassName("renderPaper")[0]
+      ?.children[1].getElementsByClassName("cardName")[0].parentElement
+      .parentElement.parentElement.style;
+    if (layout !== undefined) layout.fontSize = layoutFontSize;
+  }, [layoutFontSize]);
+
+  const [layoutIconSize, setLayoutIconSize] = useState("16px");
+  const [layoutParentIconSize, setLayoutParentIconSize] = useState("25px");
+
+  useEffect(async () => {
+    const layout = await document
+      .getElementsByClassName("renderPaper")[0]
+      ?.children[1].getElementsByClassName("fa");
+    console.log(layout);
+    if (layout !== undefined) {
+      if (layout[0] !== undefined) {
+        layout[0].style.fontSize = layoutIconSize;
+        layout[0].parentElement.style.width = layoutParentIconSize;
+        layout[0].parentElement.style.height = layoutParentIconSize;
+      }
+      if (layout[1] !== undefined) {
+        layout[1].style.fontSize = layoutIconSize;
+        layout[1].parentElement.style.width = layoutParentIconSize;
+        layout[1].parentElement.style.height = layoutParentIconSize;
+      }
+      if (layout[2] !== undefined) {
+        layout[2].style.fontSize = layoutIconSize;
+        layout[2].parentElement.style.width = layoutParentIconSize;
+        layout[2].parentElement.style.height = layoutParentIconSize;
+      }
+      if (layout[3] !== undefined) {
+        layout[3].style.fontSize = layoutIconSize;
+        layout[3].parentElement.style.width = layoutParentIconSize;
+        layout[3].parentElement.style.height = layoutParentIconSize;
+      }
+    }
+  }, [layoutParentIconSize, layoutIconSize]);
+
+  const layoutIconS = (value) => {
+    setLayoutIconSize(`${value}px`);
+    setLayoutParentIconSize(`${value * 1.5}px`);
+    return `${value}`;
+  };
+
   return (
     <>
       <Snackbar
@@ -2367,6 +2419,19 @@ const Dashboard = () => {
                           }}
                         >
                           Add Ons
+                        </NavLink>
+                      </NavItem>
+                      <NavItem style={{ outline: "none" }}>
+                        <NavLink
+                          className={
+                            classnames({ active: activeTab === "5" }) +
+                            " rounded"
+                          }
+                          onClick={() => {
+                            toggleTab("5");
+                          }}
+                        >
+                          Design
                         </NavLink>
                       </NavItem>
                     </Nav>
@@ -3481,6 +3546,143 @@ const Dashboard = () => {
                           </Col>
                         </Row>
                       </TabPane>
+                      <TabPane tabId="5">
+                        <Typography variant="h5" style={{ margin: "20px 5px" }}>
+                          Layout
+                        </Typography>
+                        <Grid
+                          style={{
+                            display: "flex",
+                            margin: "15px 20px",
+                          }}
+                        >
+                          <Grid
+                            item
+                            md={6}
+                            style={{
+                              display: "flex",
+                              justifyContent: "flex-start",
+                              flexDirection: "column",
+                            }}
+                          >
+                            <Label>Font Size</Label>
+                            <Slider
+                              defaultValue={12}
+                              value={layoutFontSize.split("p")[0]}
+                              onChange={(e, newValue) =>
+                                setLayoutFontSize(`${newValue}px`)
+                              }
+                              valueLabelDisplay="auto"
+                              step={2}
+                              marks
+                              min={8}
+                              max={22}
+                              style={{
+                                width: "90%",
+                                marginTop: "15px",
+                              }}
+                            />
+                          </Grid>
+
+                          <Grid
+                            item
+                            md={6}
+                            style={{
+                              display: "flex",
+                              flexDirection: "column",
+                              paddingLeft: "15px",
+                            }}
+                          >
+                            <Label style={{ marginBottom: "10px" }}>
+                              Font Color
+                            </Label>
+                            <Chrome
+                              color={layoutTopColor}
+                              onChange={(color) => {
+                                setLayoutTopColor(color.hex);
+                                const layout = document
+                                  .getElementsByClassName("renderPaper")[0]
+                                  ?.children[1].getElementsByClassName(
+                                    "cardName"
+                                  )[0];
+                                layout.style.color = color.hex;
+                              }}
+                            />
+                          </Grid>
+                        </Grid>
+                        <hr />
+                        <Typography variant="h5" style={{ margin: "20px 5px" }}>
+                          Social Icons
+                        </Typography>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "space-between",
+                            margin: "5px 20px",
+                          }}
+                        >
+                          <Label>Icon Size</Label>
+                          <Slider
+                            defaultValue={16}
+                            value={layoutIconSize.split("p")[0]}
+                            onChange={(e, newValue) =>
+                              setLayoutIconSize(`${newValue}px`)
+                            }
+                            valueLabelDisplay="auto"
+                            step={2}
+                            marks
+                            min={10}
+                            max={26}
+                            style={{
+                              width: "80%",
+                            }}
+                          />
+                        </div>
+                        <hr />
+                        <center>
+                          <Button
+                            color="primary"
+                            onClick={() => {
+                              setFinalSign("");
+                              setSignOffOptions("");
+                              setDisclaimer("");
+                              setDisc("");
+                              setImageLink("");
+                              setImageURL("");
+                              setCTAText("");
+                              setCTAUrl("");
+                              setIsCTA(false);
+                              setCTABorderR("");
+                              setCTAMarginT("");
+                              setBackgroundColorCTA("#5a6d90");
+                              setTextColorCTA("#fff");
+                              setSocialImages([]);
+                              setLinkHREF("");
+                              setGreenMessage("");
+                              setGreenImage(
+                                "https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632191783/signature/green1.png"
+                              );
+                              setGreenMessageSize("14px");
+                              setSocialImages([]);
+                              setLayoutFontSize("12px");
+                              setLayoutTopColor("#000");
+                              setLayoutIconSize("16px");
+                              setLayoutParentIconSize("25px");
+                              toggleTab("1");
+                              setInfo(initialState);
+                              setMarketLinks(initialMarket);
+                              const forResetCard =
+                                document.getElementsByClassName(
+                                  "forResetCard"
+                                )[0];
+                              forResetCard.innerHTML = originalCard;
+                            }}
+                          >
+                            Reset Card
+                          </Button>
+                        </center>
+                      </TabPane>
                     </TabContent>
                   </Paper>
                 ) : (
@@ -3611,7 +3813,10 @@ const Dashboard = () => {
                     >
                       {finalSign}
                     </p>
-                    <div style={{ width: "max-content" }}>
+                    <div
+                      style={{ width: "max-content" }}
+                      className="forResetCard"
+                    >
                       {renderHTML(card)}
                     </div>
                     <div style={{ margin: "10px" }}>{disclaimer}</div>
