@@ -2245,7 +2245,6 @@ const Dashboard = () => {
     const layout = await document
       .getElementsByClassName("renderPaper")[0]
       ?.children[1].getElementsByClassName("fa");
-    console.log(layout);
     if (layout !== undefined) {
       if (layout[0] !== undefined) {
         layout[0].style.fontSize = layoutIconSize;
@@ -2274,6 +2273,38 @@ const Dashboard = () => {
     setLayoutIconSize(`${value}px`);
     setLayoutParentIconSize(`${value * 1.5}px`);
     return `${value}`;
+  };
+
+  const [openCustom, setOpenCustom] = React.useState(false);
+  const handleClickCustom = () => setOpenCustom(true);
+  const handleCloseCustom = () => setOpenCustom(false);
+  const [customName, setCustomName] = useState("");
+  const [customValue, setCustomValue] = useState("");
+  const [customLink, setCustomLink] = useState("");
+
+  const addCustomFields = async () => {
+    const layout = await document
+      .getElementsByClassName("renderPaper")[0]
+      ?.children[1].getElementsByClassName("cardName")[0].parentElement
+      .parentElement.parentElement;
+    if (customLink === "") {
+      layout.innerHTML += `<tr><td style="margin: 0.1px;">
+        <div style="font-family: &quot;Comic Sans MS&quot;, cursive, sans-serif;">
+        <span style="font-weight: 600; color: rgb(195, 95, 62);">${customName}&nbsp;
+        </span>${customValue}</div>
+        </td></tr>`;
+    } else {
+      layout.innerHTML += `<tr><td style="margin: 0.1px;">
+        <a href="${customLink}">
+        <div style="font-family: &quot;Comic Sans MS&quot;, cursive, sans-serif;">
+        <span style="font-weight: 600; color: rgb(195, 95, 62);">${customName}&nbsp;
+        </span>${customValue}</div></a>
+        </td></tr>`;
+    }
+    handleCloseCustom();
+    setCustomName();
+    setCustomValue();
+    setCustomLink();
   };
 
   return (
@@ -2493,6 +2524,71 @@ const Dashboard = () => {
                             />
                           </Col>
                         </Row>
+                        <center>
+                          <Button color="primary" onClick={handleClickCustom}>
+                            Add Custom Fields
+                          </Button>
+                          <Dialog
+                            open={openCustom}
+                            onClose={handleCloseCustom}
+                            maxWidth="sm"
+                            fullWidth
+                          >
+                            <DialogTitle id="alert-dialog-title">
+                              Add Custom Fields
+                            </DialogTitle>
+                            <DialogContent>
+                              <Grid
+                                style={{ display: "flex" }}
+                                spacing={2}
+                                container
+                              >
+                                <Grid item md={6}>
+                                  <Label>Name</Label>
+                                  <Input
+                                    value={customName}
+                                    onChange={(e) =>
+                                      setCustomName(e.target.value)
+                                    }
+                                  />
+                                </Grid>
+                                <Grid item md={6}>
+                                  <Label>Value</Label>
+                                  <Input
+                                    value={customValue}
+                                    onChange={(e) =>
+                                      setCustomValue(e.target.value)
+                                    }
+                                  />
+                                </Grid>
+                                <Grid item md={12}>
+                                  <Label>Link</Label>
+                                  <Input
+                                    value={customLink}
+                                    onChange={(e) =>
+                                      setCustomLink(e.target.value)
+                                    }
+                                  />
+                                </Grid>
+                              </Grid>
+                            </DialogContent>
+                            <DialogActions>
+                              <MButton
+                                color="primary"
+                                onClick={handleCloseCustom}
+                              >
+                                Close
+                              </MButton>
+                              <MButton
+                                onClick={addCustomFields}
+                                variant="contained"
+                                color="primary"
+                              >
+                                Add
+                              </MButton>
+                            </DialogActions>
+                          </Dialog>
+                        </center>
                       </TabPane>
                       <TabPane tabId="2">
                         <Row>
