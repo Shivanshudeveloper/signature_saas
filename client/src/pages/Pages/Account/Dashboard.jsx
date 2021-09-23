@@ -2385,13 +2385,13 @@ const Dashboard = () => {
                       boxShadow: "none",
                     }}
                   >
-                    <Typography
+                    {/* <Typography
                       variant="h5"
                       align="center"
                       style={{ marginBottom: "15px" }}
                     >
                       EDIT CARD
-                    </Typography>
+                    </Typography> */}
 
                     <Nav
                       pills
