@@ -2307,6 +2307,9 @@ const Dashboard = () => {
     setCustomLink();
   };
 
+  const [profileWidth, setProfileWidth] = useState(160);
+  const [secondPhotoWidth, setSecondPhotoWidth] = useState(160);
+
   return (
     <>
       <Snackbar
@@ -2510,12 +2513,18 @@ const Dashboard = () => {
                               value={info.website}
                               onChange={changeInfo}
                             />
-                            <InputField
-                              label="Description"
-                              name="desc"
-                              value={info.desc}
-                              onChange={changeInfo}
-                            />
+                            {document
+                              .getElementsByClassName("renderPaper")[0]
+                              ?.children[1]?.getElementsByClassName(
+                                "cardDesc"
+                              )[0] !== undefined && (
+                              <InputField
+                                label="Description"
+                                name="desc"
+                                value={info.desc}
+                                onChange={changeInfo}
+                              />
+                            )}
                             <InputField
                               label="Address"
                               name="address"
@@ -2765,6 +2774,31 @@ const Dashboard = () => {
                               </Grid>
                             </Grid>
 
+                            <Slider
+                              defaultValue={160}
+                              value={profileWidth}
+                              onChange={(e, newValue) => {
+                                setProfileWidth(newValue);
+                                const image = document
+                                  .getElementsByClassName("renderPaper")[0]
+                                  ?.children[1]?.getElementsByClassName(
+                                    "cardProfile"
+                                  )[0];
+                                image.maxWidth = newValue;
+                                image.style.width = `${newValue}px`;
+                                image.style.maxWidth = `max-content`;
+                              }}
+                              valueLabelDisplay="auto"
+                              step={5}
+                              marks
+                              min={140}
+                              max={220}
+                              style={{
+                                width: "90%",
+                                marginTop: "15px",
+                              }}
+                            />
+
                             {renderPhotoLen === 1 && file1.length > 0 && (
                               <center>
                                 <Button
@@ -2818,6 +2852,30 @@ const Dashboard = () => {
                                     </Button>
                                   </Grid>
                                 </Grid>
+                                <Slider
+                                  defaultValue={160}
+                                  value={secondPhotoWidth}
+                                  onChange={(e, newValue) => {
+                                    setSecondPhotoWidth(newValue);
+                                    const image = document
+                                      .getElementsByClassName("renderPaper")[0]
+                                      ?.children[1]?.getElementsByClassName(
+                                        "cardPhoto"
+                                      )[0];
+                                    image.maxWidth = newValue;
+                                    image.style.width = `${newValue}px`;
+                                    image.style.maxWidth = `max-content`;
+                                  }}
+                                  valueLabelDisplay="auto"
+                                  step={5}
+                                  marks
+                                  min={140}
+                                  max={250}
+                                  style={{
+                                    width: "90%",
+                                    marginTop: "15px",
+                                  }}
+                                />
                               </>
                             )}
                           </Col>

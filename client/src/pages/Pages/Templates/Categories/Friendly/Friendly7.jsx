@@ -369,7 +369,7 @@ const Friendly7 = () => {
                       </td>
                       <td
                         style={{ fontSize: "16px", paddingLeft: "5px" }}
-                        className="name8"
+                        className="cardDesc"
                       >
                         Schedule your next consultation online
                       </td>
