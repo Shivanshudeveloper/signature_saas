@@ -2534,6 +2534,47 @@ const Dashboard = () => {
                           </Col>
                         </Row>
                         <center>
+                          <Button
+                            color="primary"
+                            style={{ marginRight: "15px" }}
+                            onClick={() => {
+                              setFinalSign("");
+                              setSignOffOptions("");
+                              setDisclaimer("");
+                              setDisc("");
+                              setImageLink("");
+                              setImageURL("");
+                              setCTAText("");
+                              setCTAUrl("");
+                              setIsCTA(false);
+                              setCTABorderR("");
+                              setCTAMarginT("");
+                              setBackgroundColorCTA("#5a6d90");
+                              setTextColorCTA("#fff");
+                              setSocialImages([]);
+                              setLinkHREF("");
+                              setGreenMessage("");
+                              setGreenImage(
+                                "https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632191783/signature/green1.png"
+                              );
+                              setGreenMessageSize("14px");
+                              setSocialImages([]);
+                              setLayoutFontSize("12px");
+                              setLayoutTopColor("#000");
+                              setLayoutIconSize("16px");
+                              setLayoutParentIconSize("25px");
+                              toggleTab("1");
+                              setInfo(initialState);
+                              setMarketLinks(initialMarket);
+                              const forResetCard =
+                                document.getElementsByClassName(
+                                  "forResetCard"
+                                )[0];
+                              forResetCard.innerHTML = originalCard;
+                            }}
+                          >
+                            Delete Custom Fields
+                          </Button>
                           <Button color="primary" onClick={handleClickCustom}>
                             Add Custom Fields
                           </Button>
