@@ -13,7 +13,7 @@
     "bootstrap": "^5.0.0-beta2",
     "feather-icons-react": "^0.4.3",
     "firebase": "^8.9.1",
-    "node-sass": "^6.0.0",
+    "node-sass": "^6.0.1",
     "npm": "^7.13.0",
     "number-counter": "^1.0.3",
     "react": "^17.0.2",
@@ -64,6 +64,6 @@
     ]
   },
   "devDependencies": {
-    "gulp-sass": "^3.2.1"
+    "gulp-sass": "^5.0.0"
   }
 }

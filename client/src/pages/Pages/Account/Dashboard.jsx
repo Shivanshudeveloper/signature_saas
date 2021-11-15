@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 // import { ChromePicker } from "react-color";
-import { Chrome } from "@uiw/react-color";
+import {Chrome} from "@uiw/react-color";
 import {
   Container,
   Row,
@@ -16,30 +16,25 @@ import {
 import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
 import PropTypes from "prop-types";
-import { useDropzone } from "react-dropzone";
-import {
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-} from "reactstrap";
+import {useDropzone} from "react-dropzone";
+import {Dropdown, DropdownToggle, DropdownMenu, DropdownItem} from "reactstrap";
 import Dialog from "@material-ui/core/Dialog";
-import { DialogTitle, DialogContent, DialogActions } from "@material-ui/core";
+import {DialogTitle, DialogContent, DialogActions} from "@material-ui/core";
 import ListItem from "@material-ui/core/ListItem";
 import List from "@material-ui/core/List";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import IconButton from "@material-ui/core/IconButton";
-import { Button as MButton } from "@material-ui/core";
+import {Button as MButton} from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import Slide from "@material-ui/core/Slide";
 import Typography from "@material-ui/core/Typography";
 import Snackbar from "@material-ui/core/Snackbar";
-import { API_SERVICES } from "./config";
-import { v4 as uuid4 } from "uuid";
+import {API_SERVICES} from "./config";
+import {v4 as uuid4} from "uuid";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import { firestore, storage } from "../../../Firebase/index";
+import {firestore, storage} from "../../../Firebase/index";
 import renderHTML from "react-render-html";
 import FileCopyIcon from "@material-ui/icons/FileCopy";
 import DeleteIcon from "@material-ui/icons/Delete";
@@ -102,7 +97,7 @@ import Professional7 from "../Templates/Categories/Professional/Professional7";
 import Professional8 from "../Templates/Categories/Professional/Professional8";
 import Professional9 from "../Templates/Categories/Professional/Professional9";
 import Professional10 from "../Templates/Categories/Professional/Professional10";
-import { AvForm, AvField } from "availity-reactstrap-validation";
+import {AvForm, AvField} from "availity-reactstrap-validation";
 
 import {
   TabContent,
@@ -121,8 +116,8 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
-import { FormGroup, Label, Input } from "reactstrap";
-import { useHistory } from "react-router-dom";
+import {FormGroup, Label, Input} from "reactstrap";
+import {useHistory} from "react-router-dom";
 import Slider from "@material-ui/core/Slider";
 
 import axios from "axios";
@@ -166,14 +161,14 @@ const Example = (props) => {
     </Dropdown>
   );
 };
-const Modern = ({ edit }) => {
+const Modern = ({edit}) => {
   return (
     <>
       <Col className="coll">
         <Card className="cardd">
           <Modern1 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -184,7 +179,7 @@ const Modern = ({ edit }) => {
         <Card className="cardd">
           <Modern2 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -195,7 +190,7 @@ const Modern = ({ edit }) => {
         <Card className="cardd">
           <Modern3 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -206,7 +201,7 @@ const Modern = ({ edit }) => {
         <Card className="cardd">
           <Modern4 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -217,7 +212,7 @@ const Modern = ({ edit }) => {
         <Card className="cardd">
           <Modern5 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -228,7 +223,7 @@ const Modern = ({ edit }) => {
         <Card className="cardd">
           <Modern6 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -241,7 +236,7 @@ const Modern = ({ edit }) => {
         <Card className="cardd">
           <Modern7 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -252,7 +247,7 @@ const Modern = ({ edit }) => {
         <Card className="cardd">
           <Modern8 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -263,7 +258,7 @@ const Modern = ({ edit }) => {
         <Card className="cardd">
           <Modern9 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -274,7 +269,7 @@ const Modern = ({ edit }) => {
         <Card className="cardd">
           <Modern10 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -285,7 +280,7 @@ const Modern = ({ edit }) => {
         <Card className="cardd">
           <Modern11 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -297,14 +292,14 @@ const Modern = ({ edit }) => {
     </>
   );
 };
-const Professional = ({ edit }) => {
+const Professional = ({edit}) => {
   return (
     <>
       <Col className="coll">
         <Card className="cardd">
           <Professional1 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -315,7 +310,7 @@ const Professional = ({ edit }) => {
         <Card className="cardd">
           <Professional2 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -326,7 +321,7 @@ const Professional = ({ edit }) => {
         <Card className="cardd">
           <Professional3 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -337,7 +332,7 @@ const Professional = ({ edit }) => {
         <Card className="cardd">
           <Professional4 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -348,7 +343,7 @@ const Professional = ({ edit }) => {
         <Card className="cardd">
           <Professional5 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -359,7 +354,7 @@ const Professional = ({ edit }) => {
         <Card className="cardd">
           <Professional6 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -372,7 +367,7 @@ const Professional = ({ edit }) => {
         <Card className="cardd">
           <Professional7 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -383,7 +378,7 @@ const Professional = ({ edit }) => {
         <Card className="cardd">
           <Professional8 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -394,7 +389,7 @@ const Professional = ({ edit }) => {
         <Card className="cardd">
           <Professional9 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -405,7 +400,7 @@ const Professional = ({ edit }) => {
         <Card className="cardd">
           <Professional10 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -417,14 +412,14 @@ const Professional = ({ edit }) => {
     </>
   );
 };
-const Elegant = ({ edit }) => {
+const Elegant = ({edit}) => {
   return (
     <>
       <Col className="coll">
         <Card className="cardd">
           <Elegant1 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -435,7 +430,7 @@ const Elegant = ({ edit }) => {
         <Card className="cardd">
           <Elegant2 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -446,7 +441,7 @@ const Elegant = ({ edit }) => {
         <Card className="cardd">
           <Elegant3 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -457,7 +452,7 @@ const Elegant = ({ edit }) => {
         <Card className="cardd">
           <Elegant4 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -468,7 +463,7 @@ const Elegant = ({ edit }) => {
         <Card className="cardd">
           <Elegant5 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -479,7 +474,7 @@ const Elegant = ({ edit }) => {
         <Card className="cardd">
           <Elegant6 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -492,7 +487,7 @@ const Elegant = ({ edit }) => {
         <Card className="cardd">
           <Elegant7 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -503,7 +498,7 @@ const Elegant = ({ edit }) => {
         <Card className="cardd">
           <Elegant8 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -514,7 +509,7 @@ const Elegant = ({ edit }) => {
         <Card className="cardd">
           <Elegant9 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -525,7 +520,7 @@ const Elegant = ({ edit }) => {
         <Card className="cardd">
           <Elegant10 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -537,14 +532,14 @@ const Elegant = ({ edit }) => {
     </>
   );
 };
-const Creative = ({ edit }) => {
+const Creative = ({edit}) => {
   return (
     <>
       <Col className="coll">
         <Card className="cardd">
           <Creative1 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -555,7 +550,7 @@ const Creative = ({ edit }) => {
         <Card className="cardd">
           <Creative2 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -566,7 +561,7 @@ const Creative = ({ edit }) => {
         <Card className="cardd">
           <Creative3 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -577,7 +572,7 @@ const Creative = ({ edit }) => {
         <Card className="cardd">
           <Creative4 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -588,7 +583,7 @@ const Creative = ({ edit }) => {
         <Card className="cardd">
           <Creative5 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -599,7 +594,7 @@ const Creative = ({ edit }) => {
         <Card className="cardd">
           <Creative6 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -612,7 +607,7 @@ const Creative = ({ edit }) => {
         <Card className="cardd">
           <Creative7 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -623,7 +618,7 @@ const Creative = ({ edit }) => {
         <Card className="cardd">
           <Creative8 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -634,7 +629,7 @@ const Creative = ({ edit }) => {
         <Card className="cardd">
           <Creative9 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -645,7 +640,7 @@ const Creative = ({ edit }) => {
         <Card className="cardd">
           <Creative10 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -657,14 +652,14 @@ const Creative = ({ edit }) => {
     </>
   );
 };
-const Friendly = ({ edit }) => {
+const Friendly = ({edit}) => {
   return (
     <>
       <Col className="coll">
         <Card className="cardd">
           <Friendly1 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -675,7 +670,7 @@ const Friendly = ({ edit }) => {
         <Card className="cardd">
           <Friendly2 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -686,7 +681,7 @@ const Friendly = ({ edit }) => {
         <Card className="cardd">
           <Friendly3 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -697,7 +692,7 @@ const Friendly = ({ edit }) => {
         <Card className="cardd">
           <Friendly4 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -708,7 +703,7 @@ const Friendly = ({ edit }) => {
         <Card className="cardd">
           <Friendly5 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -719,7 +714,7 @@ const Friendly = ({ edit }) => {
         <Card className="cardd">
           <Friendly6 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -732,7 +727,7 @@ const Friendly = ({ edit }) => {
         <Card className="cardd">
           <Friendly7 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -743,7 +738,7 @@ const Friendly = ({ edit }) => {
         <Card className="cardd">
           <Friendly8 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -754,7 +749,7 @@ const Friendly = ({ edit }) => {
         <Card className="cardd">
           <Friendly9 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -765,7 +760,7 @@ const Friendly = ({ edit }) => {
         <Card className="cardd">
           <Friendly10 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -777,14 +772,14 @@ const Friendly = ({ edit }) => {
     </>
   );
 };
-const Free = ({ edit }) => {
+const Free = ({edit}) => {
   return (
     <>
       <Col className="coll">
         <Card className="cardd">
           <Free1 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -795,7 +790,7 @@ const Free = ({ edit }) => {
         <Card className="cardd">
           <Free2 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -806,7 +801,7 @@ const Free = ({ edit }) => {
         <Card className="cardd">
           <Free3 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -819,7 +814,7 @@ const Free = ({ edit }) => {
         <Card className="cardd">
           <Free4 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -830,7 +825,7 @@ const Free = ({ edit }) => {
         <Card className="cardd">
           <Free5 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -843,14 +838,14 @@ const Free = ({ edit }) => {
   );
 };
 
-const AllCategory = ({ edit }) => {
+const AllCategory = ({edit}) => {
   return (
     <>
       <Col>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Professional1 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -858,10 +853,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Professional2 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -869,10 +864,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Professional3 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -880,10 +875,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Professional4 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -891,10 +886,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Professional5 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -902,10 +897,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Professional6 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -913,10 +908,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Professional7 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -924,10 +919,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Professional8 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -935,10 +930,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Professional9 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -946,10 +941,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Professional10 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -957,10 +952,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Elegant1 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -968,10 +963,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Elegant2 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -979,10 +974,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Elegant3 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -990,10 +985,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Elegant4 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1001,10 +996,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Elegant5 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1012,10 +1007,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Elegant6 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1023,10 +1018,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Elegant7 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1034,10 +1029,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Elegant8 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1045,10 +1040,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Elegant9 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1056,10 +1051,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Elegant10 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1067,10 +1062,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Modern1 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1078,10 +1073,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Modern2 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1089,10 +1084,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Modern3 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1100,10 +1095,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Modern4 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1111,10 +1106,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Modern5 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1122,10 +1117,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Modern6 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1133,10 +1128,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Modern7 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1144,10 +1139,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Modern8 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1155,10 +1150,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Modern9 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1168,10 +1163,10 @@ const AllCategory = ({ edit }) => {
         </Card>
       </Col>
       <Col>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Creative1 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1179,10 +1174,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Creative2 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1190,10 +1185,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Creative3 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1201,10 +1196,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Creative4 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1212,10 +1207,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Creative5 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1223,10 +1218,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Creative6 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1234,10 +1229,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Creative7 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1245,10 +1240,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Creative8 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1256,10 +1251,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Creative9 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1267,10 +1262,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Creative10 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1278,10 +1273,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Friendly1 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1289,10 +1284,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Friendly2 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1300,10 +1295,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Friendly3 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1311,10 +1306,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Friendly4 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1322,10 +1317,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Friendly5 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1333,10 +1328,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Friendly6 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1344,10 +1339,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Friendly7 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1355,10 +1350,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Friendly8 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1366,10 +1361,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Friendly9 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1377,10 +1372,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Friendly10 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1388,10 +1383,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Free1 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1399,10 +1394,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Free2 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1410,10 +1405,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Free3 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1421,10 +1416,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Free4 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1432,10 +1427,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Free5 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1443,10 +1438,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Modern10 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1454,10 +1449,10 @@ const AllCategory = ({ edit }) => {
             Select
           </Button>
         </Card>
-        <Card style={{ marginTop: "20px" }} className="card2">
+        <Card style={{marginTop: "20px"}} className="card2">
           <Modern11 />
           <Button
-            style={{ margin: "10px" }}
+            style={{margin: "10px"}}
             onClick={edit}
             outline
             color="primary"
@@ -1470,10 +1465,10 @@ const AllCategory = ({ edit }) => {
   );
 };
 
-const InputField = ({ label, name, value, onChange, xs }) => {
+const InputField = ({label, name, value, onChange, xs}) => {
   return (
     <Grid item md={12}>
-      <FormGroup style={{ margin: "10px 0", width: "100%" }}>
+      <FormGroup style={{margin: "10px 0", width: "100%"}}>
         <Label>{label}</Label>
         <Input name={name} onChange={onChange} value={value} />
       </FormGroup>
@@ -1548,7 +1543,7 @@ const Dashboard = () => {
   };
 
   const changeInfo = (e) => {
-    setInfo({ ...info, [e.target.name]: e.target.value });
+    setInfo({...info, [e.target.name]: e.target.value});
     if (e.target.name === "name") {
       const renderName = document
         .getElementsByClassName("renderPaper")[0]
@@ -1883,7 +1878,7 @@ const Dashboard = () => {
     const text = document.getElementsByClassName("renderPaper")[0].innerHTML;
     const userId = sessionStorage.getItem("userId");
     axios
-      .post(`${API_SERVICES}/card/save`, { text, userId })
+      .post(`${API_SERVICES}/card/save`, {text, userId})
       .then((res) => {
         console.log(res);
         setSignData(res.data);
@@ -1908,12 +1903,12 @@ const Dashboard = () => {
   };
 
   function OuterDropzone(props) {
-    const { getRootProps, getInputProps } = useDropzone({
+    const {getRootProps, getInputProps} = useDropzone({
       onDrop: (files) => handleDrop(files),
     });
 
     return (
-      <div {...getRootProps({ className: "dropzone" })}>
+      <div {...getRootProps({className: "dropzone"})}>
         <input {...getInputProps()} />
         <p>Upload Profile Photo</p>
       </div>
@@ -1921,11 +1916,11 @@ const Dashboard = () => {
   }
 
   function InnerDropzone(props) {
-    const { getRootProps, getInputProps } = useDropzone({
+    const {getRootProps, getInputProps} = useDropzone({
       onDrop: (files) => handleDrop1(files),
     });
     return (
-      <div {...getRootProps({ className: "dropzone" })}>
+      <div {...getRootProps({className: "dropzone"})}>
         <input {...getInputProps()} />
         <p>Upload Picture</p>
       </div>
@@ -2011,7 +2006,7 @@ const Dashboard = () => {
     setSignOff("");
   };
 
-  const RadioOption = ({ name }) => {
+  const RadioOption = ({name}) => {
     return (
       <>
         <FormControlLabel value={name} control={<Radio />} label={name} />
@@ -2053,13 +2048,13 @@ const Dashboard = () => {
     return `${value}`;
   };
 
-  const SectionThree = ({ name, link }) => {
+  const SectionThree = ({name, link}) => {
     return (
       <Grid item md={6}>
         <Button
           outline
           color="primary"
-          style={{ width: "100%" }}
+          style={{width: "100%"}}
           onClick={() => setImageLink(link)}
         >
           {name}
@@ -2081,7 +2076,7 @@ const Dashboard = () => {
 
   const [socialImages, setSocialImages] = useState([]);
 
-  const SectionFive = ({ name }) => {
+  const SectionFive = ({name}) => {
     return (
       <Grid item md={6}>
         <MButton
@@ -2108,7 +2103,7 @@ const Dashboard = () => {
   );
   const [greenMessageSize, setGreenMessageSize] = useState("14px");
 
-  const GreenImage = ({ num }) => {
+  const GreenImage = ({num}) => {
     return (
       <Grid item md={2}>
         <MButton
@@ -2120,7 +2115,7 @@ const Dashboard = () => {
           fullWidth
           variant="outlined"
           color="primary"
-          style={{ height: "40px" }}
+          style={{height: "40px"}}
         >
           <img
             src={`https://res.cloudinary.com/dx9dnqzaj/image/upload/v1632191783/signature/green${num}.png`}
@@ -2130,7 +2125,7 @@ const Dashboard = () => {
     );
   };
 
-  const SectionSeven = ({ name, message }) => {
+  const SectionSeven = ({name, message}) => {
     return (
       <Grid item md={4}>
         <MButton
@@ -2281,26 +2276,34 @@ const Dashboard = () => {
   const [customName, setCustomName] = useState("");
   const [customValue, setCustomValue] = useState("");
   const [customLink, setCustomLink] = useState("");
+  const [fields, setFields] = useState([]);
 
   const addCustomFields = async () => {
     const layout = await document
       .getElementsByClassName("renderPaper")[0]
       ?.children[1].getElementsByClassName("cardName")[0].parentElement
       .parentElement.parentElement;
-    if (customLink === "") {
-      layout.innerHTML += `<tr><td style="margin: 0.1px;">
-        <div style="font-family: &quot;Comic Sans MS&quot;, cursive, sans-serif;">
-        <span style="font-weight: 600; color: rgb(195, 95, 62);">${customName}&nbsp;
-        </span>${customValue}</div>
-        </td></tr>`;
-    } else {
-      layout.innerHTML += `<tr><td style="margin: 0.1px;">
-        <a href="${customLink}">
-        <div style="font-family: &quot;Comic Sans MS&quot;, cursive, sans-serif;">
-        <span style="font-weight: 600; color: rgb(195, 95, 62);">${customName}&nbsp;
-        </span>${customValue}</div></a>
-        </td></tr>`;
-    }
+
+      if (customLink === "") {
+        layout.innerHTML += `<tr id=${
+          customName + "layout"
+        }><td style="margin: 0.1px;">
+          <div style="font-family: &quot;Comic Sans MS&quot;, cursive, sans-serif;">
+          <span style="font-weight: 600; color: rgb(195, 95, 62);">${customName}&nbsp;
+          </span>${customValue}</div>
+          </td></tr>`;
+          setFields([...fields, customName]);
+      } else {
+        layout.innerHTML += `<tr id=${
+          customName + "layout"
+        }><td style="margin: 0.1px;">
+          <a href="${customLink}">
+          <div style="font-family: &quot;Comic Sans MS&quot;, cursive, sans-serif;">
+          <span style="font-weight: 600; color: rgb(195, 95, 62);">${customName}&nbsp;
+          </span>${customValue}</div></a>
+          </td></tr>`;
+          setFields([...fields, customName]);
+      }
     handleCloseCustom();
     setCustomName();
     setCustomValue();
@@ -2341,7 +2344,7 @@ const Dashboard = () => {
         onClose={handleClose}
         TransitionComponent={Transition}
       >
-        <List style={{ background: "#f1f2f9", height: "100%" }}>
+        <List style={{background: "#f1f2f9", height: "100%"}}>
           <ListItem
             style={{
               display: "flex",
@@ -2403,11 +2406,10 @@ const Dashboard = () => {
                       id="pills-tab"
                       role="tablist"
                     >
-                      <NavItem style={{ outline: "none" }}>
+                      <NavItem style={{outline: "none"}}>
                         <NavLink
                           className={
-                            classnames({ active: activeTab === "1" }) +
-                            " rounded"
+                            classnames({active: activeTab === "1"}) + " rounded"
                           }
                           onClick={() => {
                             toggleTab("1");
@@ -2416,11 +2418,10 @@ const Dashboard = () => {
                           General
                         </NavLink>
                       </NavItem>
-                      <NavItem style={{ outline: "none" }}>
+                      <NavItem style={{outline: "none"}}>
                         <NavLink
                           className={
-                            classnames({ active: activeTab === "2" }) +
-                            " rounded"
+                            classnames({active: activeTab === "2"}) + " rounded"
                           }
                           onClick={() => {
                             toggleTab("2");
@@ -2429,11 +2430,10 @@ const Dashboard = () => {
                           Social Links
                         </NavLink>
                       </NavItem>
-                      <NavItem style={{ outline: "none" }}>
+                      <NavItem style={{outline: "none"}}>
                         <NavLink
                           className={
-                            classnames({ active: activeTab === "3" }) +
-                            " rounded"
+                            classnames({active: activeTab === "3"}) + " rounded"
                           }
                           onClick={() => {
                             toggleTab("3");
@@ -2442,11 +2442,10 @@ const Dashboard = () => {
                           Images
                         </NavLink>
                       </NavItem>
-                      <NavItem style={{ outline: "none" }}>
+                      <NavItem style={{outline: "none"}}>
                         <NavLink
                           className={
-                            classnames({ active: activeTab === "4" }) +
-                            " rounded"
+                            classnames({active: activeTab === "4"}) + " rounded"
                           }
                           onClick={() => {
                             toggleTab("4");
@@ -2455,11 +2454,10 @@ const Dashboard = () => {
                           Add Ons
                         </NavLink>
                       </NavItem>
-                      <NavItem style={{ outline: "none" }}>
+                      <NavItem style={{outline: "none"}}>
                         <NavLink
                           className={
-                            classnames({ active: activeTab === "5" }) +
-                            " rounded"
+                            classnames({active: activeTab === "5"}) + " rounded"
                           }
                           onClick={() => {
                             toggleTab("5");
@@ -2531,12 +2529,35 @@ const Dashboard = () => {
                               value={info.address}
                               onChange={changeInfo}
                             />
+
+                            <div id="customFieldList">
+                              <h6>Custom Fields</h6>
+                              {fields.map((ele) => (
+                                <div style={removeStyle}>
+                                  <Label style={{margin: "0 10px"}}>
+                                    {ele}
+                                  </Label>
+                                  <IconButton
+                                    onClick={(e) => {
+                                      e.target.parentElement.parentElement.parentElement.remove();
+
+                                      const element = document.getElementById(
+                                        `${ele + "layout"}`
+                                      );
+                                      element.remove();
+                                    }}
+                                  >
+                                    <ClearIcon />
+                                  </IconButton>
+                                </div>
+                              ))}
+                            </div>
                           </Col>
                         </Row>
                         <center>
-                          <Button
+                          {/* <Button
                             color="primary"
-                            style={{ marginRight: "15px" }}
+                            style={{marginRight: "15px"}}
                             onClick={() => {
                               setFinalSign("");
                               setSignOffOptions("");
@@ -2574,7 +2595,7 @@ const Dashboard = () => {
                             }}
                           >
                             Delete Custom Fields
-                          </Button>
+                          </Button> */}
                           <Button color="primary" onClick={handleClickCustom}>
                             Add Custom Fields
                           </Button>
@@ -2589,7 +2610,7 @@ const Dashboard = () => {
                             </DialogTitle>
                             <DialogContent>
                               <Grid
-                                style={{ display: "flex" }}
+                                style={{display: "flex"}}
                                 spacing={2}
                                 container
                               >
@@ -2794,7 +2815,7 @@ const Dashboard = () => {
                             >
                               <Grid item md={9}>
                                 <FormGroup
-                                  style={{ margin: "10px 0", width: "100%" }}
+                                  style={{margin: "10px 0", width: "100%"}}
                                 >
                                   <Input
                                     onChange={(e) =>
@@ -2808,7 +2829,7 @@ const Dashboard = () => {
                                 <Button
                                   color="primary"
                                   onClick={changeProfile}
-                                  style={{ marginLeft: "15px" }}
+                                  style={{marginLeft: "15px"}}
                                 >
                                   Add Link
                                 </Button>
@@ -2844,7 +2865,7 @@ const Dashboard = () => {
                               <center>
                                 <Button
                                   onClick={() => setFile1([])}
-                                  style={{ margin: "20px 0" }}
+                                  style={{margin: "20px 0"}}
                                 >
                                   Remove Second Photo
                                 </Button>
@@ -2887,7 +2908,7 @@ const Dashboard = () => {
                                     <Button
                                       color="primary"
                                       onClick={changeSecondPhoto}
-                                      style={{ marginLeft: "15px" }}
+                                      style={{marginLeft: "15px"}}
                                     >
                                       Add Link
                                     </Button>
@@ -2935,7 +2956,7 @@ const Dashboard = () => {
                             <div>
                               {finalSign !== "" && (
                                 <div style={removeStyle}>
-                                  <Label style={{ margin: "0 10px" }}>
+                                  <Label style={{margin: "0 10px"}}>
                                     Remove Sign Off
                                   </Label>
                                   <IconButton
@@ -2950,7 +2971,7 @@ const Dashboard = () => {
                               )}
                               {disclaimer !== "" && (
                                 <div style={removeStyle}>
-                                  <Label style={{ margin: "0 10px" }}>
+                                  <Label style={{margin: "0 10px"}}>
                                     Remove Disclaimer
                                   </Label>
                                   <IconButton
@@ -2965,7 +2986,7 @@ const Dashboard = () => {
                               )}
                               {imageLink !== "" && (
                                 <div style={removeStyle}>
-                                  <Label style={{ margin: "0 10px" }}>
+                                  <Label style={{margin: "0 10px"}}>
                                     Remove Video Conferences
                                   </Label>
                                   <IconButton
@@ -2980,7 +3001,7 @@ const Dashboard = () => {
                               )}
                               {isCTA && (
                                 <div style={removeStyle}>
-                                  <Label style={{ margin: "0 10px" }}>
+                                  <Label style={{margin: "0 10px"}}>
                                     Remove CTA
                                   </Label>
                                   <IconButton
@@ -3001,7 +3022,7 @@ const Dashboard = () => {
 
                               {socialImages.length > 0 && (
                                 <div style={removeStyle}>
-                                  <Label style={{ margin: "0 10px" }}>
+                                  <Label style={{margin: "0 10px"}}>
                                     Remove Social Links
                                   </Label>
                                   <IconButton
@@ -3017,7 +3038,7 @@ const Dashboard = () => {
 
                               {greenMessage !== "" && (
                                 <div style={removeStyle}>
-                                  <Label style={{ margin: "0 10px" }}>
+                                  <Label style={{margin: "0 10px"}}>
                                     Remove Green Message
                                   </Label>
                                   <IconButton
@@ -3035,7 +3056,7 @@ const Dashboard = () => {
                               )}
                             </div>
                             <h4>Add Ons</h4>
-                            <Accordion style={{ background: "#e6ecf7" }}>
+                            <Accordion style={{background: "#e6ecf7"}}>
                               <AccordionSummary>
                                 {/* <AccordionSummary expandIcon={<ExpandMoreIcon />}> */}
                                 <Typography>Sign Off</Typography>
@@ -3043,7 +3064,7 @@ const Dashboard = () => {
                               <AccordionDetails>
                                 <Container>
                                   <FormGroup
-                                    style={{ margin: "10px 0", width: "100%" }}
+                                    style={{margin: "10px 0", width: "100%"}}
                                   >
                                     <Label>Text</Label>
                                     <Input
@@ -3075,7 +3096,7 @@ const Dashboard = () => {
                                     </div>
                                   </RadioGroup>
                                   <hr />
-                                  <Grid style={{ display: "flex" }}>
+                                  <Grid style={{display: "flex"}}>
                                     <Grid item md={6}>
                                       <Label>Font Size</Label>
                                       <br />
@@ -3095,7 +3116,7 @@ const Dashboard = () => {
                                       />
                                     </Grid>
                                     <Grid item md={6}>
-                                      <Label style={{ marginBottom: "10px" }}>
+                                      <Label style={{marginBottom: "10px"}}>
                                         Font Color
                                       </Label>
                                       <Chrome
@@ -3113,7 +3134,7 @@ const Dashboard = () => {
                               </AccordionDetails>
                             </Accordion>
                             <Accordion
-                              style={{ background: "#e6ecf7" }}
+                              style={{background: "#e6ecf7"}}
                               onClick={(e) => {
                                 if (
                                   String(e.target.className).includes(
@@ -3128,7 +3149,7 @@ const Dashboard = () => {
                                 <Typography>Disclaimer</Typography>
                               </AccordionSummary>
                               <AccordionDetails>
-                                <FormGroup style={{ width: "100%" }}>
+                                <FormGroup style={{width: "100%"}}>
                                   <Label for="disclaimer">
                                     Customer Disclaimer
                                   </Label>
@@ -3144,7 +3165,7 @@ const Dashboard = () => {
                                 </FormGroup>
                               </AccordionDetails>
                             </Accordion>
-                            <Accordion style={{ background: "#e6ecf7" }}>
+                            <Accordion style={{background: "#e6ecf7"}}>
                               <AccordionSummary>
                                 {/* <AccordionSummary expandIcon={<ExpandMoreIcon />}> */}
                                 <Typography>Video Conferences</Typography>
@@ -3156,7 +3177,7 @@ const Dashboard = () => {
                                 }}
                               >
                                 <Grid
-                                  style={{ display: "flex" }}
+                                  style={{display: "flex"}}
                                   container
                                   spacing={2}
                                 >
@@ -3182,7 +3203,7 @@ const Dashboard = () => {
                                   />
                                 </Grid>
                                 <FormGroup
-                                  style={{ width: "100%", marginTop: "15px" }}
+                                  style={{width: "100%", marginTop: "15px"}}
                                 >
                                   <Label for="button">Button URL</Label>
                                   <Input
@@ -3192,7 +3213,7 @@ const Dashboard = () => {
                                       setImageURL(e.target.value)
                                     }
                                   />
-                                  <Label style={{ marginTop: "15px" }}>
+                                  <Label style={{marginTop: "15px"}}>
                                     Height
                                   </Label>
                                   <br />
@@ -3206,7 +3227,7 @@ const Dashboard = () => {
                                     min={150}
                                     max={300}
                                   />
-                                  <Label style={{ marginTop: "15px" }}>
+                                  <Label style={{marginTop: "15px"}}>
                                     Margin Top
                                   </Label>
                                   <br />
@@ -3224,7 +3245,7 @@ const Dashboard = () => {
                               </AccordionDetails>
                             </Accordion>
                             <Accordion
-                              style={{ background: "#e6ecf7" }}
+                              style={{background: "#e6ecf7"}}
                               onClick={(e) => {
                                 if (
                                   String(e.target.className).includes(
@@ -3246,7 +3267,7 @@ const Dashboard = () => {
                               >
                                 <Label
                                   for="button"
-                                  style={{ width: "100%", marginTop: "15px" }}
+                                  style={{width: "100%", marginTop: "15px"}}
                                 >
                                   Button Text
                                 </Label>
@@ -3257,7 +3278,7 @@ const Dashboard = () => {
                                 />
                                 <Label
                                   for="button"
-                                  style={{ width: "100%", marginTop: "15px" }}
+                                  style={{width: "100%", marginTop: "15px"}}
                                 >
                                   Button URL
                                 </Label>
@@ -3268,7 +3289,7 @@ const Dashboard = () => {
                                 />
                                 <Grid container spacing={2}>
                                   <Grid item md={12}>
-                                    <Label style={{ marginTop: "15px" }}>
+                                    <Label style={{marginTop: "15px"}}>
                                       Shape
                                     </Label>
                                     <br />
@@ -3282,7 +3303,7 @@ const Dashboard = () => {
                                       min={0}
                                       max={7}
                                     />
-                                    <Label style={{ marginTop: "15px" }}>
+                                    <Label style={{marginTop: "15px"}}>
                                       Margin Top
                                     </Label>
                                     <br />
@@ -3298,7 +3319,7 @@ const Dashboard = () => {
                                     />
                                   </Grid>
                                   <Grid item md={6}>
-                                    <Label style={{ marginBottom: "10px" }}>
+                                    <Label style={{marginBottom: "10px"}}>
                                       Background Color
                                     </Label>
                                     <Chrome
@@ -3309,7 +3330,7 @@ const Dashboard = () => {
                                     />
                                   </Grid>
                                   <Grid item md={6}>
-                                    <Label style={{ marginBottom: "10px" }}>
+                                    <Label style={{marginBottom: "10px"}}>
                                       Text Color
                                     </Label>
                                     <Chrome
@@ -3322,7 +3343,7 @@ const Dashboard = () => {
                                 </Grid>
                               </AccordionDetails>
                             </Accordion>
-                            <Accordion style={{ background: "#e6ecf7" }}>
+                            <Accordion style={{background: "#e6ecf7"}}>
                               <AccordionSummary>
                                 {/* <AccordionSummary expandIcon={<ExpandMoreIcon />}> */}
                                 <Typography>Social Links</Typography>
@@ -3354,7 +3375,7 @@ const Dashboard = () => {
                                     <SectionFive name="dribble" />
                                   </Grid>
 
-                                  <Label style={{ marginTop: "15px" }}>
+                                  <Label style={{marginTop: "15px"}}>
                                     Width
                                   </Label>
                                   <br />
@@ -3443,7 +3464,7 @@ const Dashboard = () => {
                                 </>
                               </AccordionDetails>
                             </Accordion>
-                            <Accordion style={{ background: "#e6ecf7" }}>
+                            <Accordion style={{background: "#e6ecf7"}}>
                               <AccordionSummary>
                                 {/* <AccordionSummary expandIcon={<ExpandMoreIcon />}> */}
                                 <Typography>MarketPlace and Retail</Typography>
@@ -3494,7 +3515,7 @@ const Dashboard = () => {
                                       </>
                                     ))}
                                   </Grid>
-                                  <Label style={{ marginTop: "15px" }}>
+                                  <Label style={{marginTop: "15px"}}>
                                     Width
                                   </Label>
                                   <br />
@@ -3582,7 +3603,7 @@ const Dashboard = () => {
                                 </>
                               </AccordionDetails>
                             </Accordion>
-                            <Accordion style={{ background: "#e6ecf7" }}>
+                            <Accordion style={{background: "#e6ecf7"}}>
                               <AccordionSummary>
                                 {/* <AccordionSummary expandIcon={<ExpandMoreIcon />}> */}
                                 <Typography>Green Message</Typography>
@@ -3636,7 +3657,7 @@ const Dashboard = () => {
                                     <GreenImage num="8" />
                                   </Grid>
 
-                                  <FormGroup style={{ width: "100%" }}>
+                                  <FormGroup style={{width: "100%"}}>
                                     <Label for="disclaimer">
                                       Custom Green Message
                                     </Label>
@@ -3649,7 +3670,7 @@ const Dashboard = () => {
                                     />
                                   </FormGroup>
 
-                                  <Label style={{ marginTop: "15px" }}>
+                                  <Label style={{marginTop: "15px"}}>
                                     Font Size
                                   </Label>
                                   <br />
@@ -3742,7 +3763,7 @@ const Dashboard = () => {
                         </Row>
                       </TabPane>
                       <TabPane tabId="5">
-                        <Typography variant="h5" style={{ margin: "20px 5px" }}>
+                        <Typography variant="h5" style={{margin: "20px 5px"}}>
                           Layout
                         </Typography>
                         <Grid
@@ -3788,7 +3809,7 @@ const Dashboard = () => {
                               paddingLeft: "15px",
                             }}
                           >
-                            <Label style={{ marginBottom: "10px" }}>
+                            <Label style={{marginBottom: "10px"}}>
                               Font Color
                             </Label>
                             <Chrome
@@ -3806,7 +3827,7 @@ const Dashboard = () => {
                           </Grid>
                         </Grid>
                         <hr />
-                        <Typography variant="h5" style={{ margin: "20px 5px" }}>
+                        <Typography variant="h5" style={{margin: "20px 5px"}}>
                           Social Icons
                         </Typography>
                         <div
@@ -3898,7 +3919,7 @@ const Dashboard = () => {
                         Liked your signature? Share it on your social media.
                       </Typography>
                       <Button
-                        style={{ marginTop: "20px" }}
+                        style={{marginTop: "20px"}}
                         color="primary"
                         block
                         href="https://www.facebook.com/sharer/sharer.php?u=example.org"
@@ -3969,14 +3990,14 @@ const Dashboard = () => {
                             setHasSubmitted(false);
                             setOpenHTML(false);
                           }}
-                          style={{ marginTop: "20px" }}
+                          style={{marginTop: "20px"}}
                           color="primary"
                         >
                           Back to Edit
                         </Button>
                       )}
                       <Button
-                        style={{ marginTop: "20px" }}
+                        style={{marginTop: "20px"}}
                         onClick={saveCard}
                         color="primary"
                         size="small"
@@ -3996,7 +4017,7 @@ const Dashboard = () => {
                   alignItems: "flex-start",
                 }}
               >
-                <Paper style={{ padding: "20px", borderRadius: "20px" }}>
+                <Paper style={{padding: "20px", borderRadius: "20px"}}>
                   <div className="renderPaper">
                     <p
                       className="finalSignP"
@@ -4009,15 +4030,15 @@ const Dashboard = () => {
                       {finalSign}
                     </p>
                     <div
-                      style={{ width: "max-content" }}
+                      style={{width: "max-content"}}
                       className="forResetCard"
                     >
                       {renderHTML(card)}
                     </div>
-                    <div style={{ margin: "10px" }}>{disclaimer}</div>
+                    <div style={{margin: "10px"}}>{disclaimer}</div>
 
                     {imageLink != "" && (
-                      <div style={{ marginTop: imageMargin }}>
+                      <div style={{marginTop: imageMargin}}>
                         <a className="meetme" href={imageURL}>
                           <img src={imageLink} width={imageWidth} />
                         </a>
@@ -4060,7 +4081,7 @@ const Dashboard = () => {
                             <a href={image.href}>
                               <img
                                 src={image.url}
-                                style={{ width: "-webkit-fill-available" }}
+                                style={{width: "-webkit-fill-available"}}
                               />
                             </a>
                           </Grid>
@@ -4085,7 +4106,7 @@ const Dashboard = () => {
                                 <a href={market.link}>
                                   <img
                                     src={market.url}
-                                    style={{ width: "-webkit-fill-available" }}
+                                    style={{width: "-webkit-fill-available"}}
                                   />
                                 </a>
                               </Grid>
@@ -4096,7 +4117,7 @@ const Dashboard = () => {
                     </Grid>
 
                     {isCTA && (
-                      <div style={{ marginTop: "10px" }}>
+                      <div style={{marginTop: "10px"}}>
                         <a href={CTAUrl}>
                           <button
                             className="CTAButton"
@@ -4142,12 +4163,12 @@ const Dashboard = () => {
         </List>
       </Dialog>
 
-      <Container style={{ paddingTop: "20px" }}>
+      <Container style={{paddingTop: "20px"}}>
         <Row>
           <Col lg="12">
             <Card
               className="public-profile border-0 rounded shadow"
-              style={{ zIndex: "1" }}
+              style={{zIndex: "1"}}
             >
               <CardBody>
                 <Row className="align-items-center">
@@ -4168,25 +4189,25 @@ const Dashboard = () => {
                     <>
                       <Col lg="12" md="12" className="align-items-center">
                         <div
-                          style={{ display: "flex", justifyContent: "center" }}
+                          style={{display: "flex", justifyContent: "center"}}
                         >
                           <img
                             src="https://res.cloudinary.com/dx9dnqzaj/image/upload/v1625283900/tracker/No_data-pana_vf9vqu.svg"
-                            style={{ maxHeight: "200px" }}
+                            style={{maxHeight: "200px"}}
                             alt="No Signature Found"
                           />
                         </div>
                       </Col>
                       <Col lg="12" md="12" className="align-items-center">
                         <div
-                          style={{ display: "flex", justifyContent: "center" }}
+                          style={{display: "flex", justifyContent: "center"}}
                         >
                           <h6>No Signatures Found</h6>
                         </div>
                       </Col>
                     </>
                   ) : (
-                    <Grid container spacing={2} style={{ marginTop: "20px" }}>
+                    <Grid container spacing={2} style={{marginTop: "20px"}}>
                       {signData?.map((sign) => (
                         <Grid
                           item
@@ -4197,9 +4218,7 @@ const Dashboard = () => {
                           }}
                           className="displayCard"
                         >
-                          <Grid
-                            style={{ display: "flex", flexDirection: "row" }}
-                          >
+                          <Grid style={{display: "flex", flexDirection: "row"}}>
                             <Grid item md={10}>
                               {renderHTML(sign.cardHTML)}
                             </Grid>
@@ -4213,7 +4232,7 @@ const Dashboard = () => {
                                 <FileCopyIcon />
                               </IconButton>
                               <IconButton
-                                style={{ marginTop: "5px" }}
+                                style={{marginTop: "5px"}}
                                 onClick={async () => {
                                   await axios
                                     .get(
@@ -4244,7 +4263,7 @@ const Dashboard = () => {
         <Modal isOpen={modal} toggle={toggle} size="xl">
           {/* <ModalHeader>New Signature</ModalHeader> */}
           <ModalBody>
-            <div style={{ display: "flex", justifyContent: "flex-end" }}>
+            <div style={{display: "flex", justifyContent: "flex-end"}}>
               <Example modalCategory={setModalCategory} />
             </div>
 
